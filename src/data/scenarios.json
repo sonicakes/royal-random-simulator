@@ -1,0 +1,297 @@
+[
+  {
+    "id": "the-shining",
+    "title": "The Shining",
+    "source": "The Shining",
+    "sourceType": "film",
+    "year": 1980,
+    "difficulty": "hard",
+    "tags": ["isolation", "supernatural", "psychological", "family"],
+    "description": "A struggling writer takes a job as the winter caretaker of the remote Overlook Hotel, bringing his wife and young son with him. As the weeks pass and the snow closes in, the hotel's dark history begins to unravel his sanity.",
+    "householdMembers": [
+      { "name": "Jack Torrance", "role": "Father / Caretaker", "traits": ["Creative", "Hot-Headed", "Loner"] },
+      { "name": "Wendy Torrance", "role": "Mother", "traits": ["Bookworm", "Neat", "Family-Oriented"] },
+      { "name": "Danny Torrance", "role": "Son", "traits": ["Psychic", "Childish", "Brave"] }
+    ],
+    "goals": [
+      "Settle the family into the Overlook Hotel before the first snowfall.",
+      "Jack must complete his writing project — at least 10,000 words.",
+      "Keep the family together until the roads reopen in spring.",
+      "Survive."
+    ],
+    "storyBeats": [
+      { "step": 1, "text": "Arrive at the Overlook and explore the sprawling grounds." },
+      { "step": 2, "text": "Jack begins writing; Wendy tries to keep spirits up." },
+      { "step": 3, "text": "Danny starts experiencing disturbing visions around the hotel." },
+      { "step": 4, "text": "Jack's mood deteriorates — arguments escalate." },
+      { "step": 5, "text": "The hotel's 'ghosts' begin whispering to Jack." },
+      { "step": 6, "text": "Jack snaps. Wendy and Danny must escape before it's too late." }
+    ]
+  },
+  {
+    "id": "friday-13th",
+    "title": "Friday the 13th",
+    "source": "Friday the 13th",
+    "sourceType": "film",
+    "year": 1980,
+    "difficulty": "medium",
+    "tags": ["slasher", "camp", "survival", "teens"],
+    "description": "A group of young camp counsellors arrive at Camp Crystal Lake to reopen it after years of tragedy. One by one they are hunted down by an unseen killer with a deeply personal motive.",
+    "householdMembers": [
+      { "name": "Alice Hardy", "role": "Head Counsellor", "traits": ["Athletic", "Brave", "Friendly"] },
+      { "name": "Ned Rubinstein", "role": "Counsellor", "traits": ["Goofball", "Childish", "Outgoing"] },
+      { "name": "Brenda Jones", "role": "Counsellor", "traits": ["Romantic", "Cheerful", "Neat"] },
+      { "name": "Jack Burrell", "role": "Counsellor", "traits": ["Romantic", "Lazy", "Outgoing"] },
+      { "name": "Marcie Stanler", "role": "Counsellor", "traits": ["Bookworm", "Neurotic", "Friendly"] }
+    ],
+    "goals": [
+      "Restore and open Camp Crystal Lake for the summer season.",
+      "Build friendships and relationships among the counsellors.",
+      "Uncover the camp's dark history before it's too late.",
+      "Get at least one counsellor out alive."
+    ],
+    "storyBeats": [
+      { "step": 1, "text": "The counsellors arrive and start preparing the camp." },
+      { "step": 2, "text": "Strange warnings from locals are ignored." },
+      { "step": 3, "text": "Counsellors pair off — romance and mischief ensue." },
+      { "step": 4, "text": "The first disappearance goes unnoticed." },
+      { "step": 5, "text": "Fear spreads as it becomes clear someone is hunting them." },
+      { "step": 6, "text": "The final survivor faces the killer in a desperate confrontation." }
+    ]
+  },
+  {
+    "id": "the-collector",
+    "title": "The Collector",
+    "source": "The Collector",
+    "sourceType": "book",
+    "year": 1963,
+    "difficulty": "hard",
+    "tags": ["psychological", "captivity", "obsession", "two-person"],
+    "description": "A lonely, obsessive man wins the lottery and uses his newfound wealth to capture Miranda, the art student he has fixated on from afar. He wants her to come to love him — she wants to survive and escape.",
+    "householdMembers": [
+      { "name": "Frederick Clegg", "role": "The Collector", "traits": ["Loner", "Obsessive", "Neat"] },
+      { "name": "Miranda Grey", "role": "The Captive", "traits": ["Creative", "Brave", "Bookworm"] }
+    ],
+    "goals": [
+      "Frederick: Keep Miranda comfortable and win her affection.",
+      "Miranda: Find a way to escape the cellar.",
+      "Miranda: Maintain her identity and spirit under captivity.",
+      "Outlast the other."
+    ],
+    "storyBeats": [
+      { "step": 1, "text": "Frederick prepares the secluded house and brings Miranda home." },
+      { "step": 2, "text": "Miranda tests the boundaries of her captivity." },
+      { "step": 3, "text": "Frederick attempts to connect — gifts, books, polite conversation." },
+      { "step": 4, "text": "Miranda engineers an escape attempt." },
+      { "step": 5, "text": "The power dynamic shifts dangerously." },
+      { "step": 6, "text": "One of them will not leave this house." }
+    ]
+  },
+  {
+    "id": "misery",
+    "title": "Misery",
+    "source": "Misery",
+    "sourceType": "book",
+    "year": 1987,
+    "difficulty": "medium",
+    "tags": ["psychological", "captivity", "obsession", "two-person"],
+    "description": "Bestselling author Paul Sheldon crashes his car in a remote blizzard and is 'rescued' by Annie Wilkes — his self-proclaimed number one fan. When she discovers he has killed off her favourite character, things take a very dark turn.",
+    "householdMembers": [
+      { "name": "Paul Sheldon", "role": "Captive Author", "traits": ["Bookworm", "Creative", "Neurotic"] },
+      { "name": "Annie Wilkes", "role": "The Rescuer", "traits": ["Perfectionist", "Volatile", "Neat"] }
+    ],
+    "goals": [
+      "Paul: Write the novel Annie demands — and buy time.",
+      "Paul: Escape before Annie's obsession turns fully lethal.",
+      "Annie: Keep Paul writing and keep him hers.",
+      "Paul: Send a signal to the outside world."
+    ],
+    "storyBeats": [
+      { "step": 1, "text": "Paul wakes in Annie's farmhouse, both legs broken." },
+      { "step": 2, "text": "Annie's devotion seems genuine — if extreme." },
+      { "step": 3, "text": "She reads the unpublished manuscript and her mood turns." },
+      { "step": 4, "text": "Paul begins writing Misery's Return to appease her." },
+      { "step": 5, "text": "Paul discovers what happened to Annie's previous 'guests'." },
+      { "step": 6, "text": "Paul's escape plan comes to a violent head." }
+    ]
+  },
+  {
+    "id": "get-out",
+    "title": "Get Out",
+    "source": "Get Out",
+    "sourceType": "film",
+    "year": 2017,
+    "difficulty": "medium",
+    "tags": ["psychological", "body-horror", "family", "modern"],
+    "description": "Chris Washington travels to meet his girlfriend Rose's family for the weekend. The idyllic estate feels off from the start — and the Black groundskeeper and housekeeper seem strangely hollowed out. Something is very, very wrong.",
+    "householdMembers": [
+      { "name": "Chris Washington", "role": "Visitor", "traits": ["Artistic", "Perceptive", "Loyal"] },
+      { "name": "Rose Armitage", "role": "Girlfriend", "traits": ["Charming", "Outgoing", "Romantic"] },
+      { "name": "Dean Armitage", "role": "Father", "traits": ["Ambitious", "Charismatic", "Perfectionist"] },
+      { "name": "Missy Armitage", "role": "Mother / Therapist", "traits": ["Cold", "Neat", "Bookworm"] }
+    ],
+    "goals": [
+      "Survive the weekend visit.",
+      "Uncover what is really happening to the staff.",
+      "Escape the estate before the auction.",
+      "Expose the Armitage family."
+    ],
+    "storyBeats": [
+      { "step": 1, "text": "Chris and Rose arrive at the grand Armitage estate." },
+      { "step": 2, "text": "The groundskeeper and housekeeper behave unnervingly." },
+      { "step": 3, "text": "A garden party introduces Chris to a crowd of interested strangers." },
+      { "step": 4, "text": "Missy hypnotises Chris — he sinks into the Sunken Place." },
+      { "step": 5, "text": "Chris uncovers the photo album and the terrible truth." },
+      { "step": 6, "text": "Chris fights his way out — or doesn't." }
+    ]
+  },
+  {
+    "id": "hereditary",
+    "title": "Hereditary",
+    "source": "Hereditary",
+    "sourceType": "film",
+    "year": 2018,
+    "difficulty": "hard",
+    "tags": ["supernatural", "family", "grief", "cult"],
+    "description": "After the Graham family matriarch passes away, her daughter Annie begins uncovering dark family secrets. Grief and dread spiral into something far more sinister as an ancient force closes in on the family.",
+    "householdMembers": [
+      { "name": "Annie Graham", "role": "Mother / Artist", "traits": ["Creative", "Neurotic", "Ambitious"] },
+      { "name": "Steve Graham", "role": "Father", "traits": ["Family-Oriented", "Patient", "Neat"] },
+      { "name": "Peter Graham", "role": "Son", "traits": ["Lazy", "Childish", "Loner"] },
+      { "name": "Charlie Graham", "role": "Daughter", "traits": ["Odd", "Creative", "Loner"] }
+    ],
+    "goals": [
+      "Process grief following the grandmother's death.",
+      "Keep the family from fracturing under pressure.",
+      "Uncover what the grandmother was involved in.",
+      "Escape the cult's design for your family."
+    ],
+    "storyBeats": [
+      { "step": 1, "text": "The family attends the grandmother's funeral and struggles with grief." },
+      { "step": 2, "text": "Charlie's strange behaviour intensifies." },
+      { "step": 3, "text": "A catastrophic accident tears the family apart." },
+      { "step": 4, "text": "Annie discovers her mother's occult history." },
+      { "step": 5, "text": "Something begins to inhabit members of the household." },
+      { "step": 6, "text": "The ritual reaches its terrible conclusion." }
+    ]
+  },
+  {
+    "id": "rosemarys-baby",
+    "title": "Rosemary's Baby",
+    "source": "Rosemary's Baby",
+    "sourceType": "film",
+    "year": 1968,
+    "difficulty": "medium",
+    "tags": ["cult", "supernatural", "pregnancy", "paranoia"],
+    "description": "Rosemary and Guy Woodhouse move into a grand New York apartment and befriend their eccentric elderly neighbours. As Rosemary's pregnancy advances, she becomes increasingly convinced that a sinister conspiracy surrounds her unborn child.",
+    "householdMembers": [
+      { "name": "Rosemary Woodhouse", "role": "Wife", "traits": ["Family-Oriented", "Neat", "Neurotic"] },
+      { "name": "Guy Woodhouse", "role": "Husband / Actor", "traits": ["Ambitious", "Charming", "Selfish"] },
+      { "name": "Minnie Castevet", "role": "Neighbour", "traits": ["Nosy", "Cheerful", "Manipulative"] }
+    ],
+    "goals": [
+      "Settle into the new apartment and start a family.",
+      "Rosemary must have a healthy pregnancy.",
+      "Uncover what the neighbours really want.",
+      "Protect the baby — or decide what the baby truly is."
+    ],
+    "storyBeats": [
+      { "step": 1, "text": "Rosemary and Guy move in and meet the Castevets." },
+      { "step": 2, "text": "Rosemary becomes pregnant after a disturbing night." },
+      { "step": 3, "text": "The neighbours grow intrusive — Rosemary's doctor is complicit." },
+      { "step": 4, "text": "Rosemary's suspicions deepen as she loses trust in everyone." },
+      { "step": 5, "text": "She tries to reach someone outside the conspiracy." },
+      { "step": 6, "text": "The baby arrives. Rosemary faces an impossible choice." }
+    ]
+  },
+  {
+    "id": "it",
+    "title": "It",
+    "source": "It",
+    "sourceType": "book",
+    "year": 1986,
+    "difficulty": "hard",
+    "tags": ["supernatural", "childhood", "group", "small-town"],
+    "description": "In the town of Derry, children are disappearing. A group of outcast kids calling themselves the Losers' Club come face to face with an ancient shapeshifting evil that preys on their deepest fears — most often appearing as Pennywise the Dancing Clown.",
+    "householdMembers": [
+      { "name": "Bill Denbrough", "role": "Leader", "traits": ["Brave", "Creative", "Hot-Headed"] },
+      { "name": "Beverly Marsh", "role": "Loner", "traits": ["Brave", "Artistic", "Outgoing"] },
+      { "name": "Ben Hanscom", "role": "New Kid", "traits": ["Bookworm", "Sensitive", "Loyal"] },
+      { "name": "Richie Tozier", "role": "Joker", "traits": ["Goofball", "Outgoing", "Childish"] },
+      { "name": "Eddie Kaspbrak", "role": "Hypochondriac", "traits": ["Neat", "Cowardly", "Loyal"] }
+    ],
+    "goals": [
+      "Discover what is killing children in Derry.",
+      "Face your greatest fear — without breaking.",
+      "Defeat It before another child dies.",
+      "Keep the Losers' Club together."
+    ],
+    "storyBeats": [
+      { "step": 1, "text": "The Losers each encounter Pennywise alone and terrified." },
+      { "step": 2, "text": "The group forms — finding strength in numbers." },
+      { "step": 3, "text": "They research Derry's horrifying history." },
+      { "step": 4, "text": "The Losers venture into the sewers to confront It." },
+      { "step": 5, "text": "It exploits each child's deepest fear in turn." },
+      { "step": 6, "text": "The ritual: face It with belief and drive it back — or be consumed." }
+    ]
+  },
+  {
+    "id": "psycho",
+    "title": "Psycho",
+    "source": "Psycho",
+    "sourceType": "film",
+    "year": 1960,
+    "difficulty": "medium",
+    "tags": ["slasher", "psychological", "isolation", "identity"],
+    "description": "Marion Crane is on the run with stolen money when she stops at the lonely Bates Motel. The quiet, awkward Norman Bates seems harmless enough — but something is very wrong in the house on the hill.",
+    "householdMembers": [
+      { "name": "Norman Bates", "role": "Motel Owner", "traits": ["Loner", "Neat", "Shy"] },
+      { "name": "Marion Crane", "role": "Fugitive", "traits": ["Impulsive", "Neurotic", "Ambitious"] },
+      { "name": "Norma Bates", "role": "Mother (deceased?)", "traits": ["Controlling", "Volatile", "Perfectionist"] }
+    ],
+    "goals": [
+      "Marion: Get far enough away to start over.",
+      "Norman: Keep the motel running and Mother satisfied.",
+      "Lila Crane: Find out what happened to her sister.",
+      "Uncover the truth about the house on the hill."
+    ],
+    "storyBeats": [
+      { "step": 1, "text": "Marion arrives at the Bates Motel, tired and on edge." },
+      { "step": 2, "text": "Norman and Marion share a stilted dinner conversation." },
+      { "step": 3, "text": "Something terrible happens in Cabin One." },
+      { "step": 4, "text": "Norman methodically cleans up — Mother must never be blamed." },
+      { "step": 5, "text": "A detective and Marion's sister begin closing in." },
+      { "step": 6, "text": "The truth about Mother is finally revealed." }
+    ]
+  },
+  {
+    "id": "haunting-hill-house",
+    "title": "The Haunting of Hill House",
+    "source": "The Haunting of Hill House",
+    "sourceType": "book",
+    "year": 1959,
+    "difficulty": "hard",
+    "tags": ["supernatural", "haunted-house", "psychological", "group"],
+    "description": "Dr Montague invites a small group to spend the summer at Hill House — a sprawling, architecturally wrong mansion with a long history of tragedy. As the weeks pass, the house begins to work on one member of the group in particular.",
+    "householdMembers": [
+      { "name": "Eleanor Vance", "role": "Guest / Subject", "traits": ["Neurotic", "Loner", "Sensitive"] },
+      { "name": "Theodora", "role": "Guest", "traits": ["Outgoing", "Artistic", "Blunt"] },
+      { "name": "Luke Sanderson", "role": "Heir to Hill House", "traits": ["Lazy", "Charming", "Brave"] },
+      { "name": "Dr Montague", "role": "Paranormal Researcher", "traits": ["Bookworm", "Ambitious", "Logical"] }
+    ],
+    "goals": [
+      "Document paranormal activity within Hill House.",
+      "Keep all guests psychologically stable.",
+      "Eleanor must resist the house's pull.",
+      "Leave Hill House before it claims someone permanently."
+    ],
+    "storyBeats": [
+      { "step": 1, "text": "The group arrives and explores Hill House's disorienting rooms." },
+      { "step": 2, "text": "Strange writing appears on the walls, addressed to Eleanor." },
+      { "step": 3, "text": "Eleanor begins to feel the house 'knows' her." },
+      { "step": 4, "text": "Paranormal events intensify — the group grows afraid." },
+      { "step": 5, "text": "Eleanor stops wanting to leave." },
+      { "step": 6, "text": "The group must decide: force Eleanor out — or let the house win." }
+    ]
+  }
+]

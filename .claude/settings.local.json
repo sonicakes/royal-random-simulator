@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(printf 'y\\\\n')",
+      "Bash(npx create-vite@9.0.3 . --template react-ts)",
+      "Bash(npm install:*)",
+      "Bash(npx tailwindcss:*)",
+      "Bash(npm run:*)"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #080f14;
+  --color-sims-green: #4ade80;
+  --color-btn-green: #16a34a;
+  --color-btn-green-hover: #15803d;
+  --color-horror-red: #e8143c;
+  --color-modal-bg: #0a1a12;
+
+  --font-sans: 'Nunito', system-ui, sans-serif;
+
+  --radius-card: 12px;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-white font-sans;
+  }
+}
