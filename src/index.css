@@ -18,3 +18,8 @@
     @apply bg-bg text-white font-sans;
   }
 }
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

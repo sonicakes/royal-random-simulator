@@ -19,7 +19,7 @@ export default function ScenarioDetailPage() {
     return (
       <main className="max-w-2xl mx-auto px-4 py-16 text-center">
         <p className="text-white/40">Scenario not found.</p>
-        <button onClick={() => navigate(-1)} className="mt-4 text-sims-green text-sm hover:underline">
+        <button onClick={() => navigate(-1)} className="mt-4 text-sims-green text-sm hover:underline cursor-pointer">
           ← Go back
         </button>
       </main>
@@ -31,7 +31,7 @@ export default function ScenarioDetailPage() {
       {/* Back */}
       <button
         onClick={() => navigate(-1)}
-        className="text-sm text-white/40 hover:text-sims-green transition-colors mb-6 flex items-center gap-1"
+        className="text-sm text-white/40 hover:text-sims-green transition-colors mb-6 flex items-center gap-1 cursor-pointer"
       >
         ← Back
       </button>

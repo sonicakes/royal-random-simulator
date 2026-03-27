@@ -55,7 +55,7 @@ export default function HomePage() {
       <button
         onClick={handleSpin}
         disabled={isSpinning}
-        className="px-10 py-3 rounded-card font-extrabold text-lg bg-btn-green hover:bg-btn-green-hover disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-white shadow-lg"
+        className="px-10 py-3 rounded-card font-extrabold text-lg bg-btn-green hover:bg-btn-green-hover cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-white shadow-lg"
       >
         {isSpinning ? 'Spinning…' : 'Spin!'}
       </button>

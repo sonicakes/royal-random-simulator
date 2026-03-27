@@ -59,7 +59,7 @@ export default function BrowsePage() {
     if (!el) return
     const observer = new IntersectionObserver(
       (entries) => { if (entries[0]?.isIntersecting) loadMore() },
-      { rootMargin: '200px' },
+      { rootMargin: '0px' },
     )
     observer.observe(el)
     return () => observer.disconnect()
@@ -105,7 +105,7 @@ export default function BrowsePage() {
             <button
               key={v}
               onClick={() => setSourceType(v)}
-              className={`px-3 py-1 rounded-full text-xs font-semibold border transition-colors ${
+              className={`px-3 py-1 rounded-full text-xs font-semibold border transition-colors cursor-pointer ${
                 sourceType === v
                   ? 'bg-sims-green text-bg border-sims-green'
                   : 'bg-transparent text-white/50 border-white/20 hover:border-white/40'
@@ -122,7 +122,7 @@ export default function BrowsePage() {
             <button
               key={v}
               onClick={() => setDifficulty(v)}
-              className={`px-3 py-1 rounded-full text-xs font-semibold border transition-colors ${
+              className={`px-3 py-1 rounded-full text-xs font-semibold border transition-colors cursor-pointer ${
                 difficulty === v
                   ? 'bg-sims-green text-bg border-sims-green'
                   : 'bg-transparent text-white/50 border-white/20 hover:border-white/40'
@@ -139,7 +139,7 @@ export default function BrowsePage() {
             <button
               key={tag}
               onClick={() => toggleTag(tag)}
-              className={`px-2.5 py-0.5 rounded-full text-[11px] font-medium border transition-colors ${
+              className={`px-2.5 py-0.5 rounded-full text-[11px] font-medium border transition-colors cursor-pointer ${
                 selectedTags.includes(tag)
                   ? 'bg-sims-green/20 text-sims-green border-sims-green/50'
                   : 'bg-transparent text-white/40 border-white/15 hover:border-white/30'

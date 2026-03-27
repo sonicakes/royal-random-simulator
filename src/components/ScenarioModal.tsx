@@ -36,7 +36,7 @@ export default function ScenarioModal({ scenario, onClose, onSpinAgain }: Scenar
         {/* close */}
         <button
           onClick={onClose}
-          className="absolute top-3 right-4 text-white/40 hover:text-white text-xl leading-none"
+          className="absolute top-3 right-4 text-white/40 hover:text-white text-xl leading-none cursor-pointer"
           aria-label="Close"
         >
           ×
@@ -70,7 +70,7 @@ export default function ScenarioModal({ scenario, onClose, onSpinAgain }: Scenar
         <div className="flex gap-3">
           <button
             onClick={onSpinAgain}
-            className="flex-1 py-2 rounded-card font-bold text-sm bg-btn-green hover:bg-btn-green-hover transition-colors text-white"
+            className="flex-1 py-2 rounded-card font-bold text-sm bg-btn-green hover:bg-btn-green-hover cursor-pointer transition-colors text-white"
           >
             Spin Again
           </button>

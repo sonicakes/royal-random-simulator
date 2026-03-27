@@ -19,6 +19,7 @@ export default function ScenarioCard({ scenario }: ScenarioCardProps) {
       style={{
         background: '#0d1f16',
         border: '1px solid rgba(255,255,255,0.07)',
+        animation: 'fadeIn 1.5s ease-out',
       }}
       onMouseEnter={(e) => {
         ;(e.currentTarget as HTMLElement).style.borderColor = 'rgba(74,222,128,0.35)'

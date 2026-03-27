@@ -293,5 +293,221 @@
       { "step": 5, "text": "Eleanor stops wanting to leave." },
       { "step": 6, "text": "The group must decide: force Eleanor out — or let the house win." }
     ]
+  },
+  {
+    "id": "placeholder-01",
+    "title": "PLACEHOLDER 01",
+    "source": "Placeholder Source",
+    "sourceType": "film",
+    "year": 2000,
+    "difficulty": "easy",
+    "tags": ["placeholder", "test"],
+    "description": "This is a placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "householdMembers": [
+      { "name": "Sim One", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    ],
+    "goals": ["Survive long enough to test the lazy loader."],
+    "storyBeats": [
+      { "step": 1, "text": "Placeholder beat one." },
+      { "step": 2, "text": "Placeholder beat two." }
+    ]
+  },
+  {
+    "id": "placeholder-02",
+    "title": "PLACEHOLDER 02",
+    "source": "Placeholder Source",
+    "sourceType": "book",
+    "year": 2001,
+    "difficulty": "medium",
+    "tags": ["placeholder", "test"],
+    "description": "This is a placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "householdMembers": [
+      { "name": "Sim Two", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    ],
+    "goals": ["Survive long enough to test the lazy loader."],
+    "storyBeats": [
+      { "step": 1, "text": "Placeholder beat one." },
+      { "step": 2, "text": "Placeholder beat two." }
+    ]
+  },
+  {
+    "id": "placeholder-03",
+    "title": "PLACEHOLDER 03",
+    "source": "Placeholder Source",
+    "sourceType": "film",
+    "year": 2002,
+    "difficulty": "hard",
+    "tags": ["placeholder", "test"],
+    "description": "This is a placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "householdMembers": [
+      { "name": "Sim Three", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    ],
+    "goals": ["Survive long enough to test the lazy loader."],
+    "storyBeats": [
+      { "step": 1, "text": "Placeholder beat one." },
+      { "step": 2, "text": "Placeholder beat two." }
+    ]
+  },
+  {
+    "id": "placeholder-04",
+    "title": "PLACEHOLDER 04",
+    "source": "Placeholder Source",
+    "sourceType": "book",
+    "year": 2003,
+    "difficulty": "easy",
+    "tags": ["placeholder", "test"],
+    "description": "This is a placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "householdMembers": [
+      { "name": "Sim Four", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    ],
+    "goals": ["Survive long enough to test the lazy loader."],
+    "storyBeats": [
+      { "step": 1, "text": "Placeholder beat one." },
+      { "step": 2, "text": "Placeholder beat two." }
+    ]
+  },
+  {
+    "id": "placeholder-05",
+    "title": "PLACEHOLDER 05",
+    "source": "Placeholder Source",
+    "sourceType": "film",
+    "year": 2004,
+    "difficulty": "medium",
+    "tags": ["placeholder", "test"],
+    "description": "This is a placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "householdMembers": [
+      { "name": "Sim Five", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    ],
+    "goals": ["Survive long enough to test the lazy loader."],
+    "storyBeats": [
+      { "step": 1, "text": "Placeholder beat one." },
+      { "step": 2, "text": "Placeholder beat two." }
+    ]
+  },
+  {
+    "id": "placeholder-06",
+    "title": "PLACEHOLDER 06",
+    "source": "Placeholder Source",
+    "sourceType": "book",
+    "year": 2005,
+    "difficulty": "hard",
+    "tags": ["placeholder", "test"],
+    "description": "This is a placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "householdMembers": [
+      { "name": "Sim Six", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    ],
+    "goals": ["Survive long enough to test the lazy loader."],
+    "storyBeats": [
+      { "step": 1, "text": "Placeholder beat one." },
+      { "step": 2, "text": "Placeholder beat two." }
+    ]
+  },
+  {
+    "id": "placeholder-07",
+    "title": "PLACEHOLDER 07",
+    "source": "Placeholder Source",
+    "sourceType": "film",
+    "year": 2006,
+    "difficulty": "easy",
+    "tags": ["placeholder", "test"],
+    "description": "This is a placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "householdMembers": [
+      { "name": "Sim Seven", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    ],
+    "goals": ["Survive long enough to test the lazy loader."],
+    "storyBeats": [
+      { "step": 1, "text": "Placeholder beat one." },
+      { "step": 2, "text": "Placeholder beat two." }
+    ]
+  },
+  {
+    "id": "placeholder-08",
+    "title": "PLACEHOLDER 08",
+    "source": "Placeholder Source",
+    "sourceType": "book",
+    "year": 2007,
+    "difficulty": "medium",
+    "tags": ["placeholder", "test"],
+    "description": "This is a placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "householdMembers": [
+      { "name": "Sim Eight", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    ],
+    "goals": ["Survive long enough to test the lazy loader."],
+    "storyBeats": [
+      { "step": 1, "text": "Placeholder beat one." },
+      { "step": 2, "text": "Placeholder beat two." }
+    ]
+  },
+  {
+    "id": "placeholder-09",
+    "title": "PLACEHOLDER 09",
+    "source": "Placeholder Source",
+    "sourceType": "film",
+    "year": 2008,
+    "difficulty": "hard",
+    "tags": ["placeholder", "test"],
+    "description": "This is a placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "householdMembers": [
+      { "name": "Sim Nine", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    ],
+    "goals": ["Survive long enough to test the lazy loader."],
+    "storyBeats": [
+      { "step": 1, "text": "Placeholder beat one." },
+      { "step": 2, "text": "Placeholder beat two." }
+    ]
+  },
+  {
+    "id": "placeholder-10",
+    "title": "PLACEHOLDER 10",
+    "source": "Placeholder Source",
+    "sourceType": "book",
+    "year": 2009,
+    "difficulty": "easy",
+    "tags": ["placeholder", "test"],
+    "description": "This is a placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "householdMembers": [
+      { "name": "Sim Ten", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    ],
+    "goals": ["Survive long enough to test the lazy loader."],
+    "storyBeats": [
+      { "step": 1, "text": "Placeholder beat one." },
+      { "step": 2, "text": "Placeholder beat two." }
+    ]
+  },
+  {
+    "id": "placeholder-11",
+    "title": "PLACEHOLDER 11",
+    "source": "Placeholder Source",
+    "sourceType": "film",
+    "year": 2010,
+    "difficulty": "medium",
+    "tags": ["placeholder", "test"],
+    "description": "This is a placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "householdMembers": [
+      { "name": "Sim Eleven", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    ],
+    "goals": ["Survive long enough to test the lazy loader."],
+    "storyBeats": [
+      { "step": 1, "text": "Placeholder beat one." },
+      { "step": 2, "text": "Placeholder beat two." }
+    ]
+  },
+  {
+    "id": "placeholder-12",
+    "title": "PLACEHOLDER 12",
+    "source": "Placeholder Source",
+    "sourceType": "book",
+    "year": 2011,
+    "difficulty": "hard",
+    "tags": ["placeholder", "test"],
+    "description": "This is a placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "householdMembers": [
+      { "name": "Sim Twelve", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    ],
+    "goals": ["Survive long enough to test the lazy loader."],
+    "storyBeats": [
+      { "step": 1, "text": "Placeholder beat one." },
+      { "step": 2, "text": "Placeholder beat two." }
+    ]
   }
 ]
