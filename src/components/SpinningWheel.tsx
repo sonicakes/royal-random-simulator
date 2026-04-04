@@ -1,4 +1,4 @@
-import { useRef, useEffect, useCallback } from 'react'
+import { useRef, useEffect, useCallback, useState } from 'react'
 import type { Scenario } from '../types/scenario'
 
 const PALETTE = [
@@ -22,11 +22,24 @@ const SPIN_DURATION = 4000 // ms
 
 export default function SpinningWheel({ scenarios, isSpinning, onSpinEnd }: SpinningWheelProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
+  const wrapperRef = useRef<HTMLDivElement>(null)
+  const [size, setSize] = useState(380)
   const rotationRef = useRef(0)
   const animationRef = useRef<number | null>(null)
   const startTimeRef = useRef<number | null>(null)
   const targetRotationRef = useRef(0)
   const hasCalledEndRef = useRef(false)
+
+  useEffect(() => {
+    const wrapper = wrapperRef.current
+    if (!wrapper) return
+    const observer = new ResizeObserver(([entry]) => {
+      if (entry) setSize(Math.floor(entry.contentRect.width))
+    })
+    observer.observe(wrapper)
+    setSize(Math.floor(wrapper.getBoundingClientRect().width))
+    return () => observer.disconnect()
+  }, [])
 
   const n = scenarios.length
   const segAngle = (2 * Math.PI) / n
@@ -110,10 +123,10 @@ export default function SpinningWheel({ scenarios, isSpinning, onSpinEnd }: Spin
     [n, scenarios, segAngle],
   )
 
-  // initial draw
+  // redraw on mount, scenario change, or resize
   useEffect(() => {
     drawWheel(rotationRef.current)
-  }, [drawWheel])
+  }, [drawWheel, size])
 
   useEffect(() => {
     if (!isSpinning) return
@@ -162,12 +175,14 @@ export default function SpinningWheel({ scenarios, isSpinning, onSpinEnd }: Spin
   }, [isSpinning, drawWheel, n, scenarios, segAngle, onSpinEnd])
 
   return (
-    <canvas
-      ref={canvasRef}
-      width={380}
-      height={380}
-      className="w-full max-w-[380px] mx-auto"
-      style={{ imageRendering: 'crisp-edges' }}
-    />
+    <div ref={wrapperRef} className="w-full">
+      <canvas
+        ref={canvasRef}
+        width={size}
+        height={size}
+        className="w-full"
+        style={{ imageRendering: 'crisp-edges' }}
+      />
+    </div>
   )
 }

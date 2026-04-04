@@ -8,7 +8,8 @@
   --color-horror-red: #e8143c;
   --color-modal-bg: #0a1a12;
 
-  --font-sans: 'Nunito', system-ui, sans-serif;
+  --font-sans: 'Quicksand', system-ui, sans-serif;
+  --font-display: 'Josefin Sans', system-ui, sans-serif;
 
   --radius-card: 12px;
 }
@@ -16,6 +17,9 @@
 @layer base {
   body {
     @apply bg-bg text-white font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
   }
 }
 

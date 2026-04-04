@@ -4,6 +4,7 @@
     "title": "The Shining",
     "source": "The Shining",
     "sourceType": "film",
+    "thumbnail": "/images/img-1.jpg",
     "year": 1980,
     "difficulty": "hard",
     "tags": ["isolation", "supernatural", "psychological", "family"],
@@ -33,6 +34,8 @@
     "title": "Friday the 13th",
     "source": "Friday the 13th",
     "sourceType": "film",
+        "thumbnail": "/images/img-2.jpg",
+
     "year": 1980,
     "difficulty": "medium",
     "tags": ["slasher", "camp", "survival", "teens"],
@@ -64,6 +67,7 @@
     "title": "The Collector",
     "source": "The Collector",
     "sourceType": "book",
+    "thumbnail": "/images/img-3.jpg",
     "year": 1963,
     "difficulty": "hard",
     "tags": ["psychological", "captivity", "obsession", "two-person"],
@@ -92,6 +96,7 @@
     "title": "Misery",
     "source": "Misery",
     "sourceType": "book",
+    "thumbnail": "/images/img-4.jpg",
     "year": 1987,
     "difficulty": "medium",
     "tags": ["psychological", "captivity", "obsession", "two-person"],
@@ -120,6 +125,7 @@
     "title": "Get Out",
     "source": "Get Out",
     "sourceType": "film",
+    "thumbnail": "/images/img-1.jpg",
     "year": 2017,
     "difficulty": "medium",
     "tags": ["psychological", "body-horror", "family", "modern"],
@@ -150,6 +156,7 @@
     "title": "Hereditary",
     "source": "Hereditary",
     "sourceType": "film",
+    "thumbnail": "/images/img-2.jpg",
     "year": 2018,
     "difficulty": "hard",
     "tags": ["supernatural", "family", "grief", "cult"],
@@ -180,6 +187,7 @@
     "title": "Rosemary's Baby",
     "source": "Rosemary's Baby",
     "sourceType": "film",
+    "thumbnail": "/images/img-3.jpg",
     "year": 1968,
     "difficulty": "medium",
     "tags": ["cult", "supernatural", "pregnancy", "paranoia"],
@@ -209,6 +217,7 @@
     "title": "It",
     "source": "It",
     "sourceType": "book",
+    "thumbnail": "/images/img-4.jpg",
     "year": 1986,
     "difficulty": "hard",
     "tags": ["supernatural", "childhood", "group", "small-town"],
@@ -240,6 +249,7 @@
     "title": "Psycho",
     "source": "Psycho",
     "sourceType": "film",
+    "thumbnail": "/images/img-1.jpg",
     "year": 1960,
     "difficulty": "medium",
     "tags": ["slasher", "psychological", "isolation", "identity"],
@@ -269,6 +279,7 @@
     "title": "The Haunting of Hill House",
     "source": "The Haunting of Hill House",
     "sourceType": "book",
+    "thumbnail": "/images/img-2.jpg",
     "year": 1959,
     "difficulty": "hard",
     "tags": ["supernatural", "haunted-house", "psychological", "group"],
@@ -295,14 +306,15 @@
     ]
   },
   {
-    "id": "placeholder-01",
-    "title": "PLACEHOLDER 01",
+    "id": "Placeholder-01",
+    "title": "Placeholder 01",
     "source": "Placeholder Source",
     "sourceType": "film",
+    "thumbnail": "/images/img-3.jpg",
     "year": 2000,
     "difficulty": "easy",
-    "tags": ["placeholder", "test"],
-    "description": "This is a placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "tags": ["Placeholder", "test"],
+    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
     "householdMembers": [
       { "name": "Sim One", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
     ],
@@ -313,14 +325,15 @@
     ]
   },
   {
-    "id": "placeholder-02",
-    "title": "PLACEHOLDER 02",
+    "id": "Placeholder-02",
+    "title": "Placeholder 02",
     "source": "Placeholder Source",
     "sourceType": "book",
+    "thumbnail": "/images/img-4.jpg",
     "year": 2001,
     "difficulty": "medium",
-    "tags": ["placeholder", "test"],
-    "description": "This is a placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "tags": ["Placeholder", "test"],
+    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
     "householdMembers": [
       { "name": "Sim Two", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
     ],
@@ -331,14 +344,15 @@
     ]
   },
   {
-    "id": "placeholder-03",
-    "title": "PLACEHOLDER 03",
+    "id": "Placeholder-03",
+    "title": "Placeholder 03",
     "source": "Placeholder Source",
     "sourceType": "film",
+    "thumbnail": "/images/img-1.jpg",
     "year": 2002,
     "difficulty": "hard",
-    "tags": ["placeholder", "test"],
-    "description": "This is a placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "tags": ["Placeholder", "test"],
+    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
     "householdMembers": [
       { "name": "Sim Three", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
     ],
@@ -349,14 +363,15 @@
     ]
   },
   {
-    "id": "placeholder-04",
-    "title": "PLACEHOLDER 04",
+    "id": "Placeholder-04",
+    "title": "Placeholder 04",
     "source": "Placeholder Source",
     "sourceType": "book",
+    "thumbnail": "/images/img-2.jpg",
     "year": 2003,
     "difficulty": "easy",
-    "tags": ["placeholder", "test"],
-    "description": "This is a placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "tags": ["Placeholder", "test"],
+    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
     "householdMembers": [
       { "name": "Sim Four", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
     ],
@@ -367,14 +382,15 @@
     ]
   },
   {
-    "id": "placeholder-05",
-    "title": "PLACEHOLDER 05",
+    "id": "Placeholder-05",
+    "title": "Placeholder 05",
     "source": "Placeholder Source",
     "sourceType": "film",
+    "thumbnail": "/images/img-3.jpg",
     "year": 2004,
     "difficulty": "medium",
-    "tags": ["placeholder", "test"],
-    "description": "This is a placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "tags": ["Placeholder", "test"],
+    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
     "householdMembers": [
       { "name": "Sim Five", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
     ],
@@ -385,14 +401,15 @@
     ]
   },
   {
-    "id": "placeholder-06",
-    "title": "PLACEHOLDER 06",
+    "id": "Placeholder-06",
+    "title": "Placeholder 06",
     "source": "Placeholder Source",
     "sourceType": "book",
+    "thumbnail": "/images/img-4.jpg",
     "year": 2005,
     "difficulty": "hard",
-    "tags": ["placeholder", "test"],
-    "description": "This is a placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "tags": ["Placeholder", "test"],
+    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
     "householdMembers": [
       { "name": "Sim Six", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
     ],
@@ -403,14 +420,15 @@
     ]
   },
   {
-    "id": "placeholder-07",
-    "title": "PLACEHOLDER 07",
+    "id": "Placeholder-07",
+    "title": "Placeholder 07",
     "source": "Placeholder Source",
     "sourceType": "film",
+    "thumbnail": "/images/img-1.jpg",
     "year": 2006,
     "difficulty": "easy",
-    "tags": ["placeholder", "test"],
-    "description": "This is a placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "tags": ["Placeholder", "test"],
+    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
     "householdMembers": [
       { "name": "Sim Seven", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
     ],
@@ -421,14 +439,15 @@
     ]
   },
   {
-    "id": "placeholder-08",
-    "title": "PLACEHOLDER 08",
+    "id": "Placeholder-08",
+    "title": "Placeholder 08",
     "source": "Placeholder Source",
     "sourceType": "book",
+    "thumbnail": "/images/img-2.jpg",
     "year": 2007,
     "difficulty": "medium",
-    "tags": ["placeholder", "test"],
-    "description": "This is a placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "tags": ["Placeholder", "test"],
+    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
     "householdMembers": [
       { "name": "Sim Eight", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
     ],
@@ -439,14 +458,15 @@
     ]
   },
   {
-    "id": "placeholder-09",
-    "title": "PLACEHOLDER 09",
+    "id": "Placeholder-09",
+    "title": "Placeholder 09",
     "source": "Placeholder Source",
     "sourceType": "film",
+    "thumbnail": "/images/img-3.jpg",
     "year": 2008,
     "difficulty": "hard",
-    "tags": ["placeholder", "test"],
-    "description": "This is a placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "tags": ["Placeholder", "test"],
+    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
     "householdMembers": [
       { "name": "Sim Nine", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
     ],
@@ -457,14 +477,15 @@
     ]
   },
   {
-    "id": "placeholder-10",
-    "title": "PLACEHOLDER 10",
+    "id": "Placeholder-10",
+    "title": "Placeholder 10",
     "source": "Placeholder Source",
     "sourceType": "book",
+    "thumbnail": "/images/img-4.jpg",
     "year": 2009,
     "difficulty": "easy",
-    "tags": ["placeholder", "test"],
-    "description": "This is a placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "tags": ["Placeholder", "test"],
+    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
     "householdMembers": [
       { "name": "Sim Ten", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
     ],
@@ -475,14 +496,15 @@
     ]
   },
   {
-    "id": "placeholder-11",
-    "title": "PLACEHOLDER 11",
+    "id": "Placeholder-11",
+    "title": "Placeholder 11",
     "source": "Placeholder Source",
     "sourceType": "film",
+    "thumbnail": "/images/img-1.jpg",
     "year": 2010,
     "difficulty": "medium",
-    "tags": ["placeholder", "test"],
-    "description": "This is a placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "tags": ["Placeholder", "test"],
+    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
     "householdMembers": [
       { "name": "Sim Eleven", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
     ],
@@ -493,14 +515,15 @@
     ]
   },
   {
-    "id": "placeholder-12",
-    "title": "PLACEHOLDER 12",
+    "id": "Placeholder-12",
+    "title": "Placeholder 12",
     "source": "Placeholder Source",
     "sourceType": "book",
+    "thumbnail": "/images/img-2.jpg",
     "year": 2011,
     "difficulty": "hard",
-    "tags": ["placeholder", "test"],
-    "description": "This is a placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "tags": ["Placeholder", "test"],
+    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
     "householdMembers": [
       { "name": "Sim Twelve", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
     ],

@@ -84,12 +84,12 @@ export default function BrowsePage() {
             placeholder="Search by title…"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="flex-1 bg-white/5 border border-white/10 rounded-card px-4 py-2 text-sm text-white placeholder-white/30 focus:outline-none focus:border-sims-green/50"
+            className="flex-1 bg-white/5 border border-white/10 rounded-card px-4 py-2 text-base text-white placeholder-white/50 focus:outline-none focus:border-sims-green/50"
           />
           <select
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value as typeof sortBy)}
-            className="bg-white/5 border border-white/10 rounded-card px-3 py-2 text-sm text-white focus:outline-none focus:border-sims-green/50"
+            className="bg-white/5 border border-white/10 rounded-card px-3 py-2 text-base text-white focus:outline-none focus:border-sims-green/50"
           >
             <option value="default">Sort: default</option>
             <option value="year-asc">Year (oldest first)</option>
@@ -105,10 +105,10 @@ export default function BrowsePage() {
             <button
               key={v}
               onClick={() => setSourceType(v)}
-              className={`px-3 py-1 rounded-full text-xs font-semibold border transition-colors cursor-pointer ${
+              className={`px-3 py-1 rounded-full text-sm font-semibold border transition-colors cursor-pointer ${
                 sourceType === v
                   ? 'bg-sims-green text-bg border-sims-green'
-                  : 'bg-transparent text-white/50 border-white/20 hover:border-white/40'
+                  : 'bg-transparent text-white/65 border-white/25 hover:border-white/50'
               }`}
             >
               {v === 'all' ? 'All types' : v === 'film' ? '🎬 Film' : '📖 Book'}
@@ -122,10 +122,10 @@ export default function BrowsePage() {
             <button
               key={v}
               onClick={() => setDifficulty(v)}
-              className={`px-3 py-1 rounded-full text-xs font-semibold border transition-colors cursor-pointer ${
+              className={`px-3 py-1 rounded-full text-sm font-semibold border transition-colors cursor-pointer ${
                 difficulty === v
                   ? 'bg-sims-green text-bg border-sims-green'
-                  : 'bg-transparent text-white/50 border-white/20 hover:border-white/40'
+                  : 'bg-transparent text-white/65 border-white/25 hover:border-white/50'
               }`}
             >
               {v === 'all' ? 'All difficulty' : v}
@@ -139,10 +139,10 @@ export default function BrowsePage() {
             <button
               key={tag}
               onClick={() => toggleTag(tag)}
-              className={`px-2.5 py-0.5 rounded-full text-[11px] font-medium border transition-colors cursor-pointer ${
+              className={`px-2.5 py-0.5 rounded-full text-xs font-medium border transition-colors cursor-pointer ${
                 selectedTags.includes(tag)
                   ? 'bg-sims-green/20 text-sims-green border-sims-green/50'
-                  : 'bg-transparent text-white/40 border-white/15 hover:border-white/30'
+                  : 'bg-transparent text-white/60 border-white/25 hover:border-white/45'
               }`}
             >
               {tag}
@@ -152,14 +152,14 @@ export default function BrowsePage() {
       </div>
 
       {/* Results count */}
-      <p className="text-xs text-white/30 mb-4">
+      <p className="text-sm text-white/60 mb-4">
         {filtered.length} scenario{filtered.length !== 1 ? 's' : ''}
         {selectedTags.length > 0 && ` · tags: ${selectedTags.join(', ')}`}
       </p>
 
       {/* Grid */}
       {visible.length === 0 ? (
-        <p className="text-white/40 text-sm">No scenarios match those filters.</p>
+        <p className="text-white/60 text-base">No scenarios match those filters.</p>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {visible.map((s) => (

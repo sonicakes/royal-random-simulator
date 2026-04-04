@@ -47,25 +47,25 @@ export default function ScenarioModal({ scenario, onClose, onSpinAgain }: Scenar
           <img
             src={scenario.thumbnail}
             alt={scenario.title}
-            className="w-full h-44 object-cover rounded-[8px] mb-4"
+            className="w-full h-44 object-cover rounded-lg mb-4"
           />
         ) : (
-          <div className="w-full h-44 rounded-[8px] bg-white/10 flex items-center justify-center text-white/30 text-xs tracking-wide mb-4">
+          <div className="w-full h-44 rounded-lg bg-white/10 flex items-center justify-center text-white/30 text-xs tracking-wide mb-4">
             img goes here
           </div>
         )}
 
-        <p className="text-xs font-semibold uppercase tracking-widest text-sims-green mb-1">
+        <p className="text-sm font-semibold uppercase tracking-widest text-sims-green mb-1">
           You got…
         </p>
-        <h2 className="text-2xl font-extrabold mb-1">{scenario.title}</h2>
-        <p className="text-sm text-white/50 mb-3">
+        <h2 className="text-2xl font-extrabold mb-1 capitalize">{scenario.title}</h2>
+        <p className="text-sm text-white/70 mb-3">
           {scenario.sourceType === 'film' ? '🎬' : '📖'} {scenario.source} ({scenario.year}) ·{' '}
           <span className={`font-semibold ${DIFFICULTY_COLOUR[scenario.difficulty]}`}>
             {scenario.difficulty}
           </span>
         </p>
-        <p className="text-sm text-white/70 leading-relaxed mb-5">{scenario.description}</p>
+        <p className="text-base text-white/85 leading-relaxed mb-5">{scenario.description}</p>
 
         <div className="flex gap-3">
           <button

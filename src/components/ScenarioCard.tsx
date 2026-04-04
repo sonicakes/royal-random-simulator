@@ -42,23 +42,23 @@ export default function ScenarioCard({ scenario }: ScenarioCardProps) {
       )}
 
       <div className="p-4 flex flex-col gap-1 flex-1">
-        <h3 className="font-bold text-base leading-snug group-hover:text-sims-green transition-colors">
+        <h3 className="font-bold text-lg leading-snug group-hover:text-sims-green transition-colors">
           {scenario.title}
         </h3>
-        <p className="text-xs text-white/40">
+        <p className="text-sm text-white/65">
           {scenario.sourceType === 'film' ? '🎬' : '📖'} {scenario.year} ·{' '}
           <span className={`font-semibold ${DIFFICULTY_COLOUR[scenario.difficulty]}`}>
             {scenario.difficulty}
           </span>
         </p>
-        <p className="text-xs text-white/55 leading-relaxed mt-1 line-clamp-2">
+        <p className="text-sm text-white/75 leading-relaxed mt-1 line-clamp-2">
           {scenario.description}
         </p>
         <div className="flex flex-wrap gap-1 mt-2">
           {scenario.tags.map((tag) => (
             <span
               key={tag}
-              className="text-[10px] px-2 py-0.5 rounded-full bg-sims-green/10 text-sims-green/70 font-medium"
+              className="text-xs px-2 py-0.5 rounded-full bg-sims-green/10 text-sims-green/90 font-medium"
             >
               {tag}
             </span>
