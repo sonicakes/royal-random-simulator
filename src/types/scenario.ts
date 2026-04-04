@@ -9,6 +9,11 @@ export interface StoryBeat {
   text: string
 }
 
+export interface Ending {
+  title: string
+  text: string
+}
+
 export interface Scenario {
   id: string
   title: string
@@ -20,6 +25,9 @@ export interface Scenario {
   description: string
   thumbnail?: string
   householdMembers: HouseholdMember[]
+  setup?: string[]
   goals: string[]
+  rules?: string[]
   storyBeats: StoryBeat[]
+  endings?: Ending[]
 }

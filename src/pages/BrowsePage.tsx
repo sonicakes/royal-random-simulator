@@ -1,4 +1,5 @@
 import { useState, useMemo, useRef, useCallback, useEffect } from 'react'
+import { SlidersHorizontal } from 'lucide-react'
 import ScenarioCard from '../components/ScenarioCard'
 import scenariosData from '../data/scenarios.json'
 import type { Scenario } from '../types/scenario'
@@ -14,7 +15,7 @@ export default function BrowsePage() {
   const [sourceType, setSourceType] = useState<'all' | 'film' | 'book'>('all')
   const [difficulty, setDifficulty] = useState<'all' | 'easy' | 'medium' | 'hard'>('all')
   const [selectedTags, setSelectedTags] = useState<string[]>([])
-  const [sortBy, setSortBy] = useState<'default' | 'year-asc' | 'year-desc' | 'title'>('default')
+  const [showFilters, setShowFilters] = useState(false)
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE)
   const sentinelRef = useRef<HTMLDivElement>(null)
 
@@ -35,12 +36,8 @@ export default function BrowsePage() {
       list = list.filter((s) => selectedTags.every((t) => s.tags.includes(t)))
     }
 
-    if (sortBy === 'year-asc') list = [...list].sort((a, b) => a.year - b.year)
-    else if (sortBy === 'year-desc') list = [...list].sort((a, b) => b.year - a.year)
-    else if (sortBy === 'title') list = [...list].sort((a, b) => a.title.localeCompare(b.title))
-
     return list
-  }, [search, sourceType, difficulty, selectedTags, sortBy])
+  }, [search, sourceType, difficulty, selectedTags])
 
   // reset visible count when filters change
   useEffect(() => {
@@ -76,8 +73,8 @@ export default function BrowsePage() {
       <h1 className="text-2xl font-extrabold text-sims-green mb-6">Browse Scenarios</h1>
 
       {/* Controls */}
-      <div className="flex flex-col gap-4 mb-8">
-        {/* Search + sort row */}
+      <div className="flex flex-col gap-3 mb-8">
+        {/* Search + sort + filters toggle */}
         <div className="flex flex-col sm:flex-row gap-3">
           <input
             type="text"
@@ -86,69 +83,78 @@ export default function BrowsePage() {
             onChange={(e) => setSearch(e.target.value)}
             className="flex-1 bg-white/5 border border-white/10 rounded-card px-4 py-2 text-base text-white placeholder-white/50 focus:outline-none focus:border-sims-green/50"
           />
-          <select
-            value={sortBy}
-            onChange={(e) => setSortBy(e.target.value as typeof sortBy)}
-            className="bg-white/5 border border-white/10 rounded-card px-3 py-2 text-base text-white focus:outline-none focus:border-sims-green/50"
+          <button
+            onClick={() => setShowFilters((v) => !v)}
+            aria-label="Toggle filters"
+            className={`relative flex items-center justify-center w-11 h-11 rounded-card border transition-colors cursor-pointer shrink-0 ${
+              showFilters
+                ? 'bg-sims-green/10 text-sims-green border-sims-green/40'
+                : 'bg-white/5 text-white/50 border-white/10 hover:text-white/80 hover:border-white/30'
+            }`}
           >
-            <option value="default">Sort: default</option>
-            <option value="year-asc">Year (oldest first)</option>
-            <option value="year-desc">Year (newest first)</option>
-            <option value="title">Title (A–Z)</option>
-          </select>
+            <SlidersHorizontal size={18} />
+            {(sourceType !== 'all' || difficulty !== 'all' || selectedTags.length > 0) && (
+              <span className="absolute -top-1.5 -right-1.5 bg-sims-green text-bg text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center">
+                {(sourceType !== 'all' ? 1 : 0) + (difficulty !== 'all' ? 1 : 0) + selectedTags.length}
+              </span>
+            )}
+          </button>
         </div>
 
-        {/* Filter row */}
-        <div className="flex flex-wrap gap-2 items-center">
-          {/* source type */}
-          {(['all', 'film', 'book'] as const).map((v) => (
-            <button
-              key={v}
-              onClick={() => setSourceType(v)}
-              className={`px-3 py-1 rounded-full text-sm font-semibold border transition-colors cursor-pointer ${
-                sourceType === v
-                  ? 'bg-sims-green text-bg border-sims-green'
-                  : 'bg-transparent text-white/65 border-white/25 hover:border-white/50'
-              }`}
-            >
-              {v === 'all' ? 'All types' : v === 'film' ? '🎬 Film' : '📖 Book'}
-            </button>
-          ))}
+        {/* Collapsible filter panel */}
+        {showFilters && (
+          <div className="flex flex-col gap-3 pt-1">
+            {/* Source type + difficulty */}
+            <div className="flex flex-wrap gap-2 items-center">
+              {(['all', 'film', 'book'] as const).map((v) => (
+                <button
+                  key={v}
+                  onClick={() => setSourceType(v)}
+                  className={`px-3 py-1 rounded-full text-sm font-semibold border transition-colors cursor-pointer ${
+                    sourceType === v
+                      ? 'bg-sims-green text-bg border-sims-green'
+                      : 'bg-transparent text-white/65 border-white/25 hover:border-white/50'
+                  }`}
+                >
+                  {v === 'all' ? 'All types' : v === 'film' ? '🎬 Film' : '📖 Book'}
+                </button>
+              ))}
 
-          <span className="text-white/20 text-xs mx-1">|</span>
+              <span className="text-white/20 text-xs mx-1">|</span>
 
-          {/* difficulty */}
-          {(['all', 'easy', 'medium', 'hard'] as const).map((v) => (
-            <button
-              key={v}
-              onClick={() => setDifficulty(v)}
-              className={`px-3 py-1 rounded-full text-sm font-semibold border transition-colors cursor-pointer ${
-                difficulty === v
-                  ? 'bg-sims-green text-bg border-sims-green'
-                  : 'bg-transparent text-white/65 border-white/25 hover:border-white/50'
-              }`}
-            >
-              {v === 'all' ? 'All difficulty' : v}
-            </button>
-          ))}
-        </div>
+              {(['all', 'easy', 'medium', 'hard'] as const).map((v) => (
+                <button
+                  key={v}
+                  onClick={() => setDifficulty(v)}
+                  className={`px-3 py-1 rounded-full text-sm font-semibold border transition-colors cursor-pointer ${
+                    difficulty === v
+                      ? 'bg-sims-green text-bg border-sims-green'
+                      : 'bg-transparent text-white/65 border-white/25 hover:border-white/50'
+                  }`}
+                >
+                  {v === 'all' ? 'All difficulty' : v}
+                </button>
+              ))}
+            </div>
 
-        {/* Tags */}
-        <div className="flex flex-wrap gap-2">
-          {allTags.map((tag) => (
-            <button
-              key={tag}
-              onClick={() => toggleTag(tag)}
-              className={`px-2.5 py-0.5 rounded-full text-xs font-medium border transition-colors cursor-pointer ${
-                selectedTags.includes(tag)
-                  ? 'bg-sims-green/20 text-sims-green border-sims-green/50'
-                  : 'bg-transparent text-white/60 border-white/25 hover:border-white/45'
-              }`}
-            >
-              {tag}
-            </button>
-          ))}
-        </div>
+            {/* Tags */}
+            <div className="flex flex-wrap gap-2">
+              {allTags.map((tag) => (
+                <button
+                  key={tag}
+                  onClick={() => toggleTag(tag)}
+                  className={`px-2.5 py-0.5 rounded-full text-xs font-medium border transition-colors cursor-pointer ${
+                    selectedTags.includes(tag)
+                      ? 'bg-sims-green/20 text-sims-green border-sims-green/50'
+                      : 'bg-transparent text-white/60 border-white/25 hover:border-white/45'
+                  }`}
+                >
+                  {tag}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Results count */}

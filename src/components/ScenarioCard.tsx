@@ -17,7 +17,7 @@ export default function ScenarioCard({ scenario }: ScenarioCardProps) {
       to={`/scenarios/${scenario.id}`}
       className="group flex flex-col rounded-card overflow-hidden transition-all duration-200"
       style={{
-        background: '#0d1f16',
+        background: 'rgb(13, 32, 35)',
         border: '1px solid rgba(255,255,255,0.07)',
         animation: 'fadeIn 1.5s ease-out',
       }}
@@ -33,10 +33,10 @@ export default function ScenarioCard({ scenario }: ScenarioCardProps) {
         <img
           src={scenario.thumbnail}
           alt={scenario.title}
-          className="w-full h-44 object-cover"
+          className="w-full h-60 object-cover"
         />
       ) : (
-        <div className="w-full h-44 bg-white/10 border-b border-white/10 flex items-center justify-center text-white/30 text-xs select-none tracking-wide">
+        <div className="w-full h-60 bg-white/10 border-b border-white/10 flex items-center justify-center text-white/30 text-xs select-none tracking-wide">
           img goes here
         </div>
       )}
@@ -58,7 +58,7 @@ export default function ScenarioCard({ scenario }: ScenarioCardProps) {
           {scenario.tags.map((tag) => (
             <span
               key={tag}
-              className="text-xs px-2 py-0.5 rounded-full bg-sims-green/10 text-sims-green/90 font-medium"
+              className="text-xs px-2 py-0.5 rounded-full bg-sims-green/25 text-sims-green font-medium"
             >
               {tag}
             </span>

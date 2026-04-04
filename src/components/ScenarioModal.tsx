@@ -30,7 +30,7 @@ export default function ScenarioModal({ scenario, onClose, onSpinAgain }: Scenar
     >
       <div
         className="relative w-full max-w-md rounded-card p-6 shadow-2xl"
-        style={{ background: '#0a1a12', border: '1px solid rgba(74,222,128,0.35)' }}
+        style={{ background: 'rgb(13, 32, 35)', border: '1px solid rgba(74,222,128,0.35)' }}
         onClick={(e) => e.stopPropagation()}
       >
         {/* close */}
@@ -47,10 +47,10 @@ export default function ScenarioModal({ scenario, onClose, onSpinAgain }: Scenar
           <img
             src={scenario.thumbnail}
             alt={scenario.title}
-            className="w-full h-44 object-cover rounded-lg mb-4"
+            className="w-full h-60 object-cover rounded-lg mb-4"
           />
         ) : (
-          <div className="w-full h-44 rounded-lg bg-white/10 flex items-center justify-center text-white/30 text-xs tracking-wide mb-4">
+          <div className="w-full h-60 rounded-lg bg-white/10 flex items-center justify-center text-white/30 text-xs tracking-wide mb-4">
             img goes here
           </div>
         )}

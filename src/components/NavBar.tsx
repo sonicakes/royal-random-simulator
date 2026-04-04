@@ -7,7 +7,7 @@ export default function NavBar() {
       <div className="max-w-6xl mx-auto h-24 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
           <Plumbob size={120} />
-          <span className="font-extrabold text-sims-green tracking-tight text-lg leading-none">
+          <span className="hidden md:inline font-extrabold text-sims-green tracking-wide text-lg leading-none">
             Royal Random <span className="uppercase">SIM</span>ulator
           </span>
         </Link>
@@ -15,7 +15,8 @@ export default function NavBar() {
           to="/browse"
           className="text-base font-semibold text-white/80 hover:text-sims-green transition-colors"
         >
-          Browse Scenarios
+          <span className="md:hidden">Browse</span>
+          <span className="hidden md:inline">Browse Scenarios</span>
         </Link>
       </div>
     </nav>
