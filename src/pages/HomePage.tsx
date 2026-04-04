@@ -39,12 +39,12 @@ export default function HomePage() {
         <h1 className="text-3xl sm:text-4xl font-extrabold text-sims-green mb-2">
           Spin the Wheel
         </h1>
-        <p className="text-white/50 text-sm">
+        <p className="text-white/70 text-base">
           {scenarios.length} horror scenarios — which will you play?
         </p>
       </div>
 
-      <div className="relative w-full max-w-[380px]">
+      <div className="relative w-full max-w-[min(600px,90vw)]">
         <SpinningWheel
           scenarios={scenarios}
           isSpinning={isSpinning}
@@ -55,7 +55,7 @@ export default function HomePage() {
       <button
         onClick={handleSpin}
         disabled={isSpinning}
-        className="px-10 py-3 rounded-card font-extrabold text-lg bg-btn-green hover:bg-btn-green-hover disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-white shadow-lg"
+        className="px-10 py-3 rounded-card font-extrabold text-lg bg-btn-green hover:bg-btn-green-hover cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-white shadow-lg"
       >
         {isSpinning ? 'Spinning…' : 'Spin!'}
       </button>

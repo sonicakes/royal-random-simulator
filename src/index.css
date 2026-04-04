@@ -8,7 +8,8 @@
   --color-horror-red: #e8143c;
   --color-modal-bg: #0a1a12;
 
-  --font-sans: 'Nunito', system-ui, sans-serif;
+  --font-sans: 'Quicksand', system-ui, sans-serif;
+  --font-display: 'Josefin Sans', system-ui, sans-serif;
 
   --radius-card: 12px;
 }
@@ -17,4 +18,38 @@
   body {
     @apply bg-bg text-white font-sans;
   }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: 0.04em;
+  }
+}
+
+.playthrough-body p {
+  margin-bottom: 1rem;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.85);
+}
+.playthrough-body p:last-child {
+  margin-bottom: 0;
+}
+.playthrough-body strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+.playthrough-body em {
+  color: rgba(255,255,255,0.75);
+}
+.playthrough-body ul, .playthrough-body ol {
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+  color: rgba(255,255,255,0.85);
+}
+.playthrough-body li {
+  margin-bottom: 0.25rem;
+  line-height: 1.7;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }

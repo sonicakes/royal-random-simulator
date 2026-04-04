@@ -4,6 +4,7 @@
     "title": "The Shining",
     "source": "The Shining",
     "sourceType": "film",
+    "thumbnail": "/images/sims-shining.png",
     "year": 1980,
     "difficulty": "hard",
     "tags": ["isolation", "supernatural", "psychological", "family"],
@@ -28,11 +29,43 @@
       { "step": 6, "text": "Jack snaps. Wendy and Danny must escape before it's too late." }
     ]
   },
+ {
+  "id": "rebecca",
+  "title": "Rebecca",
+  "source": "Rebecca",
+  "sourceType": "novel",
+  "thumbnail": "/images/sims-rebecca.png",
+  "year": 1938,
+  "difficulty": "hard",
+  "tags": ["gothic", "psychological", "obsession", "class", "identity"],
+  "description": "A shy young woman marries the wealthy widower Maxim de Winter and moves into Manderley, his grand Cornish estate. But the shadow of his beautiful first wife, Rebecca, lingers in every room — kept alive by the sinister housekeeper Mrs Danvers.",
+  "householdMembers": [
+    { "name": "The Second Mrs de Winter", "role": "Narrator / New Wife", "traits": ["Insecure", "Observant", "Loyal"] },
+    { "name": "Maxim de Winter", "role": "Master of Manderley", "traits": ["Brooding", "Secretive", "Controlled"] },
+    { "name": "Mrs Danvers", "role": "Housekeeper", "traits": ["Obsessive", "Manipulative", "Cold"] }
+  ],
+  "goals": [
+    "Settle into Manderley and earn the respect of its staff.",
+    "Uncover the truth about Rebecca — and what really happened to her.",
+    "Keep your marriage to Maxim alive despite Rebecca's haunting presence.",
+    "Survive Mrs Danvers."
+  ],
+  "storyBeats": [
+    { "step": 1, "text": "Arrive at Manderley. Every room is a shrine to Rebecca." },
+    { "step": 2, "text": "Mrs Danvers makes clear you will never replace her mistress." },
+    { "step": 3, "text": "The costume ball goes disastrously wrong — Rebecca's influence strikes again." },
+    { "step": 4, "text": "Rebecca's boat is found. The truth about her death begins to surface." },
+    { "step": 5, "text": "The inquest forces Maxim to reveal his dark secret." },
+    { "step": 6, "text": "Manderley burns. Some ghosts can only be laid to rest in ashes." }
+  ]
+},
   {
     "id": "friday-13th",
     "title": "Friday the 13th",
     "source": "Friday the 13th",
     "sourceType": "film",
+        "thumbnail": "/images/img-2.jpg",
+
     "year": 1980,
     "difficulty": "medium",
     "tags": ["slasher", "camp", "survival", "teens"],
@@ -64,27 +97,58 @@
     "title": "The Collector",
     "source": "The Collector",
     "sourceType": "book",
+    "thumbnail": "/images/img-3.jpg",
     "year": 1963,
     "difficulty": "hard",
     "tags": ["psychological", "captivity", "obsession", "two-person"],
-    "description": "A lonely, obsessive man wins the lottery and uses his newfound wealth to capture Miranda, the art student he has fixated on from afar. He wants her to come to love him — she wants to survive and escape.",
+    "description": "A lonely, obsessive man wins the lottery and uses his newfound wealth to capture Miranda, the art student he has fixated on from afar. He wants her to come to love him — she wants to survive and escape. Based on the novel by John Fowles and the 1965 film adaptation starring Samantha Eggar.",
+    "setup": [
+      "Use a countryside lot — Henford-on-Bagley is ideal. A large isolated house (e.g. a beachhouse in Tartosa) also works.",
+      "A cellar is required, either pre-existing or built in. Add a fake door or grass covering to hide its existence from any passing Sims.",
+      "The Collector is a wealthy young adult Sim — large household funds, unemployed, no friends. Suggested traits: Mean, Antisocial, Hates Children, Unromantic, Gloomy. Bonus: give them the Butterfly Collector hobby if you have Adventure Awaits.",
+      "The Victim is also a young adult. Appearance, gender, and personality are entirely your choice. You may create a custom Sim resembling Miranda Grey, or have the Collector stalk and 'kidnap' an existing townie.",
+      "The cellar must satisfy all the Victim's needs except two: no fridge (food is brought by the Collector) and no bath (the Victim may use a bath elsewhere in the house on supervised trips only).",
+      "Stock the cellar with items matching the Victim's interests — art supplies and canvases for a creative Sim, instruments or a stereo for a musical one.",
+      "The cellar door must remain locked at all times except for supervised bath trips and the weekly fancy dinner."
+    ],
     "householdMembers": [
-      { "name": "Frederick Clegg", "role": "The Collector", "traits": ["Loner", "Obsessive", "Neat"] },
-      { "name": "Miranda Grey", "role": "The Captive", "traits": ["Creative", "Brave", "Bookworm"] }
+      { "name": "Frederick Clegg", "role": "The Collector", "traits": ["Mean", "Antisocial", "Loner", "Unromantic", "Gloomy"] },
+      { "name": "Miranda Grey", "role": "The Captive", "traits": ["Creative", "Outgoing", "Bookworm", "Romantic"] }
     ],
     "goals": [
-      "Frederick: Keep Miranda comfortable and win her affection.",
-      "Miranda: Find a way to escape the cellar.",
-      "Miranda: Maintain her identity and spirit under captivity.",
-      "Outlast the other."
+      "The Victim's mood must be consistently green — all needs met, no prolonged distress.",
+      "The Victim and Collector must reach Good Friends status, or show mutual romantic interest (pink indicators on both sides)."
+    ],
+    "rules": [
+      "Every day: the Collector visits the cellar, brings food, disposes of rubbish, and does laundry (if you have the pack).",
+      "Every day: the Collector has at least one conversation with the Victim — topic is your choice.",
+      "Every day: the Collector watches the Victim perform one activity (drawing, dancing, gaming, etc.).",
+      "Whenever a Victim need drops to red: trigger an escape attempt — remove one hobby item from the cellar as punishment.",
+      "Every day with no escape attempt: add one new hobby item of your choosing to the cellar.",
+      "Every day: the Victim takes a supervised bath trip. You may use this as a second opportunity for an escape attempt.",
+      "Every 7 days: hold a fancy dinner in the main house. Both Sims dress up. The Collector may attempt romantic interactions, propose if available, or WooHoo if desired. The Victim returns to the cellar when dinner ends."
     ],
     "storyBeats": [
-      { "step": 1, "text": "Frederick prepares the secluded house and brings Miranda home." },
-      { "step": 2, "text": "Miranda tests the boundaries of her captivity." },
-      { "step": 3, "text": "Frederick attempts to connect — gifts, books, polite conversation." },
-      { "step": 4, "text": "Miranda engineers an escape attempt." },
-      { "step": 5, "text": "The power dynamic shifts dangerously." },
-      { "step": 6, "text": "One of them will not leave this house." }
+      { "step": 1, "text": "Frederick prepares the countryside house — builds or fits out the cellar, installs the hidden door, and stocks it for his Victim's interests." },
+      { "step": 2, "text": "The Victim arrives. They test every corner of the cellar, looking for weakness. Frederick watches through the locked door." },
+      { "step": 3, "text": "A routine establishes itself. Daily visits, small gifts, careful conversation. Frederick believes things are improving." },
+      { "step": 4, "text": "The first red need triggers an escape attempt. Frederick removes a hobby item. The cellar feels smaller." },
+      { "step": 5, "text": "The first fancy dinner. Both dress up. Frederick attempts to romance or connect. The Victim weighs their options across the candlelit table." },
+      { "step": 6, "text": "The loop continues — new victims if needed — until the two conditions are finally met, or one of them doesn't make it." }
+    ],
+    "endings": [
+      {
+        "title": "The Reform",
+        "text": "The Victim's mood is consistently green. The two have reached Good Friends status or show mutual romantic interest from both sides. The Victim is released to the main house as a roommate or platonic spouse. Frederick reforms — he never collects again."
+      },
+      {
+        "title": "The Punishment",
+        "text": "The Victim's needs drop critically — loneliness, or a red moodlet from a Social Butterfly trait. They attempt escape and are caught. Frederick punishes them by your method of choice. The cellar is repurposed for a new Victim. Begin again."
+      },
+      {
+        "title": "The Accident",
+        "text": "The Victim deteriorates while the Collector is away — starvation, illness, hysteria, or another fate of your choosing. This mirrors the novel's ending. Frederick, unmoved, clears the cellar and selects a new Victim. Begin again."
+      }
     ]
   },
   {
@@ -92,6 +156,7 @@
     "title": "Misery",
     "source": "Misery",
     "sourceType": "book",
+    "thumbnail": "/images/img-4.jpg",
     "year": 1987,
     "difficulty": "medium",
     "tags": ["psychological", "captivity", "obsession", "two-person"],
@@ -120,6 +185,7 @@
     "title": "Get Out",
     "source": "Get Out",
     "sourceType": "film",
+    "thumbnail": "/images/img-1.jpg",
     "year": 2017,
     "difficulty": "medium",
     "tags": ["psychological", "body-horror", "family", "modern"],
@@ -150,6 +216,7 @@
     "title": "Hereditary",
     "source": "Hereditary",
     "sourceType": "film",
+    "thumbnail": "/images/img-2.jpg",
     "year": 2018,
     "difficulty": "hard",
     "tags": ["supernatural", "family", "grief", "cult"],
@@ -180,6 +247,7 @@
     "title": "Rosemary's Baby",
     "source": "Rosemary's Baby",
     "sourceType": "film",
+    "thumbnail": "/images/img-3.jpg",
     "year": 1968,
     "difficulty": "medium",
     "tags": ["cult", "supernatural", "pregnancy", "paranoia"],
@@ -209,6 +277,7 @@
     "title": "It",
     "source": "It",
     "sourceType": "book",
+    "thumbnail": "/images/img-4.jpg",
     "year": 1986,
     "difficulty": "hard",
     "tags": ["supernatural", "childhood", "group", "small-town"],
@@ -240,6 +309,7 @@
     "title": "Psycho",
     "source": "Psycho",
     "sourceType": "film",
+    "thumbnail": "/images/img-1.jpg",
     "year": 1960,
     "difficulty": "medium",
     "tags": ["slasher", "psychological", "isolation", "identity"],
@@ -269,6 +339,7 @@
     "title": "The Haunting of Hill House",
     "source": "The Haunting of Hill House",
     "sourceType": "book",
+    "thumbnail": "/images/img-2.jpg",
     "year": 1959,
     "difficulty": "hard",
     "tags": ["supernatural", "haunted-house", "psychological", "group"],
@@ -292,6 +363,234 @@
       { "step": 4, "text": "Paranormal events intensify — the group grows afraid." },
       { "step": 5, "text": "Eleanor stops wanting to leave." },
       { "step": 6, "text": "The group must decide: force Eleanor out — or let the house win." }
+    ]
+  },
+  {
+    "id": "Placeholder-01",
+    "title": "Placeholder 01",
+    "source": "Placeholder Source",
+    "sourceType": "film",
+    "thumbnail": "/images/img-3.jpg",
+    "year": 2000,
+    "difficulty": "easy",
+    "tags": ["Placeholder", "test"],
+    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "householdMembers": [
+      { "name": "Sim One", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    ],
+    "goals": ["Survive long enough to test the lazy loader."],
+    "storyBeats": [
+      { "step": 1, "text": "Placeholder beat one." },
+      { "step": 2, "text": "Placeholder beat two." }
+    ]
+  },
+  {
+    "id": "Placeholder-02",
+    "title": "Placeholder 02",
+    "source": "Placeholder Source",
+    "sourceType": "book",
+    "thumbnail": "/images/img-4.jpg",
+    "year": 2001,
+    "difficulty": "medium",
+    "tags": ["Placeholder", "test"],
+    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "householdMembers": [
+      { "name": "Sim Two", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    ],
+    "goals": ["Survive long enough to test the lazy loader."],
+    "storyBeats": [
+      { "step": 1, "text": "Placeholder beat one." },
+      { "step": 2, "text": "Placeholder beat two." }
+    ]
+  },
+  {
+    "id": "Placeholder-03",
+    "title": "Placeholder 03",
+    "source": "Placeholder Source",
+    "sourceType": "film",
+    "thumbnail": "/images/img-1.jpg",
+    "year": 2002,
+    "difficulty": "hard",
+    "tags": ["Placeholder", "test"],
+    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "householdMembers": [
+      { "name": "Sim Three", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    ],
+    "goals": ["Survive long enough to test the lazy loader."],
+    "storyBeats": [
+      { "step": 1, "text": "Placeholder beat one." },
+      { "step": 2, "text": "Placeholder beat two." }
+    ]
+  },
+  {
+    "id": "Placeholder-04",
+    "title": "Placeholder 04",
+    "source": "Placeholder Source",
+    "sourceType": "book",
+    "thumbnail": "/images/img-2.jpg",
+    "year": 2003,
+    "difficulty": "easy",
+    "tags": ["Placeholder", "test"],
+    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "householdMembers": [
+      { "name": "Sim Four", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    ],
+    "goals": ["Survive long enough to test the lazy loader."],
+    "storyBeats": [
+      { "step": 1, "text": "Placeholder beat one." },
+      { "step": 2, "text": "Placeholder beat two." }
+    ]
+  },
+  {
+    "id": "Placeholder-05",
+    "title": "Placeholder 05",
+    "source": "Placeholder Source",
+    "sourceType": "film",
+    "thumbnail": "/images/img-3.jpg",
+    "year": 2004,
+    "difficulty": "medium",
+    "tags": ["Placeholder", "test"],
+    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "householdMembers": [
+      { "name": "Sim Five", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    ],
+    "goals": ["Survive long enough to test the lazy loader."],
+    "storyBeats": [
+      { "step": 1, "text": "Placeholder beat one." },
+      { "step": 2, "text": "Placeholder beat two." }
+    ]
+  },
+  {
+    "id": "Placeholder-06",
+    "title": "Placeholder 06",
+    "source": "Placeholder Source",
+    "sourceType": "book",
+    "thumbnail": "/images/img-4.jpg",
+    "year": 2005,
+    "difficulty": "hard",
+    "tags": ["Placeholder", "test"],
+    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "householdMembers": [
+      { "name": "Sim Six", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    ],
+    "goals": ["Survive long enough to test the lazy loader."],
+    "storyBeats": [
+      { "step": 1, "text": "Placeholder beat one." },
+      { "step": 2, "text": "Placeholder beat two." }
+    ]
+  },
+  {
+    "id": "Placeholder-07",
+    "title": "Placeholder 07",
+    "source": "Placeholder Source",
+    "sourceType": "film",
+    "thumbnail": "/images/img-1.jpg",
+    "year": 2006,
+    "difficulty": "easy",
+    "tags": ["Placeholder", "test"],
+    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "householdMembers": [
+      { "name": "Sim Seven", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    ],
+    "goals": ["Survive long enough to test the lazy loader."],
+    "storyBeats": [
+      { "step": 1, "text": "Placeholder beat one." },
+      { "step": 2, "text": "Placeholder beat two." }
+    ]
+  },
+  {
+    "id": "Placeholder-08",
+    "title": "Placeholder 08",
+    "source": "Placeholder Source",
+    "sourceType": "book",
+    "thumbnail": "/images/img-2.jpg",
+    "year": 2007,
+    "difficulty": "medium",
+    "tags": ["Placeholder", "test"],
+    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "householdMembers": [
+      { "name": "Sim Eight", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    ],
+    "goals": ["Survive long enough to test the lazy loader."],
+    "storyBeats": [
+      { "step": 1, "text": "Placeholder beat one." },
+      { "step": 2, "text": "Placeholder beat two." }
+    ]
+  },
+  {
+    "id": "Placeholder-09",
+    "title": "Placeholder 09",
+    "source": "Placeholder Source",
+    "sourceType": "film",
+    "thumbnail": "/images/img-3.jpg",
+    "year": 2008,
+    "difficulty": "hard",
+    "tags": ["Placeholder", "test"],
+    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "householdMembers": [
+      { "name": "Sim Nine", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    ],
+    "goals": ["Survive long enough to test the lazy loader."],
+    "storyBeats": [
+      { "step": 1, "text": "Placeholder beat one." },
+      { "step": 2, "text": "Placeholder beat two." }
+    ]
+  },
+  {
+    "id": "Placeholder-10",
+    "title": "Placeholder 10",
+    "source": "Placeholder Source",
+    "sourceType": "book",
+    "thumbnail": "/images/img-4.jpg",
+    "year": 2009,
+    "difficulty": "easy",
+    "tags": ["Placeholder", "test"],
+    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "householdMembers": [
+      { "name": "Sim Ten", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    ],
+    "goals": ["Survive long enough to test the lazy loader."],
+    "storyBeats": [
+      { "step": 1, "text": "Placeholder beat one." },
+      { "step": 2, "text": "Placeholder beat two." }
+    ]
+  },
+  {
+    "id": "Placeholder-11",
+    "title": "Placeholder 11",
+    "source": "Placeholder Source",
+    "sourceType": "film",
+    "thumbnail": "/images/img-1.jpg",
+    "year": 2010,
+    "difficulty": "medium",
+    "tags": ["Placeholder", "test"],
+    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "householdMembers": [
+      { "name": "Sim Eleven", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    ],
+    "goals": ["Survive long enough to test the lazy loader."],
+    "storyBeats": [
+      { "step": 1, "text": "Placeholder beat one." },
+      { "step": 2, "text": "Placeholder beat two." }
+    ]
+  },
+  {
+    "id": "Placeholder-12",
+    "title": "Placeholder 12",
+    "source": "Placeholder Source",
+    "sourceType": "book",
+    "thumbnail": "/images/img-2.jpg",
+    "year": 2011,
+    "difficulty": "hard",
+    "tags": ["Placeholder", "test"],
+    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
+    "householdMembers": [
+      { "name": "Sim Twelve", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    ],
+    "goals": ["Survive long enough to test the lazy loader."],
+    "storyBeats": [
+      { "step": 1, "text": "Placeholder beat one." },
+      { "step": 2, "text": "Placeholder beat two." }
     ]
   }
 ]
