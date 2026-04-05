@@ -34,31 +34,84 @@ export default function HomePage() {
   }, [])
 
   return (
-    <main className="flex flex-col items-center justify-center flex-1 px-4 py-10 gap-8">
-      <div className="text-center">
-        <h1 className="text-3xl sm:text-4xl font-extrabold text-sims-green mb-2">
-          Spin the Wheel
-        </h1>
-        <p className="text-white/70 text-base">
-          {scenarios.length} horror scenarios — which will you play?
-        </p>
-      </div>
+    <main className="flex flex-col items-center flex-1 px-4 py-10">
+      <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
 
-      <div className="relative w-full max-w-[min(600px,90vw)]">
-        <SpinningWheel
-          scenarios={scenarios}
-          isSpinning={isSpinning}
-          onSpinEnd={handleSpinEnd}
-        />
-      </div>
+        {/* Wheel column — 2/3 */}
+        <div className="md:col-span-2 flex flex-col items-center gap-6">
+          <div className="text-center">
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-white mb-2">
+              Wheel of <span className="line-through text-white/40">Fortune</span>{' '}
+              <span className="text-horror-red" style={{ fontFamily: "'Barriecito', cursive" }}>Torture</span>
+            </h1>
+            <p className="text-white/70 text-base">
+              {scenarios.length} horror scenarios — which will you play?
+            </p>
+          </div>
 
-      <button
-        onClick={handleSpin}
-        disabled={isSpinning}
-        className="px-10 py-3 rounded-card font-extrabold text-lg bg-btn-green hover:bg-btn-green-hover cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-white shadow-lg"
-      >
-        {isSpinning ? 'Spinning…' : 'Spin!'}
-      </button>
+          <div className="relative w-full max-w-130">
+            <SpinningWheel
+              scenarios={scenarios}
+              isSpinning={isSpinning}
+              onSpinEnd={handleSpinEnd}
+            />
+          </div>
+
+          <button
+            onClick={handleSpin}
+            disabled={isSpinning}
+            className="px-10 py-3 rounded-card font-extrabold text-lg btn-primary cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed text-bg shadow-lg"
+          >
+            {isSpinning ? 'Spinning…' : 'Spin!'}
+          </button>
+        </div>
+
+        {/* About card — 1/3 */}
+        <div
+          className="md:col-span-1 rounded-card border p-6 flex flex-col gap-5 self-stretch"
+          style={{ background: 'rgba(8,15,20,0.97)', borderColor: 'rgba(255,255,255,0.25)', boxShadow: '0 2px 12px rgba(255,255,255,0.04)' }}
+        >
+          <div className="flex flex-col gap-3">
+            <h2 className="text-sims-green font-bold text-sm uppercase tracking-widest">About</h2>
+            <div className="text-white/70 text-sm leading-relaxed flex flex-col gap-3">
+              <p>
+                <span className="text-white uppercase tracking-wider text-xs font-bold">What it is</span><br />
+                The Royal Simulator turns horror films and novels into playable Sims 4 scenarios — designed to recreate the logic and atmosphere of each source material inside the game.
+              </p>
+              <p>
+                <span className="text-white uppercase tracking-wider text-xs font-bold">What each scenario includes</span><br />
+                Full lot setup, household traits, daily rules, story beats, and multiple endings. Difficulty ratings run from easy one-night camps to hard multi-week deterioration arcs.
+              </p>
+              <p>
+                <span className="text-white uppercase tracking-wider text-xs font-bold">How to use it</span><br />
+                Spin the wheel to let chance decide what you play next, or search the library by title, difficulty, tag, or source type.
+              </p>
+              <p>
+                <span className="text-white uppercase tracking-wider text-xs font-bold">What it's part of</span><br />
+                A companion project to{' '}
+                <a href="https://cinefile-blog.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-sims-green hover:underline">The Cinefile Blog</a>
+                {' '}and{' '}
+                <a href="https://open.spotify.com/show/5Ri7xJYDE9JDel4iCdl6LA?si=eb1e6971fd3d4844" target="_blank" rel="noopener noreferrer" className="text-sims-green hover:underline">The Kino Royale Podcast</a>.
+              </p>
+            </div>
+          </div>
+          <div>
+            <h2 className="text-sims-green font-bold text-sm uppercase tracking-widest mb-2">How to Play</h2>
+            <ol className="text-white/70 text-sm leading-relaxed list-decimal list-inside flex flex-col gap-1">
+              <li>Spin the wheel to get a random horror scenario</li>
+              <li>Build the household described in the scenario</li>
+              <li>Follow the story beats in order and see how it plays out</li>
+            </ol>
+          </div>
+
+          <a
+            href="/browse"
+            className="text-sims-green text-sm font-bold self-end hover:underline mt-auto"
+          >
+            Browse all scenarios →
+          </a>
+        </div>
+      </div>
 
       {result && (
         <ScenarioModal

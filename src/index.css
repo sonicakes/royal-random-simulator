@@ -3,8 +3,8 @@
 @theme {
   --color-bg: #080f14;
   --color-sims-green: #4ade80;
-  --color-btn-green: #16a34a;
-  --color-btn-green-hover: #15803d;
+  --color-btn-green: #1db86a;
+  --color-btn-green-hover: #18a05c;
   --color-horror-red: #e8143c;
   --color-modal-bg: #0a1a12;
 
@@ -17,6 +17,18 @@
 @layer base {
   body {
     @apply bg-bg text-white font-sans;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: -20%;
+    background-image: url('/sims-pattern.svg');
+    background-repeat: repeat;
+    background-size: 480px 320px;
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: 0;
+    transform: rotate(6deg);
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
@@ -52,4 +64,22 @@
 @keyframes fadeIn {
   from { opacity: 0; }
   to   { opacity: 1; }
+}
+
+@keyframes btn-flow {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.btn-primary {
+  background: linear-gradient(270deg, #1db86a, #0d9488, #4ade80, #0d9488, #1db86a);
+  background-size: 300% 300%;
+  animation: btn-flow 4s ease infinite;
+  transition: box-shadow 0.3s ease;
+}
+
+.btn-primary:hover:not(:disabled) {
+  animation: btn-flow 2s ease infinite;
+  box-shadow: 0 0 16px rgba(29, 184, 106, 0.35);
 }

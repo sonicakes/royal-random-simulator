@@ -1,5 +1,6 @@
 import { useState, useMemo, useRef, useCallback, useEffect } from 'react'
 import { SlidersHorizontal } from 'lucide-react'
+import { PiFilmSlate, PiBookOpenText } from 'react-icons/pi'
 import ScenarioCard from '../components/ScenarioCard'
 import scenariosData from '../data/scenarios.json'
 import type { Scenario } from '../types/scenario'
@@ -70,29 +71,30 @@ export default function BrowsePage() {
 
   return (
     <main className="max-w-6xl mx-auto px-4 sm:px-6 py-8 w-full">
-      <h1 className="text-2xl font-extrabold text-sims-green mb-6">Browse Scenarios</h1>
+      <h1 className="text-2xl font-extrabold text-white mb-6">Browse Scenarios</h1>
 
       {/* Controls */}
       <div className="flex flex-col gap-3 mb-8">
         {/* Search + sort + filters toggle */}
-        <div className="flex flex-col sm:flex-row gap-3">
+        <div className="flex items-center justify-between gap-3">
           <input
             type="text"
             placeholder="Search by title…"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="flex-1 bg-white/5 border border-white/10 rounded-card px-4 py-2 text-base text-white placeholder-white/50 focus:outline-none focus:border-sims-green/50"
+            className="w-2/3 bg-white/5 border border-white/10 rounded-card px-4 py-2 text-base text-white placeholder-white/50 focus:outline-none focus:border-sims-green/50"
           />
           <button
             onClick={() => setShowFilters((v) => !v)}
             aria-label="Toggle filters"
-            className={`relative flex items-center justify-center w-11 h-11 rounded-card border transition-colors cursor-pointer shrink-0 ${
+            className={`relative flex items-center gap-2 px-4 py-2 rounded-card border transition-colors cursor-pointer ${
               showFilters
                 ? 'bg-sims-green/10 text-sims-green border-sims-green/40'
                 : 'bg-white/5 text-white/50 border-white/10 hover:text-white/80 hover:border-white/30'
             }`}
           >
-            <SlidersHorizontal size={18} />
+            <SlidersHorizontal size={16} />
+            <span className="text-sm font-semibold">Filters</span>
             {(sourceType !== 'all' || difficulty !== 'all' || selectedTags.length > 0) && (
               <span className="absolute -top-1.5 -right-1.5 bg-sims-green text-bg text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center">
                 {(sourceType !== 'all' ? 1 : 0) + (difficulty !== 'all' ? 1 : 0) + selectedTags.length}
@@ -116,7 +118,9 @@ export default function BrowsePage() {
                       : 'bg-transparent text-white/65 border-white/25 hover:border-white/50'
                   }`}
                 >
-                  {v === 'all' ? 'All types' : v === 'film' ? '🎬 Film' : '📖 Book'}
+                  {v === 'all' ? 'All types' : v === 'film'
+                    ? <span className="flex items-center gap-1.5"><PiFilmSlate size={13} className="text-sims-green" />Film</span>
+                    : <span className="flex items-center gap-1.5"><PiBookOpenText size={13} className="text-sims-green" />Book</span>}
                 </button>
               ))}
 

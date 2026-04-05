@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { PiFilmSlate, PiBookOpenText } from 'react-icons/pi'
 import type { Scenario } from '../types/scenario'
 
 interface ScenarioModalProps {
@@ -60,7 +61,13 @@ export default function ScenarioModal({ scenario, onClose, onSpinAgain }: Scenar
         </p>
         <h2 className="text-2xl font-extrabold mb-1 capitalize">{scenario.title}</h2>
         <p className="text-sm text-white/70 mb-3">
-          {scenario.sourceType === 'film' ? '🎬' : '📖'} {scenario.source} ({scenario.year}) ·{' '}
+          <span className="inline-flex items-center gap-1.5">
+            {scenario.sourceType === 'film'
+              ? <PiFilmSlate className="text-sims-green" size={14} />
+              : <PiBookOpenText className="text-sims-green" size={14} />}
+            {scenario.source} ({scenario.year})
+          </span>
+          {' · '}
           <span className={`font-semibold ${DIFFICULTY_COLOUR[scenario.difficulty]}`}>
             {scenario.difficulty}
           </span>
@@ -70,7 +77,7 @@ export default function ScenarioModal({ scenario, onClose, onSpinAgain }: Scenar
         <div className="flex gap-3">
           <button
             onClick={onSpinAgain}
-            className="flex-1 py-2 rounded-card font-bold text-sm bg-btn-green hover:bg-btn-green-hover cursor-pointer transition-colors text-white"
+            className="flex-1 py-2 rounded-card font-bold text-sm btn-primary cursor-pointer text-bg"
           >
             Spin Again
           </button>

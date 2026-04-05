@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { PiFilmSlate, PiBookOpenText } from 'react-icons/pi'
 import type { Scenario } from '../types/scenario'
 
 const DIFFICULTY_COLOUR: Record<Scenario['difficulty'], string> = {
@@ -46,7 +47,13 @@ export default function ScenarioCard({ scenario }: ScenarioCardProps) {
           {scenario.title}
         </h3>
         <p className="text-sm text-white/65">
-          {scenario.sourceType === 'film' ? '🎬' : '📖'} {scenario.year} ·{' '}
+          <span className="inline-flex items-center gap-1.5">
+            {scenario.sourceType === 'film'
+              ? <PiFilmSlate className="text-sims-green" size={14} />
+              : <PiBookOpenText className="text-sims-green" size={14} />}
+            {scenario.year}
+          </span>
+          {' · '}
           <span className={`font-semibold ${DIFFICULTY_COLOUR[scenario.difficulty]}`}>
             {scenario.difficulty}
           </span>
