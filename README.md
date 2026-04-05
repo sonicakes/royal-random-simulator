@@ -1,6 +1,6 @@
 # Royal Random SIMulator
 
-A personal, curated Sims 4 horror scenario generator. Hand-authored, playtested scenarios inspired by horror films and books — discovered via a spinning wheel, browsed in a searchable library, or navigated to directly.
+A personal Sims 4 horror scenario generator, created with Claude's help. Gives players scenario ideas based on horror films and books — discovered via a spinning wheel, browsed in a searchable library, or navigated to directly. Pairs with [The Cinefile Blog](https://cinefile-blog.netlify.app/) and [The Kino Royale Podcast](https://open.spotify.com/show/5Ri7xJYDE9JDel4iCdl6LA).
 
 No backend. No database. No auth. All scenario data lives in a single JSON file.
 
@@ -42,9 +42,9 @@ src/
     SpinningWheel.tsx      # canvas-based spinning wheel
     ScenarioCard.tsx       # card used in browse grid
     ScenarioModal.tsx      # modal shown after wheel lands
-    NavBar.tsx
+    NavBar.tsx             # slim nav with inline GemM icon
     Footer.tsx
-    PlumbobSVG.tsx
+    PlumbobSVG.tsx         # legacy, no longer used in nav
   types/
     scenario.ts            # TypeScript interfaces
   index.css                # Tailwind theme + keyframes
@@ -70,9 +70,15 @@ All three routes are real browser URLs and are directly linkable and bookmarkabl
 
 ## Features
 
+### Home page
+
+The home page uses a two-column layout on desktop (wheel takes 2/3, about card takes 1/3) and stacks on mobile.
+
+The **about card** covers what the app is, how to play (3 steps), and links to The Cinefile Blog and The Kino Royale Podcast.
+
 ### Spinning wheel
 
-The home page. A canvas-drawn wheel with one segment per scenario. Click **Spin** — the wheel decelerates over ~4 seconds and lands on a random scenario. A modal appears with confetti, showing the scenario title, source, difficulty, and description. From there you can spin again or go to the full scenario page.
+A canvas-drawn wheel with one segment per scenario. Click **Spin** — the wheel decelerates over ~4 seconds and lands on a random scenario. A modal appears with confetti, showing the scenario title, source, difficulty, and description. From there you can spin again or go to the full scenario page.
 
 ### Browse page
 
@@ -257,7 +263,7 @@ All scenarios live in `src/data/scenarios.json` as a top-level array:
 |---|---|---|
 | `--bg` | `#080f14` | Page background |
 | `--bg-card` | `#0a1212` | Card background |
-| `--green-bright` | `#4ade80` | Plumbob, nav, hover states |
+| `--green-bright` | `#4ade80` | Nav, hover states, gem icon |
 | `--green-btn` | `#16a34a` | Button background |
 | `--crimson` | `#e8143c` | Wheel pointer, film tags, difficulty |
 | `--text-muted` | `rgba(255,255,255,0.35)` | Secondary text |

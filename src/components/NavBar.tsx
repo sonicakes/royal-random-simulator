@@ -1,19 +1,39 @@
 import { Link } from 'react-router-dom'
-import Plumbob from './Plumbob'
+
+function GemM() {
+  return (
+    <svg
+      viewBox="0 0 12 14"
+      style={{ display: 'inline', width: '0.75em', height: '0.875em', verticalAlign: 'middle', position: 'relative', top: '-0.05em' }}
+      aria-hidden="true"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="0.9"
+      strokeLinejoin="round"
+    >
+      {/* outer shape */}
+      <polygon points="3,0 9,0 12,5 6,14 0,5" />
+      {/* girdle line */}
+      <line x1="0" y1="5" x2="12" y2="5" />
+      {/* crown facets */}
+      <line x1="3" y1="0" x2="6" y2="5" />
+      <line x1="9" y1="0" x2="6" y2="5" />
+    </svg>
+  )
+}
 
 export default function NavBar() {
   return (
-    <nav className="sticky top-0 z-50 bg-bg border-b border-white/10 px-4 sm:px-6 font-display">
-      <div className="max-w-6xl mx-auto h-24 flex items-center justify-between">
+    <nav className="sticky top-0 z-50 bg-bg border-b border-white/10 px-4 sm:px-6 font-display" style={{ boxShadow: '0 2px 12px rgba(255,255,255,0.04)' }}>
+      <div className="max-w-6xl mx-auto h-15 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-          <Plumbob size={120} />
-          <span className="hidden md:inline font-extrabold text-sims-green tracking-wide text-lg leading-none">
-            Royal Random <span className="uppercase">SIM</span>ulator
+          <span className="text-sims-green leading-none tracking-wide" style={{ fontFamily: "'Barriecito', cursive", fontSize: '1.5rem' }}>
+            Royal Si<GemM />ulator
           </span>
         </Link>
         <Link
           to="/browse"
-          className="text-base font-semibold text-white/80 hover:text-sims-green transition-colors"
+          className="font-semibold text-white/80 hover:text-sims-green transition-colors"
         >
           <span className="md:hidden">Browse</span>
           <span className="hidden md:inline">Browse Scenarios</span>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { PiFilmSlate, PiBookOpenText } from 'react-icons/pi'
 import { useParams, useNavigate } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import LightboxGallery from '../components/LightboxGallery'
@@ -62,7 +63,7 @@ export default function ScenarioDetailPage() {
   }
 
   return (
-    <main className="max-w-2xl mx-auto px-4 sm:px-6 py-8 w-full">
+    <main className="max-w-2xl mx-auto px-4 sm:px-6 py-8 w-full relative z-10" style={{ background: 'rgba(8,15,20,0.97)' }}>
       {/* Back */}
       <button
         onClick={() => navigate(-1)}
@@ -75,7 +76,13 @@ export default function ScenarioDetailPage() {
       <div className="mb-6">
         <h1 className="text-3xl font-extrabold mb-1">{scenario.title}</h1>
         <p className="text-base text-white/70">
-          {scenario.sourceType === 'film' ? '🎬' : '📖'} {scenario.source} ({scenario.year}) ·{' '}
+          <span className="inline-flex items-center gap-1.5 align-middle">
+            {scenario.sourceType === 'film'
+              ? <PiFilmSlate className="inline text-sims-green" size={16} />
+              : <PiBookOpenText className="inline text-sims-green" size={16} />}
+            {scenario.source} ({scenario.year})
+          </span>
+          {' · '}
           <span className={`font-semibold ${DIFFICULTY_COLOUR[scenario.difficulty]}`}>
             {scenario.difficulty}
           </span>

@@ -6,6 +6,7 @@ const PALETTE = [
   '#0369a1',
   '#7c3aed',
   '#eab308',
+  '#e8143c',
   '#0f766e',
   '#be185d',
   '#15803d',
@@ -114,9 +115,9 @@ export default function SpinningWheel({ scenarios, isSpinning, onSpinEnd }: Spin
       ctx.lineTo(pCx - pHalf, pBase)
       ctx.lineTo(pCx + pHalf, pBase)
       ctx.closePath()
-      ctx.fillStyle = '#e8143c'
+      ctx.fillStyle = '#080f14'
       ctx.fill()
-      ctx.strokeStyle = '#fff'
+      ctx.strokeStyle = '#080f14'
       ctx.lineWidth = 1.5
       ctx.stroke()
     },
