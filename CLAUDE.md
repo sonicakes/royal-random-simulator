@@ -1,7 +1,7 @@
 # Royal Random SIMulator — Claude Code Instructions
 
 ## Project overview
-Royal Random SIMulator is a Sims 4 horror scenario generator. It is a personal, curated web app where the author publishes hand-authored, playtested Sims 4 scenarios inspired by horror films and books. Users discover scenarios via a spinning wheel, browse a searchable library, or navigate directly to a scenario.
+Royal Random SIMulator is a Sims 4 horror scenario generator. It is a personal web app created with Claude's help, giving players scenario ideas based on horror films and books. Users discover scenarios via a spinning wheel, browse a searchable library, or navigate directly to a scenario. It can be used alongside The Cinefile Blog (https://cinefile-blog.netlify.app/) and The Kino Royale Podcast (https://open.spotify.com/show/5Ri7xJYDE9JDel4iCdl6LA).
 
 There is no backend, no database, no authentication, and no AI integration. All scenario data lives in a single `src/data/scenarios.json` file.
 
@@ -32,16 +32,16 @@ src/
   data/
     scenarios.json       # all scenario data — single source of truth
   pages/
-    Home.tsx             # spinning wheel page
+    HomePage.tsx             # two-column layout: spinning wheel + about card
     BrowsePage.tsx           # search + filter + card grid
     ScenarioDetailPage.tsx   # full individual scenario
   components/
-    SpinningWheel.tsx            # canvas-based spinning wheel
-    ScenarioCard.tsx     # card used in Browse and scenario grid
-    ScenarioModal.tsx    # modal shown after wheel lands
-    NavBar.tsx              # top navigation
-    Footer.tsx    # github link to project, other links coming too.   
-    PlumbobSVG.tsx   #svg-based logo for nav
+    SpinningWheel.tsx        # canvas-based spinning wheel
+    ScenarioCard.tsx         # card used in Browse and scenario grid
+    ScenarioModal.tsx        # modal shown after wheel lands
+    NavBar.tsx               # slim top nav with inline GemM icon in site name
+    Footer.tsx               # github link to project, other links coming too
+    PlumbobSVG.tsx           # legacy SVG component, no longer used in nav
   index.css           # tailwind classes, theme
   App.tsx
   main.tsx
@@ -111,7 +111,7 @@ Field notes:
 --bg:             #080f14;   /* page background */
 --bg-card:        #0a1212;   /* card / modal background */
 --bg-modal:       #0a1a12;   /* modal background */
---green-bright:   #4ade80;   /* primary Sims green — plumbob, nav, hover */
+--green-bright:   #4ade80;   /* primary Sims green — nav, hover, gem icon */
 --green-btn:      #16a34a;   /* button background */
 --green-btn-hover:#15803d;   /* button hover */
 --crimson:        #e8143c;   /* horror accent — wheel pointer, film tags, difficulty */
@@ -138,15 +138,16 @@ Field notes:
 - Weights: 400 regular, 700 bold
 - Border radius: 12px for cards and buttons, 99px for pills/badges
 
-### Plumbob (nav logo)
-Three-polygon SVG diamond, green tones:
+### Nav logo (GemM)
+The "M" in "SIMulator" in the nav is replaced by an inline faceted gem SVG — a three-polygon diamond in green tones, sized to sit flush with the surrounding text:
 ```jsx
-<svg width="18" height="18" viewBox="0 0 24 24">
-  <polygon points="12,2 20,10 12,22 4,10" fill="#4ade80" opacity="0.95"/>
-  <polygon points="12,2 20,10 12,14" fill="#86efac" opacity="0.7"/>
-  <polygon points="12,2 4,10 12,14" fill="#16a34a" opacity="0.9"/>
+<svg viewBox="0 0 12 14" style={{ display: 'inline', width: '0.75em', height: '0.875em', verticalAlign: 'middle' }}>
+  <polygon points="3,0 9,0 12,5 6,14 0,5" fill="#4ade80" />
+  <polygon points="3,0 9,0 6,5" fill="#86efac" opacity="0.8" />
+  <polygon points="0,5 12,5 6,14" fill="#16a34a" opacity="0.9" />
 </svg>
 ```
+The nav is 60px tall (`h-15`), no bottom border, and renders: **Royal Si♦ulator** on the left, **Browse Scenarios** on the right.
 
 ---
 

@@ -1,103 +1,198 @@
 [
-  {
-    "id": "the-shining",
-    "title": "The Shining",
-    "source": "The Shining",
-    "sourceType": "film",
-    "thumbnail": "/images/sims-shining.png",
-    "year": 1980,
-    "difficulty": "hard",
-    "tags": ["isolation", "supernatural", "psychological", "family"],
-    "description": "A struggling writer takes a job as the winter caretaker of the remote Overlook Hotel, bringing his wife and young son with him. As the weeks pass and the snow closes in, the hotel's dark history begins to unravel his sanity.",
-    "householdMembers": [
-      { "name": "Jack Torrance", "role": "Father / Caretaker", "traits": ["Creative", "Hot-Headed", "Loner"] },
-      { "name": "Wendy Torrance", "role": "Mother", "traits": ["Bookworm", "Neat", "Family-Oriented"] },
-      { "name": "Danny Torrance", "role": "Son", "traits": ["Psychic", "Childish", "Brave"] }
-    ],
-    "goals": [
-      "Settle the family into the Overlook Hotel before the first snowfall.",
-      "Jack must complete his writing project — at least 10,000 words.",
-      "Keep the family together until the roads reopen in spring.",
-      "Survive."
-    ],
-    "storyBeats": [
-      { "step": 1, "text": "Arrive at the Overlook and explore the sprawling grounds." },
-      { "step": 2, "text": "Jack begins writing; Wendy tries to keep spirits up." },
-      { "step": 3, "text": "Danny starts experiencing disturbing visions around the hotel." },
-      { "step": 4, "text": "Jack's mood deteriorates — arguments escalate." },
-      { "step": 5, "text": "The hotel's 'ghosts' begin whispering to Jack." },
-      { "step": 6, "text": "Jack snaps. Wendy and Danny must escape before it's too late." }
-    ]
-  },
- {
-  "id": "rebecca",
-  "title": "Rebecca",
-  "source": "Rebecca",
-  "sourceType": "novel",
-  "thumbnail": "/images/sims-rebecca.png",
-  "year": 1938,
-  "difficulty": "hard",
-  "tags": ["gothic", "psychological", "obsession", "class", "identity"],
-  "description": "A shy young woman marries the wealthy widower Maxim de Winter and moves into Manderley, his grand Cornish estate. But the shadow of his beautiful first wife, Rebecca, lingers in every room — kept alive by the sinister housekeeper Mrs Danvers.",
-  "householdMembers": [
-    { "name": "The Second Mrs de Winter", "role": "Narrator / New Wife", "traits": ["Insecure", "Observant", "Loyal"] },
-    { "name": "Maxim de Winter", "role": "Master of Manderley", "traits": ["Brooding", "Secretive", "Controlled"] },
-    { "name": "Mrs Danvers", "role": "Housekeeper", "traits": ["Obsessive", "Manipulative", "Cold"] }
-  ],
-  "goals": [
-    "Settle into Manderley and earn the respect of its staff.",
-    "Uncover the truth about Rebecca — and what really happened to her.",
-    "Keep your marriage to Maxim alive despite Rebecca's haunting presence.",
-    "Survive Mrs Danvers."
-  ],
-  "storyBeats": [
-    { "step": 1, "text": "Arrive at Manderley. Every room is a shrine to Rebecca." },
-    { "step": 2, "text": "Mrs Danvers makes clear you will never replace her mistress." },
-    { "step": 3, "text": "The costume ball goes disastrously wrong — Rebecca's influence strikes again." },
-    { "step": 4, "text": "Rebecca's boat is found. The truth about her death begins to surface." },
-    { "step": 5, "text": "The inquest forces Maxim to reveal his dark secret." },
-    { "step": 6, "text": "Manderley burns. Some ghosts can only be laid to rest in ashes." }
-  ]
-},
-  {
-    "id": "friday-13th",
-    "title": "Friday the 13th",
-    "source": "Friday the 13th",
-    "sourceType": "film",
-        "thumbnail": "/images/img-2.jpg",
 
-    "year": 1980,
+    {
+    "id": "rebecca",
+    "title": "Rebecca",
+    "source": "Rebecca",
+    "sourceType": "book",
+    "thumbnail": "/images/sims-rebecca.png",
+    "year": 1938,
     "difficulty": "medium",
-    "tags": ["slasher", "camp", "survival", "teens"],
-    "description": "A group of young camp counsellors arrive at Camp Crystal Lake to reopen it after years of tragedy. One by one they are hunted down by an unseen killer with a deeply personal motive.",
+    "tags": [
+      "gothic",
+      "psychological",
+      "class",
+      "obsession",
+      "haunting",
+      "romance"
+    ],
+    "description": "A shy, unnamed young woman marries the brooding widower Maxim de Winter and is brought to Manderley, his grand estate — only to find the house still entirely in thrall to his dead first wife, Rebecca. The housekeeper Mrs Danvers worships Rebecca's memory and will do anything to protect it. Based on the novel by Daphne du Maurier and the 1940 Hitchcock film.",
+    "setup": [
+      "Build or download a large, grand manor lot — multiple storeys, formal gardens, a boathouse if possible. Henford-on-Bagley or Tartosa suits the mood.",
+      "A sealed-off wing or locked upstairs bedroom represents Rebecca's rooms — untouched, preserved. This room must never be redecorated.",
+      "The Second Mrs de Winter is a young adult — low funds of her own, recently married. Suggested traits: Shy, Bookworm, Romantic, Neat, Insecure (use Gloomy as a substitute). She begins with no friends on the lot.",
+      "Maxim de Winter is a middle-aged adult Sim — wealthy, reserved, with a hidden dark past. Suggested traits: Snob, Loner, Romantic, Gloomy, Proper (use Neat).",
+      "Mrs Danvers is a household member or frequent visitor — older adult, immaculately dressed in black. Suggested traits: Mean, Jealous, Gloomy, Perfectionist, Loner. She has max Charisma and Mischief skill.",
+      "Scatter portraits, monogrammed items (renamed via debug), and expensive furnishings associated with Rebecca throughout the house. Rebecca's rooms should be the most lavishly decorated on the lot.",
+      "The Second Mrs de Winter begins with no Cooking, Charisma, or Flower Arranging skill — she must earn her place at Manderley."
+    ],
     "householdMembers": [
-      { "name": "Alice Hardy", "role": "Head Counsellor", "traits": ["Athletic", "Brave", "Friendly"] },
-      { "name": "Ned Rubinstein", "role": "Counsellor", "traits": ["Goofball", "Childish", "Outgoing"] },
-      { "name": "Brenda Jones", "role": "Counsellor", "traits": ["Romantic", "Cheerful", "Neat"] },
-      { "name": "Jack Burrell", "role": "Counsellor", "traits": ["Romantic", "Lazy", "Outgoing"] },
-      { "name": "Marcie Stanler", "role": "Counsellor", "traits": ["Bookworm", "Neurotic", "Friendly"] }
+      {
+        "name": "The Second Mrs de Winter",
+        "role": "The Newcomer",
+        "traits": ["Gloomy", "Bookworm", "Romantic", "Neat"]
+      },
+      {
+        "name": "Maxim de Winter",
+        "role": "The Widower",
+        "traits": ["Snob", "Loner", "Romantic", "Gloomy"]
+      },
+      {
+        "name": "Mrs Danvers",
+        "role": "The Keeper",
+        "traits": ["Mean", "Jealous", "Gloomy", "Perfectionist"]
+      }
     ],
     "goals": [
-      "Restore and open Camp Crystal Lake for the summer season.",
-      "Build friendships and relationships among the counsellors.",
-      "Uncover the camp's dark history before it's too late.",
-      "Get at least one counsellor out alive."
+      "The Second Mrs de Winter must reach level 5 in Charisma and host one successful dinner party (all guests' needs green at end of event).",
+      "Maxim and the Second Mrs de Winter must reach Soulmate status.",
+      "Mrs Danvers must be removed from the household — by being fired (evicted), breaking down (prolonged red mood), or through a fire event."
+    ],
+    "rules": [
+      "Every day: Mrs Danvers performs one act of sabotage — autonomously or player-directed. Options include: breaking an appliance, sending a mean social interaction to the Second Mrs de Winter, hiding food, or criticising her outfit.",
+      "Every day: the Second Mrs de Winter must greet at least one NPC or household member. She may not initiate romantic interactions with Maxim until Charisma level 3.",
+      "Rebecca's rooms must remain locked to the Second Mrs de Winter for the first 14 in-game days.",
+      "Every 7 days: host a social event at Manderley. If the event rating is below Silver, Mrs Danvers gains a confidence boost — add one new mean interaction she is permitted to use.",
+      "If Maxim's mood ever drops to red: he must withdraw from the household socially for 24 in-game hours. No interactions initiated by him.",
+      "Once the Second Mrs de Winter discovers Rebecca's rooms (Day 14): she may redecorate one item. Mrs Danvers immediately breaks something in retaliation."
     ],
     "storyBeats": [
-      { "step": 1, "text": "The counsellors arrive and start preparing the camp." },
-      { "step": 2, "text": "Strange warnings from locals are ignored." },
-      { "step": 3, "text": "Counsellors pair off — romance and mischief ensue." },
-      { "step": 4, "text": "The first disappearance goes unnoticed." },
-      { "step": 5, "text": "Fear spreads as it becomes clear someone is hunting them." },
-      { "step": 6, "text": "The final survivor faces the killer in a desperate confrontation." }
+      {
+        "step": 1,
+        "text": "The new Mrs de Winter arrives at Manderley for the first time. Mrs Danvers greets her at the door — correct, composed, and entirely unwelcoming."
+      },
+      {
+        "step": 2,
+        "text": "The house is full of Rebecca. Her monogram is on the stationery, her portrait dominates the hall, and Mrs Danvers speaks of her at every opportunity."
+      },
+      {
+        "step": 3,
+        "text": "The Second Mrs de Winter attempts to establish herself — hosting guests, managing the household, reaching toward Maxim. Mrs Danvers undermines her at every turn."
+      },
+      {
+        "step": 4,
+        "text": "Rebecca's rooms are finally unlocked. The Second Mrs de Winter steps inside for the first time and understands the full weight of what she is competing with."
+      },
+      {
+        "step": 5,
+        "text": "Maxim's secret begins to surface. The relationship deepens — or fractures — depending on what comes to light."
+      },
+      {
+        "step": 6,
+        "text": "A confrontation with Mrs Danvers. Manderley's fate, and theirs, hangs in the balance."
+      }
+    ],
+    "endings": [
+      {
+        "title": "Manderley Burns",
+        "text": "Mrs Danvers's mood is critically red and she has been refused eviction. Set a fire on the lot while she is inside Rebecca's rooms. If she perishes, the Second Mrs de Winter and Maxim escape and begin a new life. If she survives, she is evicted in the chaos. Manderley is sold."
+      },
+      {
+        "title": "The Mistress of Manderley",
+        "text": "The Second Mrs de Winter reaches Charisma 5, hosts a Gold-rated dinner party, and reaches Soulmate status with Maxim. Mrs Danvers is evicted. The house is slowly, carefully redecorated. One room at a time."
+      },
+      {
+        "title": "Rebecca Wins",
+        "text": "The Second Mrs de Winter's mood remains red for 7 consecutive days and she and Maxim never reach Good Friends status. She leaves the household. Mrs Danvers locks Rebecca's rooms again. Nothing at Manderley changes."
+      }
     ]
   },
+  {
+    "id": "misery",
+    "title": "Misery",
+    "source": "Misery",
+    "sourceType": "book",
+    "thumbnail": "/images/sims-misery.png",
+    "year": 1987,
+    "difficulty": "hard",
+    "tags": [
+      "psychological",
+      "captivity",
+      "obsession",
+      "two-person",
+      "isolation"
+    ],
+    "description": "Celebrated novelist Paul Sheldon crashes his car in a blizzard and is rescued by Annie Wilkes — his self-proclaimed number one fan. What begins as recovery becomes imprisonment as Annie's adoration curdles into something far more dangerous. Based on the novel by Stephen King and the 1990 film starring Kathy Bates and James Caan.",
+    "setup": [
+      "Use a remote lot in a snowy or rural world — Henford-on-Bagley or a custom mountain build works well. The house should be isolated with no nearby neighbours.",
+      "Paul's bedroom must be locked from the outside. It should contain a bed, a desk with a typewriter or computer, and basic need-satisfying items — but no phone.",
+      "Annie is a middle-aged adult Sim, large household funds, unemployed or retired. Suggested traits: Erratic, Mean, Perfectionist, Loner, Gloomy. Give her a garden and cooking hobby to reflect her domestic facade.",
+      "Paul is a young or middle-aged adult with high Creativity skill. Suggested traits: Bookworm, Creative, Neat, Romantic. He begins the scenario injured — remove his ability to leave the lot via locked doors.",
+      "Stock Paul's room with writing materials only. He has no access to the kitchen, garden, or front door without Annie's presence.",
+      "Annie's house should feel warm and obsessive — bookshelves full of Paul's 'novels', fan memorabilia, a large kitchen where she cooks his meals, and a pristine garden."
+    ],
+    "householdMembers": [
+      {
+        "name": "Paul Sheldon",
+        "role": "The Captive",
+        "traits": ["Bookworm", "Creative", "Neat", "Romantic"]
+      },
+      {
+        "name": "Annie Wilkes",
+        "role": "The Fan",
+        "traits": ["Erratic", "Mean", "Perfectionist", "Loner", "Gloomy"]
+      }
+    ],
+    "goals": [
+      "Paul must complete a full manuscript — reach level 10 Writing skill or finish a book using the in-game writing system.",
+      "Annie's mood must remain consistently green for 14 consecutive days — she is content with Paul's progress and behaviour."
+    ],
+    "rules": [
+      "Every day: Annie brings Paul his meals. Paul may not access the kitchen independently.",
+      "Every day: Annie checks Paul's writing progress. If no progress was made that day, remove one comfort item from the room.",
+      "Every day: Annie and Paul must have at least one conversation. Annie may be warm or hostile depending on her current mood.",
+      "If Paul attempts to leave the locked room (use the door to test): trigger a punishment event. Remove a room item and lock the room for an additional in-game day with no visits.",
+      "Every 7 days: Annie reads Paul's latest chapter. If her mood is green, she adds a new item to Paul's room. If red, she enters a rage — break or remove an item of your choosing.",
+      "Paul may attempt an escape once per week during Annie's sleep cycle. If caught, apply the punishment rule."
+    ],
+    "storyBeats": [
+      {
+        "step": 1,
+        "text": "Paul wakes in Annie's spare room, legs immobilised. She is attentive, cheerful, and certain she has saved his life."
+      },
+      {
+        "step": 2,
+        "text": "Annie reads Paul's newest manuscript and is horrified by what he has done to her favourite character. The warm facade cracks."
+      },
+      {
+        "step": 3,
+        "text": "Paul realises the doors are locked and the phone is gone. He begins exploring the house during Annie's supply runs."
+      },
+      {
+        "step": 4,
+        "text": "Annie discovers his snooping. A punishment follows. Paul resolves to be more careful — and more convincing."
+      },
+      {
+        "step": 5,
+        "text": "The manuscript grows. Paul begins writing strategically — keeping Annie placated, buying himself time."
+      },
+      {
+        "step": 6,
+        "text": "A final confrontation approaches. The manuscript is nearly done. Only one of them may walk away from what comes next."
+      }
+    ],
+    "endings": [
+      {
+        "title": "The Manuscript",
+        "text": "Paul completes the book and Annie's mood is green for 14 consecutive days. She releases him, believing their bond is real. Paul escapes and Annie is left alone with her garden, her shelves, and her certainty that she was his number one fan."
+      },
+      {
+        "title": "The Hobbling",
+        "text": "Paul attempts escape and is caught. Annie's rage peaks — she destroys all his writing materials except the manuscript. Paul begins again from scratch, more broken than before. The scenario resets from Story Beat 4."
+      },
+      {
+        "title": "The Fire",
+        "text": "Paul sets the kitchen alight during a confrontation. Both Sims are placed in the burning room. Whoever survives inherits the lot and the scenario ends. If Annie survives, she begins again with a new captive."
+      }
+    ]
+  },
+
   {
     "id": "the-collector",
     "title": "The Collector",
     "source": "The Collector",
     "sourceType": "book",
-    "thumbnail": "/images/img-3.jpg",
+    "thumbnail": "/images/sims-collector.png",
     "year": 1963,
     "difficulty": "hard",
     "tags": ["psychological", "captivity", "obsession", "two-person"],
@@ -112,8 +207,16 @@
       "The cellar door must remain locked at all times except for supervised bath trips and the weekly fancy dinner."
     ],
     "householdMembers": [
-      { "name": "Frederick Clegg", "role": "The Collector", "traits": ["Mean", "Antisocial", "Loner", "Unromantic", "Gloomy"] },
-      { "name": "Miranda Grey", "role": "The Captive", "traits": ["Creative", "Outgoing", "Bookworm", "Romantic"] }
+      {
+        "name": "Frederick Clegg",
+        "role": "The Collector",
+        "traits": ["Mean", "Antisocial", "Loner", "Unromantic", "Gloomy"]
+      },
+      {
+        "name": "Miranda Grey",
+        "role": "The Captive",
+        "traits": ["Creative", "Outgoing", "Bookworm", "Romantic"]
+      }
     ],
     "goals": [
       "The Victim's mood must be consistently green — all needs met, no prolonged distress.",
@@ -129,12 +232,30 @@
       "Every 7 days: hold a fancy dinner in the main house. Both Sims dress up. The Collector may attempt romantic interactions, propose if available, or WooHoo if desired. The Victim returns to the cellar when dinner ends."
     ],
     "storyBeats": [
-      { "step": 1, "text": "Frederick prepares the countryside house — builds or fits out the cellar, installs the hidden door, and stocks it for his Victim's interests." },
-      { "step": 2, "text": "The Victim arrives. They test every corner of the cellar, looking for weakness. Frederick watches through the locked door." },
-      { "step": 3, "text": "A routine establishes itself. Daily visits, small gifts, careful conversation. Frederick believes things are improving." },
-      { "step": 4, "text": "The first red need triggers an escape attempt. Frederick removes a hobby item. The cellar feels smaller." },
-      { "step": 5, "text": "The first fancy dinner. Both dress up. Frederick attempts to romance or connect. The Victim weighs their options across the candlelit table." },
-      { "step": 6, "text": "The loop continues — new victims if needed — until the two conditions are finally met, or one of them doesn't make it." }
+      {
+        "step": 1,
+        "text": "Frederick prepares the countryside house — builds or fits out the cellar, installs the hidden door, and stocks it for his Victim's interests."
+      },
+      {
+        "step": 2,
+        "text": "The Victim arrives. They test every corner of the cellar, looking for weakness. Frederick watches through the locked door."
+      },
+      {
+        "step": 3,
+        "text": "A routine establishes itself. Daily visits, small gifts, careful conversation. Frederick believes things are improving."
+      },
+      {
+        "step": 4,
+        "text": "The first red need triggers an escape attempt. Frederick removes a hobby item. The cellar feels smaller."
+      },
+      {
+        "step": 5,
+        "text": "The first fancy dinner. Both dress up. Frederick attempts to romance or connect. The Victim weighs their options across the candlelit table."
+      },
+      {
+        "step": 6,
+        "text": "The loop continues — new victims if needed — until the two conditions are finally met, or one of them doesn't make it."
+      }
     ],
     "endings": [
       {
@@ -151,64 +272,427 @@
       }
     ]
   },
+
   {
-    "id": "misery",
-    "title": "Misery",
-    "source": "Misery",
+    "id": "haunting-of-hill-house",
+    "title": "The Haunting of Hill House",
+    "source": "The Haunting of Hill House",
     "sourceType": "book",
-    "thumbnail": "/images/img-4.jpg",
-    "year": 1987,
-    "difficulty": "medium",
-    "tags": ["psychological", "captivity", "obsession", "two-person"],
-    "description": "Bestselling author Paul Sheldon crashes his car in a remote blizzard and is 'rescued' by Annie Wilkes — his self-proclaimed number one fan. When she discovers he has killed off her favourite character, things take a very dark turn.",
+    "thumbnail": "/images/sims-haunting-hill.png",
+    "year": 1959,
+    "difficulty": "hard",
+    "tags": [
+      "supernatural",
+      "psychological",
+      "isolation",
+      "ensemble",
+      "haunting",
+      "slow-burn"
+    ],
+    "description": "Dr Montague invites a small group to spend the summer at Hill House, a mansion with a long history of madness and death. As the weeks pass, the house begins to single out Eleanor — the most psychologically fragile of the guests — drawing her inward until she can no longer tell where she ends and the house begins. Based on the novel by Shirley Jackson and the 2018 Netflix series.",
+    "setup": [
+      "Build or download a large, asymmetrical, unsettling manor. Every room should feel slightly wrong — mismatched angles, too-dark corners, furniture that doesn't quite fit. Windenburg or Moonwood Mill are recommended worlds.",
+      "The house must have at least 6 rooms plus a cellar. One room — the Cold Room — must be furnished identically to Eleanor's childhood bedroom, down to the wallpaper. This room unlocks at Day 14.",
+      "Eleanor Vance is the protagonist — young adult, recently freed from a long caregiving stint. Suggested traits: Gloomy, Loner, Paranoid (use Erratic), Bookworm, Romantic. She begins the scenario with no friends and low household funds.",
+      "Dr Montague is an older adult academic — curious, well-meaning, increasingly out of his depth. Suggested traits: Bookworm, Genius, Proper, Oblivious (use Cheerful as ironic contrast).",
+      "Theodora is Eleanor's foil — confident, sociable, slightly cruel. Suggested traits: Outgoing, Mischievous, Creative, Self-Assured.",
+      "Luke Sanderson is the heir to Hill House — charming, unreliable, and secretly frightened. Suggested traits: Charming (use Romantic), Lazy, Kleptomaniac, Gloomy.",
+      "Add 1–2 additional household members or regular visitors to represent the research group. The house must never feel fully safe or fully explained."
+    ],
     "householdMembers": [
-      { "name": "Paul Sheldon", "role": "Captive Author", "traits": ["Bookworm", "Creative", "Neurotic"] },
-      { "name": "Annie Wilkes", "role": "The Rescuer", "traits": ["Perfectionist", "Volatile", "Neat"] }
+      {
+        "name": "Eleanor Vance",
+        "role": "The Chosen",
+        "traits": ["Gloomy", "Loner", "Erratic", "Bookworm", "Romantic"]
+      },
+      {
+        "name": "Dr Montague",
+        "role": "The Investigator",
+        "traits": ["Bookworm", "Genius", "Neat", "Cheerful"]
+      },
+      {
+        "name": "Theodora",
+        "role": "The Companion",
+        "traits": ["Outgoing", "Mischievous", "Creative", "Self-Assured"]
+      },
+      {
+        "name": "Luke Sanderson",
+        "role": "The Heir",
+        "traits": ["Romantic", "Lazy", "Kleptomaniac", "Gloomy"]
+      }
     ],
     "goals": [
-      "Paul: Write the novel Annie demands — and buy time.",
-      "Paul: Escape before Annie's obsession turns fully lethal.",
-      "Annie: Keep Paul writing and keep him hers.",
-      "Paul: Send a signal to the outside world."
+      "Eleanor must reach level 3 Friendship with every other household member — and then lose it. All friendships must decay back below Friend status before the ending triggers.",
+      "Eleanor must spend 3 consecutive in-game days with a red Social need and no successful friendly interactions.",
+      "The Cold Room must be discovered by Eleanor on or after Day 14."
+    ],
+    "rules": [
+      "Every day: Eleanor must spend at least 2 hours alone in a room not occupied by any other Sim.",
+      "Every day: roll a die or use a random trigger. On a 1 or 2, a 'haunting event' occurs — choose from: all lights on the lot flicker off for one in-game hour, a door locks or unlocks without explanation, Eleanor's hunger drops two bars instantly, or an object breaks.",
+      "Every day: Theodora must perform one socially cutting interaction toward Eleanor — teasing, dismissing, or excluding.",
+      "If Eleanor's mood is red for 2 consecutive days: she enters an Absorbed state. She may only interact with the house itself (objects, environment) for the next 24 hours — no social interactions.",
+      "The Cold Room remains locked until Day 14. When unlocked, Eleanor must spend her first waking hours of that day inside it alone.",
+      "No Sim may leave the lot for the first 21 days. Dr Montague may make one off-lot trip per week for supplies."
     ],
     "storyBeats": [
-      { "step": 1, "text": "Paul wakes in Annie's farmhouse, both legs broken." },
-      { "step": 2, "text": "Annie's devotion seems genuine — if extreme." },
-      { "step": 3, "text": "She reads the unpublished manuscript and her mood turns." },
-      { "step": 4, "text": "Paul begins writing Misery's Return to appease her." },
-      { "step": 5, "text": "Paul discovers what happened to Annie's previous 'guests'." },
-      { "step": 6, "text": "Paul's escape plan comes to a violent head." }
+      {
+        "step": 1,
+        "text": "The group arrives at Hill House. It is larger than expected and strangely quiet. Everyone agrees it has a peculiar atmosphere. No one agrees on what kind."
+      },
+      {
+        "step": 2,
+        "text": "The first haunting event. Something moves or changes without explanation. Dr Montague takes notes. Eleanor feels, privately, that it was meant for her."
+      },
+      {
+        "step": 3,
+        "text": "Friendships form — Eleanor and Theodora are briefly, warmly close. The house seems to ease. This does not last."
+      },
+      {
+        "step": 4,
+        "text": "Theodora pulls away. The hauntings intensify and become more personal. Eleanor finds writing on the wall that uses her name."
+      },
+      {
+        "step": 5,
+        "text": "The Cold Room unlocks. Eleanor steps inside and recognises it. She does not tell the others what she felt there."
+      },
+      {
+        "step": 6,
+        "text": "Eleanor can no longer be sure what is the house and what is herself. The others begin to talk about leaving. Eleanor does not want to go."
+      }
+    ],
+    "endings": [
+      {
+        "title": "Journey's End",
+        "text": "Eleanor's three friendship goals are met and then lost. Her Social need is red for 3 consecutive days. On Day 21 or later, when the others attempt to leave: Eleanor's Sim is directed to the car — but you cancel the action at the last moment. She remains. She is home. Remove Eleanor from the household. The others depart. Hill House stands empty."
+      },
+      {
+        "title": "The Rescue",
+        "text": "Dr Montague's mood remains green throughout and he retains Friend status with Eleanor to the end. He intervenes before the ending triggers — Eleanor is removed from the lot by taxi. She survives, changed. The research group never returns to Hill House."
+      },
+      {
+        "title": "The Record",
+        "text": "All four Sims survive to Day 28. Dr Montague completes his research notes (finish a book on the Writing skill). The group departs. Hill House is left exactly as it was. Whatever lived there is still living there."
+      }
     ]
   },
+
   {
-    "id": "get-out",
-    "title": "Get Out",
-    "source": "Get Out",
-    "sourceType": "film",
-    "thumbnail": "/images/img-1.jpg",
-    "year": 2017,
+    "id": "rosemarys-baby",
+    "title": "Rosemary's Baby",
+    "source": "Rosemary's Baby",
+    "sourceType": "book",
+    "thumbnail": "/images/img-2.jpg",
+    "year": 1967,
     "difficulty": "medium",
-    "tags": ["psychological", "body-horror", "family", "modern"],
-    "description": "Chris Washington travels to meet his girlfriend Rose's family for the weekend. The idyllic estate feels off from the start — and the Black groundskeeper and housekeeper seem strangely hollowed out. Something is very, very wrong.",
+    "tags": [
+      "supernatural",
+      "paranoia",
+      "pregnancy",
+      "isolation",
+      "cult",
+      "psychological"
+    ],
+    "description": "Rosemary and Guy Woodhouse move into the Bramford, a prestigious Manhattan apartment building with a dark history. Their neighbours — the Castevets — are warm, eccentric, and entirely too interested in Rosemary's wellbeing. As her pregnancy progresses, Rosemary becomes increasingly certain that something is very wrong — with her body, her husband, and everyone around her. Based on the novel by Ira Levin and the 1968 film directed by Roman Polanski.",
+    "setup": [
+      "Use an apartment lot or a large multi-unit build in a city world — San Myshuno is ideal. The Woodhouse apartment should be comfortable but modestly furnished.",
+      "The Castevet apartment must share a wall with the Woodhouses. It should be cluttered with herbs, occult objects, and overly personal decor.",
+      "Rosemary is a young adult — warm, sociable, and recently married. Suggested traits: Romantic, Family-Oriented, Outgoing, Neat, Cheerful. She begins the scenario with no pregnancy.",
+      "Guy Woodhouse is an ambitious young adult actor — charming on the surface, hollow beneath. Suggested traits: Romantic, Self-Assured, Ambitious, Jealous, Snob.",
+      "Minnie Castevet is a loud, intrusive older adult neighbour — impossible to dislike on the surface. Suggested traits: Outgoing, Nosy (use Mischievous), Cheerful, Mean. She has high Cooking skill and always arrives with food.",
+      "Roman Castevet is Minnie's husband — quiet, watchful, distinguished. Suggested traits: Genius, Snob, Loner, Gloomy.",
+      "Rosemary must become pregnant by Day 7. From that point, her autonomy begins to narrow — track her needs carefully and apply restrictions weekly."
+    ],
     "householdMembers": [
-      { "name": "Chris Washington", "role": "Visitor", "traits": ["Artistic", "Perceptive", "Loyal"] },
-      { "name": "Rose Armitage", "role": "Girlfriend", "traits": ["Charming", "Outgoing", "Romantic"] },
-      { "name": "Dean Armitage", "role": "Father", "traits": ["Ambitious", "Charismatic", "Perfectionist"] },
-      { "name": "Missy Armitage", "role": "Mother / Therapist", "traits": ["Cold", "Neat", "Bookworm"] }
+      {
+        "name": "Rosemary Woodhouse",
+        "role": "The Mother",
+        "traits": [
+          "Romantic",
+          "Family-Oriented",
+          "Outgoing",
+          "Neat",
+          "Cheerful"
+        ]
+      },
+      {
+        "name": "Guy Woodhouse",
+        "role": "The Husband",
+        "traits": ["Romantic", "Self-Assured", "Ambitious", "Jealous"]
+      },
+      {
+        "name": "Minnie Castevet",
+        "role": "The Neighbour",
+        "traits": ["Outgoing", "Mischievous", "Cheerful", "Mean"]
+      },
+      {
+        "name": "Roman Castevet",
+        "role": "The Architect",
+        "traits": ["Genius", "Snob", "Loner", "Gloomy"]
+      }
     ],
     "goals": [
-      "Survive the weekend visit.",
-      "Uncover what is really happening to the staff.",
-      "Escape the estate before the auction.",
-      "Expose the Armitage family."
+      "Rosemary must carry a pregnancy to term while her Friendship score with every non-household Sim decays to zero.",
+      "Guy must reach Soulmate status with either Minnie or Roman — representing his complicity.",
+      "Rosemary must spend the final 7 days of pregnancy unable to leave the apartment lot."
+    ],
+    "rules": [
+      "Every day: Minnie visits and brings a meal or drink. Rosemary must consume it before Minnie leaves.",
+      "Every day from Week 2 onward: Rosemary loses access to one outside friendship. Use the relationship panel to gradually decay non-household relationships.",
+      "Every day: Guy must perform one social interaction with the Castevets before interacting with Rosemary.",
+      "Once per week: Rosemary is permitted one off-lot outing without Guy. If her mood drops to red during this outing, she must return immediately.",
+      "From Week 3 onward: Rosemary may not call, text, or invite any Sim outside the Castevet circle. Lock her phone interactions if possible via mods, or use the honour system.",
+      "Any time Rosemary's Comfort or Social drops to red: Guy and Minnie must immediately attend to her — but only in ways that serve their goal, not hers."
     ],
     "storyBeats": [
-      { "step": 1, "text": "Chris and Rose arrive at the grand Armitage estate." },
-      { "step": 2, "text": "The groundskeeper and housekeeper behave unnervingly." },
-      { "step": 3, "text": "A garden party introduces Chris to a crowd of interested strangers." },
-      { "step": 4, "text": "Missy hypnotises Chris — he sinks into the Sunken Place." },
-      { "step": 5, "text": "Chris uncovers the photo album and the terrible truth." },
-      { "step": 6, "text": "Chris fights his way out — or doesn't." }
+      {
+        "step": 1,
+        "text": "Rosemary and Guy settle into the Bramford. The apartment is perfect. The Castevets next door are a little much — but warm, and generous, and always there."
+      },
+      {
+        "step": 2,
+        "text": "Rosemary falls pregnant. Everyone is delighted. Minnie begins bringing her daily drinks — tannis root, she says. Good for the baby."
+      },
+      {
+        "step": 3,
+        "text": "Rosemary's old friendships begin to fade. Her calls go unreturned. Guy is busy, distracted, and oddly cheerful for a man whose wife is suffering."
+      },
+      {
+        "step": 4,
+        "text": "The pregnancy is difficult. Rosemary loses weight. The doctor Minnie recommends dismisses her concerns. Guy agrees with the doctor."
+      },
+      {
+        "step": 5,
+        "text": "Rosemary begins to piece it together — too slowly, too late. She reaches out to an old friend. He dies before he can help her."
+      },
+      {
+        "step": 6,
+        "text": "The baby is coming. Rosemary is not allowed to leave."
+      }
+    ],
+    "endings": [
+      {
+        "title": "All of Them Witches",
+        "text": "Rosemary carries the pregnancy to term. She has no friendships outside the apartment. She is shown the baby and, after a moment of horror, begins to rock the cradle. The scenario ends. Guy and the Castevets have won. The baby will be raised in the Bramford."
+      },
+      {
+        "title": "The Escape",
+        "text": "If Rosemary retains at least one outside friendship at full green and her mood is green for 3 consecutive days in Week 5: she escapes the lot before the birth. Move her to a new apartment alone. She raises the child. She never sees Guy or the Castevets again."
+      },
+      {
+        "title": "The Doubt",
+        "text": "Rosemary's mood is consistently red through the final trimester. She gives birth, sees the baby, and does nothing. She neither rocks the cradle nor flees. She sits in the room and the scenario simply ends, unresolved — which is the most honest ending of all."
+      }
+    ]
+  },
+
+  {
+    "id": "the-shining",
+    "title": "The Shining",
+    "source": "The Shining",
+    "sourceType": "book",
+    "thumbnail": "/images/sims-shining.png",
+    "year": 1977,
+    "difficulty": "hard",
+    "tags": [
+      "supernatural",
+      "isolation",
+      "family",
+      "addiction",
+      "psychological",
+      "horror"
+    ],
+    "description": "Jack Torrance takes a job as winter caretaker of the Overlook Hotel, bringing his wife Wendy and young son Danny. Isolated by snow and stalked by something that knows Jack's every weakness, the family slowly comes apart. Based on the novel by Stephen King and the 1980 film directed by Stanley Kubrick.",
+    "setup": [
+      "Build or download a large, labyrinthine hotel lot — many corridors, ornate rooms, a grand ballroom, and a hedge maze if possible. Moonwood Mill or a large Windenburg lot works well.",
+      "The caretaker's quarters must be separated from the hotel's public rooms — Jack's office, a typewriter, and a bar are essential.",
+      "Jack Torrance is a middle-aged adult — a writer in recovery, brilliant and brittle. Suggested traits: Creative, Bookworm, Hot-Headed, Erratic, Mean. He must begin the scenario with zero Wellness skill and no bar-related objects in his quarters.",
+      "Wendy Torrance is a young adult — practical, loving, and far stronger than she appears. Suggested traits: Family-Oriented, Neat, Brave (use Active), Romantic, Gloomy.",
+      "Danny Torrance is a child Sim — unusually perceptive, sensitive, and frightened of Room 217. Suggested traits: Genius, Bookworm, Loner.",
+      "The hotel bar must be locked for the first 14 days. When it unlocks, Jack gains free access. Track his bar visits daily.",
+      "Room 217 (or 237) must be locked for the entire scenario. It may be furnished however you choose — but no Sim should enter it unless triggering an event."
+    ],
+    "householdMembers": [
+      {
+        "name": "Jack Torrance",
+        "role": "The Caretaker",
+        "traits": ["Creative", "Bookworm", "Hot-Headed", "Erratic", "Mean"]
+      },
+      {
+        "name": "Wendy Torrance",
+        "role": "The Wife",
+        "traits": ["Family-Oriented", "Neat", "Active", "Romantic", "Gloomy"]
+      },
+      {
+        "name": "Danny Torrance",
+        "role": "The Boy",
+        "traits": ["Genius", "Bookworm", "Loner"]
+      }
+    ],
+    "goals": [
+      "Jack must complete a manuscript — reach Writing level 5 — before the hotel bar unlocks. If he does not, his deterioration accelerates.",
+      "Jack's relationship with Wendy must decay from Good Friends to Enemies status.",
+      "Danny must retain green mood throughout — the scenario ends early if he is harmed."
+    ],
+    "rules": [
+      "Every day: Jack must spend at least 3 hours writing. If he does not, his Erratic trait triggers — he must perform one mean or mischievous interaction that day.",
+      "Every day from Day 14 onward: Jack may visit the bar. Each visit costs one positive relationship point with Wendy.",
+      "Every day: Danny must spend time alone in a part of the hotel away from Jack.",
+      "Once per week: a 'hotel event' occurs — choose from: a mysterious locked door opens, a social interaction appears between Jack and an invisible guest, a room fills with water, or a piece of furniture moves.",
+      "If Jack's mood is red for 2 consecutive days: he enters a Rage state. He must perform mean interactions with every household member before his mood can recover.",
+      "Wendy may not leave the lot without Danny. If Danny's mood drops to red, Wendy immediately attempts to organise departure."
+    ],
+    "storyBeats": [
+      {
+        "step": 1,
+        "text": "The Torrance family arrives at the Overlook as the last guests depart. The hotel is magnificent and enormous and entirely theirs."
+      },
+      {
+        "step": 2,
+        "text": "Jack writes. The manuscript grows slowly. The hotel is quiet. Danny explores its corridors and avoids Room 217 for reasons he cannot explain."
+      },
+      {
+        "step": 3,
+        "text": "The snow comes. The road closes. The hotel gets louder — or seems to. Jack hears things in the ballroom."
+      },
+      {
+        "step": 4,
+        "text": "The bar unlocks. Jack tells himself one drink won't hurt. Wendy watches his eyes when he comes back to their quarters."
+      },
+      {
+        "step": 5,
+        "text": "Jack's manuscript is abandoned. The pages he reads back to himself are not what he thought he wrote."
+      },
+      {
+        "step": 6,
+        "text": "The hotel has Jack now. Danny calls for help. The hedge maze is the last place any of them want to be."
+      }
+    ],
+    "endings": [
+      {
+        "title": "REDRUM",
+        "text": "Jack's relationship with Wendy reaches Enemies. He enters a Rage state and pursues Wendy and Danny across the lot. If Wendy and Danny escape the lot by any means — taxi, door — while Jack is confined to the hotel wing: they survive. Jack remains. He has always been the caretaker."
+      },
+      {
+        "title": "The Manuscript",
+        "text": "Jack reaches Writing level 5 before Day 14 and does not visit the bar at all. His mood stabilises. He and Wendy reach Soulmate status. They leave the Overlook at season's end. The hotel stands empty again, waiting for the next caretaker."
+      },
+      {
+        "title": "All Work and No Play",
+        "text": "Jack's manuscript is never finished. His mood remains red. He never leaves the bar wing. Wendy and Danny depart on Day 21 without him. Jack stays behind. The scenario ends when he reaches Enemies status with every household member. He is home."
+      }
+    ]
+  },
+
+  {
+    "id": "the-others",
+    "title": "The Others",
+    "source": "The Others",
+    "sourceType": "film",
+    "thumbnail": "/images/img-1.jpg",
+    "year": 2001,
+    "difficulty": "medium",
+    "tags": [
+      "gothic",
+      "supernatural",
+      "family",
+      "isolation",
+      "twist",
+      "slow-burn"
+    ],
+    "description": "Grace Stewart waits in her fog-bound wartime manor for her husband to return from the front, protecting her two photosensitive children with religious ferocity. Three new servants arrive. Strange things begin to happen. Grace is certain the house is haunted. She is not wrong — but she is not right, either. Written and directed by Alejandro Amenábar.",
+    "setup": [
+      "Build or download a large, dark Victorian manor surrounded by fog — Moonwood Mill or a custom Windenburg lot. All windows must be covered with heavy curtains or blocked by shrubs. No natural light should reach the interior.",
+      "The house must have a sealed room — locked, curtained, never redecorated. This is the children's former nursery.",
+      "Grace Stewart is a middle-aged adult — devout, controlling, exhausted. Suggested traits: Neat, Mean, Gloomy, Paranoid (use Erratic), Family-Oriented. She begins with no outside friendships.",
+      "Anne and Nicholas are child Sims — Anne is older, curious, and prone to telling her mother uncomfortable truths. Nicholas is younger and more fearful. Both have the Gloomy trait and must remain indoors at all times.",
+      "The three servants — Mrs Mills, Mr Tuttle, and Lydia — are older adults. Suggested traits: Gloomy, Loner, Perfectionist. They arrived without references. They never discuss where they came from.",
+      "The house must remain dark — use the lowest lighting settings possible throughout. Candles and low-wattage lamps only.",
+      "No other Sims should visit the lot. Any NPC who arrives uninvited must be immediately turned away by Grace."
+    ],
+    "householdMembers": [
+      {
+        "name": "Grace Stewart",
+        "role": "The Mother",
+        "traits": ["Neat", "Mean", "Gloomy", "Erratic", "Family-Oriented"]
+      },
+      {
+        "name": "Anne Stewart",
+        "role": "The Daughter",
+        "traits": ["Gloomy", "Outgoing", "Bookworm"]
+      },
+      {
+        "name": "Nicholas Stewart",
+        "role": "The Son",
+        "traits": ["Gloomy", "Loner", "Neat"]
+      },
+      {
+        "name": "Mrs Mills",
+        "role": "The Housekeeper",
+        "traits": ["Gloomy", "Loner", "Perfectionist"]
+      },
+      {
+        "name": "Mr Tuttle",
+        "role": "The Gardener",
+        "traits": ["Gloomy", "Loner", "Neat"]
+      },
+      {
+        "name": "Lydia",
+        "role": "The Maid",
+        "traits": ["Gloomy", "Loner", "Perfectionist"]
+      }
+    ],
+    "goals": [
+      "Grace must maintain green mood for all three children and servants simultaneously for 7 consecutive days — her control holds.",
+      "Anne must trigger a 'truth event' — she must initiate a conversation with Grace that results in a negative moodlet or tense interaction.",
+      "Grace must discover the servants' secret — represented by finding the sealed room unlocked on Day 21."
+    ],
+    "rules": [
+      "Every day: all curtains and windows must remain blocked. If any Sim autonomously opens a curtain, Grace must immediately close it and scold that Sim.",
+      "Every day: Grace leads the children in a structured lesson or religious reading — represented by a 1-hour period of no autonomous actions for the children.",
+      "Every day: Anne must attempt one act of minor defiance — opening a curtain, leaving her room, or speaking to a servant without Grace's knowledge.",
+      "Once per week: a 'presence event' occurs — a door opens by itself, an object moves, or Anne reports seeing a figure in the curtained room. Grace must investigate and find nothing.",
+      "Grace may not leave the lot under any circumstances. She is waiting for her husband to return.",
+      "If Grace's mood drops to red for 2 consecutive days: she locks the children in their room for 24 hours and does not interact with the servants."
+    ],
+    "storyBeats": [
+      {
+        "step": 1,
+        "text": "The servants arrive on a foggy morning with no references and no explanation. Grace hires them anyway — the house is too large to manage alone."
+      },
+      {
+        "step": 2,
+        "text": "Anne tells her mother she has seen a boy in the house. Grace dismisses it. The servants exchange a glance she does not see."
+      },
+      {
+        "step": 3,
+        "text": "The presences multiply. Curtains open by themselves. Voices come from sealed rooms. Grace's control of the household begins to cost her more than it gives."
+      },
+      {
+        "step": 4,
+        "text": "Charles Stewart returns from the front — changed, distant, wrong. He does not stay. His departure is worse than his absence."
+      },
+      {
+        "step": 5,
+        "text": "Grace confronts the servants. Mrs Mills speaks carefully. What she says does not make sense — until suddenly, horribly, it does."
+      },
+      {
+        "step": 6,
+        "text": "The sealed room opens. Anne was telling the truth all along. Grace has always known, somewhere, what the truth was."
+      }
+    ],
+    "endings": [
+      {
+        "title": "This House Is Ours",
+        "text": "Grace reaches Day 21. The sealed room opens. Grace enters and finds it furnished as the servants left it — not as she arranged it. She understands. She gathers the children. She tells them they may never leave, but she says it more gently than before. The servants stay. They have nowhere else to go. The manor endures."
+      },
+      {
+        "title": "The Husband Returns",
+        "text": "If a male Sim is added to the household on Day 14 and then removed again within 48 hours: this represents Charles's brief return. If Grace's mood is green when he departs: she accepts her situation with something close to peace. The house settles."
+      },
+      {
+        "title": "The Intruders",
+        "text": "An NPC successfully enters the lot and encounters Grace. Grace's erratic trait triggers — she attacks or drives them off. The NPC calls for help. Officials arrive. The scenario ends with outsiders inside Manderley — and Grace, finally, having to explain herself."
+      }
     ]
   },
   {
@@ -216,381 +700,529 @@
     "title": "Hereditary",
     "source": "Hereditary",
     "sourceType": "film",
-    "thumbnail": "/images/img-2.jpg",
+    "thumbnail": "/images/hereditary.jpg",
     "year": 2018,
     "difficulty": "hard",
-    "tags": ["supernatural", "family", "grief", "cult"],
-    "description": "After the Graham family matriarch passes away, her daughter Annie begins uncovering dark family secrets. Grief and dread spiral into something far more sinister as an ancient force closes in on the family.",
+    "tags": ["supernatural", "family", "grief", "slow-burn", "cult", "psychological"],
+    "description": "When Ellen Graham dies, her daughter Annie begins to unravel the disturbing secrets her mother kept hidden. As grief spreads through the family like an infection, something older and more deliberate moves in behind it. Written and directed by Ari Aster.",
+    "setup": [
+      "Use a large isolated house on a rural lot — Henford-on-Bagley is ideal. A treehouse or separate backyard structure represents the grandmother's private space and later the cult's gathering place.",
+      "Annie Graham is a middle-aged adult — an artist, precise and controlled, with grief she has not yet located. Suggested traits: Creative, Perfectionist, Gloomy, Erratic, Bookworm. She works from a home studio.",
+      "Steve Graham is a middle-aged adult — steady, patient, and fatally passive. Suggested traits: Good, Neat, Family-Oriented, Cheerful. He is the household's emotional ballast and the scenario suffers when he is gone.",
+      "Peter Graham is a teenage Sim — detached, guilty, slowly being hollowed out. Suggested traits: Loner, Lazy, Gloomy, Erratic.",
+      "Charlie Graham is a child Sim — strange, watchful, allergic. Suggested traits: Loner, Gloomy, Creative. She must carry a nut allergy flag — no nut-containing foods may be served to her.",
+      "Ellen Graham does not appear as a playable Sim. She is represented by a locked attic room filled with her belongings, photos, and a single shrine object. This room unlocks on Day 3.",
+      "Annie's miniature workshop must contain small doll-house builds that mirror the family home exactly — use debug objects and miniature furniture to replicate each room of the lot.",
+      "A second structure on the lot — the treehouse or shed — must be locked until Day 14. It contains occult objects, cult symbols, and a copy of the same photo that appears in Ellen's attic."
+    ],
     "householdMembers": [
-      { "name": "Annie Graham", "role": "Mother / Artist", "traits": ["Creative", "Neurotic", "Ambitious"] },
-      { "name": "Steve Graham", "role": "Father", "traits": ["Family-Oriented", "Patient", "Neat"] },
-      { "name": "Peter Graham", "role": "Son", "traits": ["Lazy", "Childish", "Loner"] },
-      { "name": "Charlie Graham", "role": "Daughter", "traits": ["Odd", "Creative", "Loner"] }
+      { "name": "Annie Graham", "role": "The Mother", "traits": ["Creative", "Perfectionist", "Gloomy", "Erratic", "Bookworm"] },
+      { "name": "Steve Graham", "role": "The Father", "traits": ["Good", "Neat", "Family-Oriented", "Cheerful"] },
+      { "name": "Peter Graham", "role": "The Son", "traits": ["Loner", "Lazy", "Gloomy", "Erratic"] },
+      { "name": "Charlie Graham", "role": "The Daughter", "traits": ["Loner", "Gloomy", "Creative"] }
     ],
     "goals": [
-      "Process grief following the grandmother's death.",
-      "Keep the family from fracturing under pressure.",
-      "Uncover what the grandmother was involved in.",
-      "Escape the cult's design for your family."
+      "Annie must complete three miniature builds in her workshop — one for each major story beat — before the scenario ends.",
+      "Steve must retain Good Friends status with Annie until the moment he cannot.",
+      "Peter must reach rock-bottom mood — red in every need category simultaneously — before the final story beat triggers.",
+      "Charlie must be removed from the household by Day 7. How this happens is your choice — but it must happen."
+    ],
+    "rules": [
+      "Every day: Annie spends at least 2 hours in her workshop. If she does not, her Erratic trait triggers — she must perform one hostile interaction with a family member.",
+      "Every day: Charlie performs one strange autonomous behaviour — clicking her tongue (represented by a repetitive idle animation), drawing alone, or eating something she should not.",
+      "Charlie must never attend a social event or leave the lot with more than one other Sim present.",
+      "Once Charlie is removed from the household on Day 7: Peter's mood immediately drops to red and may not recover above yellow for the remainder of the scenario.",
+      "Every day after Day 7: Annie must attempt one interaction with Peter. He must reject it — use mean or dismissive responses only.",
+      "From Day 14 onward: Annie begins attending a grief support group — represented by a weekly off-lot visit. Joan, an NPC she meets there, must be invited to the lot at least once.",
+      "Joan must never enter the house. She may only interact with Annie in the garden or on the lot boundary.",
+      "Once Joan visits: Annie begins performing a ritual in the backyard each night. Represent this by having Annie stand outside alone for one in-game hour after dark."
     ],
     "storyBeats": [
-      { "step": 1, "text": "The family attends the grandmother's funeral and struggles with grief." },
-      { "step": 2, "text": "Charlie's strange behaviour intensifies." },
-      { "step": 3, "text": "A catastrophic accident tears the family apart." },
-      { "step": 4, "text": "Annie discovers her mother's occult history." },
-      { "step": 5, "text": "Something begins to inhabit members of the household." },
-      { "step": 6, "text": "The ritual reaches its terrible conclusion." }
+      { "step": 1, "text": "Ellen Graham is buried. The family returns to the house. Annie begins a new miniature — a recreation of the funeral. Charlie watches from the doorway and makes her sound." },
+      { "step": 2, "text": "The attic unlocks. Annie finds her mother's things — photos, letters, names she does not recognise. The treehouse at the back of the lot catches her eye." },
+      { "step": 3, "text": "Charlie is removed from the household. The manner of it is sudden and wrong. Peter drives home alone. Annie does not sleep." },
+      { "step": 4, "text": "The grief support group. Joan is kind and specific in ways that feel rehearsed. She teaches Annie something she should not have learned." },
+      { "step": 5, "text": "Annie finds the treehouse unlocked. Inside: her mother's work, the cult's marks, and the realisation that grief was never the point. The ritual was." },
+      { "step": 6, "text": "Peter's body is no longer entirely Peter's. Annie moves through the house above him. Steve stands between them for as long as he can." }
+    ],
+    "endings": [
+      {
+        "title": "Reigning",
+        "text": "Peter's mood reaches critical red across all needs. Steve is removed from the household by any means. Annie completes her third miniature — a replica of the treehouse. Move Annie to the treehouse permanently and lock the main house. Peter remains inside alone. The cult has what it came for. Paimon is seated."
+      },
+      {
+        "title": "The Notebook",
+        "text": "Steve discovers Annie's ritual notebook before Day 21. His mood drops to red. He burns it — remove the occult objects from the lot. Annie's erratic trait triggers into full breakdown. The ritual is interrupted. The family does not survive intact, but Paimon does not get his throne. The cost is everything anyway."
+      },
+      {
+        "title": "The Miniature",
+        "text": "Annie completes all three miniatures but Steve remains in the household with green mood to the end. The ritual is never completed. The scenario ends with the family fractured but present — living inside a house that is already, in every way that matters, a doll's house."
+      }
     ]
   },
+
   {
-    "id": "rosemarys-baby",
-    "title": "Rosemary's Baby",
-    "source": "Rosemary's Baby",
+    "id": "midsommar",
+    "title": "Midsommar",
+    "source": "Midsommar",
     "sourceType": "film",
-    "thumbnail": "/images/img-3.jpg",
-    "year": 1968,
+    "thumbnail": "/images/midsommar.jpg",
+    "year": 2019,
     "difficulty": "medium",
-    "tags": ["cult", "supernatural", "pregnancy", "paranoia"],
-    "description": "Rosemary and Guy Woodhouse move into a grand New York apartment and befriend their eccentric elderly neighbours. As Rosemary's pregnancy advances, she becomes increasingly convinced that a sinister conspiracy surrounds her unborn child.",
+    "tags": ["folk-horror", "cult", "grief", "travel", "community", "psychological"],
+    "description": "Dani Ardor travels to Sweden with her emotionally distant boyfriend Christian and his friends to attend a midsummer festival at a rural commune. The commune is beautiful, generous, and entirely closed. The festival runs for ninety days. Not everyone is meant to leave. Written and directed by Ari Aster.",
+    "setup": [
+      "Build or download a bright, open Scandinavian commune — flower arches, communal dining tables, a large decorated Maypole, and several small sleeping cottages. Snowy worlds repurposed with spring/summer colour work well. Everything should be excessively cheerful.",
+      "One building on the commune lot must be locked and curtained — the Ritual Temple. It unlocks at Day 21.",
+      "Dani Ardor is a young adult — recently bereaved, emotionally dependent, and far stronger than she knows. Suggested traits: Gloomy, Romantic, Bookworm, Emotional (use Erratic), Family-Oriented.",
+      "Christian Hughes is a young adult — handsome, non-committal, and coasting. Suggested traits: Romantic, Lazy, Self-Assured, Noncommittal (use Loner). He should not initiate affectionate interactions with Dani.",
+      "Josh is a young adult academic — serious, opportunistic, here for his thesis. Suggested traits: Bookworm, Genius, Ambitious, Loner.",
+      "Mark is a young adult — crass, impatient, and magnificently unsuited for the situation. Suggested traits: Outgoing, Hot-Headed, Lazy, Mischievous.",
+      "Pelle is a young adult commune member — warm, genuine, and the reason any of them are here. Suggested traits: Outgoing, Cheerful, Romantic, Mischievous. He is the only commune member the visitors fully trust.",
+      "Add 6–8 commune NPCs as household members or frequent visitors. They must always be in groups — no commune member should be alone with a visitor unless a ritual event triggers.",
+      "All visitors begin the scenario in the same sleeping cottage. The cottage has no locks on the inside."
+    ],
     "householdMembers": [
-      { "name": "Rosemary Woodhouse", "role": "Wife", "traits": ["Family-Oriented", "Neat", "Neurotic"] },
-      { "name": "Guy Woodhouse", "role": "Husband / Actor", "traits": ["Ambitious", "Charming", "Selfish"] },
-      { "name": "Minnie Castevet", "role": "Neighbour", "traits": ["Nosy", "Cheerful", "Manipulative"] }
+      { "name": "Dani Ardor", "role": "The Grieving", "traits": ["Gloomy", "Romantic", "Bookworm", "Erratic", "Family-Oriented"] },
+      { "name": "Christian Hughes", "role": "The Boyfriend", "traits": ["Romantic", "Lazy", "Self-Assured", "Loner"] },
+      { "name": "Josh", "role": "The Scholar", "traits": ["Bookworm", "Genius", "Ambitious", "Loner"] },
+      { "name": "Mark", "role": "The Loud One", "traits": ["Outgoing", "Hot-Headed", "Lazy", "Mischievous"] },
+      { "name": "Pelle", "role": "The Host", "traits": ["Outgoing", "Cheerful", "Romantic", "Mischievous"] }
     ],
     "goals": [
-      "Settle into the new apartment and start a family.",
-      "Rosemary must have a healthy pregnancy.",
-      "Uncover what the neighbours really want.",
-      "Protect the baby — or decide what the baby truly is."
+      "Dani must be crowned May Queen — reach the highest Charisma score among all female Sims on the lot by Day 14.",
+      "Christian, Josh, and Mark must each be removed from the household before Day 28. The order and method are your choice.",
+      "Dani must end the scenario with green mood and a new Best Friend among the commune members."
+    ],
+    "rules": [
+      "Every day: the commune provides all meals. Visitors may not cook for themselves.",
+      "Every day: at least one commune ritual must be performed — represented by all Sims on the lot gathering at the Maypole or communal table for one hour.",
+      "Every day: Christian must fail to comfort Dani at least once — if her mood drops, he must be directed away rather than toward her.",
+      "Every day: Pelle must perform one warm, attentive interaction with Dani that Christian does not.",
+      "Once per week: a visitor is removed from the household. The commune members' moods all improve when this happens.",
+      "Mark must be the first visitor removed — on or before Day 7 — due to an act of disrespect on the commune grounds.",
+      "Josh must be removed between Day 7 and Day 14 — caught where he should not be, taking what was not offered.",
+      "Christian must be removed last — on or before Day 21 — in a manner befitting the Maypole.",
+      "After each removal: Dani's relationship with the remaining commune members improves by one tier.",
+      "Dani may not leave the lot at any point. She chose to stay — even when she could have gone."
     ],
     "storyBeats": [
-      { "step": 1, "text": "Rosemary and Guy move in and meet the Castevets." },
-      { "step": 2, "text": "Rosemary becomes pregnant after a disturbing night." },
-      { "step": 3, "text": "The neighbours grow intrusive — Rosemary's doctor is complicit." },
-      { "step": 4, "text": "Rosemary's suspicions deepen as she loses trust in everyone." },
-      { "step": 5, "text": "She tries to reach someone outside the conspiracy." },
-      { "step": 6, "text": "The baby arrives. Rosemary faces an impossible choice." }
+      { "step": 1, "text": "The commune greets them with flowers and open arms. The food is extraordinary. The light never quite fades. Dani cries once, privately, and Pelle is the only one who notices." },
+      { "step": 2, "text": "The first ritual. It is not what any of them expected. Mark laughs. The commune does not." },
+      { "step": 3, "text": "Mark does something unforgivable on sacred ground. He is gone before the others fully register his absence." },
+      { "step": 4, "text": "Josh disappears in the night, chasing his thesis. His notes are found but he is not." },
+      { "step": 5, "text": "The May Queen competition. Dani dances until everyone else falls. She is crowned. She weeps and the commune weeps with her — genuinely, collectively, and for the first time she does not feel her grief alone." },
+      { "step": 6, "text": "Christian is brought to the Maypole. Dani is given a choice. She looks at him for a long moment. She makes it." }
+    ],
+    "endings": [
+      {
+        "title": "The May Queen",
+        "text": "All three male visitors have been removed. Dani's mood is green. She watches the Ritual Temple burn from a flower-covered throne, surrounded by commune members who are crying with her. She is smiling. She is home. She was always going to stay."
+      },
+      {
+        "title": "The Escape",
+        "text": "If Christian retains Friend status with Dani through Day 21 and his mood remains green: Dani chooses not to condemn him. Both leave the commune lot together before Day 28. Pelle watches them go. The commune begins preparing for next year."
+      },
+      {
+        "title": "The Thesis",
+        "text": "Josh completes his research notes before being removed and hides them off-lot. He survives to Day 28 and leaves with the notes. The commune does not pursue him. The thesis is published the following year. It wins an award. No one who reads it believes it."
+      }
     ]
   },
+
   {
-    "id": "it",
-    "title": "It",
-    "source": "It",
-    "sourceType": "book",
-    "thumbnail": "/images/img-4.jpg",
-    "year": 1986,
-    "difficulty": "hard",
-    "tags": ["supernatural", "childhood", "group", "small-town"],
-    "description": "In the town of Derry, children are disappearing. A group of outcast kids calling themselves the Losers' Club come face to face with an ancient shapeshifting evil that preys on their deepest fears — most often appearing as Pennywise the Dancing Clown.",
-    "householdMembers": [
-      { "name": "Bill Denbrough", "role": "Leader", "traits": ["Brave", "Creative", "Hot-Headed"] },
-      { "name": "Beverly Marsh", "role": "Loner", "traits": ["Brave", "Artistic", "Outgoing"] },
-      { "name": "Ben Hanscom", "role": "New Kid", "traits": ["Bookworm", "Sensitive", "Loyal"] },
-      { "name": "Richie Tozier", "role": "Joker", "traits": ["Goofball", "Outgoing", "Childish"] },
-      { "name": "Eddie Kaspbrak", "role": "Hypochondriac", "traits": ["Neat", "Cowardly", "Loyal"] }
-    ],
-    "goals": [
-      "Discover what is killing children in Derry.",
-      "Face your greatest fear — without breaking.",
-      "Defeat It before another child dies.",
-      "Keep the Losers' Club together."
-    ],
-    "storyBeats": [
-      { "step": 1, "text": "The Losers each encounter Pennywise alone and terrified." },
-      { "step": 2, "text": "The group forms — finding strength in numbers." },
-      { "step": 3, "text": "They research Derry's horrifying history." },
-      { "step": 4, "text": "The Losers venture into the sewers to confront It." },
-      { "step": 5, "text": "It exploits each child's deepest fear in turn." },
-      { "step": 6, "text": "The ritual: face It with belief and drive it back — or be consumed." }
-    ]
-  },
-  {
-    "id": "psycho",
-    "title": "Psycho",
-    "source": "Psycho",
+    "id": "crimson-peak",
+    "title": "Crimson Peak",
+    "source": "Crimson Peak",
     "sourceType": "film",
-    "thumbnail": "/images/img-1.jpg",
-    "year": 1960,
+    "thumbnail": "/images/crimson-peak.jpg",
+    "year": 2015,
     "difficulty": "medium",
-    "tags": ["slasher", "psychological", "isolation", "identity"],
-    "description": "Marion Crane is on the run with stolen money when she stops at the lonely Bates Motel. The quiet, awkward Norman Bates seems harmless enough — but something is very wrong in the house on the hill.",
+    "tags": ["gothic", "romance", "supernatural", "sibling", "poison", "slow-burn"],
+    "description": "Aspiring author Edith Cushing marries the charming English baronet Thomas Sharpe and is brought to Allerdale Hall — his decaying ancestral home in the north of England, built on a clay mine that bleeds red through the snow. His sister Lucille has never left the house. Neither has anyone Thomas married before. Directed by Guillermo del Toro.",
+    "setup": [
+      "Build a large, deteriorating Victorian manor — crumbling plaster, dead garden, a collapsed section of roof open to the sky. The upper floors should feel abandoned. Moonwood Mill or a custom Windenburg lot works well.",
+      "The house must have a basement — the clay mine. This space is dark, wet-looking, and contains one locked room representing the elevator shaft. It unlocks at Day 21.",
+      "Edith Cushing is a young adult — a writer, observant, and romantically inexperienced. Suggested traits: Bookworm, Creative, Romantic, Neat, Outgoing. She arrives with her own household funds which immediately transfer to Thomas.",
+      "Thomas Sharpe is a young adult — beautiful, melancholy, genuinely conflicted. Suggested traits: Romantic, Gloomy, Creative, Charming (use Self-Assured), Loner. He is not entirely villainous — this matters for the ending.",
+      "Lucille Sharpe is a young adult — immaculate, musical, and the true architect of everything. Suggested traits: Perfectionist, Mean, Gloomy, Loner, Creative. She plays piano daily. She has never left the lot.",
+      "The house must contain a gramophone or piano that Lucille plays every morning without fail.",
+      "Edith's teacup must be a distinct colour from all other cups in the house. She drinks from it every day. Lucille prepares it.",
+      "Scatter ghost-light objects or debug spirit items throughout the upper floors — the previous wives are here, trying to warn Edith."
+    ],
     "householdMembers": [
-      { "name": "Norman Bates", "role": "Motel Owner", "traits": ["Loner", "Neat", "Shy"] },
-      { "name": "Marion Crane", "role": "Fugitive", "traits": ["Impulsive", "Neurotic", "Ambitious"] },
-      { "name": "Norma Bates", "role": "Mother (deceased?)", "traits": ["Controlling", "Volatile", "Perfectionist"] }
+      { "name": "Edith Cushing", "role": "The Wife", "traits": ["Bookworm", "Creative", "Romantic", "Neat", "Outgoing"] },
+      { "name": "Thomas Sharpe", "role": "The Husband", "traits": ["Romantic", "Gloomy", "Creative", "Self-Assured", "Loner"] },
+      { "name": "Lucille Sharpe", "role": "The Sister", "traits": ["Perfectionist", "Mean", "Gloomy", "Loner", "Creative"] }
     ],
     "goals": [
-      "Marion: Get far enough away to start over.",
-      "Norman: Keep the motel running and Mother satisfied.",
-      "Lila Crane: Find out what happened to her sister.",
-      "Uncover the truth about the house on the hill."
+      "Edith must reach Writing level 5 — she is finishing her novel despite everything.",
+      "Thomas must reach a genuine romantic conflict — he must have active positive romantic indicators with both Edith and Lucille simultaneously.",
+      "Edith must discover the locked basement room before Day 28.",
+      "Lucille must be removed from the household before the scenario ends."
+    ],
+    "rules": [
+      "Every day: Lucille prepares Edith's tea. From Day 7 onward, this counts as a poisoning event — Edith's Energy need drops one bar after each tea interaction.",
+      "Every day: Lucille plays the piano for at least one hour. No other Sim may use the piano.",
+      "Every day: Thomas must perform one romantic interaction with Edith and one with Lucille. He initiates both. This is not optional.",
+      "Every day: Edith writes. If she does not reach her writing goal by Day 21, her Health need begins to decline by one bar per day.",
+      "Every 7 days: Edith explores one locked room in the house. Each room contains a clue — represented by a journal, a photo, or a locked chest.",
+      "Edith may not leave the lot without Thomas. Thomas may leave alone once per week for business.",
+      "If Thomas's mood drops to red: he must choose between performing an affectionate interaction with Edith or with Lucille. He may not do both on that day.",
+      "Once Edith discovers the basement on Day 21: her Energy and Comfort needs drop to red and may not recover above yellow until the ending resolves."
     ],
     "storyBeats": [
-      { "step": 1, "text": "Marion arrives at the Bates Motel, tired and on edge." },
-      { "step": 2, "text": "Norman and Marion share a stilted dinner conversation." },
-      { "step": 3, "text": "Something terrible happens in Cabin One." },
-      { "step": 4, "text": "Norman methodically cleans up — Mother must never be blamed." },
-      { "step": 5, "text": "A detective and Marion's sister begin closing in." },
-      { "step": 6, "text": "The truth about Mother is finally revealed." }
+      { "step": 1, "text": "Edith arrives at Allerdale Hall for the first time. The house is enormous and broken and cold in ways that have nothing to do with the weather. Lucille greets her at the door — correct, musical, and watching." },
+      { "step": 2, "text": "The tea begins. Edith writes. The ghosts in the upper floors are agitated — they appear near her writing desk, near her teacup, near the stairs to the basement." },
+      { "step": 3, "text": "Edith finds the first locked room. Inside: a name, a date, a wedding photograph with Thomas in it that predates their own." },
+      { "step": 4, "text": "Thomas is kind to her in ways that seem increasingly desperate. Lucille plays the same piece on the piano every evening. Edith begins to understand that the music is a kind of counting down." },
+      { "step": 5, "text": "The basement. The clay mine. The elevator shaft. What the red in the snow has always been." },
+      { "step": 6, "text": "Thomas has to choose. Lucille does not wait to see what he decides." }
+    ],
+    "endings": [
+      {
+        "title": "Allerdale Hall",
+        "text": "Edith discovers the basement and Thomas's romantic conflict peaks. He chooses Edith — performs a romantic interaction with her and a hostile one toward Lucille. Lucille attacks. One of the siblings does not survive. If Thomas survives: he and Edith leave the lot together. The house sinks slowly into its red clay. If Lucille survives: Edith escapes alone. Lucille remains in the house with Thomas gone and plays the same piece until the scenario ends."
+      },
+      {
+        "title": "The Novel",
+        "text": "Edith reaches Writing level 5 before discovering the basement. She has written the truth — all of it — into her manuscript before she fully knows it consciously. She escapes. The novel is published. Allerdale Hall is sold for its clay deposits. Nobody buys it."
+      },
+      {
+        "title": "The Tea",
+        "text": "Edith's Energy and Health needs reach critical before Day 21 and she never discovers the basement. She deteriorates in the upper floors while Lucille attends to her with perfect, terrible care. Thomas watches from the doorway. Lucille begins corresponding with a new prospect. Begin again."
+      }
     ]
   },
+
   {
-    "id": "haunting-hill-house",
-    "title": "The Haunting of Hill House",
-    "source": "The Haunting of Hill House",
-    "sourceType": "book",
-    "thumbnail": "/images/img-2.jpg",
-    "year": 1959,
-    "difficulty": "hard",
-    "tags": ["supernatural", "haunted-house", "psychological", "group"],
-    "description": "Dr Montague invites a small group to spend the summer at Hill House — a sprawling, architecturally wrong mansion with a long history of tragedy. As the weeks pass, the house begins to work on one member of the group in particular.",
-    "householdMembers": [
-      { "name": "Eleanor Vance", "role": "Guest / Subject", "traits": ["Neurotic", "Loner", "Sensitive"] },
-      { "name": "Theodora", "role": "Guest", "traits": ["Outgoing", "Artistic", "Blunt"] },
-      { "name": "Luke Sanderson", "role": "Heir to Hill House", "traits": ["Lazy", "Charming", "Brave"] },
-      { "name": "Dr Montague", "role": "Paranormal Researcher", "traits": ["Bookworm", "Ambitious", "Logical"] }
-    ],
-    "goals": [
-      "Document paranormal activity within Hill House.",
-      "Keep all guests psychologically stable.",
-      "Eleanor must resist the house's pull.",
-      "Leave Hill House before it claims someone permanently."
-    ],
-    "storyBeats": [
-      { "step": 1, "text": "The group arrives and explores Hill House's disorienting rooms." },
-      { "step": 2, "text": "Strange writing appears on the walls, addressed to Eleanor." },
-      { "step": 3, "text": "Eleanor begins to feel the house 'knows' her." },
-      { "step": 4, "text": "Paranormal events intensify — the group grows afraid." },
-      { "step": 5, "text": "Eleanor stops wanting to leave." },
-      { "step": 6, "text": "The group must decide: force Eleanor out — or let the house win." }
-    ]
-  },
-  {
-    "id": "Placeholder-01",
-    "title": "Placeholder 01",
-    "source": "Placeholder Source",
+    "id": "audition",
+    "title": "Audition",
+    "source": "Audition",
     "sourceType": "film",
-    "thumbnail": "/images/img-3.jpg",
-    "year": 2000,
+    "thumbnail": "/images/audition.jpg",
+    "year": 1999,
+    "difficulty": "hard",
+    "tags": ["psychological", "romance", "horror", "slow-burn", "twist", "two-person"],
+    "description": "Widower Shigeharu Aoyama, encouraged by his son, stages a fake film audition to find a new wife. He becomes fixated on Asami Yamazaki — quiet, graceful, and apparently perfect. The first half is a romance. The second half is something else entirely. Directed by Takashi Miike. Based on the novel by Ryu Murakami.",
+    "setup": [
+      "The scenario runs in two distinct phases. Phase One uses a suburban family home — comfortable, slightly lonely, tasteful. Phase Two introduces Asami's apartment, which should feel wrong in specific ways: too bare, one piece of furniture too many, a sack in the corner that occasionally moves.",
+      "Shigeharu Aoyama is a middle-aged adult — a widower, a film producer, a decent man making a terrible decision. Suggested traits: Romantic, Family-Oriented, Neat, Good, Gloomy.",
+      "Shigeharu's son Shigehiko is a teenage Sim — well-adjusted, encouraging, absent enough not to complicate Phase Two. Suggested traits: Cheerful, Outgoing, Family-Oriented.",
+      "Asami Yamazaki is a young adult — pale, precise, and constructed entirely to be what Shigeharu wants to see. Suggested traits: Loner, Gloomy, Romantic, Perfectionist, Mean (hidden until Phase Two). She arrives with no friends, no family connections, and no verifiable past.",
+      "Phase One lasts 14 in-game days. During this phase, Asami is played as a shy, gentle romantic prospect. All interactions are warm. Nothing goes wrong.",
+      "At Day 14: Phase Two begins. Asami's 'hidden' traits become active. Her apartment is introduced as a new room or secondary lot. The sack is added to the corner of her apartment.",
+      "Asami's apartment must have piano wire visible as a decor item from Day 14 onward."
+    ],
+    "householdMembers": [
+      { "name": "Shigeharu Aoyama", "role": "The Widower", "traits": ["Romantic", "Family-Oriented", "Neat", "Good", "Gloomy"] },
+      { "name": "Shigehiko Aoyama", "role": "The Son", "traits": ["Cheerful", "Outgoing", "Family-Oriented"] },
+      { "name": "Asami Yamazaki", "role": "The Audition", "traits": ["Loner", "Gloomy", "Romantic", "Perfectionist", "Mean"] }
+    ],
+    "goals": [
+      "Phase One: Shigeharu and Asami must reach Romantic Interest status before Day 14.",
+      "Phase Two: Asami must reach Enemies status with Shigeharu while retaining a positive romantic indicator — love without care, want without warmth.",
+      "Shigehiko must survive the scenario with green mood — he is the only one who comes through this without damage."
+    ],
+    "rules": [
+      "Phase One rules — Days 1 to 14:",
+      "Every day: Shigeharu investigates Asami's background — represented by one phone call or off-lot interaction that returns no result. He must perform this and then ignore what it tells him.",
+      "Every day: Asami and Shigeharu must share one meal. Asami eats very little. This is not commented on.",
+      "Asami may not interact with Shigehiko. At all. If they share a room, Asami must leave.",
+      "If Shigeharu's friends or colleagues warn him about Asami — represented by any NPC performing a worried or negative interaction — Shigeharu must dismiss it and end that friendship the same day.",
+      "Phase Two rules — Days 14 to end:",
+      "Asami's mean and hostile interactions are now permitted and encouraged.",
+      "Every day: Asami performs one act of control — locking a door Shigeharu needs, removing a food item, blocking his path between rooms.",
+      "Shigeharu's mobility must be gradually restricted — lock doors room by room as the scenario progresses.",
+      "Shigehiko must not be present on the lot during Phase Two. Send him to a friend's house or school event and do not return him until the scenario ends.",
+      "The sack in Asami's apartment may be 'opened' once — on the day the scenario ends."
+    ],
+    "storyBeats": [
+      { "step": 1, "text": "The auditions. Forty women, one afternoon, a fake film that will never be made. Shigeharu watches Asami's tape three times before he calls her." },
+      { "step": 2, "text": "They meet for dinner. She is everything he hoped for — quiet, attentive, slightly sad in a way that feels familiar. He does not ask why she flinches at certain words." },
+      { "step": 3, "text": "His producer friend looks into her past and does not like what he finds — or does not find. Shigeharu stops returning his calls." },
+      { "step": 4, "text": "Day 14. Phase Two begins. Shigeharu calls Asami and she does not answer for three days. When she does, something in her voice is different. Or perhaps it was always different." },
+      { "step": 5, "text": "Asami's apartment. The chair. The sack in the corner. What the sack contains is not addressed directly — only its presence, and the sound it makes." },
+      { "step": 6, "text": "Deeper, deeper, deeper. Asami explains, precisely and without emotion, what she is doing and why. She has very specific feelings about men who lie." }
+    ],
+    "endings": [
+      {
+        "title": "Kiri Kiri Kiri",
+        "text": "Asami reaches Enemies status while retaining a positive romantic indicator. Shigeharu's mobility is fully restricted — all main room doors locked except one. Shigehiko is off the lot. The scenario ends here, with Asami in the room and the piano wire visible on the counter. What happens next is not shown. Shigehiko returns in the morning."
+      },
+      {
+        "title": "The Warning",
+        "text": "If Shigeharu maintains his friendship with his producer colleague through Day 14 — does not dismiss the warning — Asami's erratic behaviour triggers early. She leaves the lot before Phase Two fully establishes. Shigeharu is safe and entirely alone. The sack is never opened."
+      },
+      {
+        "title": "The Audition Was Always Real",
+        "text": "Shigeharu reaches Soulmate status with Asami before Day 14 and Asami's hidden traits never activate. The scenario ends in Phase One — a quiet, almost convincing domestic happiness. The sack in her apartment is never explained. Shigehiko likes her. Everything is fine. Do not look in the sack."
+      }
+    ]
+  },
+
+  {
+    "id": "halloween",
+    "title": "Halloween",
+    "source": "Halloween",
+    "sourceType": "film",
+    "thumbnail": "/images/halloween.jpg",
+    "year": 1978,
+    "difficulty": "medium",
+    "tags": ["slasher", "survival", "small-town", "ensemble", "night", "chase"],
+    "description": "On Halloween night in Haddonfield, Illinois, Michael Myers — who murdered his sister fifteen years ago and has not spoken since — escapes from Smith's Grove Sanitarium and returns home. Dr Loomis follows him. The babysitters of Haddonfield do not know he is coming. Laurie Strode does not know he has been watching her all week. Directed by John Carpenter.",
+    "setup": [
+      "Use a suburban neighbourhood lot or a multi-unit residential build — Willow Creek is ideal. The Myers house must be on the same lot or immediately adjacent: empty, dark, slightly wrong.",
+      "Laurie Strode is a young adult — studious, responsible, a little lonely. Suggested traits: Bookworm, Neat, Good, Family-Oriented, Loner. She is babysitting on Halloween night.",
+      "Annie Brackett and Lynda Van Der Klok are Laurie's friends — both young adults, both considerably less cautious. Annie: Outgoing, Romantic, Mischievous, Lazy. Lynda: Outgoing, Self-Assured, Romantic, Cheerful.",
+      "Tommy Doyle and Lindsey Wallace are child Sims in Laurie's care — both must survive the scenario or the bad ending triggers.",
+      "Michael Myers is represented by a young adult Sim in a white mask costume — Mean, Erratic, Evil, Hot-Headed, Loner. He does not speak. He does not run. He is already there.",
+      "Dr Sam Loomis is an older adult — driven, frightened, right about everything. Suggested traits: Genius, Bookworm, Gloomy, Hot-Headed.",
+      "The scenario begins at sundown on Day 1 — represented by switching all lot lights off at 6pm and beginning the event timer.",
+      "Michael's starting position is the Myers house. He may move one room per in-game hour."
+    ],
+    "householdMembers": [
+      { "name": "Laurie Strode", "role": "The Final Girl", "traits": ["Bookworm", "Neat", "Good", "Family-Oriented", "Loner"] },
+      { "name": "Annie Brackett", "role": "The Friend", "traits": ["Outgoing", "Romantic", "Mischievous", "Lazy"] },
+      { "name": "Lynda Van Der Klok", "role": "The Other Friend", "traits": ["Outgoing", "Self-Assured", "Romantic", "Cheerful"] },
+      { "name": "Michael Myers", "role": "The Shape", "traits": ["Mean", "Erratic", "Evil", "Hot-Headed", "Loner"] },
+      { "name": "Dr Sam Loomis", "role": "The Doctor", "traits": ["Genius", "Bookworm", "Gloomy", "Hot-Headed"] },
+      { "name": "Tommy Doyle", "role": "The Ward", "traits": ["Bookworm", "Loner", "Gloomy"] },
+      { "name": "Lindsey Wallace", "role": "The Ward", "traits": ["Cheerful", "Outgoing", "Neat"] }
+    ],
+    "goals": [
+      "Laurie must keep both children alive and in green mood until Dr Loomis arrives on the lot — Day 2, dawn.",
+      "Michael must reach Enemies status with every non-child Sim on the lot before the scenario ends.",
+      "Dr Loomis must arrive before Laurie's mood reaches critical red."
+    ],
+    "rules": [
+      "Michael moves one room or one lot boundary per in-game hour. He does not rush. Track his position manually.",
+      "Every hour after sundown: roll a die. On a 1: Michael performs a hostile interaction with the nearest non-Laurie adult Sim. That Sim is removed from the household.",
+      "Annie must be the first Sim removed — between hours 2 and 4 of the scenario.",
+      "Lynda must be the second Sim removed — between hours 4 and 6.",
+      "Laurie may not leave the lot. The children may not leave the room Laurie assigns them.",
+      "Every hour: Laurie must perform one protective action — locking a door, checking on the children, or barricading a room with furniture.",
+      "Dr Loomis arrives at dawn on Day 2. If Laurie's mood is green when he arrives: she survives. If her mood is red: roll a die to determine outcome.",
+      "Michael cannot be killed — only temporarily removed from the lot. If removed, he reappears at the lot boundary one in-game hour later."
+    ],
+    "storyBeats": [
+      { "step": 1, "text": "Halloween afternoon. Laurie walks to the babysitting job, passing the old Myers house. Something in the window catches her eye. She keeps walking." },
+      { "step": 2, "text": "Sundown. Annie leaves to pick up her boyfriend. Laurie settles the children with the television. The Myers house is dark. The Myers house has always been dark." },
+      { "step": 3, "text": "Annie does not come back. Lynda calls, then doesn't. Laurie checks the door. The lock feels less solid than it did an hour ago." },
+      { "step": 4, "text": "Michael is in the house. Laurie sends the children upstairs and faces what is standing in the hallway." },
+      { "step": 5, "text": "She hurts him. He gets up. She hurts him again. He gets up again. Dr Loomis is driving through Haddonfield with a gun and a twenty-year dread." },
+      { "step": 6, "text": "Dawn. Loomis arrives. The question is not whether Michael is stopped — it is what Laurie looks like after." }
+    ],
+    "endings": [
+      {
+        "title": "He Was the Boogeyman",
+        "text": "Both children survive with green mood. Dr Loomis arrives at dawn. Laurie's mood is yellow or above. Michael is removed from the lot by Loomis. Laurie sits on the steps outside in the morning light. She is alive. She will spend the rest of her life wondering if that was enough."
+      },
+      {
+        "title": "The Shape Remains",
+        "text": "Michael is temporarily removed but Loomis does not arrive before Laurie's mood reaches red. She survives but is alone on the lot with the children at dawn. The scenario ends. Michael reappears at the lot boundary as the sun rises. The sequel begins."
+      },
+      {
+        "title": "Haddonfield",
+        "text": "Either Tommy or Lindsey is removed from the household before dawn. Laurie's failure condition triggers. The scenario ends immediately. Dr Loomis arrives to an empty house. He has always known this was how it would end."
+      }
+    ]
+  },
+
+  {
+    "id": "friday-the-13th",
+    "title": "Friday the 13th",
+    "source": "Friday the 13th",
+    "sourceType": "film",
+    "thumbnail": "/images/friday-13th.jpg",
+    "year": 1980,
     "difficulty": "easy",
-    "tags": ["Placeholder", "test"],
-    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
-    "householdMembers": [
-      { "name": "Sim One", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    "tags": ["slasher", "survival", "ensemble", "camp", "night", "chase"],
+    "description": "A group of young counsellors arrive at Camp Crystal Lake to reopen it for the summer, despite the town's warnings and the camp's history. They are not alone in the woods. Someone remembers what happened here. Someone never left. Based on the original film directed by Sean S. Cunningham.",
+    "setup": [
+      "Build or download a summer camp lot — cabins, a dock, a lake (use a pool with natural surroundings), a mess hall, and dense trees marking the lot's boundaries. Sulani or a custom outdoor world works well.",
+      "The camp must have at least 6 separate structures. Each counsellor is assigned to a different cabin. No cabin has a lock.",
+      "Create 6–8 young adult counsellors — mix of traits, no particular protagonist until the scenario reveals one. Suggested spread: one Bookworm/Loner (this will be your Final Girl or Guy), the rest a mix of Outgoing, Romantic, Mischievous, Cheerful, Lazy.",
+      "The killer begins the scenario off the lot — represented by a Sim waiting at the lot boundary. They enter at sundown on Day 1.",
+      "The camp's radio or phone must be represented by a single computer in the mess hall. This is the only means of calling for help.",
+      "No counsellor may leave the lot once the scenario begins — the road is flooded, the car won't start, the boat has a hole in it.",
+      "The scenario runs over a single in-game night — from sundown to dawn."
     ],
-    "goals": ["Survive long enough to test the lazy loader."],
+    "householdMembers": [
+      { "name": "Alice Hardy", "role": "The Final Girl", "traits": ["Bookworm", "Loner", "Creative", "Good"] },
+      { "name": "Counsellor 2", "role": "The Joker", "traits": ["Outgoing", "Mischievous", "Lazy", "Romantic"] },
+      { "name": "Counsellor 3", "role": "The Couple A", "traits": ["Romantic", "Cheerful", "Outgoing"] },
+      { "name": "Counsellor 4", "role": "The Couple B", "traits": ["Romantic", "Self-Assured", "Active"] },
+      { "name": "Counsellor 5", "role": "The Serious One", "traits": ["Neat", "Ambitious", "Bookworm"] },
+      { "name": "Counsellor 6", "role": "The New One", "traits": ["Cheerful", "Outgoing", "Neat"] }
+    ],
+    "goals": [
+      "Alice must survive to dawn — mood above red, on the lot, at sunrise.",
+      "The killer must reach Enemies status with every other counsellor before dawn.",
+      "Alice must reach the mess hall computer and complete a 'call for help' action — represented by finishing a 2-hour writing task — before dawn."
+    ],
+    "rules": [
+      "Every hour after sundown: roll a die. On a 1 or 2: the killer removes the counsellor they are nearest to from the household.",
+      "Counsellors who are alone in a cabin are removed automatically if the killer enters that structure — no roll required.",
+      "Counsellors in pairs survive the first encounter — one is removed, one escapes to another cabin.",
+      "Alice may never be alone in a cabin. She must always be moving or in a shared space.",
+      "The killer moves two structures per hour. Track their position manually.",
+      "If any counsellor reaches the computer and completes the writing task: help arrives at dawn regardless of outcome.",
+      "The killer cannot enter the mess hall until all other cabins have been visited.",
+      "Rain begins at midnight — all outdoor movement costs double the time.",
+      "At dawn: if Alice is alive and has completed the call, the killer retreats to the water. If Alice is alive but has not completed the call, the killer remains for a final confrontation."
+    ],
     "storyBeats": [
-      { "step": 1, "text": "Placeholder beat one." },
-      { "step": 2, "text": "Placeholder beat two." }
+      { "step": 1, "text": "The counsellors arrive at Camp Crystal Lake in good spirits. The town locals gave them looks. Someone spray-painted something on the welcome sign. Nobody read it." },
+      { "step": 2, "text": "Sundown. The first pair of counsellors slip away to the dock. They are not seen again. Nobody notices for two hours." },
+      { "step": 3, "text": "The rain starts. The phone in the mess hall is dead. Alice finds it first and begins trying to reach someone on the computer." },
+      { "step": 4, "text": "The cabins are going quiet one by one. Alice moves between them and finds what has been left behind." },
+      { "step": 5, "text": "The killer is not hiding anymore. Alice runs." },
+      { "step": 6, "text": "Dawn. The lake. One final confrontation at the water's edge." }
+    ],
+    "endings": [
+      {
+        "title": "The Lake",
+        "text": "Alice survives to dawn with green or yellow mood and has completed the call. Help arrives. Alice is found at the dock. She is the only one. She tells them what happened and they believe her and it makes no difference at all."
+      },
+      {
+        "title": "The Morning After",
+        "text": "Alice survives but the call was never completed. Help does not come. Alice spends the daylight hours alone on the lot, waiting. Help arrives eventually — in two days. Camp Crystal Lake is closed again. It will reopen. It always reopens."
+      },
+      {
+        "title": "No Survivors",
+        "text": "Alice is removed from the household before dawn. The killer is alone on the lot at sunrise. The scenario ends. The camp is silent. The water is still. Help arrives to find the welcome sign and eight empty cabins."
+      }
     ]
   },
+
   {
-    "id": "Placeholder-02",
-    "title": "Placeholder 02",
-    "source": "Placeholder Source",
-    "sourceType": "book",
-    "thumbnail": "/images/img-4.jpg",
-    "year": 2001,
-    "difficulty": "medium",
-    "tags": ["Placeholder", "test"],
-    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
-    "householdMembers": [
-      { "name": "Sim Two", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
-    ],
-    "goals": ["Survive long enough to test the lazy loader."],
-    "storyBeats": [
-      { "step": 1, "text": "Placeholder beat one." },
-      { "step": 2, "text": "Placeholder beat two." }
-    ]
-  },
-  {
-    "id": "Placeholder-03",
-    "title": "Placeholder 03",
-    "source": "Placeholder Source",
+    "id": "the-ring",
+    "title": "The Ring",
+    "source": "The Ring",
     "sourceType": "film",
-    "thumbnail": "/images/img-1.jpg",
+    "thumbnail": "/images/the-ring.jpg",
     "year": 2002,
-    "difficulty": "hard",
-    "tags": ["Placeholder", "test"],
-    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
-    "householdMembers": [
-      { "name": "Sim Three", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
-    ],
-    "goals": ["Survive long enough to test the lazy loader."],
-    "storyBeats": [
-      { "step": 1, "text": "Placeholder beat one." },
-      { "step": 2, "text": "Placeholder beat two." }
-    ]
-  },
-  {
-    "id": "Placeholder-04",
-    "title": "Placeholder 04",
-    "source": "Placeholder Source",
-    "sourceType": "book",
-    "thumbnail": "/images/img-2.jpg",
-    "year": 2003,
-    "difficulty": "easy",
-    "tags": ["Placeholder", "test"],
-    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
-    "householdMembers": [
-      { "name": "Sim Four", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
-    ],
-    "goals": ["Survive long enough to test the lazy loader."],
-    "storyBeats": [
-      { "step": 1, "text": "Placeholder beat one." },
-      { "step": 2, "text": "Placeholder beat two." }
-    ]
-  },
-  {
-    "id": "Placeholder-05",
-    "title": "Placeholder 05",
-    "source": "Placeholder Source",
-    "sourceType": "film",
-    "thumbnail": "/images/img-3.jpg",
-    "year": 2004,
     "difficulty": "medium",
-    "tags": ["Placeholder", "test"],
-    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
-    "householdMembers": [
-      { "name": "Sim Five", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    "tags": ["supernatural", "investigation", "countdown", "paranoia", "solo", "curse"],
+    "description": "Journalist Rachel Keller investigates a cursed videotape — everyone who watches it dies seven days later. Then she watches it. The clock is running. Her son Aidan has also seen it. Based on the 1998 Japanese film Ringu, directed by Hideo Nakata, and the 2002 American adaptation directed by Gore Verbinski.",
+    "setup": [
+      "Use a city apartment lot for Rachel's home and a secondary rural lot representing the cabin where the tape was first watched. San Myshuno works for the apartment; Henford-on-Bagley for the rural location.",
+      "Rachel Keller is a young adult — a journalist, driven and slightly neglectful of her son. Suggested traits: Ambitious, Bookworm, Loner, Perfectionist, Gloomy.",
+      "Aidan Keller is a child Sim — quiet, perceptive, and already closer to what is happening than Rachel understands. Suggested traits: Loner, Gloomy, Bookworm. He must watch the tape on Day 1.",
+      "Noah Clay is a young adult — Rachel's ex, practical, useful for the investigation. Suggested traits: Creative, Outgoing, Lazy, Romantic.",
+      "Samara Morgan is represented by a child Sim — pale, hair covering her face, moving wrong. She is never placed on the main lot. She exists only in the well room, which is locked until Day 7.",
+      "The tape is represented by a specific object — a TV or monitor in a locked room of the apartment. Both Rachel and Aidan interact with it on Day 1.",
+      "A countdown clock must be tracked externally — a note, a calendar, or a visible in-game timer. 7 days. Both Rachel and Aidan have been watching since Day 1.",
+      "The well must be built or represented on the rural lot — a pit, a basement, a covered shaft. Samara's room is down there."
     ],
-    "goals": ["Survive long enough to test the lazy loader."],
+    "householdMembers": [
+      { "name": "Rachel Keller", "role": "The Journalist", "traits": ["Ambitious", "Bookworm", "Loner", "Perfectionist", "Gloomy"] },
+      { "name": "Aidan Keller", "role": "The Boy", "traits": ["Loner", "Gloomy", "Bookworm"] },
+      { "name": "Noah Clay", "role": "The Ex", "traits": ["Creative", "Outgoing", "Lazy", "Romantic"] }
+    ],
+    "goals": [
+      "Rachel must complete 7 investigative actions — each represented by a 2-hour research or writing task — before Day 7.",
+      "Rachel must visit the rural lot and access the well room before Day 7.",
+      "Aidan must survive to Day 7 with green mood — Rachel must tend to his needs before her own every day."
+    ],
+    "rules": [
+      "Every day: Rachel must complete one investigative task — writing, researching on a computer, or making a phone call. Each task counts as one of her 7 required actions.",
+      "Every day: Rachel must check on Aidan before doing anything else. If his mood is red at any point during her check: she loses one investigative action that day.",
+      "Noah may join the investigation from Day 3 onward. He may complete investigative tasks independently — each of his actions counts toward Rachel's total.",
+      "Every day from Day 4 onward: one object in Rachel's apartment malfunctions, breaks, or displays the wrong image on its screen.",
+      "The rural lot may only be visited once — Rachel must spend at least 4 in-game hours there and access the well room before leaving.",
+      "On Day 6: Noah is removed from the household. How this happens is your choice.",
+      "If Rachel reaches 7 investigative actions before Day 7: the curse can be passed on. If she does not: the scenario moves to the bad ending.",
+      "Aidan's nightly sleep must never be interrupted — no events, no visitors, no alarms after 9pm."
+    ],
     "storyBeats": [
-      { "step": 1, "text": "Placeholder beat one." },
-      { "step": 2, "text": "Placeholder beat two." }
+      { "step": 1, "text": "Rachel watches the tape to understand what killed her niece. It is a short film of images that should not be in sequence. The phone rings when it ends. Seven days." },
+      { "step": 2, "text": "She finds the cabin where the tape was first watched. She finds the owner's name. She finds a photograph of a girl who should not be in it." },
+      { "step": 3, "text": "Aidan draws things he has not seen. He tells Rachel she should not have watched it. He does not say this accusingly. He says it as fact." },
+      { "step": 4, "text": "The rural lot. The horse farm. The well at the edge of the property, covered over and forgotten. Rachel goes down." },
+      { "step": 5, "text": "Samara's story assembles itself — the mother, the island, the asylum, the well. Rachel thinks that finding her will be enough. It is not enough." },
+      { "step": 6, "text": "Noah watches the tape. On Day 6, Samara comes for him. On Day 7, she will come for Rachel — unless Rachel has understood what must be done." }
+    ],
+    "endings": [
+      {
+        "title": "Copy and Pass",
+        "text": "Rachel completes all 7 investigative actions and visits the well before Day 7. She understands the only way to survive is to copy the tape and pass it on. Aidan survives. The curse continues — somewhere, someone else's phone is ringing. Rachel knows what she has done. She would do it again."
+      },
+      {
+        "title": "The Well",
+        "text": "Rachel completes the investigation but does not copy the tape. On Day 7, the television in the apartment turns on by itself. The well room unlocks. Samara arrives at the lot boundary. Rachel did not understand in time. The scenario ends."
+      },
+      {
+        "title": "Seven Days",
+        "text": "Rachel fails to complete 7 investigative actions before Day 7. The countdown reaches zero. The apartment lot goes dark. Aidan is alone in the morning. The tape is still in the locked room. Someone will find it."
+      }
     ]
   },
+
   {
-    "id": "Placeholder-06",
-    "title": "Placeholder 06",
-    "source": "Placeholder Source",
-    "sourceType": "book",
-    "thumbnail": "/images/img-4.jpg",
-    "year": 2005,
-    "difficulty": "hard",
-    "tags": ["Placeholder", "test"],
-    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
-    "householdMembers": [
-      { "name": "Sim Six", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
-    ],
-    "goals": ["Survive long enough to test the lazy loader."],
-    "storyBeats": [
-      { "step": 1, "text": "Placeholder beat one." },
-      { "step": 2, "text": "Placeholder beat two." }
-    ]
-  },
-  {
-    "id": "Placeholder-07",
-    "title": "Placeholder 07",
-    "source": "Placeholder Source",
+    "id": "blair-witch",
+    "title": "The Blair Witch Project",
+    "source": "The Blair Witch Project",
     "sourceType": "film",
-    "thumbnail": "/images/img-1.jpg",
-    "year": 2006,
-    "difficulty": "easy",
-    "tags": ["Placeholder", "test"],
-    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
-    "householdMembers": [
-      { "name": "Sim Seven", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
-    ],
-    "goals": ["Survive long enough to test the lazy loader."],
-    "storyBeats": [
-      { "step": 1, "text": "Placeholder beat one." },
-      { "step": 2, "text": "Placeholder beat two." }
-    ]
-  },
-  {
-    "id": "Placeholder-08",
-    "title": "Placeholder 08",
-    "source": "Placeholder Source",
-    "sourceType": "book",
-    "thumbnail": "/images/img-2.jpg",
-    "year": 2007,
-    "difficulty": "medium",
-    "tags": ["Placeholder", "test"],
-    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
-    "householdMembers": [
-      { "name": "Sim Eight", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
-    ],
-    "goals": ["Survive long enough to test the lazy loader."],
-    "storyBeats": [
-      { "step": 1, "text": "Placeholder beat one." },
-      { "step": 2, "text": "Placeholder beat two." }
-    ]
-  },
-  {
-    "id": "Placeholder-09",
-    "title": "Placeholder 09",
-    "source": "Placeholder Source",
-    "sourceType": "film",
-    "thumbnail": "/images/img-3.jpg",
-    "year": 2008,
+    "thumbnail": "/images/blair-witch.jpg",
+    "year": 1999,
     "difficulty": "hard",
-    "tags": ["Placeholder", "test"],
-    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
-    "householdMembers": [
-      { "name": "Sim Nine", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    "tags": ["supernatural", "found-footage", "wilderness", "paranoia", "ensemble", "survival"],
+    "description": "Three student filmmakers hike into the Black Hills Forest in Maryland to document the legend of the Blair Witch. They become lost. Their equipment continues to work after they cannot. Their footage is found one year later. Directed by Daniel Myrick and Eduardo Sánchez.",
+    "setup": [
+      "Use a dense, dark outdoor lot — Granite Falls or a custom wilderness build. No built structures except one ruined cabin at the far end of the lot, locked until Day 5. No roads. No exits visible from the centre of the lot.",
+      "The lot must have no electricity, no plumbing, and no cooking appliances. All needs must be managed with campfire, cooler, and sleeping bags only.",
+      "Heather Donahue is a young adult — the director, determined, the last to admit anything is wrong. Suggested traits: Ambitious, Bookworm, Loner, Perfectionist, Hot-Headed.",
+      "Josh Leonard is a young adult — the cameraman, pragmatic, frightened more quickly than he shows. Suggested traits: Creative, Outgoing, Gloomy, Loner.",
+      "Mike Williams is a young adult — sound, sceptical, the first to lose his temper. Suggested traits: Hot-Headed, Lazy, Mischievous, Gloomy.",
+      "All three begin with a full inventory: camping gear, a map, a compass, and a camera (represented by a handheld object or debug item).",
+      "The map must be destroyed on Day 3 — remove it from the inventory without announcement.",
+      "Stick figures and rock cairns must appear on the lot each morning from Day 2 onward — add them as debug objects before the Sims wake."
     ],
-    "goals": ["Survive long enough to test the lazy loader."],
-    "storyBeats": [
-      { "step": 1, "text": "Placeholder beat one." },
-      { "step": 2, "text": "Placeholder beat two." }
-    ]
-  },
-  {
-    "id": "Placeholder-10",
-    "title": "Placeholder 10",
-    "source": "Placeholder Source",
-    "sourceType": "book",
-    "thumbnail": "/images/img-4.jpg",
-    "year": 2009,
-    "difficulty": "easy",
-    "tags": ["Placeholder", "test"],
-    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
     "householdMembers": [
-      { "name": "Sim Ten", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+      { "name": "Heather Donahue", "role": "The Director", "traits": ["Ambitious", "Bookworm", "Loner", "Perfectionist", "Hot-Headed"] },
+      { "name": "Josh Leonard", "role": "The Cameraman", "traits": ["Creative", "Outgoing", "Gloomy", "Loner"] },
+      { "name": "Mike Williams", "role": "The Sound Guy", "traits": ["Hot-Headed", "Lazy", "Mischievous", "Gloomy"] }
     ],
-    "goals": ["Survive long enough to test the lazy loader."],
-    "storyBeats": [
-      { "step": 1, "text": "Placeholder beat one." },
-      { "step": 2, "text": "Placeholder beat two." }
-    ]
-  },
-  {
-    "id": "Placeholder-11",
-    "title": "Placeholder 11",
-    "source": "Placeholder Source",
-    "sourceType": "film",
-    "thumbnail": "/images/img-1.jpg",
-    "year": 2010,
-    "difficulty": "medium",
-    "tags": ["Placeholder", "test"],
-    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
-    "householdMembers": [
-      { "name": "Sim Eleven", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    "goals": [
+      "The group must survive 7 in-game days in the wilderness with no lot exit.",
+      "All three Sims must reach Enemies status with each other before Day 7.",
+      "Heather must complete one filmed record each day — represented by a 1-hour writing or creative task logged as 'footage'."
     ],
-    "goals": ["Survive long enough to test the lazy loader."],
-    "storyBeats": [
-      { "step": 1, "text": "Placeholder beat one." },
-      { "step": 2, "text": "Placeholder beat two." }
-    ]
-  },
-  {
-    "id": "Placeholder-12",
-    "title": "Placeholder 12",
-    "source": "Placeholder Source",
-    "sourceType": "book",
-    "thumbnail": "/images/img-2.jpg",
-    "year": 2011,
-    "difficulty": "hard",
-    "tags": ["Placeholder", "test"],
-    "description": "This is a Placeholder scenario added to test lazy loading in the browse grid. It is not a real scenario.",
-    "householdMembers": [
-      { "name": "Sim Twelve", "role": "Test Subject", "traits": ["Lazy", "Goofball", "Childish"] }
+    "rules": [
+      "Every day: Heather must complete her filming task before any other activity. If she does not, her Hot-Headed trait triggers — she must argue with one other Sim.",
+      "Every day: one need for all three Sims drops by two bars without explanation — rotate through Hunger, Energy, Comfort, and Social.",
+      "Every morning from Day 2: add new stick figures or cairn objects near the sleeping area. The Sims did not put them there.",
+      "The map is removed on Day 3 with no announcement. From Day 3 onward, all three Sims must spend 2 hours per day moving between lot sections — they are trying to find the way out.",
+      "Every day: Mike and Josh must perform one hostile interaction with Heather. She must not back down.",
+      "On Day 4: Josh is removed from the household during the night. He is not there in the morning. His equipment is.",
+      "From Day 5: Heather and Mike may access the ruined cabin. They must enter together.",
+      "Neither Heather nor Mike may sleep inside any structure before Day 5.",
+      "On Day 7: both remaining Sims are moved to the cabin's basement room. The scenario ends there. The camera is still running."
     ],
-    "goals": ["Survive long enough to test the lazy loader."],
     "storyBeats": [
-      { "step": 1, "text": "Placeholder beat one." },
-      { "step": 2, "text": "Placeholder beat two." }
+      { "step": 1, "text": "Day one of filming. The forest is beautiful. The locals in town were odd about the whole thing. The map is clear. The path is clear. Everything is fine." },
+      { "step": 2, "text": "Something moved around the camp during the night. The stick figures were not there yesterday. Nobody admits to being afraid." },
+      { "step": 3, "text": "The map is gone. Mike says Heather dropped it. Heather says she did not drop it. They walk in circles for most of the day and end up where they started." },
+      { "step": 4, "text": "Josh's voice is heard in the trees that night but he is not in his sleeping bag in the morning. His camera is still recording." },
+      { "step": 5, "text": "The cabin. It is impossible — they have never been this far in this direction. And yet here it is, exactly where it should not be." },
+      { "step": 6, "text": "Inside. Down the stairs. The camera is still running. It will be running when they find it." }
+    ],
+    "endings": [
+      {
+        "title": "The Footage",
+        "text": "Both Heather and Mike are moved to the cabin basement on Day 7. The scenario ends. The camera object is placed on the basement floor and not touched. One year later — represented by starting a new save — a third Sim finds the lot and finds the camera. The footage is intact."
+      },
+      {
+        "title": "Heather's Apology",
+        "text": "If Heather completes all 7 filming tasks and her mood is green on Day 7: the footage is coherent and complete. It is genuinely good documentary material about three people being undone by fear and each other. The Blair Witch may or may not exist. The film is real either way."
+      },
+      {
+        "title": "The Map",
+        "text": "If Mike's and Heather's moods are both green on Day 4 — they have held together better than expected — Josh's disappearance is not enough to break them. They find the cabin on Day 5 and choose not to enter. They sit outside it until dawn. Nothing happens. They walk out of the forest on Day 6 using instinct and luck. Nobody believes them. They barely believe themselves."
+      }
     ]
   }
+
 ]
