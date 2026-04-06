@@ -1,5 +1,5 @@
 import { useState, useMemo, useRef, useCallback, useEffect } from 'react'
-import { PiFilmSlate, PiBookOpenText, PiSlidersHorizontal } from 'react-icons/pi'
+import { PiFilmSlate, PiBookOpenText, PiTelevisionSimple, PiSlidersHorizontal } from 'react-icons/pi'
 import ScenarioCard from '../components/ScenarioCard'
 import scenariosData from '../data/scenarios.json'
 import type { Scenario } from '../types/scenario'
@@ -12,7 +12,7 @@ const PAGE_SIZE = 6
 
 export default function BrowsePage() {
   const [search, setSearch] = useState('')
-  const [sourceType, setSourceType] = useState<'all' | 'film' | 'book'>('all')
+  const [sourceType, setSourceType] = useState<'all' | 'film' | 'book' | 'tv'>('all')
   const [difficulty, setDifficulty] = useState<'all' | 'easy' | 'medium' | 'hard'>('all')
   const [selectedTags, setSelectedTags] = useState<string[]>([])
   const [showFilters, setShowFilters] = useState(false)
@@ -107,7 +107,7 @@ export default function BrowsePage() {
           <div className="flex flex-col gap-3 pt-1">
             {/* Source type + difficulty */}
             <div className="flex flex-wrap gap-2 items-center">
-              {(['all', 'film', 'book'] as const).map((v) => (
+              {(['all', 'film', 'book', 'tv'] as const).map((v) => (
                 <button
                   key={v}
                   onClick={() => setSourceType(v)}
@@ -119,7 +119,9 @@ export default function BrowsePage() {
                 >
                   {v === 'all' ? 'All types' : v === 'film'
                     ? <span className="flex items-center gap-1.5"><PiFilmSlate size={13} className="text-sims-green" />Film</span>
-                    : <span className="flex items-center gap-1.5"><PiBookOpenText size={13} className="text-sims-green" />Book</span>}
+                    : v === 'book'
+                    ? <span className="flex items-center gap-1.5"><PiBookOpenText size={13} className="text-sims-green" />Book</span>
+                    : <span className="flex items-center gap-1.5"><PiTelevisionSimple size={13} className="text-sims-green" />TV</span>}
                 </button>
               ))}
 
