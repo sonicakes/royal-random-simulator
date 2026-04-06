@@ -381,7 +381,7 @@
     "title": "Rosemary's Baby",
     "source": "Rosemary's Baby",
     "sourceType": "book",
-    "thumbnail": "/images/img-2.jpg",
+    "thumbnail": "/images/knife.png",
     "year": 1967,
     "difficulty": "medium",
     "tags": [
@@ -588,7 +588,7 @@
     "title": "The Others",
     "source": "The Others",
     "sourceType": "film",
-    "thumbnail": "/images/img-1.jpg",
+    "thumbnail": "/images/knife.png",
     "year": 2001,
     "difficulty": "medium",
     "tags": [
@@ -700,7 +700,7 @@
     "title": "Hereditary",
     "source": "Hereditary",
     "sourceType": "film",
-    "thumbnail": "/images/hereditary.jpg",
+    "thumbnail": "/images/scream.png",
     "year": 2018,
     "difficulty": "hard",
     "tags": ["supernatural", "family", "grief", "slow-burn", "cult", "psychological"],
@@ -766,7 +766,7 @@
     "title": "Midsommar",
     "source": "Midsommar",
     "sourceType": "film",
-    "thumbnail": "/images/midsommar.jpg",
+    "thumbnail": "/images/spooks.png",
     "year": 2019,
     "difficulty": "medium",
     "tags": ["folk-horror", "cult", "grief", "travel", "community", "psychological"],
@@ -835,7 +835,7 @@
     "title": "Crimson Peak",
     "source": "Crimson Peak",
     "sourceType": "film",
-    "thumbnail": "/images/crimson-peak.jpg",
+    "thumbnail": "/images/reaper.png",
     "year": 2015,
     "difficulty": "medium",
     "tags": ["gothic", "romance", "supernatural", "sibling", "poison", "slow-burn"],
@@ -900,7 +900,7 @@
     "title": "Audition",
     "source": "Audition",
     "sourceType": "film",
-    "thumbnail": "/images/audition.jpg",
+    "thumbnail": "/images/knife.png",
     "year": 1999,
     "difficulty": "hard",
     "tags": ["psychological", "romance", "horror", "slow-burn", "twist", "two-person"],
@@ -966,7 +966,7 @@
     "title": "Halloween",
     "source": "Halloween",
     "sourceType": "film",
-    "thumbnail": "/images/halloween.jpg",
+    "thumbnail": "/images/halloween.png",
     "year": 1978,
     "difficulty": "medium",
     "tags": ["slasher", "survival", "small-town", "ensemble", "night", "chase"],
@@ -1028,13 +1028,76 @@
       }
     ]
   },
-
+  {
+    "id": "blair-witch",
+    "title": "The Blair Witch Project",
+    "source": "The Blair Witch Project",
+    "sourceType": "film",
+    "thumbnail": "/images/spooks.png",
+    "year": 1999,
+    "difficulty": "hard",
+    "tags": ["supernatural", "found-footage", "wilderness", "paranoia", "ensemble", "survival"],
+    "description": "Three student filmmakers hike into the Black Hills Forest in Maryland to document the legend of the Blair Witch. They become lost. Their equipment continues to work after they cannot. Their footage is found one year later. Directed by Daniel Myrick and Eduardo Sánchez.",
+    "setup": [
+      "Use a dense, dark outdoor lot — Granite Falls or a custom wilderness build. No built structures except one ruined cabin at the far end of the lot, locked until Day 5. No roads. No exits visible from the centre of the lot.",
+      "The lot must have no electricity, no plumbing, and no cooking appliances. All needs must be managed with campfire, cooler, and sleeping bags only.",
+      "Heather Donahue is a young adult — the director, determined, the last to admit anything is wrong. Suggested traits: Ambitious, Bookworm, Loner, Perfectionist, Hot-Headed.",
+      "Josh Leonard is a young adult — the cameraman, pragmatic, frightened more quickly than he shows. Suggested traits: Creative, Outgoing, Gloomy, Loner.",
+      "Mike Williams is a young adult — sound, sceptical, the first to lose his temper. Suggested traits: Hot-Headed, Lazy, Mischievous, Gloomy.",
+      "All three begin with a full inventory: camping gear, a map, a compass, and a camera (represented by a handheld object or debug item).",
+      "The map must be destroyed on Day 3 — remove it from the inventory without announcement.",
+      "Stick figures and rock cairns must appear on the lot each morning from Day 2 onward — add them as debug objects before the Sims wake."
+    ],
+    "householdMembers": [
+      { "name": "Heather Donahue", "role": "The Director", "traits": ["Ambitious", "Bookworm", "Loner", "Perfectionist", "Hot-Headed"] },
+      { "name": "Josh Leonard", "role": "The Cameraman", "traits": ["Creative", "Outgoing", "Gloomy", "Loner"] },
+      { "name": "Mike Williams", "role": "The Sound Guy", "traits": ["Hot-Headed", "Lazy", "Mischievous", "Gloomy"] }
+    ],
+    "goals": [
+      "The group must survive 7 in-game days in the wilderness with no lot exit.",
+      "All three Sims must reach Enemies status with each other before Day 7.",
+      "Heather must complete one filmed record each day — represented by a 1-hour writing or creative task logged as 'footage'."
+    ],
+    "rules": [
+      "Every day: Heather must complete her filming task before any other activity. If she does not, her Hot-Headed trait triggers — she must argue with one other Sim.",
+      "Every day: one need for all three Sims drops by two bars without explanation — rotate through Hunger, Energy, Comfort, and Social.",
+      "Every morning from Day 2: add new stick figures or cairn objects near the sleeping area. The Sims did not put them there.",
+      "The map is removed on Day 3 with no announcement. From Day 3 onward, all three Sims must spend 2 hours per day moving between lot sections — they are trying to find the way out.",
+      "Every day: Mike and Josh must perform one hostile interaction with Heather. She must not back down.",
+      "On Day 4: Josh is removed from the household during the night. He is not there in the morning. His equipment is.",
+      "From Day 5: Heather and Mike may access the ruined cabin. They must enter together.",
+      "Neither Heather nor Mike may sleep inside any structure before Day 5.",
+      "On Day 7: both remaining Sims are moved to the cabin's basement room. The scenario ends there. The camera is still running."
+    ],
+    "storyBeats": [
+      { "step": 1, "text": "Day one of filming. The forest is beautiful. The locals in town were odd about the whole thing. The map is clear. The path is clear. Everything is fine." },
+      { "step": 2, "text": "Something moved around the camp during the night. The stick figures were not there yesterday. Nobody admits to being afraid." },
+      { "step": 3, "text": "The map is gone. Mike says Heather dropped it. Heather says she did not drop it. They walk in circles for most of the day and end up where they started." },
+      { "step": 4, "text": "Josh's voice is heard in the trees that night but he is not in his sleeping bag in the morning. His camera is still recording." },
+      { "step": 5, "text": "The cabin. It is impossible — they have never been this far in this direction. And yet here it is, exactly where it should not be." },
+      { "step": 6, "text": "Inside. Down the stairs. The camera is still running. It will be running when they find it." }
+    ],
+    "endings": [
+      {
+        "title": "The Footage",
+        "text": "Both Heather and Mike are moved to the cabin basement on Day 7. The scenario ends. The camera object is placed on the basement floor and not touched. One year later — represented by starting a new save — a third Sim finds the lot and finds the camera. The footage is intact."
+      },
+      {
+        "title": "Heather's Apology",
+        "text": "If Heather completes all 7 filming tasks and her mood is green on Day 7: the footage is coherent and complete. It is genuinely good documentary material about three people being undone by fear and each other. The Blair Witch may or may not exist. The film is real either way."
+      },
+      {
+        "title": "The Map",
+        "text": "If Mike's and Heather's moods are both green on Day 4 — they have held together better than expected — Josh's disappearance is not enough to break them. They find the cabin on Day 5 and choose not to enter. They sit outside it until dawn. Nothing happens. They walk out of the forest on Day 6 using instinct and luck. Nobody believes them. They barely believe themselves."
+      }
+    ]
+  },
   {
     "id": "friday-the-13th",
     "title": "Friday the 13th",
     "source": "Friday the 13th",
     "sourceType": "film",
-    "thumbnail": "/images/friday-13th.jpg",
+    "thumbnail": "/images/reaper.png",
     "year": 1980,
     "difficulty": "easy",
     "tags": ["slasher", "survival", "ensemble", "camp", "night", "chase"],
@@ -1101,7 +1164,7 @@
     "title": "The Ring",
     "source": "The Ring",
     "sourceType": "film",
-    "thumbnail": "/images/the-ring.jpg",
+    "thumbnail": "/images/scream.png",
     "year": 2002,
     "difficulty": "medium",
     "tags": ["supernatural", "investigation", "countdown", "paranoia", "solo", "curse"],
@@ -1158,71 +1221,8 @@
         "text": "Rachel fails to complete 7 investigative actions before Day 7. The countdown reaches zero. The apartment lot goes dark. Aidan is alone in the morning. The tape is still in the locked room. Someone will find it."
       }
     ]
-  },
-
-  {
-    "id": "blair-witch",
-    "title": "The Blair Witch Project",
-    "source": "The Blair Witch Project",
-    "sourceType": "film",
-    "thumbnail": "/images/blair-witch.jpg",
-    "year": 1999,
-    "difficulty": "hard",
-    "tags": ["supernatural", "found-footage", "wilderness", "paranoia", "ensemble", "survival"],
-    "description": "Three student filmmakers hike into the Black Hills Forest in Maryland to document the legend of the Blair Witch. They become lost. Their equipment continues to work after they cannot. Their footage is found one year later. Directed by Daniel Myrick and Eduardo Sánchez.",
-    "setup": [
-      "Use a dense, dark outdoor lot — Granite Falls or a custom wilderness build. No built structures except one ruined cabin at the far end of the lot, locked until Day 5. No roads. No exits visible from the centre of the lot.",
-      "The lot must have no electricity, no plumbing, and no cooking appliances. All needs must be managed with campfire, cooler, and sleeping bags only.",
-      "Heather Donahue is a young adult — the director, determined, the last to admit anything is wrong. Suggested traits: Ambitious, Bookworm, Loner, Perfectionist, Hot-Headed.",
-      "Josh Leonard is a young adult — the cameraman, pragmatic, frightened more quickly than he shows. Suggested traits: Creative, Outgoing, Gloomy, Loner.",
-      "Mike Williams is a young adult — sound, sceptical, the first to lose his temper. Suggested traits: Hot-Headed, Lazy, Mischievous, Gloomy.",
-      "All three begin with a full inventory: camping gear, a map, a compass, and a camera (represented by a handheld object or debug item).",
-      "The map must be destroyed on Day 3 — remove it from the inventory without announcement.",
-      "Stick figures and rock cairns must appear on the lot each morning from Day 2 onward — add them as debug objects before the Sims wake."
-    ],
-    "householdMembers": [
-      { "name": "Heather Donahue", "role": "The Director", "traits": ["Ambitious", "Bookworm", "Loner", "Perfectionist", "Hot-Headed"] },
-      { "name": "Josh Leonard", "role": "The Cameraman", "traits": ["Creative", "Outgoing", "Gloomy", "Loner"] },
-      { "name": "Mike Williams", "role": "The Sound Guy", "traits": ["Hot-Headed", "Lazy", "Mischievous", "Gloomy"] }
-    ],
-    "goals": [
-      "The group must survive 7 in-game days in the wilderness with no lot exit.",
-      "All three Sims must reach Enemies status with each other before Day 7.",
-      "Heather must complete one filmed record each day — represented by a 1-hour writing or creative task logged as 'footage'."
-    ],
-    "rules": [
-      "Every day: Heather must complete her filming task before any other activity. If she does not, her Hot-Headed trait triggers — she must argue with one other Sim.",
-      "Every day: one need for all three Sims drops by two bars without explanation — rotate through Hunger, Energy, Comfort, and Social.",
-      "Every morning from Day 2: add new stick figures or cairn objects near the sleeping area. The Sims did not put them there.",
-      "The map is removed on Day 3 with no announcement. From Day 3 onward, all three Sims must spend 2 hours per day moving between lot sections — they are trying to find the way out.",
-      "Every day: Mike and Josh must perform one hostile interaction with Heather. She must not back down.",
-      "On Day 4: Josh is removed from the household during the night. He is not there in the morning. His equipment is.",
-      "From Day 5: Heather and Mike may access the ruined cabin. They must enter together.",
-      "Neither Heather nor Mike may sleep inside any structure before Day 5.",
-      "On Day 7: both remaining Sims are moved to the cabin's basement room. The scenario ends there. The camera is still running."
-    ],
-    "storyBeats": [
-      { "step": 1, "text": "Day one of filming. The forest is beautiful. The locals in town were odd about the whole thing. The map is clear. The path is clear. Everything is fine." },
-      { "step": 2, "text": "Something moved around the camp during the night. The stick figures were not there yesterday. Nobody admits to being afraid." },
-      { "step": 3, "text": "The map is gone. Mike says Heather dropped it. Heather says she did not drop it. They walk in circles for most of the day and end up where they started." },
-      { "step": 4, "text": "Josh's voice is heard in the trees that night but he is not in his sleeping bag in the morning. His camera is still recording." },
-      { "step": 5, "text": "The cabin. It is impossible — they have never been this far in this direction. And yet here it is, exactly where it should not be." },
-      { "step": 6, "text": "Inside. Down the stairs. The camera is still running. It will be running when they find it." }
-    ],
-    "endings": [
-      {
-        "title": "The Footage",
-        "text": "Both Heather and Mike are moved to the cabin basement on Day 7. The scenario ends. The camera object is placed on the basement floor and not touched. One year later — represented by starting a new save — a third Sim finds the lot and finds the camera. The footage is intact."
-      },
-      {
-        "title": "Heather's Apology",
-        "text": "If Heather completes all 7 filming tasks and her mood is green on Day 7: the footage is coherent and complete. It is genuinely good documentary material about three people being undone by fear and each other. The Blair Witch may or may not exist. The film is real either way."
-      },
-      {
-        "title": "The Map",
-        "text": "If Mike's and Heather's moods are both green on Day 4 — they have held together better than expected — Josh's disappearance is not enough to break them. They find the cabin on Day 5 and choose not to enter. They sit outside it until dawn. Nothing happens. They walk out of the forest on Day 6 using instinct and luck. Nobody believes them. They barely believe themselves."
-      }
-    ]
   }
+
+
 
 ]

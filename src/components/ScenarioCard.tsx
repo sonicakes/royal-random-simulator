@@ -3,9 +3,9 @@ import { PiFilmSlate, PiBookOpenText } from 'react-icons/pi'
 import type { Scenario } from '../types/scenario'
 
 const DIFFICULTY_COLOUR: Record<Scenario['difficulty'], string> = {
-  easy: 'text-sims-green',
-  medium: 'text-yellow-400',
-  hard: 'text-horror-red',
+  easy: '#4ade80',
+  medium: '#F5B800',
+  hard: '#B81515',
 }
 
 interface ScenarioCardProps {
@@ -16,10 +16,11 @@ export default function ScenarioCard({ scenario }: ScenarioCardProps) {
   return (
     <Link
       to={`/scenarios/${scenario.id}`}
-      className="group flex flex-col rounded-card overflow-hidden transition-all duration-200"
+      className="group flex flex-col rounded-card overflow-hidden transition-all duration-200 z-90"
       style={{
-        background: 'rgb(13, 32, 35)',
+        background: 'rgb(8, 26, 32)',
         border: '1px solid rgba(255,255,255,0.07)',
+        boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
         animation: 'fadeIn 1.5s ease-out',
       }}
       onMouseEnter={(e) => {
@@ -37,16 +38,18 @@ export default function ScenarioCard({ scenario }: ScenarioCardProps) {
           className="w-full h-60 object-cover"
         />
       ) : (
-        <div className="w-full h-60 bg-white/10 border-b border-white/10 flex items-center justify-center text-white/30 text-xs select-none tracking-wide">
-          img goes here
-        </div>
+        <img
+          src="/images/spooks.png"
+          alt="Spooky placeholder"
+          className="w-full h-60 object-cover"
+        />
       )}
 
       <div className="p-4 flex flex-col gap-1 flex-1">
         <h3 className="font-bold text-lg leading-snug group-hover:text-sims-green transition-colors">
           {scenario.title}
         </h3>
-        <p className="text-sm text-white/65">
+        <p className="text-sm text-white/65 flex gap-2 items-center">
           <span className="inline-flex items-center gap-1.5">
             {scenario.sourceType === 'film'
               ? <PiFilmSlate className="text-sims-green" size={14} />
@@ -54,7 +57,7 @@ export default function ScenarioCard({ scenario }: ScenarioCardProps) {
             {scenario.year}
           </span>
           {' · '}
-          <span className={`font-semibold ${DIFFICULTY_COLOUR[scenario.difficulty]}`}>
+          <span className="font-semibold" style={{ color: DIFFICULTY_COLOUR[scenario.difficulty] }}>
             {scenario.difficulty}
           </span>
         </p>

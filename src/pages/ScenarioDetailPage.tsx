@@ -30,9 +30,9 @@ interface Playthrough {
 const scenarios = scenariosData as Scenario[]
 
 const DIFFICULTY_COLOUR: Record<Scenario['difficulty'], string> = {
-  easy: 'text-sims-green',
-  medium: 'text-yellow-400',
-  hard: 'text-horror-red',
+  easy: '#4ade80',
+  medium: '#F5B800',
+  hard: '#B81515',
 }
 
 export default function ScenarioDetailPage() {
@@ -83,7 +83,7 @@ export default function ScenarioDetailPage() {
             {scenario.source} ({scenario.year})
           </span>
           {' · '}
-          <span className={`font-semibold ${DIFFICULTY_COLOUR[scenario.difficulty]}`}>
+          <span className="font-semibold" style={{ color: DIFFICULTY_COLOUR[scenario.difficulty] }}>
             {scenario.difficulty}
           </span>
         </p>
@@ -97,12 +97,11 @@ export default function ScenarioDetailPage() {
           className="w-full rounded-card object-contain mb-8"
         />
       ) : (
-        <div
-          className="w-full aspect-video rounded-card flex items-center justify-center text-white/30 text-xs tracking-wide mb-8"
-          style={{ background: 'rgba(255,255,255,0.10)', border: '1px solid rgba(255,255,255,0.12)' }}
-        >
-          img goes here
-        </div>
+        <img
+          src="/images/spooks.png"
+          alt="Spooky placeholder"
+          className="w-full rounded-card object-contain mb-8"
+        />
       )}
 
       {/* Description */}
@@ -127,7 +126,10 @@ export default function ScenarioDetailPage() {
           <ul className="space-y-2">
             {scenario.setup.map((item, i) => (
               <li key={i} className="flex gap-3 text-base text-white/85">
-                <span className="text-sims-green shrink-0 mt-1">☐</span>
+                <svg viewBox="0 0 12 14" fill="none" stroke="#4ade80" strokeWidth="1.2" strokeLinejoin="round" style={{ width: '0.7em', height: '0.85em', flexShrink: 0, marginTop: '0.3em' }}>
+                  <polygon points="3,0 9,0 12,5 6,14 0,5" />
+                  <line x1="0" y1="5" x2="12" y2="5" strokeOpacity="0.5" />
+                </svg>
                 <span>{item}</span>
               </li>
             ))}

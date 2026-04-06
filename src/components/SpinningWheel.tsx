@@ -2,15 +2,14 @@ import { useRef, useEffect, useCallback, useState } from 'react'
 import type { Scenario } from '../types/scenario'
 
 const PALETTE = [
-  '#16a34a',
-  '#0369a1',
-  '#7c3aed',
-  '#eab308',
-  '#e8143c',
-  '#0f766e',
-  '#be185d',
-  '#15803d',
-  '#1d4ed8',
+  '#2EAD3F',
+  '#15B8B0',
+  '#F5B800',
+  '#6BCF3A',
+  '#AD2E9C',
+  '#B81515',
+  '#0047F5',
+  '#7C3AED',
 ]
 
 interface SpinningWheelProps {
