@@ -86,7 +86,7 @@ export default function HomePage() {
                 A companion project to{' '}<a href="https://cinefile-blog.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-sims-green hover:underline">The Cinefile Blog</a>{' '}and{' '}
                 <a href="https://open.spotify.com/show/5Ri7xJYDE9JDel4iCdl6LA?si=eb1e6971fd3d4844" target="_blank" rel="noopener noreferrer" className="text-sims-green hover:underline">The Kino Royale Podcast</a>,
           
-              <span className='pl-1 font-bold'>The Royal Simulator</span> turns horror films and novels into playable Sims 4 scenarios — designed to recreate the logic and atmosphere of each source material inside the game.
+              <span className='pl-1 font-bold'>The Royal Simulator</span> turns horror films, tv shows and novels into playable Sims 4 scenarios — designed to recreate the logic and atmosphere of each source material inside the game.
             </p>
               <p>
                 <span className="text-white uppercase tracking-wider text-xs font-bold">What each scenario includes</span><br />

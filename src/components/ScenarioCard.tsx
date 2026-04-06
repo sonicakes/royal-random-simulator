@@ -1,11 +1,24 @@
 import { Link } from 'react-router-dom'
-import { PiFilmSlate, PiBookOpenText } from 'react-icons/pi'
+import { PiFilmSlate, PiBookOpenText, PiTelevisionSimple } from 'react-icons/pi'
 import type { Scenario } from '../types/scenario'
 
 const DIFFICULTY_COLOUR: Record<Scenario['difficulty'], string> = {
   easy: '#4ade80',
   medium: '#F5B800',
   hard: '#B81515',
+}
+
+const PLACEHOLDERS = [
+  '/images/placeholder/halloween.png',
+  '/images/placeholder/knife.png',
+  '/images/placeholder/reaper.png',
+  '/images/placeholder/scream.png',
+  '/images/placeholder/spooks.png',
+]
+
+function pickPlaceholder(id: string): string {
+  const hash = id.split('').reduce((acc, c) => acc + c.charCodeAt(0), 0)
+  return PLACEHOLDERS[hash % PLACEHOLDERS.length]
 }
 
 interface ScenarioCardProps {
@@ -39,7 +52,7 @@ export default function ScenarioCard({ scenario }: ScenarioCardProps) {
         />
       ) : (
         <img
-          src="/images/spooks.png"
+          src={pickPlaceholder(scenario.id)}
           alt="Spooky placeholder"
           className="w-full h-60 object-cover"
         />
@@ -53,7 +66,9 @@ export default function ScenarioCard({ scenario }: ScenarioCardProps) {
           <span className="inline-flex items-center gap-1.5">
             {scenario.sourceType === 'film'
               ? <PiFilmSlate className="text-sims-green" size={14} />
-              : <PiBookOpenText className="text-sims-green" size={14} />}
+              : scenario.sourceType === 'book'
+              ? <PiBookOpenText className="text-sims-green" size={14} />
+              : <PiTelevisionSimple className="text-sims-green" size={14} />}
             {scenario.year}
           </span>
           {' · '}

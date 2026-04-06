@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { PiFilmSlate, PiBookOpenText } from 'react-icons/pi'
+import { PiFilmSlate, PiBookOpenText, PiTelevisionSimple } from 'react-icons/pi'
 import { useParams, useNavigate } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import LightboxGallery from '../components/LightboxGallery'
@@ -79,7 +79,9 @@ export default function ScenarioDetailPage() {
           <span className="inline-flex items-center gap-1.5 align-middle">
             {scenario.sourceType === 'film'
               ? <PiFilmSlate className="inline text-sims-green" size={16} />
-              : <PiBookOpenText className="inline text-sims-green" size={16} />}
+              : scenario.sourceType === 'book'
+              ? <PiBookOpenText className="inline text-sims-green" size={16} />
+              : <PiTelevisionSimple className="inline text-sims-green" size={16} />}
             {scenario.source} ({scenario.year})
           </span>
           {' · '}
