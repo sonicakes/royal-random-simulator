@@ -1,7 +1,7 @@
 # Royal Random SIMulator — Claude Code Instructions
 
 ## Project overview
-Royal Random SIMulator is a Sims 4 horror scenario generator. It is a personal web app created with Claude's help, giving players scenario ideas based on horror films and books. Users discover scenarios via a spinning wheel, browse a searchable library, or navigate directly to a scenario. It can be used alongside The Cinefile Blog (https://cinefile-blog.netlify.app/) and The Kino Royale Podcast (https://open.spotify.com/show/5Ri7xJYDE9JDel4iCdl6LA).
+Royal Random SIMulator is a Sims 4 horror scenario generator. It is a personal web app created with Claude's help, giving players scenario ideas based on horror films, books, and TV shows. Users discover scenarios via a spinning wheel, browse a searchable library, or navigate directly to a scenario. It can be used alongside The Cinefile Blog (https://cinefile-blog.netlify.app/) and The Kino Royale Podcast (https://open.spotify.com/show/5Ri7xJYDE9JDel4iCdl6LA).
 
 There is no backend, no database, no authentication, and no AI integration. All scenario data lives in a single `src/data/scenarios.json` file.
 
@@ -94,11 +94,11 @@ All scenarios live in `src/data/scenarios.json` as a top-level array. The shape 
 Field notes:
 - `id` — kebab-case, unique, used as the URL slug
 - `source` — string title of the source work
-- `sourceType` — `"film"` or `"book"`
+- `sourceType` — `"film"`, `"book"`, or `"tv"`
 - `year` — release/publication year of the source work
 - `difficulty` — `"easy"`, `"medium"`, or `"hard"`
 - `tags` — freeform lowercase strings, defined by the author
-- `thumbnail` — optional; path relative to `/public/images/`; omit if no image yet
+- `thumbnail` — optional; path relative to `/public/images/`; omit if no image yet — a random placeholder from `/public/images/placeholder/` will be used
 - `householdMembers` — each member has `name`, `role`, and `traits` (string array)
 - `storyBeats` — ordered objects with `step` (number) and `text` (string)
 
@@ -164,7 +164,7 @@ The nav is 60px tall (`h-15`), no bottom border, and renders: **Royal Si♦ulato
 
 ## Functionality notes
 - Browse page: search is live (filters as user types), no submit button
-- Filters (film/book, difficulty, tags) are additive — AND logic
+- Filters (film/book/tv, difficulty, tags) are additive — AND logic
 - Modal closes on backdrop click or ✕ button
 - No loading states needed — all data is local JSON
 - No error boundaries needed for MVP
@@ -177,6 +177,15 @@ The nav is 60px tall (`h-15`), no bottom border, and renders: **Royal Si♦ulato
 - No user accounts, saves, or favourites
 - No animations beyond the wheel spin & confetti
 - No dark/light mode toggle (dark only)
+
+## Deployment
+
+- Hosted on **Netlify**: https://royal-simulator.netlify.app/
+- Auto-deploys from `master` branch
+- Build command: `npm run build` · Publish directory: `dist`
+- `public/_redirects` rewrites all paths to `index.html` for React Router (BrowserRouter) to work on direct URL access and refresh
+
+---
 
 ## Behavior Instructions
 
