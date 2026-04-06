@@ -1,6 +1,5 @@
 import { useState, useMemo, useRef, useCallback, useEffect } from 'react'
-import { SlidersHorizontal } from 'lucide-react'
-import { PiFilmSlate, PiBookOpenText } from 'react-icons/pi'
+import { PiFilmSlate, PiBookOpenText, PiSlidersHorizontal } from 'react-icons/pi'
 import ScenarioCard from '../components/ScenarioCard'
 import scenariosData from '../data/scenarios.json'
 import type { Scenario } from '../types/scenario'
@@ -82,7 +81,7 @@ export default function BrowsePage() {
             placeholder="Search by title…"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-2/3 bg-white/5 border border-white/10 rounded-card px-4 py-2 text-base text-white placeholder-white/50 focus:outline-none focus:border-sims-green/50"
+            className="w-md bg-white/5 z-100 border border-white/10 rounded-card px-4 py-2 text-base text-white placeholder-white/50 focus:outline-none focus:border-sims-green/50"
           />
           <button
             onClick={() => setShowFilters((v) => !v)}
@@ -93,7 +92,7 @@ export default function BrowsePage() {
                 : 'bg-white/5 text-white/50 border-white/10 hover:text-white/80 hover:border-white/30'
             }`}
           >
-            <SlidersHorizontal size={16} />
+            <PiSlidersHorizontal size={16} />
             <span className="text-sm font-semibold">Filters</span>
             {(sourceType !== 'all' || difficulty !== 'all' || selectedTags.length > 0) && (
               <span className="absolute -top-1.5 -right-1.5 bg-sims-green text-bg text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center">

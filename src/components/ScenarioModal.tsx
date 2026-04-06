@@ -10,9 +10,9 @@ interface ScenarioModalProps {
 }
 
 const DIFFICULTY_COLOUR: Record<Scenario['difficulty'], string> = {
-  easy: 'text-sims-green',
-  medium: 'text-yellow-400',
-  hard: 'text-horror-red',
+  easy: '#4ade80',
+  medium: '#F5B800',
+  hard: '#B81515',
 }
 
 export default function ScenarioModal({ scenario, onClose, onSpinAgain }: ScenarioModalProps) {
@@ -30,7 +30,7 @@ export default function ScenarioModal({ scenario, onClose, onSpinAgain }: Scenar
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-md rounded-card p-6 shadow-2xl"
+        className="relative w-full max-w-md rounded-card p-6 shadow-2xl z-200"
         style={{ background: 'rgb(13, 32, 35)', border: '1px solid rgba(74,222,128,0.35)' }}
         onClick={(e) => e.stopPropagation()}
       >
@@ -60,7 +60,7 @@ export default function ScenarioModal({ scenario, onClose, onSpinAgain }: Scenar
           You got…
         </p>
         <h2 className="text-2xl font-extrabold mb-1 capitalize">{scenario.title}</h2>
-        <p className="text-sm text-white/70 mb-3">
+        <p className="text-sm text-white/70 mb-3 flex gap-2 items-center">
           <span className="inline-flex items-center gap-1.5">
             {scenario.sourceType === 'film'
               ? <PiFilmSlate className="text-sims-green" size={14} />
@@ -68,7 +68,7 @@ export default function ScenarioModal({ scenario, onClose, onSpinAgain }: Scenar
             {scenario.source} ({scenario.year})
           </span>
           {' · '}
-          <span className={`font-semibold ${DIFFICULTY_COLOUR[scenario.difficulty]}`}>
+          <span className="font-semibold" style={{ color: DIFFICULTY_COLOUR[scenario.difficulty] }}>
             {scenario.difficulty}
           </span>
         </p>

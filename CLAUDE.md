@@ -109,12 +109,10 @@ Field notes:
 ### Colours
 ```css
 --bg:             #080f14;   /* page background */
---bg-card:        #0a1212;   /* card / modal background */
---bg-modal:       #0a1a12;   /* modal background */
 --green-bright:   #4ade80;   /* primary Sims green — nav, hover, gem icon */
---green-btn:      #16a34a;   /* button background */
---green-btn-hover:#15803d;   /* button hover */
---crimson:        #e8143c;   /* horror accent — wheel pointer, film tags, difficulty */
+--green-btn:      #1db86a;   /* spin button base */
+--amber:          #F5B800;   /* warm accent — medium difficulty */
+--coral:          #B81515;   /* hard difficulty, "Torture" title */
 --text-primary:   #ffffff;
 --text-muted:     rgba(255,255,255,0.35);
 --text-hint:      rgba(255,255,255,0.28);
@@ -122,15 +120,20 @@ Field notes:
 --border-hover:   rgba(74,222,128,0.35);
 ```
 
-### Wheel segment palette (cycle through in order)
+### Difficulty colours
+- easy → `#4ade80` (green)
+- medium → `#F5B800` (amber)
+- hard → `#B81515` (coral)
+
+### Wheel segment palette
+8-colour complementary palette — four colours from a botanical reference image plus their direct opposites. Cycle through in order:
 ```js
-["#16a34a","#0369a1","#7c3aed","'#eab308","#0f766e","#be185d","#15803d","#1d4ed8"]
+["#2EAD3F","#15B8B0","#F5B800","#6BCF3A","#AD2E9C","#B81515","#0047F5","#7C3AED"]
 ```
 
 ### Tags
-- Film source → crimson background/border
-- Book source → green background/border
-- Difficulty badges → crimson
+- Film source → amber tint
+- Book source → green tint
 - Generic tags → subtle white tint
 
 ### Typography
