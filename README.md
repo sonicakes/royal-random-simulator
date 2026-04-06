@@ -4,6 +4,21 @@ A personal Sims 4 horror scenario generator, created with Claude's help. Gives p
 
 No backend. No database. No auth. All scenario data lives in a single JSON file.
 
+**Live site:** [royal-simulator.netlify.app](https://royal-simulator.netlify.app/)
+
+---
+
+## Deployment
+
+Hosted on **Netlify** with automatic deploys from the `master` branch.
+
+| Setting | Value |
+|---|---|
+| Build command | `npm run build` |
+| Publish directory | `dist` |
+
+`public/_redirects` rewrites all paths to `index.html` so React Router handles client-side navigation correctly on direct URL access and page refresh.
+
 ---
 
 ## Tech stack
@@ -247,7 +262,7 @@ All scenarios live in `src/data/scenarios.json` as a top-level array:
 |---|---|---|
 | `id` | `string` | Kebab-case, unique, used as the URL slug |
 | `source` | `string` | Title of the source work |
-| `sourceType` | `"film" \| "book"` | |
+| `sourceType` | `"film" \| "book" \| "tv"` | |
 | `year` | `number` | Release / publication year |
 | `difficulty` | `"easy" \| "medium" \| "hard"` | |
 | `tags` | `string[]` | Freeform lowercase, defined by the author |
