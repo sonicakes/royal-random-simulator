@@ -1,24 +1,12 @@
 import { Link } from 'react-router-dom'
 import { PiFilmSlate, PiBookOpenText, PiTelevisionSimple } from 'react-icons/pi'
 import type { Scenario } from '../types/scenario'
+import { pickPlaceholder } from '../utils/placeholder'
 
 const DIFFICULTY_COLOUR: Record<Scenario['difficulty'], string> = {
   easy: '#4ade80',
   medium: '#F5B800',
   hard: '#B81515',
-}
-
-const PLACEHOLDERS = [
-  '/images/placeholder/halloween.png',
-  '/images/placeholder/knife.png',
-  '/images/placeholder/reaper.png',
-  '/images/placeholder/scream.png',
-  '/images/placeholder/spooks.png',
-]
-
-function pickPlaceholder(id: string): string {
-  const hash = id.split('').reduce((acc, c) => acc + c.charCodeAt(0), 0)
-  return PLACEHOLDERS[hash % PLACEHOLDERS.length]
 }
 
 interface ScenarioCardProps {
