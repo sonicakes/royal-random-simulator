@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown'
 import LightboxGallery from '../components/LightboxGallery'
 import scenariosData from '../data/scenarios.json'
 import type { Scenario } from '../types/scenario'
+import { pickPlaceholder } from '../utils/placeholder'
 
 const playthroughModules = import.meta.glob('../data/playthroughs/*.md', { query: '?raw', import: 'default' })
 
@@ -100,7 +101,7 @@ export default function ScenarioDetailPage() {
         />
       ) : (
         <img
-          src="/images/spooks.png"
+          src={pickPlaceholder(scenario.id)}
           alt="Spooky placeholder"
           className="w-full rounded-card object-contain mb-8"
         />

@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { PiFilmSlate, PiBookOpenText } from 'react-icons/pi'
 import type { Scenario } from '../types/scenario'
+import { pickPlaceholder } from '../utils/placeholder'
 
 interface ScenarioModalProps {
   scenario: Scenario
@@ -51,9 +52,11 @@ export default function ScenarioModal({ scenario, onClose, onSpinAgain }: Scenar
             className="w-full h-60 object-cover rounded-lg mb-4"
           />
         ) : (
-          <div className="w-full h-60 rounded-lg bg-white/10 flex items-center justify-center text-white/30 text-xs tracking-wide mb-4">
-            img goes here
-          </div>
+          <img
+            src={pickPlaceholder(scenario.id)}
+            alt="Spooky placeholder"
+            className="w-full h-60 object-cover rounded-lg mb-4"
+          />
         )}
 
         <p className="text-sm font-semibold uppercase tracking-widest text-sims-green mb-1">

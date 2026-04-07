@@ -1579,8 +1579,146 @@
         "text": "Rachel fails to complete 7 investigative actions before Day 7. The countdown reaches zero. The apartment lot goes dark. Aidan is alone in the morning. The tape is still in the locked room. Someone will find it."
       }
     ]
+  },
+  {
+    "id": "stepford-wives",
+    "title": "The Stepford Wives",
+    "source": "The Stepford Wives",
+    "sourceType": "film",
+    "year": 1975,
+    "difficulty": "hard",
+    "tags": ["psychological", "suburban", "paranoia", "body-horror", "slow-burn", "ensemble"],
+    "description": "Joanna Eberhart moves with her husband Walter and their children to Stepford, Connecticut — a picture-perfect town where the lawns are immaculate, the houses are enormous, and the wives are extraordinary. Beautiful, compliant, devoted to their homes and husbands with a fervour that reads less like contentment and more like something has been removed. Joanna cannot stop noticing. Noticing is the most dangerous thing she can do. Based on the novel by Ira Levin and the 1975 film directed by Bryan Forbes.",
+    "setup": [
+      "Use a large, pristine suburban world — Willow Creek dressed up with oversized lots, manicured hedges, and no visible disorder anywhere. Every house should look like a show home. The street should feel like a set.",
+      "The Men's Association is a locked building at the edge of the lot — large, windowless, accessible only to male Sims. It must contain a workshop room representing the laboratory. This room is never seen by female Sims. It unlocks for the scenario's ending only.",
+      "Joanna Eberhart is a young adult — a photographer, sharp, funny, not yet frightened enough. Suggested traits: Creative, Outgoing, Bookworm, Self-Assured, Ambitious. She arrives in Stepford with her camera and her sense of humour and begins losing both gradually.",
+      "Walter Eberhart is a young adult — Joanna's husband, well-meaning in the beginning, weak in the ways that matter most. Suggested traits: Good, Neat, Ambitious, Family-Oriented, Loner. He joins the Men's Association on Day 3 and must visit it every day thereafter.",
+      "Bobbie Markowe is a young adult — Joanna's only real friend in Stepford, the other woman who notices. Suggested traits: Outgoing, Hot-Headed, Bookworm, Mischievous, Good. She and Joanna must share at least one conspiratorial conversation per day.",
+      "The Stepford Wives are 4–6 existing NPC women in the neighbourhood — all immaculately dressed, all warm, all wrong. Suggested traits for each: Neat, Cheerful, Family-Oriented, Romantic, Perfectionist. They never argue. They never complain. They always have something on the stove.",
+      "The Stepford Husbands are the male partners of the Stepford Wives — all members of the Men's Association. They are pleasant, organised, and have arrived at their pleasant organisation recently.",
+      "Dale Coba — called Diz — is a middle-aged adult, the president of the Men's Association. Suggested traits: Genius, Loner, Snob, Ambitious, Mean. He is always friendly to Joanna. This is worse than if he were not.",
+      "Each Stepford Wife must have a Before and After state. Before: give one wife a hidden rebellious or independent trait — Hot-Headed, Creative, Ambitious. After Day 14: remove that trait and replace it with Neat or Perfectionist. This is her replacement.",
+      "Joanna begins the scenario with a camera object — a debug item representing her photography. It must be in her inventory at all times. If it is ever removed, she has begun to change."
+    ],
+    "householdMembers": [
+      { "name": "Joanna Eberhart", "role": "The Newcomer", "traits": ["Creative", "Outgoing", "Bookworm", "Self-Assured", "Ambitious"] },
+      { "name": "Walter Eberhart", "role": "The Husband", "traits": ["Good", "Neat", "Ambitious", "Family-Oriented", "Loner"] },
+      { "name": "Bobbie Markowe", "role": "The Friend", "traits": ["Outgoing", "Hot-Headed", "Bookworm", "Mischievous", "Good"] },
+      { "name": "Dale Coba", "role": "The President", "traits": ["Genius", "Loner", "Snob", "Ambitious", "Mean"] }
+    ],
+    "goals": [
+      "Joanna must discover 5 clues about the Men's Association before Day 21 — each represented by a 2-hour research or observation task near the Association building or a suspicious husband.",
+      "Bobbie must remain in the household with her original traits intact until at least Day 14.",
+      "Joanna must attempt to leave Stepford — represented by calling a taxi or moving toward the lot exit — before Day 28.",
+      "Walter must reach the Men's Association on Day 3 and attend every day thereafter. His relationship score with Joanna must decay by one tier per week from Day 7 onward."
+    ],
+    "rules": [
+      "Every day: the Stepford Wives perform their domestic routines with inhuman consistency — cleaning, cooking, tending the garden. They must complete at least 3 household tasks before noon. They do not read. They do not have opinions about things that are not the house.",
+      "Every day: Joanna must perform one act of independent selfhood — photographing something, reading, pursuing a creative task, or having a conversation that is not about the house or the children. This is her resistance. It must be logged.",
+      "Every day: Walter visits the Men's Association for at least 2 hours. When he returns, he must perform one interaction with Joanna that is subtly wrong — too complimentary about the house, too uninterested in her photography, too satisfied.",
+      "Every day: Bobbie and Joanna must meet and share one conspiratorial interaction — a whispered conversation, an exchange of observations, a moment of we-are-not-imagining-this. If they miss a day, Bobbie's suspicion meter drops by one point.",
+      "Once per week: one Stepford Wife undergoes her replacement. Remove her rebellious or independent trait. Add Neat or Perfectionist. She is now pleasant about things she previously had opinions on. She makes a casserole.",
+      "Once per week: Diz visits Joanna at home. He is warm, attentive, and asks careful questions about her photography and her interests. Each visit, Joanna must make a note of one new detail she finds wrong about him.",
+      "From Day 7 onward: Walter's relationship score with Joanna drops by one tier per week automatically. He is not cruel. He is becoming interested in different things.",
+      "If Bobbie's replacement occurs before Day 21: Joanna loses her closest ally. Her mood drops to red for 48 hours and she may not perform her daily act of independent selfhood during this period. She is alone now.",
+      "Joanna may not leave the neighbourhood lot without Walter's company until Day 21. From Day 21 onward she may attempt to leave alone — each attempt is met with one blocking interaction from a Stepford Husband before she reaches the exit.",
+      "The camera object must remain in Joanna's inventory. If Walter removes it — represented by taking it from a shared surface — the replacement has begun. The scenario moves immediately to the ending."
+    ],
+    "storyBeats": [
+      { "step": 1, "text": "Stepford is beautiful. The neighbours are warm. The houses are extraordinary. Joanna photographs everything because that is what she does, and everything here looks like it has been arranged to be photographed." },
+      { "step": 2, "text": "The wives. Something about the wives. Joanna mentions it to Bobbie. Bobbie has noticed too. They sit in Bobbie's kitchen and make a list of things that are wrong." },
+      { "step": 3, "text": "Walter joins the Men's Association. He comes home later than expected and compliments the kitchen in a way he has never complimented anything before." },
+      { "step": 4, "text": "The first replacement. A woman Joanna had begun to like — sharp, funny, prone to strong opinions about local politics — is now discussing the correct temperature for a slow-braised joint. She seems happy. She seems genuinely, completely happy." },
+      { "step": 5, "text": "Diz visits. He asks about Joanna's photography with the specific interest of a man who has been briefed on what to ask about. She smiles and answers and afterwards writes down everything he said." },
+      { "step": 6, "text": "Bobbie. The morning after Bobbie's replacement Joanna stands in Bobbie's kitchen and Bobbie offers her coffee and discusses the new countertops. Joanna drinks the coffee. She does not stay long." },
+      { "step": 7, "text": "The Men's Association. The lot exit. Walter somewhere behind her in the house. The camera in her hand or not in her hand. The decision that has already been made, possibly weeks ago, by someone other than her." }
+    ],
+    "endings": [
+      {
+        "title": "The Association",
+        "text": "Walter removes the camera object before Day 28. The replacement has begun. Move Joanna to the Men's Association building — she may enter it now, for the first time, through the laboratory door. She spends 2 hours inside. When she emerges she is wearing something she would not have chosen. She makes a casserole. She compliments the kitchen. She is warm and pleasant and the photography equipment sits untouched in the spare room. Walter seems very happy. Stepford is beautiful."
+      },
+      {
+        "title": "The Evidence",
+        "text": "Joanna collects all 5 clues before Day 21 and attempts to leave the lot. She is blocked once. She is blocked twice. On the third attempt — if her mood is green and Bobbie has not yet been replaced — she reaches the lot exit. She leaves Stepford with the children and the camera and a list of five things she cannot yet prove. Walter does not follow immediately. He will, eventually. The Association is patient."
+      },
+      {
+        "title": "Too Late",
+        "text": "Joanna collects fewer than 3 clues before Bobbie's replacement. She has no ally, insufficient evidence, and Walter's relationship score has reached Acquaintance. She does not attempt to leave. She stays in the house and photographs the garden and the kitchen and the children and nothing with a sharp edge in it. The photos are beautiful. Diz tells her so on his next visit. She thanks him. She means it."
+      }
+    ]
+  },
+  {
+    "id": "little-shop-of-horrors",
+    "title": "Little Shop of Horrors",
+    "source": "Little Shop of Horrors",
+    "sourceType": "film",
+    "year": 1960,
+    "difficulty": "medium",
+    "tags": ["comedy-horror", "supernatural", "ambition", "plant", "two-person", "escalation"],
+    "description": "Seymour Krelborn is a hapless florist's assistant on Skid Row who discovers an unusual plant he cannot identify. He names it Audrey II, after his co-worker and secret love. Audrey II grows only when fed blood. It speaks. It wants more. Each feeding makes it larger, more persuasive, more demanding — and Seymour's life gets measurably better every time he complies. Based on the 1960 film directed by Roger Corman and the 1982 stage musical.",
+    "setup": [
+      "Use a small, shabby commercial lot — a flower shop on a rundown city street. San Myshuno's older districts work well. The shop must be cramped, slightly grimy, and full of plants — none of them as interesting as Audrey II.",
+      "Audrey II begins as a small potted plant object on the shop counter — a debug item or the smallest available plant. It must grow at the end of each feeding cycle, represented by replacing it with progressively larger plant objects. There are four sizes: small, medium, large, and enormous. It reaches enormous at the fourth feeding.",
+      "Seymour Krelborn is a young adult — sweet, unlucky, desperate to be seen as something more than he is. Suggested traits: Good, Bookworm, Loner, Clumsy (use Hot-Headed for moments of panicked bad decisions), Romantic.",
+      "Audrey is a young adult — kind, self-deprecating, trapped in a relationship she has normalised. Suggested traits: Good, Romantic, Outgoing, Cheerful, Loner. She deserves better than everything currently happening to her.",
+      "Gravis Mushnick is a middle-aged adult — the shop owner, mercenary, delighted by Audrey II's effect on business and uninterested in asking how. Suggested traits: Mean, Ambitious, Materialist, Snob.",
+      "Audrey II's voice is never a playable Sim. It is a mechanic — a daily demand that arrives each morning as a note object near the plant. Seymour reads it alone. No one else may interact with the note.",
+      "The plant's victims are rotating NPCs — one per feeding cycle. They must visit the shop lot at least once before the feeding occurs. They must not be innocent — the scenario requires Seymour to find someone the audience will not entirely mourn. Suggested NPC traits: Evil, Mean, Hot-Headed.",
+      "Orin Scrivello is the first designated victim — Audrey's sadistic dentist boyfriend. He is a young adult. Suggested traits: Mean, Evil, Hot-Headed, Self-Assured. He must visit the lot at least twice before his feeding.",
+      "The shop must track two parallel metrics: the Business Meter (how well the shop is doing — track customer visits and positive interactions with Mushnick) and the Guilt Meter (a manual count of Seymour's feeding events). At Guilt 4 the plant is enormous and the scenario enters its final phase."
+    ],
+    "householdMembers": [
+      { "name": "Seymour Krelborn", "role": "The Florist", "traits": ["Good", "Bookworm", "Loner", "Hot-Headed", "Romantic"] },
+      { "name": "Audrey", "role": "The Co-Worker", "traits": ["Good", "Romantic", "Outgoing", "Cheerful", "Loner"] },
+      { "name": "Gravis Mushnick", "role": "The Boss", "traits": ["Mean", "Ambitious", "Materialist", "Snob"] },
+      { "name": "Orin Scrivello", "role": "The Dentist", "traits": ["Mean", "Evil", "Hot-Headed", "Self-Assured"] }
+    ],
+    "goals": [
+      "Audrey II must reach enormous size — four completed feeding cycles — before the scenario's ending triggers.",
+      "Seymour must reach Romantic Interest status with Audrey before the fourth feeding.",
+      "The Business Meter must reach 5 — five days of successful customer interactions — before the Guilt Meter reaches 3.",
+      "Seymour must attempt to destroy the plant once — represented by removing it from the counter — before the fourth feeding. He must then return it."
+    ],
+    "rules": [
+      "Every day: Audrey II's note arrives. It contains one demand — blood, a specific person, more. Seymour reads it alone. He has until the end of that in-game day to decide whether to comply.",
+      "Every day: Seymour must tend the plant for at least 1 hour — watering, talking to it, standing near it with the particular helplessness of a man who knows better. The plant must always have green needs.",
+      "Every day: Seymour must perform at least one warm interaction with Audrey. He is in love with her. This predates the plant. The plant has simply made it more complicated.",
+      "Every day: Mushnick monitors the shop's business. If fewer than 2 customer interactions occur that day, he threatens to close the shop. If this happens 3 days running, the scenario enters crisis mode — Seymour must perform a feeding within 24 hours to restore foot traffic via the plant's notoriety.",
+      "The feeding ritual: the designated victim must visit the shop lot. Seymour must spend 1 hour alone with them and the plant. The victim is removed from the household. The plant grows one size. The Guilt Meter increases by 1. Mushnick's mood improves.",
+      "After each feeding: Seymour's mood drops to red for 24 hours. He may not initiate romantic interactions with Audrey during this period. He may receive them.",
+      "Orin Scrivello must be the first feeding. He visits the shop twice before Seymour is ready. On his second visit he is hostile to Audrey. This is what makes Seymour ready.",
+      "Once per scenario: Seymour removes the plant from the counter and carries it to the lot exit. He cannot do it. He returns it. The Guilt Meter does not increase but the plant grows half a size anyway.",
+      "From Guilt 3 onward: Audrey II speaks during Seymour's daily tending hour — represented by the note object appearing twice that day, containing two demands instead of one. Seymour must choose which demand to fulfil.",
+      "From Guilt 3 onward: Audrey begins to suspect something. She must perform one investigative interaction per day — looking at the plant, asking Seymour a question he answers poorly, spending time near the back room where Seymour keeps things he should not be keeping.",
+      "If Audrey's suspicion reaches 3 consecutive investigative interactions with no reassurance from Seymour: she discovers the truth. The scenario moves immediately to its ending.",
+      "Mushnick must never be told the truth. If he asks a direct question about the plant's growth, Seymour must deflect with a successful Charisma interaction."
+    ],
+    "storyBeats": [
+      { "step": 1, "text": "Seymour finds the plant at a street market during an unusual solar eclipse. It is small and strange and he has never seen anything like it. He names it after Audrey because he names everything he loves after Audrey." },
+      { "step": 2, "text": "The plant is dying. Seymour pricks his finger on a thorn and a drop of blood falls on the soil. The plant straightens. It opens. It is, somehow, larger than it was this morning." },
+      { "step": 3, "text": "The shop is busy for the first time in years. People come from across the neighbourhood to see the extraordinary plant in the window. Mushnick is delighted. Seymour is terrified. Audrey thinks it is wonderful." },
+      { "step": 4, "text": "Orin. The second visit. What he says to Audrey in the back of the shop while Seymour pretends not to hear. The plant leans slightly toward the sound of Seymour's blood pressure rising." },
+      { "step": 5, "text": "The first feeding. Seymour does not sleep that night. In the morning the plant is the size of a small table and Mushnick has taken a phone call from a television producer." },
+      { "step": 6, "text": "The plant speaks now. It is charming about it. It says please. It says Seymour, feed me. It says you know this was always going to happen. It is not wrong." },
+      { "step": 7, "text": "Enormous. The fourth size. The plant fills the back of the shop. Audrey stands near it and it leans toward her and Seymour finally understands what the next demand is going to be." }
+    ],
+    "endings": [
+      {
+        "title": "Feed Me Seymour",
+        "text": "The plant reaches enormous size and Audrey's suspicion reaches 3. She discovers the truth. Seymour must choose: comply with Audrey II's final demand — removing Audrey from the household — or refuse. If he refuses: the plant attacks. Seymour is removed from the lot. Audrey survives. The plant remains in the shop, enormous and satisfied, as Mushnick begins discussing franchise opportunities. The Business Meter is at its highest point. The Guilt Meter is irrelevant now."
+      },
+      {
+        "title": "The Right Thing",
+        "text": "Seymour refuses the fourth feeding and destroys the plant — represented by removing the enormous plant object from the lot permanently. The shop loses all its customers within a week. Mushnick closes the business. Seymour and Audrey are unemployed and together on a street corner in Skid Row. Audrey's mood is green. Seymour's mood is green. The Guilt Meter resets to 0. A small, strange plant is visible in the background of the lot. It is very small. It is not doing anything. Yet."
+      },
+      {
+        "title": "Downtown",
+        "text": "Seymour complies with every demand including the last. Audrey is removed from the household. The plant reaches a size that cannot be represented by any available object — place it in the centre of the lot and surround it with debug objects representing rubble. Mushnick is somewhere underneath. Seymour stands in what used to be the shop. The plant says thank you. It says it could not have done this without him. It says there is a whole world out there. It asks if he is ready. Seymour has stopped being able to say no to it. He has been unable to say no to it since the first drop of blood. This was always where they were going."
+      }
+    ]
   }
-
 
 
 ]
