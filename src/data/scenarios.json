@@ -1651,13 +1651,13 @@
   },
   {
     "id": "little-shop-of-horrors",
-    "title": "Little Shop of Horrors",
+    "title": "PlantShop of Horrors",
     "source": "Little Shop of Horrors",
     "sourceType": "film",
     "year": 1960,
     "difficulty": "medium",
     "tags": ["comedy-horror", "supernatural", "ambition", "plant", "two-person", "escalation"],
-    "description": "Seymour Krelborn is a hapless florist's assistant on Skid Row who discovers an unusual plant he cannot identify. He names it Audrey II, after his co-worker and secret love. Audrey II grows only when fed blood. It speaks. It wants more. Each feeding makes it larger, more persuasive, more demanding — and Seymour's life gets measurably better every time he complies. Based on the 1960 film directed by Roger Corman and the 1982 stage musical.",
+    "description": "SFlaunt your entrepreneurship skills a la Mr Mushnik by running your own flower shop, except all your plants are weird. Actually, your worker Sims are ..plantSims? Don't forget your prized posession - a cowplant named Audrey.",
     "setup": [
       "Use a small, shabby commercial lot — a flower shop on a rundown city street. San Myshuno's older districts work well. The shop must be cramped, slightly grimy, and full of plants — none of them as interesting as Audrey II.",
       "Audrey II begins as a small potted plant object on the shop counter — a debug item or the smallest available plant. It must grow at the end of each feeding cycle, represented by replacing it with progressively larger plant objects. There are four sizes: small, medium, large, and enormous. It reaches enormous at the fourth feeding.",
