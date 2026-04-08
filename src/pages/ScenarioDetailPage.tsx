@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { PiFilmSlate, PiBookOpenText, PiTelevisionSimple } from 'react-icons/pi'
+import { PiFilmSlate, PiBookOpenText, PiTelevisionSimple, PiArrowUp } from 'react-icons/pi'
 import { useParams, useNavigate } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import LightboxGallery from '../components/LightboxGallery'
@@ -43,6 +43,13 @@ export default function ScenarioDetailPage() {
   const scenario = scenarios.find((s) => s.id === id)
 
   const [playthrough, setPlaythrough] = useState<Playthrough | null>(null)
+  const [showBackToTop, setShowBackToTop] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setShowBackToTop(window.scrollY > 400)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   useEffect(() => {
     const key = `../data/playthroughs/${id}.md`
@@ -65,6 +72,7 @@ export default function ScenarioDetailPage() {
   }
 
   return (
+    <>
     <main className="max-w-2xl mx-auto px-4 sm:px-6 py-8 w-full relative z-10" style={{ background: 'rgba(8,15,20,0.97)' }}>
       {/* Back */}
       <button
@@ -77,7 +85,7 @@ export default function ScenarioDetailPage() {
       {/* Header */}
       <div className="mb-6">
         <h1 className="text-3xl font-extrabold mb-1">{scenario.title}</h1>
-        <p className="text-base text-white/70">
+        <p className="text-base text-white/70 flex items-center gap-2">
           <span className="inline-flex items-center gap-1.5 align-middle">
             {scenario.sourceType === 'film'
               ? <PiFilmSlate className="inline text-sims-green" size={16} />
@@ -277,5 +285,16 @@ export default function ScenarioDetailPage() {
         </section>
       )}
     </main>
+
+      {showBackToTop && (
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          aria-label="Back to top"
+          className="fixed bottom-6 right-6 p-3 rounded-card border border-sims-green/40 bg-bg text-sims-green hover:border-sims-green hover:bg-sims-green/10 transition-colors cursor-pointer shadow-lg z-[100]"
+        >
+          <PiArrowUp size={20} />
+        </button>
+      )}
+    </>
   )
 }

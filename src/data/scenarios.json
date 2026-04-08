@@ -111,7 +111,7 @@
         "text": "Jack's manuscript is never finished. His mood remains red. He never leaves the bar wing. Wendy and Danny depart on Day 21 without him. Jack stays behind. The scenario ends when he reaches Enemies status with every household member. He is home."
       }
     ],
-    "sort": 2
+    "sort": 3
   },
   {
     "id": "rebecca",
@@ -868,6 +868,7 @@
     "title": "Dexter",
     "source": "Dexter",
     "sourceType": "film",
+    "thumbnail": "/images/banners/sims-dexter.png",
     "year": 2006,
     "difficulty": "hard",
     "tags": [
@@ -1015,6 +1016,7 @@
     "title": "Pretty Little Liars",
     "source": "Pretty Little Liars",
     "sourceType": "film",
+    "thumbnail": "/images/banners/sims-pretty-little-liars.png",
     "year": 2010,
     "difficulty": "medium",
     "tags": [
@@ -2634,6 +2636,7 @@
     "title": "The Stepford Wives",
     "source": "The Stepford Wives",
     "sourceType": "film",
+    "thumbnail": "/images/banners/sims-stepford-wives.png",
     "year": 1975,
     "difficulty": "hard",
     "tags": [
@@ -2903,6 +2906,6 @@
         "text": "Seymour complies with every demand including the last. Audrey is removed from the household. The plant reaches a size that cannot be represented by any available object — place it in the centre of the lot and surround it with debug objects representing rubble. Mushnick is somewhere underneath. Seymour stands in what used to be the shop. The plant says thank you. It says it could not have done this without him. It says there is a whole world out there. It asks if he is ready. Seymour has stopped being able to say no to it. He has been unable to say no to it since the first drop of blood. This was always where they were going."
       }
     ],
-    "sort": 3
+    "sort": 2
   }
 ]

@@ -49,13 +49,13 @@ export default function ScenarioModal({ scenario, onClose, onSpinAgain }: Scenar
           <img
             src={scenario.thumbnail}
             alt={scenario.title}
-            className="w-full h-60 object-cover rounded-lg mb-4"
+            className="w-full h-65 object-cover rounded-lg mb-4"
           />
         ) : (
           <img
             src={pickPlaceholder(scenario.id)}
             alt="Spooky placeholder"
-            className="w-full h-60 object-cover rounded-lg mb-4"
+            className="w-full h-65 object-cover rounded-lg mb-4"
           />
         )}
 

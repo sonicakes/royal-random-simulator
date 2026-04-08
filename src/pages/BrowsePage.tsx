@@ -200,7 +200,7 @@ export default function BrowsePage() {
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           aria-label="Back to top"
-          className="fixed bottom-6 right-6 p-3 rounded-card border border-sims-green/40 bg-bg text-sims-green hover:border-sims-green hover:bg-sims-green/10 transition-colors cursor-pointer shadow-lg z-50"
+          className="fixed bottom-6 right-6 p-3 rounded-card border border-sims-green/40 bg-bg text-sims-green hover:border-sims-green hover:bg-sims-green/10 transition-colors cursor-pointer shadow-lg z-[100]"
         >
           <PiArrowUp size={20} />
         </button>
