@@ -34,7 +34,7 @@ export default function HomePage() {
   }, [])
 
   return (
-    <main className="flex flex-col items-center flex-1 px-4 py-10">
+    <main className="flex flex-col items-center flex-1 px-4 py-8">
       <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
 
         {/* Wheel column — 2/3 */}
