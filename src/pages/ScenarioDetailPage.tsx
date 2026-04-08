@@ -10,7 +10,8 @@ import { pickPlaceholder } from '../utils/placeholder'
 const playthroughModules = import.meta.glob('../data/playthroughs/*.md', { query: '?raw', import: 'default' })
 
 function parsePlaythrough(raw: string): { content: string; screenshots: string[] } {
-  const match = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/)
+  const normalised = raw.replace(/\r\n/g, '\n')
+  const match = normalised.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/)
   if (!match) return { content: raw.trim(), screenshots: [] }
   const screenshots: string[] = []
   const section = match[1].match(/screenshots:\s*\n((?:\s+- .+\n?)+)/)

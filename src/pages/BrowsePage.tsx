@@ -21,7 +21,7 @@ export default function BrowsePage() {
   const sentinelRef = useRef<HTMLDivElement>(null)
 
   const filtered = useMemo(() => {
-    let list = allScenarios
+    let list = [...allScenarios].sort((a, b) => a.sort - b.sort)
 
     if (search.trim()) {
       const q = search.toLowerCase()

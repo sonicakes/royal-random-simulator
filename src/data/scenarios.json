@@ -4,7 +4,7 @@
     "title": "The Shining",
     "source": "The Shining",
     "sourceType": "book",
-    "thumbnail": "/images/sims-shining.png",
+    "thumbnail": "/images/banners/sims-shining.png",
     "year": 1977,
     "difficulty": "hard",
     "tags": [
@@ -29,17 +29,33 @@
       {
         "name": "Jack Torrance",
         "role": "The Caretaker",
-        "traits": ["Creative", "Bookworm", "Hot-Headed", "Erratic", "Mean"]
+        "traits": [
+          "Creative",
+          "Bookworm",
+          "Hot-Headed",
+          "Erratic",
+          "Mean"
+        ]
       },
       {
         "name": "Wendy Torrance",
         "role": "The Wife",
-        "traits": ["Family-Oriented", "Neat", "Active", "Romantic", "Gloomy"]
+        "traits": [
+          "Family-Oriented",
+          "Neat",
+          "Active",
+          "Romantic",
+          "Gloomy"
+        ]
       },
       {
         "name": "Danny Torrance",
         "role": "The Boy",
-        "traits": ["Genius", "Bookworm", "Loner"]
+        "traits": [
+          "Genius",
+          "Bookworm",
+          "Loner"
+        ]
       }
     ],
     "goals": [
@@ -94,14 +110,15 @@
         "title": "All Work and No Play",
         "text": "Jack's manuscript is never finished. His mood remains red. He never leaves the bar wing. Wendy and Danny depart on Day 21 without him. Jack stays behind. The scenario ends when he reaches Enemies status with every household member. He is home."
       }
-    ]
+    ],
+    "sort": 2
   },
-    {
+  {
     "id": "rebecca",
     "title": "Rebecca",
     "source": "Rebecca",
     "sourceType": "book",
-    "thumbnail": "/images/sims-rebecca.png",
+    "thumbnail": "/images/banners/sims-rebecca.png",
     "year": 1938,
     "difficulty": "medium",
     "tags": [
@@ -126,17 +143,32 @@
       {
         "name": "The Second Mrs de Winter",
         "role": "The Newcomer",
-        "traits": ["Gloomy", "Bookworm", "Romantic", "Neat"]
+        "traits": [
+          "Gloomy",
+          "Bookworm",
+          "Romantic",
+          "Neat"
+        ]
       },
       {
         "name": "Maxim de Winter",
         "role": "The Widower",
-        "traits": ["Snob", "Loner", "Romantic", "Gloomy"]
+        "traits": [
+          "Snob",
+          "Loner",
+          "Romantic",
+          "Gloomy"
+        ]
       },
       {
         "name": "Mrs Danvers",
         "role": "The Keeper",
-        "traits": ["Mean", "Jealous", "Gloomy", "Perfectionist"]
+        "traits": [
+          "Mean",
+          "Jealous",
+          "Gloomy",
+          "Perfectionist"
+        ]
       }
     ],
     "goals": [
@@ -191,14 +223,15 @@
         "title": "Rebecca Wins",
         "text": "The Second Mrs de Winter's mood remains red for 7 consecutive days and she and Maxim never reach Good Friends status. She leaves the household. Mrs Danvers locks Rebecca's rooms again. Nothing at Manderley changes."
       }
-    ]
+    ],
+    "sort": 1
   },
   {
     "id": "misery",
     "title": "Misery",
     "source": "Misery",
     "sourceType": "book",
-    "thumbnail": "/images/sims-misery.png",
+    "thumbnail": "/images/banners/sims-misery.png",
     "year": 1987,
     "difficulty": "hard",
     "tags": [
@@ -221,12 +254,23 @@
       {
         "name": "Paul Sheldon",
         "role": "The Captive",
-        "traits": ["Bookworm", "Creative", "Neat", "Romantic"]
+        "traits": [
+          "Bookworm",
+          "Creative",
+          "Neat",
+          "Romantic"
+        ]
       },
       {
         "name": "Annie Wilkes",
         "role": "The Fan",
-        "traits": ["Erratic", "Mean", "Perfectionist", "Loner", "Gloomy"]
+        "traits": [
+          "Erratic",
+          "Mean",
+          "Perfectionist",
+          "Loner",
+          "Gloomy"
+        ]
       }
     ],
     "goals": [
@@ -280,18 +324,23 @@
         "title": "The Fire",
         "text": "Paul sets the kitchen alight during a confrontation. Both Sims are placed in the burning room. Whoever survives inherits the lot and the scenario ends. If Annie survives, she begins again with a new captive."
       }
-    ]
+    ],
+    "sort": 22
   },
-
   {
     "id": "the-collector",
     "title": "The Collector",
     "source": "The Collector",
     "sourceType": "book",
-    "thumbnail": "/images/sims-collector.png",
+    "thumbnail": "/images/banners/sims-collector.png",
     "year": 1963,
     "difficulty": "hard",
-    "tags": ["psychological", "captivity", "obsession", "two-person"],
+    "tags": [
+      "psychological",
+      "captivity",
+      "obsession",
+      "two-person"
+    ],
     "description": "A lonely, obsessive man wins the lottery and uses his newfound wealth to capture Miranda, the art student he has fixated on from afar. He wants her to come to love him — she wants to survive and escape. Based on the novel by John Fowles and the 1965 film adaptation starring Samantha Eggar.",
     "setup": [
       "Use a countryside lot — Henford-on-Bagley is ideal. A large isolated house (e.g. a beachhouse in Tartosa) also works.",
@@ -306,12 +355,23 @@
       {
         "name": "Frederick Clegg",
         "role": "The Collector",
-        "traits": ["Mean", "Antisocial", "Loner", "Unromantic", "Gloomy"]
+        "traits": [
+          "Mean",
+          "Antisocial",
+          "Loner",
+          "Unromantic",
+          "Gloomy"
+        ]
       },
       {
         "name": "Miranda Grey",
         "role": "The Captive",
-        "traits": ["Creative", "Outgoing", "Bookworm", "Romantic"]
+        "traits": [
+          "Creative",
+          "Outgoing",
+          "Bookworm",
+          "Romantic"
+        ]
       }
     ],
     "goals": [
@@ -366,15 +426,15 @@
         "title": "The Accident",
         "text": "The Victim deteriorates while the Collector is away — starvation, illness, hysteria, or another fate of your choosing. This mirrors the novel's ending. Frederick, unmoved, clears the cellar and selects a new Victim. Begin again."
       }
-    ]
+    ],
+    "sort": 4
   },
-
   {
     "id": "haunting-of-hill-house",
     "title": "The Haunting of Hill House",
     "source": "The Haunting of Hill House",
     "sourceType": "book",
-    "thumbnail": "/images/sims-haunting-hill.png",
+    "thumbnail": "/images/banners/sims-haunting-hill.png",
     "year": 1959,
     "difficulty": "hard",
     "tags": [
@@ -399,22 +459,43 @@
       {
         "name": "Eleanor Vance",
         "role": "The Chosen",
-        "traits": ["Gloomy", "Loner", "Erratic", "Bookworm", "Romantic"]
+        "traits": [
+          "Gloomy",
+          "Loner",
+          "Erratic",
+          "Bookworm",
+          "Romantic"
+        ]
       },
       {
         "name": "Dr Montague",
         "role": "The Investigator",
-        "traits": ["Bookworm", "Genius", "Neat", "Cheerful"]
+        "traits": [
+          "Bookworm",
+          "Genius",
+          "Neat",
+          "Cheerful"
+        ]
       },
       {
         "name": "Theodora",
         "role": "The Companion",
-        "traits": ["Outgoing", "Mischievous", "Creative", "Self-Assured"]
+        "traits": [
+          "Outgoing",
+          "Mischievous",
+          "Creative",
+          "Self-Assured"
+        ]
       },
       {
         "name": "Luke Sanderson",
         "role": "The Heir",
-        "traits": ["Romantic", "Lazy", "Kleptomaniac", "Gloomy"]
+        "traits": [
+          "Romantic",
+          "Lazy",
+          "Kleptomaniac",
+          "Gloomy"
+        ]
       }
     ],
     "goals": [
@@ -469,15 +550,15 @@
         "title": "The Record",
         "text": "All four Sims survive to Day 28. Dr Montague completes his research notes (finish a book on the Writing skill). The group departs. Hill House is left exactly as it was. Whatever lived there is still living there."
       }
-    ]
+    ],
+    "sort": 16
   },
-
   {
     "id": "rosemarys-baby",
     "title": "Rosemary's Baby",
     "source": "Rosemary's Baby",
     "sourceType": "book",
-    "thumbnail": "/images/sims-rosemary-baby.png",
+    "thumbnail": "/images/banners/sims-rosemary-baby.png",
     "year": 1967,
     "difficulty": "medium",
     "tags": [
@@ -513,17 +594,32 @@
       {
         "name": "Guy Woodhouse",
         "role": "The Husband",
-        "traits": ["Romantic", "Self-Assured", "Ambitious", "Jealous"]
+        "traits": [
+          "Romantic",
+          "Self-Assured",
+          "Ambitious",
+          "Jealous"
+        ]
       },
       {
         "name": "Minnie Castevet",
         "role": "The Neighbour",
-        "traits": ["Outgoing", "Mischievous", "Cheerful", "Mean"]
+        "traits": [
+          "Outgoing",
+          "Mischievous",
+          "Cheerful",
+          "Mean"
+        ]
       },
       {
         "name": "Roman Castevet",
         "role": "The Architect",
-        "traits": ["Genius", "Snob", "Loner", "Gloomy"]
+        "traits": [
+          "Genius",
+          "Snob",
+          "Loner",
+          "Gloomy"
+        ]
       }
     ],
     "goals": [
@@ -578,91 +674,195 @@
         "title": "The Doubt",
         "text": "Rosemary's mood is consistently red through the final trimester. She gives birth, sees the baby, and does nothing. She neither rocks the cradle nor flees. She sits in the room and the scenario simply ends, unresolved — which is the most honest ending of all."
       }
-    ]
+    ],
+    "sort": 6
   },
-{
-  "id": "twin-peaks",
-  "title": "Twin Peaks",
-  "source": "Twin Peaks",
-  "sourceType": "tv",
-  "thumbnail": "/images/sims-twin-peaks.png",
-  "year": 1990,
-  "difficulty": "hard",
-  "tags": ["supernatural", "mystery", "small-town", "ensemble", "psychological", "slow-burn"],
-  "description": "The body of homecoming queen Laura Palmer is found wrapped in plastic on the shore of a small Pacific Northwest logging town. FBI Special Agent Dale Cooper arrives to investigate, drawn by something in Twin Peaks that goes deeper than murder — a darkness that lives in the woods, speaks through dreams, and has been feeding on the town for longer than anyone wants to admit. Based on the television series created by David Lynch and Mark Frost.",
-  "setup": [
-    "Use a large, dense woodland world — Moonwood Mill is ideal, or a custom Henford-on-Bagley build with heavy tree coverage and a body of water at the lot boundary. The town must feel both cosy and wrong.",
-    "Build or place several distinct structures on or adjacent to the main lot: the Double R Diner, the sheriff's station (a large open-plan build), the Great Northern Hotel (the grandest residential lot available), and a roadside cabin in the trees representing the Palmer house.",
-    "A single locked room in the largest structure represents the Black Lodge — curtained in red, chevron-patterned floor if possible using debug tiles, containing only two chairs and a lamp. This room unlocks at Day 21.",
-    "Laura Palmer does not begin the scenario as a playable Sim. She is represented by a locked memorial object — a framed photo or candle arrangement — placed at the water's edge on Day 1. She may appear as a ghost from Day 7 onward.",
-    "Dale Cooper is a young or middle-aged adult — meticulous, joyful, and entirely serious about both. Suggested traits: Genius, Foodie, Outgoing, Bookworm, Good. He arrives on the lot on Day 1 with a single suitcase and immediately records a message into a handheld object representing his tape recorder.",
-    "Sheriff Harry S. Truman is a middle-aged adult — decent, loyal, out of his depth in the best possible way. Suggested traits: Good, Neat, Family-Oriented, Loner, Brave (use Active).",
-    "Audrey Horne is a young adult — the sharpest person in any room she enters, bored enough to be dangerous. Suggested traits: Mischievous, Self-Assured, Romantic, Genius, Outgoing.",
-    "Bobby Briggs is a young adult — loud, grieving, involved in things he cannot talk about. Suggested traits: Hot-Headed, Romantic, Lazy, Mean.",
-    "Donna Hayward is a young adult — Laura's best friend, already pulling at threads she was warned to leave alone. Suggested traits: Romantic, Bookworm, Good, Outgoing.",
-    "Benjamin Horne is a middle-aged adult — the wealthiest man in town, charming and entirely corrupt. Suggested traits: Snob, Ambitious, Romantic, Mischievous, Mean.",
-    "Leland Palmer is a middle-aged adult — Laura's father, a grieving wreck with something living behind his eyes. Suggested traits: Erratic, Gloomy, Romantic, Hot-Headed. He must share a household with his wife Sarah.",
-    "Sarah Palmer is a middle-aged adult — medicated, visionary, already knows more than she can say. Suggested traits: Erratic, Gloomy, Loner, Bookworm.",
-    "Bob is not a playable Sim. He is represented by a hidden object — a debug item placed in Leland's bedroom and never moved — that only Cooper may interact with. Interacting with it counts as a clue discovery.",
-    "The town must have at least 8 NPCs representing townspeople — the Log Lady, Big Ed, Norma, Nadine, James, Leo Johnson, Josie Packard, and Pete Martell. These may be household visitors or ambient NPCs. Each must have one distinctive trait that sets them apart."
-  ],
-  "householdMembers": [
-    { "name": "Dale Cooper", "role": "The Agent", "traits": ["Genius", "Foodie", "Outgoing", "Bookworm", "Good"] },
-    { "name": "Harry S. Truman", "role": "The Sheriff", "traits": ["Good", "Neat", "Family-Oriented", "Active", "Loner"] },
-    { "name": "Audrey Horne", "role": "The Schemer", "traits": ["Mischievous", "Self-Assured", "Romantic", "Genius", "Outgoing"] },
-    { "name": "Bobby Briggs", "role": "The Boyfriend", "traits": ["Hot-Headed", "Romantic", "Lazy", "Mean"] },
-    { "name": "Donna Hayward", "role": "The Best Friend", "traits": ["Romantic", "Bookworm", "Good", "Outgoing"] },
-    { "name": "Benjamin Horne", "role": "The Patriarch", "traits": ["Snob", "Ambitious", "Romantic", "Mischievous"] },
-    { "name": "Leland Palmer", "role": "The Father", "traits": ["Erratic", "Gloomy", "Romantic", "Hot-Headed"] },
-    { "name": "Sarah Palmer", "role": "The Mother", "traits": ["Erratic", "Gloomy", "Loner", "Bookworm"] }
-  ],
-  "goals": [
-    "Cooper must discover 7 clues before Day 21 — each represented by completing a 2-hour research or writing task, or by interacting with a specific object or Sim designated as a clue source at the start of the scenario.",
-    "Cooper must reach Good Friends status with at least 5 other household or NPC Sims — the town must trust him.",
-    "Leland's secret must be uncovered before Day 28 — represented by Cooper interacting with the Bob object in Leland's bedroom while Leland is present on the lot.",
-    "Cooper must enter the Black Lodge on Day 21 or later — he must spend at least one in-game hour alone in the red room.",
-    "The Double R Diner must remain open — at least one meal must be served there every day. If it closes for a full day, a bad omen triggers."
-  ],
-  "rules": [
-    "Every morning: Cooper records a tape — represented by a 30-minute solo activity at his desk before interacting with any other Sim. If he skips this, he loses one clue progress that day.",
-    "Every morning: Cooper must eat pie and drink coffee at the Double R Diner before beginning his investigation. Both needs — Hunger and Social — must be green before he leaves the diner lot.",
-    "Every day: Cooper and Harry must meet for at least one joint conversation or activity. They are partners. The investigation does not proceed without both of them.",
-    "Every day: one NPC townsperson must approach Cooper unsolicited — represented by the player choosing a random NPC to initiate conversation with him. What they tell him counts as ambient clue colour.",
-    "Every day: Leland must perform one erratic or hostile interaction — crying at an object, dancing alone, or arguing with Sarah. This is not optional. Something is wearing him.",
-    "Every day: Audrey must perform one act of independent investigation — going somewhere she was told not to, talking to someone she was told to avoid, or accessing a locked space.",
-    "Every day: the Log Lady NPC must visit the lot once and deliver a cryptic statement — represented by initiating a conversation with Cooper and then immediately leaving.",
-    "Once per week: a dream sequence occurs. Move Cooper to the Black Lodge room alone for one in-game hour. When he exits, he gains one clue automatically — the dream told him something.",
-    "Once per week: hold a town gathering at the Double R Diner — all available Sims on the lot, green moods encouraged. The town is trying to hold itself together.",
-    "If Sarah's mood drops to red for 2 consecutive days: she has a vision. She must spend 4 hours alone and may not be interacted with. When she emerges, Cooper gains half a clue.",
-    "Bobby and Donna may not be in the same room without a hostile interaction triggering between them. They are grieving differently and it keeps coming out wrong.",
-    "Benjamin Horne must attempt one manipulation per week — a mean, mischievous, or romantic interaction directed at a Sim who is not his spouse.",
-    "The Bob object in Leland's bedroom may only be interacted with by Cooper. If any other Sim touches it: Leland's erratic trait triggers immediately and he must perform a hostile interaction."
-  ],
-  "storyBeats": [
-    { "step": 1, "text": "Cooper arrives in Twin Peaks on a Tuesday morning. The coffee is extraordinary. The body was found wrapped in plastic at the water's edge. He records everything into his tape recorder and begins to fall in love with the town before he has even met it." },
-    { "step": 2, "text": "The town assembles around the investigation — some offering too much, some offering nothing. Audrey watches Cooper from across the diner. The Log Lady has been waiting for him." },
-    { "step": 3, "text": "The first dream. Cooper wakes with partial knowledge he cannot fully articulate. He writes it down anyway. Harry watches him with patient confusion." },
-    { "step": 4, "text": "Donna and James begin pulling at Laura's secrets. What they find is not what they expected. Bobby gets drunk and says something true by accident." },
-    { "step": 5, "text": "Leland dances. Sarah sees something in the corner of the living room that is not there when anyone else looks. The Bob object vibrates with proximity." },
-    { "step": 6, "text": "Cooper reaches the seventh clue. The pattern assembles. Leland is in the room. The Bob object is no longer just an object." },
-    { "step": 7, "text": "Day 21. The Black Lodge unlocks. Cooper has been here before — in the dream, in the backward speech, in the place between the trees. He goes in anyway." }
-  ],
-  "endings": [
-    {
-      "title": "The Arm",
-      "text": "Cooper discovers all 7 clues, enters the Black Lodge on Day 21, and spends one hour inside alone. When he exits, Leland's secret is exposed — represented by a final confrontation scene in the Palmer house. Leland is removed from the household. The case is closed. Cooper sits in the Double R Diner at dawn and orders pie. Something is slightly wrong with his reflection but he does not mention it. The town goes on."
-    },
-    {
-      "title": "Fire Walk With Me",
-      "text": "Cooper discovers fewer than 5 clues before Day 21. He enters the Black Lodge underprepared. He does not come out the same way he went in — represent this by changing one of his traits to Erratic permanently. The investigation continues without resolution. Audrey keeps looking. Donna stops. The woods are quiet in a way that means something is satisfied."
-    },
-    {
-      "title": "The Mystery Remains",
-      "text": "Cooper never enters the Black Lodge. He solves the surface case — Leland is exposed — but the deeper thing is never addressed. He is reassigned. He drives out of Twin Peaks on a grey morning with excellent coffee and an incomplete tape. The red room stays locked. Laura's photo stays at the water's edge. Whatever lives in the woods waits for the next person who gets close enough to hear it."
-    }
-  ]
-},
-
+  {
+    "id": "twin-peaks",
+    "title": "Twin Peaks",
+    "source": "Twin Peaks",
+    "sourceType": "tv",
+    "thumbnail": "/images/banners/sims-twin-peaks.png",
+    "year": 1990,
+    "difficulty": "hard",
+    "tags": [
+      "supernatural",
+      "mystery",
+      "small-town",
+      "ensemble",
+      "psychological",
+      "slow-burn"
+    ],
+    "description": "The body of homecoming queen Laura Palmer is found wrapped in plastic on the shore of a small Pacific Northwest logging town. FBI Special Agent Dale Cooper arrives to investigate, drawn by something in Twin Peaks that goes deeper than murder — a darkness that lives in the woods, speaks through dreams, and has been feeding on the town for longer than anyone wants to admit. Based on the television series created by David Lynch and Mark Frost.",
+    "setup": [
+      "Use a large, dense woodland world — Moonwood Mill is ideal, or a custom Henford-on-Bagley build with heavy tree coverage and a body of water at the lot boundary. The town must feel both cosy and wrong.",
+      "Build or place several distinct structures on or adjacent to the main lot: the Double R Diner, the sheriff's station (a large open-plan build), the Great Northern Hotel (the grandest residential lot available), and a roadside cabin in the trees representing the Palmer house.",
+      "A single locked room in the largest structure represents the Black Lodge — curtained in red, chevron-patterned floor if possible using debug tiles, containing only two chairs and a lamp. This room unlocks at Day 21.",
+      "Laura Palmer does not begin the scenario as a playable Sim. She is represented by a locked memorial object — a framed photo or candle arrangement — placed at the water's edge on Day 1. She may appear as a ghost from Day 7 onward.",
+      "Dale Cooper is a young or middle-aged adult — meticulous, joyful, and entirely serious about both. Suggested traits: Genius, Foodie, Outgoing, Bookworm, Good. He arrives on the lot on Day 1 with a single suitcase and immediately records a message into a handheld object representing his tape recorder.",
+      "Sheriff Harry S. Truman is a middle-aged adult — decent, loyal, out of his depth in the best possible way. Suggested traits: Good, Neat, Family-Oriented, Loner, Brave (use Active).",
+      "Audrey Horne is a young adult — the sharpest person in any room she enters, bored enough to be dangerous. Suggested traits: Mischievous, Self-Assured, Romantic, Genius, Outgoing.",
+      "Bobby Briggs is a young adult — loud, grieving, involved in things he cannot talk about. Suggested traits: Hot-Headed, Romantic, Lazy, Mean.",
+      "Donna Hayward is a young adult — Laura's best friend, already pulling at threads she was warned to leave alone. Suggested traits: Romantic, Bookworm, Good, Outgoing.",
+      "Benjamin Horne is a middle-aged adult — the wealthiest man in town, charming and entirely corrupt. Suggested traits: Snob, Ambitious, Romantic, Mischievous, Mean.",
+      "Leland Palmer is a middle-aged adult — Laura's father, a grieving wreck with something living behind his eyes. Suggested traits: Erratic, Gloomy, Romantic, Hot-Headed. He must share a household with his wife Sarah.",
+      "Sarah Palmer is a middle-aged adult — medicated, visionary, already knows more than she can say. Suggested traits: Erratic, Gloomy, Loner, Bookworm.",
+      "Bob is not a playable Sim. He is represented by a hidden object — a debug item placed in Leland's bedroom and never moved — that only Cooper may interact with. Interacting with it counts as a clue discovery.",
+      "The town must have at least 8 NPCs representing townspeople — the Log Lady, Big Ed, Norma, Nadine, James, Leo Johnson, Josie Packard, and Pete Martell. These may be household visitors or ambient NPCs. Each must have one distinctive trait that sets them apart."
+    ],
+    "householdMembers": [
+      {
+        "name": "Dale Cooper",
+        "role": "The Agent",
+        "traits": [
+          "Genius",
+          "Foodie",
+          "Outgoing",
+          "Bookworm",
+          "Good"
+        ]
+      },
+      {
+        "name": "Harry S. Truman",
+        "role": "The Sheriff",
+        "traits": [
+          "Good",
+          "Neat",
+          "Family-Oriented",
+          "Active",
+          "Loner"
+        ]
+      },
+      {
+        "name": "Audrey Horne",
+        "role": "The Schemer",
+        "traits": [
+          "Mischievous",
+          "Self-Assured",
+          "Romantic",
+          "Genius",
+          "Outgoing"
+        ]
+      },
+      {
+        "name": "Bobby Briggs",
+        "role": "The Boyfriend",
+        "traits": [
+          "Hot-Headed",
+          "Romantic",
+          "Lazy",
+          "Mean"
+        ]
+      },
+      {
+        "name": "Donna Hayward",
+        "role": "The Best Friend",
+        "traits": [
+          "Romantic",
+          "Bookworm",
+          "Good",
+          "Outgoing"
+        ]
+      },
+      {
+        "name": "Benjamin Horne",
+        "role": "The Patriarch",
+        "traits": [
+          "Snob",
+          "Ambitious",
+          "Romantic",
+          "Mischievous"
+        ]
+      },
+      {
+        "name": "Leland Palmer",
+        "role": "The Father",
+        "traits": [
+          "Erratic",
+          "Gloomy",
+          "Romantic",
+          "Hot-Headed"
+        ]
+      },
+      {
+        "name": "Sarah Palmer",
+        "role": "The Mother",
+        "traits": [
+          "Erratic",
+          "Gloomy",
+          "Loner",
+          "Bookworm"
+        ]
+      }
+    ],
+    "goals": [
+      "Cooper must discover 7 clues before Day 21 — each represented by completing a 2-hour research or writing task, or by interacting with a specific object or Sim designated as a clue source at the start of the scenario.",
+      "Cooper must reach Good Friends status with at least 5 other household or NPC Sims — the town must trust him.",
+      "Leland's secret must be uncovered before Day 28 — represented by Cooper interacting with the Bob object in Leland's bedroom while Leland is present on the lot.",
+      "Cooper must enter the Black Lodge on Day 21 or later — he must spend at least one in-game hour alone in the red room.",
+      "The Double R Diner must remain open — at least one meal must be served there every day. If it closes for a full day, a bad omen triggers."
+    ],
+    "rules": [
+      "Every morning: Cooper records a tape — represented by a 30-minute solo activity at his desk before interacting with any other Sim. If he skips this, he loses one clue progress that day.",
+      "Every morning: Cooper must eat pie and drink coffee at the Double R Diner before beginning his investigation. Both needs — Hunger and Social — must be green before he leaves the diner lot.",
+      "Every day: Cooper and Harry must meet for at least one joint conversation or activity. They are partners. The investigation does not proceed without both of them.",
+      "Every day: one NPC townsperson must approach Cooper unsolicited — represented by the player choosing a random NPC to initiate conversation with him. What they tell him counts as ambient clue colour.",
+      "Every day: Leland must perform one erratic or hostile interaction — crying at an object, dancing alone, or arguing with Sarah. This is not optional. Something is wearing him.",
+      "Every day: Audrey must perform one act of independent investigation — going somewhere she was told not to, talking to someone she was told to avoid, or accessing a locked space.",
+      "Every day: the Log Lady NPC must visit the lot once and deliver a cryptic statement — represented by initiating a conversation with Cooper and then immediately leaving.",
+      "Once per week: a dream sequence occurs. Move Cooper to the Black Lodge room alone for one in-game hour. When he exits, he gains one clue automatically — the dream told him something.",
+      "Once per week: hold a town gathering at the Double R Diner — all available Sims on the lot, green moods encouraged. The town is trying to hold itself together.",
+      "If Sarah's mood drops to red for 2 consecutive days: she has a vision. She must spend 4 hours alone and may not be interacted with. When she emerges, Cooper gains half a clue.",
+      "Bobby and Donna may not be in the same room without a hostile interaction triggering between them. They are grieving differently and it keeps coming out wrong.",
+      "Benjamin Horne must attempt one manipulation per week — a mean, mischievous, or romantic interaction directed at a Sim who is not his spouse.",
+      "The Bob object in Leland's bedroom may only be interacted with by Cooper. If any other Sim touches it: Leland's erratic trait triggers immediately and he must perform a hostile interaction."
+    ],
+    "storyBeats": [
+      {
+        "step": 1,
+        "text": "Cooper arrives in Twin Peaks on a Tuesday morning. The coffee is extraordinary. The body was found wrapped in plastic at the water's edge. He records everything into his tape recorder and begins to fall in love with the town before he has even met it."
+      },
+      {
+        "step": 2,
+        "text": "The town assembles around the investigation — some offering too much, some offering nothing. Audrey watches Cooper from across the diner. The Log Lady has been waiting for him."
+      },
+      {
+        "step": 3,
+        "text": "The first dream. Cooper wakes with partial knowledge he cannot fully articulate. He writes it down anyway. Harry watches him with patient confusion."
+      },
+      {
+        "step": 4,
+        "text": "Donna and James begin pulling at Laura's secrets. What they find is not what they expected. Bobby gets drunk and says something true by accident."
+      },
+      {
+        "step": 5,
+        "text": "Leland dances. Sarah sees something in the corner of the living room that is not there when anyone else looks. The Bob object vibrates with proximity."
+      },
+      {
+        "step": 6,
+        "text": "Cooper reaches the seventh clue. The pattern assembles. Leland is in the room. The Bob object is no longer just an object."
+      },
+      {
+        "step": 7,
+        "text": "Day 21. The Black Lodge unlocks. Cooper has been here before — in the dream, in the backward speech, in the place between the trees. He goes in anyway."
+      }
+    ],
+    "endings": [
+      {
+        "title": "The Arm",
+        "text": "Cooper discovers all 7 clues, enters the Black Lodge on Day 21, and spends one hour inside alone. When he exits, Leland's secret is exposed — represented by a final confrontation scene in the Palmer house. Leland is removed from the household. The case is closed. Cooper sits in the Double R Diner at dawn and orders pie. Something is slightly wrong with his reflection but he does not mention it. The town goes on."
+      },
+      {
+        "title": "Fire Walk With Me",
+        "text": "Cooper discovers fewer than 5 clues before Day 21. He enters the Black Lodge underprepared. He does not come out the same way he went in — represent this by changing one of his traits to Erratic permanently. The investigation continues without resolution. Audrey keeps looking. Donna stops. The woods are quiet in a way that means something is satisfied."
+      },
+      {
+        "title": "The Mystery Remains",
+        "text": "Cooper never enters the Black Lodge. He solves the surface case — Leland is exposed — but the deeper thing is never addressed. He is reassigned. He drives out of Twin Peaks on a grey morning with excellent coffee and an incomplete tape. The red room stays locked. Laura's photo stays at the water's edge. Whatever lives in the woods waits for the next person who gets close enough to hear it."
+      }
+    ],
+    "sort": 7
+  },
   {
     "id": "dexter",
     "title": "Dexter",
@@ -670,7 +870,14 @@
     "sourceType": "film",
     "year": 2006,
     "difficulty": "hard",
-    "tags": ["psychological", "double-life", "serial-killer", "procedural", "urban", "slow-burn"],
+    "tags": [
+      "psychological",
+      "double-life",
+      "serial-killer",
+      "procedural",
+      "urban",
+      "slow-burn"
+    ],
     "description": "Dexter Morgan is a blood spatter analyst for the Miami Metro Police Department. He is also a serial killer. He loves his sister, his colleagues, his routine. He follows the Code his adoptive father Harry drilled into him — only kill those who deserve it, never get caught, keep the mask on. The mask is the work. Based on the Showtime series developed by James Manos Jr. and the novels by Jeff Lindsay.",
     "setup": [
       "Use a city world — San Myshuno is ideal. Dexter's apartment must be modest, clean, and unremarkable. A second locked room on the lot or a separate basement structure represents the kill room — plastic sheeting implied by bare walls, a single table, locked at all times except during a kill ritual.",
@@ -685,11 +892,57 @@
       "Rita Bennett is a young adult — kind, damaged, exactly the kind of normal Dexter is trying to perform. Suggested traits: Family-Oriented, Neat, Romantic, Cheerful, Good. She and her children represent Dexter's civilian anchor."
     ],
     "householdMembers": [
-      { "name": "Dexter Morgan", "role": "The Blood Analyst", "traits": ["Genius", "Neat", "Loner", "Good", "Evil"] },
-      { "name": "Debra Morgan", "role": "The Sister", "traits": ["Hot-Headed", "Outgoing", "Good", "Ambitious"] },
-      { "name": "Rita Bennett", "role": "The Girlfriend", "traits": ["Family-Oriented", "Neat", "Romantic", "Cheerful"] },
-      { "name": "Angel Batista", "role": "The Partner", "traits": ["Good", "Outgoing", "Romantic", "Foodie"] },
-      { "name": "Maria LaGuerta", "role": "The Lieutenant", "traits": ["Ambitious", "Mean", "Self-Assured", "Snob"] }
+      {
+        "name": "Dexter Morgan",
+        "role": "The Blood Analyst",
+        "traits": [
+          "Genius",
+          "Neat",
+          "Loner",
+          "Good",
+          "Evil"
+        ]
+      },
+      {
+        "name": "Debra Morgan",
+        "role": "The Sister",
+        "traits": [
+          "Hot-Headed",
+          "Outgoing",
+          "Good",
+          "Ambitious"
+        ]
+      },
+      {
+        "name": "Rita Bennett",
+        "role": "The Girlfriend",
+        "traits": [
+          "Family-Oriented",
+          "Neat",
+          "Romantic",
+          "Cheerful"
+        ]
+      },
+      {
+        "name": "Angel Batista",
+        "role": "The Partner",
+        "traits": [
+          "Good",
+          "Outgoing",
+          "Romantic",
+          "Foodie"
+        ]
+      },
+      {
+        "name": "Maria LaGuerta",
+        "role": "The Lieutenant",
+        "traits": [
+          "Ambitious",
+          "Mean",
+          "Self-Assured",
+          "Snob"
+        ]
+      }
     ],
     "goals": [
       "Dexter must complete one kill ritual per story arc — 7 in-game days — without Debra or LaGuerta discovering the kill room.",
@@ -712,13 +965,34 @@
       "If Rita's mood drops to red: Dexter must abandon all investigation activity that day and attend to her exclusively. The mask requires it."
     ],
     "storyBeats": [
-      { "step": 1, "text": "Dexter's morning routine. Breakfast alone. The kill kit checked. The drive to Miami Metro. The colleagues who like him without knowing him. He narrates everything internally and none of it reaches his face." },
-      { "step": 2, "text": "A new case arrives at the department. The Target begins to take shape — someone the law has touched and released, someone Harry's Code would approve. Dexter begins to watch." },
-      { "step": 3, "text": "The Dark Passenger is quiet for now. Rita makes dinner. Debra calls twice. Dexter performs warmth so fluently he occasionally forgets it is a performance." },
-      { "step": 4, "text": "The evidence phase. Three observations. The Target does not know they are being studied. Dexter is meticulous in ways that look like professional habit." },
-      { "step": 5, "text": "LaGuerta is watching something at the edge of her vision. She cannot name it yet. Dexter smiles at her across the bullpen and she smiles back." },
-      { "step": 6, "text": "The kill room. The plastic. The ritual that makes Dexter feel, briefly and completely, like himself. The Target is removed. The boat carries what remains out past the lights of the city." },
-      { "step": 7, "text": "Morning. Breakfast alone. The kill kit checked. The drive to Miami Metro. The Dark Passenger is satisfied. This is sustainable. This is the Code. This is the life." }
+      {
+        "step": 1,
+        "text": "Dexter's morning routine. Breakfast alone. The kill kit checked. The drive to Miami Metro. The colleagues who like him without knowing him. He narrates everything internally and none of it reaches his face."
+      },
+      {
+        "step": 2,
+        "text": "A new case arrives at the department. The Target begins to take shape — someone the law has touched and released, someone Harry's Code would approve. Dexter begins to watch."
+      },
+      {
+        "step": 3,
+        "text": "The Dark Passenger is quiet for now. Rita makes dinner. Debra calls twice. Dexter performs warmth so fluently he occasionally forgets it is a performance."
+      },
+      {
+        "step": 4,
+        "text": "The evidence phase. Three observations. The Target does not know they are being studied. Dexter is meticulous in ways that look like professional habit."
+      },
+      {
+        "step": 5,
+        "text": "LaGuerta is watching something at the edge of her vision. She cannot name it yet. Dexter smiles at her across the bullpen and she smiles back."
+      },
+      {
+        "step": 6,
+        "text": "The kill room. The plastic. The ritual that makes Dexter feel, briefly and completely, like himself. The Target is removed. The boat carries what remains out past the lights of the city."
+      },
+      {
+        "step": 7,
+        "text": "Morning. Breakfast alone. The kill kit checked. The drive to Miami Metro. The Dark Passenger is satisfied. This is sustainable. This is the Code. This is the life."
+      }
     ],
     "endings": [
       {
@@ -733,9 +1007,9 @@
         "title": "Deb Knows",
         "text": "Debra enters the kill room during a ritual — either by autonomous pathing or as a deliberate story choice. Her mood drops to critical. Dexter's mask interaction fails — she rejects all 5 positive interactions. She knows. The scenario ends here. What she does with what she knows is the question the series spent eight seasons answering. You decide."
       }
-    ]
+    ],
+    "sort": 8
   },
-
   {
     "id": "pretty-little-liars",
     "title": "Pretty Little Liars",
@@ -743,7 +1017,14 @@
     "sourceType": "film",
     "year": 2010,
     "difficulty": "medium",
-    "tags": ["mystery", "ensemble", "secrets", "small-town", "paranoia", "teen"],
+    "tags": [
+      "mystery",
+      "ensemble",
+      "secrets",
+      "small-town",
+      "paranoia",
+      "teen"
+    ],
     "description": "One year after the disappearance of Alison DiLaurentis — the queen bee who knew everyone's secrets — her four best friends begin receiving threatening messages from someone who signs themselves A. A knows everything Alison knew. A might be Alison. The girls of Rosewood keep lying to protect themselves and each other, and every lie gives A more to work with. Based on the book series by Sara Shepard and the Freeform television series.",
     "setup": [
       "Use a wealthy suburban world — Willow Creek dressed up with large lots, manicured gardens, and a visible class divide between the older family estates and the newer builds. Rosewood should feel pristine and suffocating.",
@@ -758,10 +1039,50 @@
       "A is never a playable Sim. A is a mechanic — a daily message that arrives at the central lot each morning, represented by a note object or a specific chair that one of the Liars must sit in to receive the day's punishment."
     ],
     "householdMembers": [
-      { "name": "Spencer Hastings", "role": "The Overachiever", "traits": ["Perfectionist", "Genius", "Ambitious", "Mean", "Bookworm"] },
-      { "name": "Hanna Marin", "role": "The It Girl", "traits": ["Self-Assured", "Outgoing", "Materialist", "Romantic", "Hot-Headed"] },
-      { "name": "Emily Fields", "role": "The Athlete", "traits": ["Active", "Romantic", "Good", "Family-Oriented", "Loner"] },
-      { "name": "Aria Montgomery", "role": "The Creative", "traits": ["Creative", "Bookworm", "Romantic", "Outgoing", "Mischievous"] }
+      {
+        "name": "Spencer Hastings",
+        "role": "The Overachiever",
+        "traits": [
+          "Perfectionist",
+          "Genius",
+          "Ambitious",
+          "Mean",
+          "Bookworm"
+        ]
+      },
+      {
+        "name": "Hanna Marin",
+        "role": "The It Girl",
+        "traits": [
+          "Self-Assured",
+          "Outgoing",
+          "Materialist",
+          "Romantic",
+          "Hot-Headed"
+        ]
+      },
+      {
+        "name": "Emily Fields",
+        "role": "The Athlete",
+        "traits": [
+          "Active",
+          "Romantic",
+          "Good",
+          "Family-Oriented",
+          "Loner"
+        ]
+      },
+      {
+        "name": "Aria Montgomery",
+        "role": "The Creative",
+        "traits": [
+          "Creative",
+          "Bookworm",
+          "Romantic",
+          "Outgoing",
+          "Mischievous"
+        ]
+      }
     ],
     "goals": [
       "All four Liars must retain at least Friend status with each other for the entire scenario — A wins when the group fractures.",
@@ -783,13 +1104,34 @@
       "Emily must perform one athletic activity per day. If she misses two consecutive days, her mood drops and A's message that morning targets her specifically."
     ],
     "storyBeats": [
-      { "step": 1, "text": "One year after Alison. The four of them have drifted the way you drift when the person holding you together is gone. Then the first message arrives and they are together again in the worst possible way." },
-      { "step": 2, "text": "A knows about Spencer's plagiarism. A knows about Hanna's shoplifting. A knows about Emily. A knows about Aria's teacher. A knows everything Alison knew, which means Alison told someone, which means Alison is either alive or she told the wrong person before she died." },
-      { "step": 3, "text": "The first escalation. One of the secrets comes close to the surface. The girls close ranks — messily, imperfectly, in the way of people who are used to competing with each other." },
-      { "step": 4, "text": "A clue. It points somewhere none of them expected. Spencer pulls at it too hard and the thread leads somewhere that implicates her own family." },
-      { "step": 5, "text": "The group fractures slightly. A immediately applies pressure to the crack. Two of the Liars don't speak for three days. The other two hold the middle." },
-      { "step": 6, "text": "Five clues. The shape of A begins to emerge. Someone in Rosewood has been watching them since before Alison disappeared. Someone who knew all of them." },
-      { "step": 7, "text": "Day 28. The memorial lot. The photo of Alison. Something moves near it at dusk that should not be moving." }
+      {
+        "step": 1,
+        "text": "One year after Alison. The four of them have drifted the way you drift when the person holding you together is gone. Then the first message arrives and they are together again in the worst possible way."
+      },
+      {
+        "step": 2,
+        "text": "A knows about Spencer's plagiarism. A knows about Hanna's shoplifting. A knows about Emily. A knows about Aria's teacher. A knows everything Alison knew, which means Alison told someone, which means Alison is either alive or she told the wrong person before she died."
+      },
+      {
+        "step": 3,
+        "text": "The first escalation. One of the secrets comes close to the surface. The girls close ranks — messily, imperfectly, in the way of people who are used to competing with each other."
+      },
+      {
+        "step": 4,
+        "text": "A clue. It points somewhere none of them expected. Spencer pulls at it too hard and the thread leads somewhere that implicates her own family."
+      },
+      {
+        "step": 5,
+        "text": "The group fractures slightly. A immediately applies pressure to the crack. Two of the Liars don't speak for three days. The other two hold the middle."
+      },
+      {
+        "step": 6,
+        "text": "Five clues. The shape of A begins to emerge. Someone in Rosewood has been watching them since before Alison disappeared. Someone who knew all of them."
+      },
+      {
+        "step": 7,
+        "text": "Day 28. The memorial lot. The photo of Alison. Something moves near it at dusk that should not be moving."
+      }
     ],
     "endings": [
       {
@@ -804,9 +1146,9 @@
         "title": "The Lie That Held",
         "text": "All four Secrets are exposed within the group but never to the outside world. The Liars know everything about each other now and have chosen to stay anyway. They have 3 clues — not enough to name A — but enough to know A is someone who needed them scared more than they needed them caught. The messages stop. Not because A is gone. Because A got what they wanted."
       }
-    ]
+    ],
+    "sort": 9
   },
-
   {
     "id": "buffy-the-vampire-slayer",
     "title": "Buffy the Vampire Slayer",
@@ -814,7 +1156,14 @@
     "sourceType": "film",
     "year": 1997,
     "difficulty": "medium",
-    "tags": ["supernatural", "ensemble", "small-town", "chosen-one", "monster-of-the-week", "coming-of-age"],
+    "tags": [
+      "supernatural",
+      "ensemble",
+      "small-town",
+      "chosen-one",
+      "monster-of-the-week",
+      "coming-of-age"
+    ],
     "description": "Buffy Summers is the Slayer — one girl in all the world, chosen to fight the vampires and the forces of darkness. She wanted to be normal. She moved to Sunnydale to start over. Sunnydale is built on a Hellmouth. There is no starting over when you are the Slayer. There is only the next thing that needs killing, and the friends strange enough to help you kill it. Based on the television series created by Joss Whedon.",
     "setup": [
       "Use a suburban world with a clear town centre — Willow Creek works well. Sunnydale requires: a high school lot (large community build), a graveyard section (use a park lot with tombstone debug objects), a magic shop lot, and the Summers family home.",
@@ -829,12 +1178,72 @@
       "Angel is a young adult — a vampire with a soul, Buffy's catastrophic romantic decision, deeply inconvenient. Suggested traits: Romantic, Gloomy, Loner, Good, Hot-Headed. He visits at night only and must leave the lot before dawn."
     ],
     "householdMembers": [
-      { "name": "Buffy Summers", "role": "The Slayer", "traits": ["Active", "Hot-Headed", "Romantic", "Good", "Outgoing"] },
-      { "name": "Willow Rosenberg", "role": "The Witch", "traits": ["Genius", "Bookworm", "Good", "Loner", "Creative"] },
-      { "name": "Xander Harris", "role": "The Heart", "traits": ["Outgoing", "Lazy", "Romantic", "Good", "Hot-Headed"] },
-      { "name": "Rupert Giles", "role": "The Watcher", "traits": ["Bookworm", "Genius", "Neat", "Loner", "Good"] },
-      { "name": "Cordelia Chase", "role": "The Mean Girl", "traits": ["Self-Assured", "Mean", "Outgoing", "Snob", "Materialist"] },
-      { "name": "Angel", "role": "The Vampire with a Soul", "traits": ["Romantic", "Gloomy", "Loner", "Good", "Hot-Headed"] }
+      {
+        "name": "Buffy Summers",
+        "role": "The Slayer",
+        "traits": [
+          "Active",
+          "Hot-Headed",
+          "Romantic",
+          "Good",
+          "Outgoing"
+        ]
+      },
+      {
+        "name": "Willow Rosenberg",
+        "role": "The Witch",
+        "traits": [
+          "Genius",
+          "Bookworm",
+          "Good",
+          "Loner",
+          "Creative"
+        ]
+      },
+      {
+        "name": "Xander Harris",
+        "role": "The Heart",
+        "traits": [
+          "Outgoing",
+          "Lazy",
+          "Romantic",
+          "Good",
+          "Hot-Headed"
+        ]
+      },
+      {
+        "name": "Rupert Giles",
+        "role": "The Watcher",
+        "traits": [
+          "Bookworm",
+          "Genius",
+          "Neat",
+          "Loner",
+          "Good"
+        ]
+      },
+      {
+        "name": "Cordelia Chase",
+        "role": "The Mean Girl",
+        "traits": [
+          "Self-Assured",
+          "Mean",
+          "Outgoing",
+          "Snob",
+          "Materialist"
+        ]
+      },
+      {
+        "name": "Angel",
+        "role": "The Vampire with a Soul",
+        "traits": [
+          "Romantic",
+          "Gloomy",
+          "Loner",
+          "Good",
+          "Hot-Headed"
+        ]
+      }
     ],
     "goals": [
       "Buffy must defeat one Minion per week — represented by a hostile encounter ending in the Minion's removal from the lot.",
@@ -857,13 +1266,34 @@
       "If any Scooby Gang member's mood reaches critical red: they are in danger. Move them off the main lot immediately and have Buffy retrieve them within 24 in-game hours."
     ],
     "storyBeats": [
-      { "step": 1, "text": "Buffy arrives in Sunnydale hoping this time will be different. Giles finds her in the library on the first day. He has been expecting her. She did not want to be expected." },
-      { "step": 2, "text": "The first Minion. Willow and Xander see something they cannot explain. They do not run. This is the beginning of the Scooby Gang even if no one has named it yet." },
-      { "step": 3, "text": "Angel. He appears at night with warnings and terrible timing. Buffy knows she should not. She does anyway. Giles looks at them both with the expression of a man watching a structural problem develop." },
-      { "step": 4, "text": "The Big Bad's influence begins to reach into the school. A teacher behaves wrongly. A student disappears. The Hellmouth hums beneath the library floor." },
-      { "step": 5, "text": "Willow's power surprises everyone, including Willow. Xander does something brave in a way he will never be given full credit for. Cordelia saves someone's life and is furious about it." },
-      { "step": 6, "text": "Giles reaches 7 points of Watcher's Knowledge. The Hellmouth basement unlocks. The Big Bad has been waiting. They have always been waiting. Sunnydale was always going to come to this." },
-      { "step": 7, "text": "The season finale. The Hellmouth. Buffy goes in alone because that is what the Slayer does. The Gang is outside because that is what the Gang does. The door closes." }
+      {
+        "step": 1,
+        "text": "Buffy arrives in Sunnydale hoping this time will be different. Giles finds her in the library on the first day. He has been expecting her. She did not want to be expected."
+      },
+      {
+        "step": 2,
+        "text": "The first Minion. Willow and Xander see something they cannot explain. They do not run. This is the beginning of the Scooby Gang even if no one has named it yet."
+      },
+      {
+        "step": 3,
+        "text": "Angel. He appears at night with warnings and terrible timing. Buffy knows she should not. She does anyway. Giles looks at them both with the expression of a man watching a structural problem develop."
+      },
+      {
+        "step": 4,
+        "text": "The Big Bad's influence begins to reach into the school. A teacher behaves wrongly. A student disappears. The Hellmouth hums beneath the library floor."
+      },
+      {
+        "step": 5,
+        "text": "Willow's power surprises everyone, including Willow. Xander does something brave in a way he will never be given full credit for. Cordelia saves someone's life and is furious about it."
+      },
+      {
+        "step": 6,
+        "text": "Giles reaches 7 points of Watcher's Knowledge. The Hellmouth basement unlocks. The Big Bad has been waiting. They have always been waiting. Sunnydale was always going to come to this."
+      },
+      {
+        "step": 7,
+        "text": "The season finale. The Hellmouth. Buffy goes in alone because that is what the Slayer does. The Gang is outside because that is what the Gang does. The door closes."
+      }
     ],
     "endings": [
       {
@@ -878,9 +1308,9 @@
         "title": "The Chosen One Falls",
         "text": "Buffy enters the Hellmouth but Willow has not reached level 7 and Giles has fewer than 5 Watcher points. The encounter cannot be completed. Buffy is removed from the lot. The Gang stands outside the sealed basement. In every generation there is a Chosen One. She alone will face the vampires and the forces of darkness. She alone. Until the next one."
       }
-    ]
+    ],
+    "sort": 10
   },
-
   {
     "id": "sabrina-the-teenage-witch",
     "title": "Sabrina the Teenage Witch",
@@ -888,7 +1318,14 @@
     "sourceType": "film",
     "year": 1996,
     "difficulty": "easy",
-    "tags": ["supernatural", "coming-of-age", "comedy", "family", "small-town", "magic"],
+    "tags": [
+      "supernatural",
+      "coming-of-age",
+      "comedy",
+      "family",
+      "small-town",
+      "magic"
+    ],
     "description": "On her sixteenth birthday, Sabrina Spellman discovers she is a witch. Her aunts Hilda and Zelda have been waiting to tell her. Her cat Salem has opinions about everything. Westbridge is full of mortals who must never find out. Harvey is her boyfriend and knows nothing. Libby is her nemesis and suspects nothing. Sabrina just wants to get through high school without accidentally turning anyone into a frog. Based on the Archie Comics character and the ABC/WB television series.",
     "setup": [
       "Use a cosy suburban world — Henford-on-Bagley or Willow Creek. The Spellman house must be large, slightly eccentric, and full of peculiar objects. A dedicated magic practice room — the linen closet — must exist as a small locked room accessible only to Sabrina, Hilda, and Zelda. It contains a spellbook object and a cauldron.",
@@ -902,11 +1339,61 @@
       "The Witch's Council is represented by a single NPC elder who visits once per week to assess Sabrina's progress. They are never satisfied but never quite unsatisfied enough to intervene."
     ],
     "householdMembers": [
-      { "name": "Sabrina Spellman", "role": "The Witch", "traits": ["Creative", "Outgoing", "Good", "Hot-Headed", "Bookworm"] },
-      { "name": "Hilda Spellman", "role": "The Fun Aunt", "traits": ["Outgoing", "Mischievous", "Romantic", "Creative", "Hot-Headed"] },
-      { "name": "Zelda Spellman", "role": "The Strict Aunt", "traits": ["Genius", "Perfectionist", "Bookworm", "Snob", "Good"] },
-      { "name": "Harvey Kinkle", "role": "The Boyfriend", "traits": ["Good", "Outgoing", "Romantic", "Cheerful", "Lazy"] },
-      { "name": "Libby Chessler", "role": "The Nemesis", "traits": ["Mean", "Self-Assured", "Outgoing", "Snob", "Materialist"] }
+      {
+        "name": "Sabrina Spellman",
+        "role": "The Witch",
+        "traits": [
+          "Creative",
+          "Outgoing",
+          "Good",
+          "Hot-Headed",
+          "Bookworm"
+        ]
+      },
+      {
+        "name": "Hilda Spellman",
+        "role": "The Fun Aunt",
+        "traits": [
+          "Outgoing",
+          "Mischievous",
+          "Romantic",
+          "Creative",
+          "Hot-Headed"
+        ]
+      },
+      {
+        "name": "Zelda Spellman",
+        "role": "The Strict Aunt",
+        "traits": [
+          "Genius",
+          "Perfectionist",
+          "Bookworm",
+          "Snob",
+          "Good"
+        ]
+      },
+      {
+        "name": "Harvey Kinkle",
+        "role": "The Boyfriend",
+        "traits": [
+          "Good",
+          "Outgoing",
+          "Romantic",
+          "Cheerful",
+          "Lazy"
+        ]
+      },
+      {
+        "name": "Libby Chessler",
+        "role": "The Nemesis",
+        "traits": [
+          "Mean",
+          "Self-Assured",
+          "Outgoing",
+          "Snob",
+          "Materialist"
+        ]
+      }
     ],
     "goals": [
       "Sabrina must reach Mischief level 5 — her magic is becoming reliable enough to control.",
@@ -927,13 +1414,34 @@
       "Hilda must provide one piece of terrible magical advice per week that Sabrina follows with predictable consequences. The consequences are always recoverable. Barely."
     ],
     "storyBeats": [
-      { "step": 1, "text": "Sabrina's birthday. The aunts sit her down. Salem jumps on the table. The linen closet glows. Everything Sabrina thought she knew about herself is correct — she always felt different — and also completely upended." },
-      { "step": 2, "text": "The first spell outside the closet. It almost works. Harvey is in the next room. Zelda appears from nowhere with the expression of someone who has been bracing for this for sixteen years." },
-      { "step": 3, "text": "Libby does something cruel at school. Sabrina's hands feel warm. Hilda says she should use the magic. Zelda says absolutely not. Sabrina uses the magic. It does not go as planned." },
-      { "step": 4, "text": "The Witch's Council elder arrives for the first time. They look at Sabrina the way customs officials look at luggage they are certain is hiding something." },
-      { "step": 5, "text": "Harvey almost sees something he should not. Sabrina's Charisma saves them both. He looks at her with total trust and she feels terrible about it in a way that is also very sweet." },
-      { "step": 6, "text": "The Witch's License test approaches. Sabrina has three consecutive clean days ahead of her. Hilda suggests celebrating. Zelda suggests absolutely not celebrating. Salem suggests a plan that would benefit Salem specifically." },
-      { "step": 7, "text": "The Council elder returns. The test. Sabrina's hands are steady. The magic does what she tells it to. She is a witch. She has always been a witch. Now she can prove it." }
+      {
+        "step": 1,
+        "text": "Sabrina's birthday. The aunts sit her down. Salem jumps on the table. The linen closet glows. Everything Sabrina thought she knew about herself is correct — she always felt different — and also completely upended."
+      },
+      {
+        "step": 2,
+        "text": "The first spell outside the closet. It almost works. Harvey is in the next room. Zelda appears from nowhere with the expression of someone who has been bracing for this for sixteen years."
+      },
+      {
+        "step": 3,
+        "text": "Libby does something cruel at school. Sabrina's hands feel warm. Hilda says she should use the magic. Zelda says absolutely not. Sabrina uses the magic. It does not go as planned."
+      },
+      {
+        "step": 4,
+        "text": "The Witch's Council elder arrives for the first time. They look at Sabrina the way customs officials look at luggage they are certain is hiding something."
+      },
+      {
+        "step": 5,
+        "text": "Harvey almost sees something he should not. Sabrina's Charisma saves them both. He looks at her with total trust and she feels terrible about it in a way that is also very sweet."
+      },
+      {
+        "step": 6,
+        "text": "The Witch's License test approaches. Sabrina has three consecutive clean days ahead of her. Hilda suggests celebrating. Zelda suggests absolutely not celebrating. Salem suggests a plan that would benefit Salem specifically."
+      },
+      {
+        "step": 7,
+        "text": "The Council elder returns. The test. Sabrina's hands are steady. The magic does what she tells it to. She is a witch. She has always been a witch. Now she can prove it."
+      }
     ],
     "endings": [
       {
@@ -948,7 +1456,8 @@
         "title": "The Other Realm Calls",
         "text": "Sabrina reaches Mischief level 5 but fails the Witch's License test three times. The Council elder informs her she must spend one week in the Other Realm for intensive training — represented by removing Sabrina from the lot for 7 days. Harvey waits. Libby fills the social vacuum immediately. When Sabrina returns she is more powerful and has missed something she cannot get back. The license test is rescheduled. She passes on the first attempt."
       }
-    ]
+    ],
+    "sort": 11
   },
   {
     "id": "the-others",
@@ -979,32 +1488,58 @@
       {
         "name": "Grace Stewart",
         "role": "The Mother",
-        "traits": ["Neat", "Mean", "Gloomy", "Erratic", "Family-Oriented"]
+        "traits": [
+          "Neat",
+          "Mean",
+          "Gloomy",
+          "Erratic",
+          "Family-Oriented"
+        ]
       },
       {
         "name": "Anne Stewart",
         "role": "The Daughter",
-        "traits": ["Gloomy", "Outgoing", "Bookworm"]
+        "traits": [
+          "Gloomy",
+          "Outgoing",
+          "Bookworm"
+        ]
       },
       {
         "name": "Nicholas Stewart",
         "role": "The Son",
-        "traits": ["Gloomy", "Loner", "Neat"]
+        "traits": [
+          "Gloomy",
+          "Loner",
+          "Neat"
+        ]
       },
       {
         "name": "Mrs Mills",
         "role": "The Housekeeper",
-        "traits": ["Gloomy", "Loner", "Perfectionist"]
+        "traits": [
+          "Gloomy",
+          "Loner",
+          "Perfectionist"
+        ]
       },
       {
         "name": "Mr Tuttle",
         "role": "The Gardener",
-        "traits": ["Gloomy", "Loner", "Neat"]
+        "traits": [
+          "Gloomy",
+          "Loner",
+          "Neat"
+        ]
       },
       {
         "name": "Lydia",
         "role": "The Maid",
-        "traits": ["Gloomy", "Loner", "Perfectionist"]
+        "traits": [
+          "Gloomy",
+          "Loner",
+          "Perfectionist"
+        ]
       }
     ],
     "goals": [
@@ -1059,7 +1594,8 @@
         "title": "The Intruders",
         "text": "An NPC successfully enters the lot and encounters Grace. Grace's erratic trait triggers — she attacks or drives them off. The NPC calls for help. Officials arrive. The scenario ends with outsiders inside Manderley — and Grace, finally, having to explain herself."
       }
-    ]
+    ],
+    "sort": 12
   },
   {
     "id": "hereditary",
@@ -1068,7 +1604,14 @@
     "sourceType": "film",
     "year": 2018,
     "difficulty": "hard",
-    "tags": ["supernatural", "family", "grief", "slow-burn", "cult", "psychological"],
+    "tags": [
+      "supernatural",
+      "family",
+      "grief",
+      "slow-burn",
+      "cult",
+      "psychological"
+    ],
     "description": "When Ellen Graham dies, her daughter Annie begins to unravel the disturbing secrets her mother kept hidden. As grief spreads through the family like an infection, something older and more deliberate moves in behind it. Written and directed by Ari Aster.",
     "setup": [
       "Use a large isolated house on a rural lot — Henford-on-Bagley is ideal. A treehouse or separate backyard structure represents the grandmother's private space and later the cult's gathering place.",
@@ -1081,10 +1624,46 @@
       "A second structure on the lot — the treehouse or shed — must be locked until Day 14. It contains occult objects, cult symbols, and a copy of the same photo that appears in Ellen's attic."
     ],
     "householdMembers": [
-      { "name": "Annie Graham", "role": "The Mother", "traits": ["Creative", "Perfectionist", "Gloomy", "Erratic", "Bookworm"] },
-      { "name": "Steve Graham", "role": "The Father", "traits": ["Good", "Neat", "Family-Oriented", "Cheerful"] },
-      { "name": "Peter Graham", "role": "The Son", "traits": ["Loner", "Lazy", "Gloomy", "Erratic"] },
-      { "name": "Charlie Graham", "role": "The Daughter", "traits": ["Loner", "Gloomy", "Creative"] }
+      {
+        "name": "Annie Graham",
+        "role": "The Mother",
+        "traits": [
+          "Creative",
+          "Perfectionist",
+          "Gloomy",
+          "Erratic",
+          "Bookworm"
+        ]
+      },
+      {
+        "name": "Steve Graham",
+        "role": "The Father",
+        "traits": [
+          "Good",
+          "Neat",
+          "Family-Oriented",
+          "Cheerful"
+        ]
+      },
+      {
+        "name": "Peter Graham",
+        "role": "The Son",
+        "traits": [
+          "Loner",
+          "Lazy",
+          "Gloomy",
+          "Erratic"
+        ]
+      },
+      {
+        "name": "Charlie Graham",
+        "role": "The Daughter",
+        "traits": [
+          "Loner",
+          "Gloomy",
+          "Creative"
+        ]
+      }
     ],
     "goals": [
       "Annie must complete three miniature builds in her workshop — one for each major story beat — before the scenario ends.",
@@ -1103,12 +1682,30 @@
       "Once Joan visits: Annie begins performing a ritual in the backyard each night. Represent this by having Annie stand outside alone for one in-game hour after dark."
     ],
     "storyBeats": [
-      { "step": 1, "text": "Ellen Graham is buried. The family returns to the house. Annie begins a new miniature — a recreation of the funeral. Charlie watches from the doorway and makes her sound." },
-      { "step": 2, "text": "The attic unlocks. Annie finds her mother's things — photos, letters, names she does not recognise. The treehouse at the back of the lot catches her eye." },
-      { "step": 3, "text": "Charlie is removed from the household. The manner of it is sudden and wrong. Peter drives home alone. Annie does not sleep." },
-      { "step": 4, "text": "The grief support group. Joan is kind and specific in ways that feel rehearsed. She teaches Annie something she should not have learned." },
-      { "step": 5, "text": "Annie finds the treehouse unlocked. Inside: her mother's work, the cult's marks, and the realisation that grief was never the point. The ritual was." },
-      { "step": 6, "text": "Peter's body is no longer entirely Peter's. Annie moves through the house above him. Steve stands between them for as long as he can." }
+      {
+        "step": 1,
+        "text": "Ellen Graham is buried. The family returns to the house. Annie begins a new miniature — a recreation of the funeral. Charlie watches from the doorway and makes her sound."
+      },
+      {
+        "step": 2,
+        "text": "The attic unlocks. Annie finds her mother's things — photos, letters, names she does not recognise. The treehouse at the back of the lot catches her eye."
+      },
+      {
+        "step": 3,
+        "text": "Charlie is removed from the household. The manner of it is sudden and wrong. Peter drives home alone. Annie does not sleep."
+      },
+      {
+        "step": 4,
+        "text": "The grief support group. Joan is kind and specific in ways that feel rehearsed. She teaches Annie something she should not have learned."
+      },
+      {
+        "step": 5,
+        "text": "Annie finds the treehouse unlocked. Inside: her mother's work, the cult's marks, and the realisation that grief was never the point. The ritual was."
+      },
+      {
+        "step": 6,
+        "text": "Peter's body is no longer entirely Peter's. Annie moves through the house above him. Steve stands between them for as long as he can."
+      }
     ],
     "endings": [
       {
@@ -1123,9 +1720,9 @@
         "title": "The Miniature",
         "text": "Annie completes all three miniatures but Steve remains in the household with green mood to the end. The ritual is never completed. The scenario ends with the family fractured but present — living inside a house that is already, in every way that matters, a doll's house."
       }
-    ]
+    ],
+    "sort": 13
   },
-
   {
     "id": "midsommar",
     "title": "Midsommar",
@@ -1133,7 +1730,14 @@
     "sourceType": "film",
     "year": 2019,
     "difficulty": "medium",
-    "tags": ["folk-horror", "cult", "grief", "travel", "community", "psychological"],
+    "tags": [
+      "folk-horror",
+      "cult",
+      "grief",
+      "travel",
+      "community",
+      "psychological"
+    ],
     "description": "Dani Ardor travels to Sweden with her emotionally distant boyfriend Christian and his friends to attend a midsummer festival at a rural commune. The commune is beautiful, generous, and entirely closed. The festival runs for ninety days. Not everyone is meant to leave. Written and directed by Ari Aster.",
     "setup": [
       "Build or download a bright, open Scandinavian commune — flower arches, communal dining tables, a large decorated Maypole, and several small sleeping cottages. Snowy worlds repurposed with spring/summer colour work well. Everything should be excessively cheerful.",
@@ -1147,11 +1751,57 @@
       "All visitors begin the scenario in the same sleeping cottage. The cottage has no locks on the inside."
     ],
     "householdMembers": [
-      { "name": "Dani Ardor", "role": "The Grieving", "traits": ["Gloomy", "Romantic", "Bookworm", "Erratic", "Family-Oriented"] },
-      { "name": "Christian Hughes", "role": "The Boyfriend", "traits": ["Romantic", "Lazy", "Self-Assured", "Loner"] },
-      { "name": "Josh", "role": "The Scholar", "traits": ["Bookworm", "Genius", "Ambitious", "Loner"] },
-      { "name": "Mark", "role": "The Loud One", "traits": ["Outgoing", "Hot-Headed", "Lazy", "Mischievous"] },
-      { "name": "Pelle", "role": "The Host", "traits": ["Outgoing", "Cheerful", "Romantic", "Mischievous"] }
+      {
+        "name": "Dani Ardor",
+        "role": "The Grieving",
+        "traits": [
+          "Gloomy",
+          "Romantic",
+          "Bookworm",
+          "Erratic",
+          "Family-Oriented"
+        ]
+      },
+      {
+        "name": "Christian Hughes",
+        "role": "The Boyfriend",
+        "traits": [
+          "Romantic",
+          "Lazy",
+          "Self-Assured",
+          "Loner"
+        ]
+      },
+      {
+        "name": "Josh",
+        "role": "The Scholar",
+        "traits": [
+          "Bookworm",
+          "Genius",
+          "Ambitious",
+          "Loner"
+        ]
+      },
+      {
+        "name": "Mark",
+        "role": "The Loud One",
+        "traits": [
+          "Outgoing",
+          "Hot-Headed",
+          "Lazy",
+          "Mischievous"
+        ]
+      },
+      {
+        "name": "Pelle",
+        "role": "The Host",
+        "traits": [
+          "Outgoing",
+          "Cheerful",
+          "Romantic",
+          "Mischievous"
+        ]
+      }
     ],
     "goals": [
       "Dani must be crowned May Queen — reach the highest Charisma score among all female Sims on the lot by Day 14.",
@@ -1171,12 +1821,30 @@
       "Dani may not leave the lot at any point. She chose to stay — even when she could have gone."
     ],
     "storyBeats": [
-      { "step": 1, "text": "The commune greets them with flowers and open arms. The food is extraordinary. The light never quite fades. Dani cries once, privately, and Pelle is the only one who notices." },
-      { "step": 2, "text": "The first ritual. It is not what any of them expected. Mark laughs. The commune does not." },
-      { "step": 3, "text": "Mark does something unforgivable on sacred ground. He is gone before the others fully register his absence." },
-      { "step": 4, "text": "Josh disappears in the night, chasing his thesis. His notes are found but he is not." },
-      { "step": 5, "text": "The May Queen competition. Dani dances until everyone else falls. She is crowned. She weeps and the commune weeps with her — genuinely, collectively, and for the first time she does not feel her grief alone." },
-      { "step": 6, "text": "Christian is brought to the Maypole. Dani is given a choice. She looks at him for a long moment. She makes it." }
+      {
+        "step": 1,
+        "text": "The commune greets them with flowers and open arms. The food is extraordinary. The light never quite fades. Dani cries once, privately, and Pelle is the only one who notices."
+      },
+      {
+        "step": 2,
+        "text": "The first ritual. It is not what any of them expected. Mark laughs. The commune does not."
+      },
+      {
+        "step": 3,
+        "text": "Mark does something unforgivable on sacred ground. He is gone before the others fully register his absence."
+      },
+      {
+        "step": 4,
+        "text": "Josh disappears in the night, chasing his thesis. His notes are found but he is not."
+      },
+      {
+        "step": 5,
+        "text": "The May Queen competition. Dani dances until everyone else falls. She is crowned. She weeps and the commune weeps with her — genuinely, collectively, and for the first time she does not feel her grief alone."
+      },
+      {
+        "step": 6,
+        "text": "Christian is brought to the Maypole. Dani is given a choice. She looks at him for a long moment. She makes it."
+      }
     ],
     "endings": [
       {
@@ -1191,9 +1859,9 @@
         "title": "The Thesis",
         "text": "Josh completes his research notes before being removed and hides them off-lot. He survives to Day 28 and leaves with the notes. The commune does not pursue him. The thesis is published the following year. It wins an award. No one who reads it believes it."
       }
-    ]
+    ],
+    "sort": 14
   },
-
   {
     "id": "crimson-peak",
     "title": "Crimson Peak",
@@ -1201,7 +1869,14 @@
     "sourceType": "film",
     "year": 2015,
     "difficulty": "medium",
-    "tags": ["gothic", "romance", "supernatural", "sibling", "poison", "slow-burn"],
+    "tags": [
+      "gothic",
+      "romance",
+      "supernatural",
+      "sibling",
+      "poison",
+      "slow-burn"
+    ],
     "description": "Aspiring author Edith Cushing marries the charming English baronet Thomas Sharpe and is brought to Allerdale Hall — his decaying ancestral home in the north of England, built on a clay mine that bleeds red through the snow. His sister Lucille has never left the house. Neither has anyone Thomas married before. Directed by Guillermo del Toro.",
     "setup": [
       "Build a large, deteriorating Victorian manor — crumbling plaster, dead garden, a collapsed section of roof open to the sky. The upper floors should feel abandoned. Moonwood Mill or a custom Windenburg lot works well.",
@@ -1214,9 +1889,39 @@
       "Scatter ghost-light objects or debug spirit items throughout the upper floors — the previous wives are here, trying to warn Edith."
     ],
     "householdMembers": [
-      { "name": "Edith Cushing", "role": "The Wife", "traits": ["Bookworm", "Creative", "Romantic", "Neat", "Outgoing"] },
-      { "name": "Thomas Sharpe", "role": "The Husband", "traits": ["Romantic", "Gloomy", "Creative", "Self-Assured", "Loner"] },
-      { "name": "Lucille Sharpe", "role": "The Sister", "traits": ["Perfectionist", "Mean", "Gloomy", "Loner", "Creative"] }
+      {
+        "name": "Edith Cushing",
+        "role": "The Wife",
+        "traits": [
+          "Bookworm",
+          "Creative",
+          "Romantic",
+          "Neat",
+          "Outgoing"
+        ]
+      },
+      {
+        "name": "Thomas Sharpe",
+        "role": "The Husband",
+        "traits": [
+          "Romantic",
+          "Gloomy",
+          "Creative",
+          "Self-Assured",
+          "Loner"
+        ]
+      },
+      {
+        "name": "Lucille Sharpe",
+        "role": "The Sister",
+        "traits": [
+          "Perfectionist",
+          "Mean",
+          "Gloomy",
+          "Loner",
+          "Creative"
+        ]
+      }
     ],
     "goals": [
       "Edith must reach Writing level 5 — she is finishing her novel despite everything.",
@@ -1235,12 +1940,30 @@
       "Once Edith discovers the basement on Day 21: her Energy and Comfort needs drop to red and may not recover above yellow until the ending resolves."
     ],
     "storyBeats": [
-      { "step": 1, "text": "Edith arrives at Allerdale Hall for the first time. The house is enormous and broken and cold in ways that have nothing to do with the weather. Lucille greets her at the door — correct, musical, and watching." },
-      { "step": 2, "text": "The tea begins. Edith writes. The ghosts in the upper floors are agitated — they appear near her writing desk, near her teacup, near the stairs to the basement." },
-      { "step": 3, "text": "Edith finds the first locked room. Inside: a name, a date, a wedding photograph with Thomas in it that predates their own." },
-      { "step": 4, "text": "Thomas is kind to her in ways that seem increasingly desperate. Lucille plays the same piece on the piano every evening. Edith begins to understand that the music is a kind of counting down." },
-      { "step": 5, "text": "The basement. The clay mine. The elevator shaft. What the red in the snow has always been." },
-      { "step": 6, "text": "Thomas has to choose. Lucille does not wait to see what he decides." }
+      {
+        "step": 1,
+        "text": "Edith arrives at Allerdale Hall for the first time. The house is enormous and broken and cold in ways that have nothing to do with the weather. Lucille greets her at the door — correct, musical, and watching."
+      },
+      {
+        "step": 2,
+        "text": "The tea begins. Edith writes. The ghosts in the upper floors are agitated — they appear near her writing desk, near her teacup, near the stairs to the basement."
+      },
+      {
+        "step": 3,
+        "text": "Edith finds the first locked room. Inside: a name, a date, a wedding photograph with Thomas in it that predates their own."
+      },
+      {
+        "step": 4,
+        "text": "Thomas is kind to her in ways that seem increasingly desperate. Lucille plays the same piece on the piano every evening. Edith begins to understand that the music is a kind of counting down."
+      },
+      {
+        "step": 5,
+        "text": "The basement. The clay mine. The elevator shaft. What the red in the snow has always been."
+      },
+      {
+        "step": 6,
+        "text": "Thomas has to choose. Lucille does not wait to see what he decides."
+      }
     ],
     "endings": [
       {
@@ -1255,17 +1978,25 @@
         "title": "The Tea",
         "text": "Edith's Energy and Health needs reach critical before Day 21 and she never discovers the basement. She deteriorates in the upper floors while Lucille attends to her with perfect, terrible care. Thomas watches from the doorway. Lucille begins corresponding with a new prospect. Begin again."
       }
-    ]
+    ],
+    "sort": 15
   },
-
   {
     "id": "audition",
     "title": "Audition",
     "source": "Audition",
     "sourceType": "film",
+    "thumbnail": "/images/banners/sims-audition.png",
     "year": 1999,
     "difficulty": "hard",
-    "tags": ["psychological", "romance", "horror", "slow-burn", "twist", "two-person"],
+    "tags": [
+      "psychological",
+      "romance",
+      "horror",
+      "slow-burn",
+      "twist",
+      "two-person"
+    ],
     "description": "Widower Shigeharu Aoyama, encouraged by his son, stages a fake film audition to find a new wife. He becomes fixated on Asami Yamazaki — quiet, graceful, and apparently perfect. The first half is a romance. The second half is something else entirely. Directed by Takashi Miike. Based on the novel by Ryu Murakami.",
     "setup": [
       "The scenario runs in two distinct phases. Phase One uses a suburban family home — comfortable, slightly lonely, tasteful. Phase Two introduces Asami's apartment, which should feel wrong in specific ways: too bare, one piece of furniture too many, a sack in the corner that occasionally moves.",
@@ -1277,9 +2008,37 @@
       "Asami's apartment must have piano wire visible as a decor item from Day 14 onward."
     ],
     "householdMembers": [
-      { "name": "Shigeharu Aoyama", "role": "The Widower", "traits": ["Romantic", "Family-Oriented", "Neat", "Good", "Gloomy"] },
-      { "name": "Shigehiko Aoyama", "role": "The Son", "traits": ["Cheerful", "Outgoing", "Family-Oriented"] },
-      { "name": "Asami Yamazaki", "role": "The Audition", "traits": ["Loner", "Gloomy", "Romantic", "Perfectionist", "Mean"] }
+      {
+        "name": "Shigeharu Aoyama",
+        "role": "The Widower",
+        "traits": [
+          "Romantic",
+          "Family-Oriented",
+          "Neat",
+          "Good",
+          "Gloomy"
+        ]
+      },
+      {
+        "name": "Shigehiko Aoyama",
+        "role": "The Son",
+        "traits": [
+          "Cheerful",
+          "Outgoing",
+          "Family-Oriented"
+        ]
+      },
+      {
+        "name": "Asami Yamazaki",
+        "role": "The Audition",
+        "traits": [
+          "Loner",
+          "Gloomy",
+          "Romantic",
+          "Perfectionist",
+          "Mean"
+        ]
+      }
     ],
     "goals": [
       "Phase One: Shigeharu and Asami must reach Romantic Interest status before Day 14.",
@@ -1300,12 +2059,30 @@
       "The sack in Asami's apartment may be 'opened' once — on the day the scenario ends."
     ],
     "storyBeats": [
-      { "step": 1, "text": "The auditions. Forty women, one afternoon, a fake film that will never be made. Shigeharu watches Asami's tape three times before he calls her." },
-      { "step": 2, "text": "They meet for dinner. She is everything he hoped for — quiet, attentive, slightly sad in a way that feels familiar. He does not ask why she flinches at certain words." },
-      { "step": 3, "text": "His producer friend looks into her past and does not like what he finds — or does not find. Shigeharu stops returning his calls." },
-      { "step": 4, "text": "Day 14. Phase Two begins. Shigeharu calls Asami and she does not answer for three days. When she does, something in her voice is different. Or perhaps it was always different." },
-      { "step": 5, "text": "Asami's apartment. The chair. The sack in the corner. What the sack contains is not addressed directly — only its presence, and the sound it makes." },
-      { "step": 6, "text": "Deeper, deeper, deeper. Asami explains, precisely and without emotion, what she is doing and why. She has very specific feelings about men who lie." }
+      {
+        "step": 1,
+        "text": "The auditions. Forty women, one afternoon, a fake film that will never be made. Shigeharu watches Asami's tape three times before he calls her."
+      },
+      {
+        "step": 2,
+        "text": "They meet for dinner. She is everything he hoped for — quiet, attentive, slightly sad in a way that feels familiar. He does not ask why she flinches at certain words."
+      },
+      {
+        "step": 3,
+        "text": "His producer friend looks into her past and does not like what he finds — or does not find. Shigeharu stops returning his calls."
+      },
+      {
+        "step": 4,
+        "text": "Day 14. Phase Two begins. Shigeharu calls Asami and she does not answer for three days. When she does, something in her voice is different. Or perhaps it was always different."
+      },
+      {
+        "step": 5,
+        "text": "Asami's apartment. The chair. The sack in the corner. What the sack contains is not addressed directly — only its presence, and the sound it makes."
+      },
+      {
+        "step": 6,
+        "text": "Deeper, deeper, deeper. Asami explains, precisely and without emotion, what she is doing and why. She has very specific feelings about men who lie."
+      }
     ],
     "endings": [
       {
@@ -1320,17 +2097,25 @@
         "title": "The Audition Was Always Real",
         "text": "Shigeharu reaches Soulmate status with Asami before Day 14 and Asami's hidden traits never activate. The scenario ends in Phase One — a quiet, almost convincing domestic happiness. The sack in her apartment is never explained. Shigehiko likes her. Everything is fine. Do not look in the sack."
       }
-    ]
+    ],
+    "sort": 5
   },
-
   {
     "id": "halloween",
     "title": "Halloween",
     "source": "Halloween",
     "sourceType": "film",
     "year": 1978,
+    "thumbnail": "/images/banners/sims-halloween.png",
     "difficulty": "medium",
-    "tags": ["slasher", "survival", "small-town", "ensemble", "night", "chase"],
+    "tags": [
+      "slasher",
+      "survival",
+      "small-town",
+      "ensemble",
+      "night",
+      "chase"
+    ],
     "description": "On Halloween night in Haddonfield, Illinois, Michael Myers — who murdered his sister fifteen years ago and has not spoken since — escapes from Smith's Grove Sanitarium and returns home. Dr Loomis follows him. The babysitters of Haddonfield do not know he is coming. Laurie Strode does not know he has been watching her all week. Directed by John Carpenter.",
     "setup": [
       "Use a suburban neighbourhood lot or a multi-unit residential build — Willow Creek is ideal. The Myers house must be on the same lot or immediately adjacent: empty, dark, slightly wrong.",
@@ -1343,13 +2128,76 @@
       "Michael's starting position is the Myers house. He may move one room per in-game hour."
     ],
     "householdMembers": [
-      { "name": "Laurie Strode", "role": "The Final Girl", "traits": ["Bookworm", "Neat", "Good", "Family-Oriented", "Loner"] },
-      { "name": "Annie Brackett", "role": "The Friend", "traits": ["Outgoing", "Romantic", "Mischievous", "Lazy"] },
-      { "name": "Lynda Van Der Klok", "role": "The Other Friend", "traits": ["Outgoing", "Self-Assured", "Romantic", "Cheerful"] },
-      { "name": "Michael Myers", "role": "The Shape", "traits": ["Mean", "Erratic", "Evil", "Hot-Headed", "Loner"] },
-      { "name": "Dr Sam Loomis", "role": "The Doctor", "traits": ["Genius", "Bookworm", "Gloomy", "Hot-Headed"] },
-      { "name": "Tommy Doyle", "role": "The Ward", "traits": ["Bookworm", "Loner", "Gloomy"] },
-      { "name": "Lindsey Wallace", "role": "The Ward", "traits": ["Cheerful", "Outgoing", "Neat"] }
+      {
+        "name": "Laurie Strode",
+        "role": "The Final Girl",
+        "traits": [
+          "Bookworm",
+          "Neat",
+          "Good",
+          "Family-Oriented",
+          "Loner"
+        ]
+      },
+      {
+        "name": "Annie Brackett",
+        "role": "The Friend",
+        "traits": [
+          "Outgoing",
+          "Romantic",
+          "Mischievous",
+          "Lazy"
+        ]
+      },
+      {
+        "name": "Lynda Van Der Klok",
+        "role": "The Other Friend",
+        "traits": [
+          "Outgoing",
+          "Self-Assured",
+          "Romantic",
+          "Cheerful"
+        ]
+      },
+      {
+        "name": "Michael Myers",
+        "role": "The Shape",
+        "traits": [
+          "Mean",
+          "Erratic",
+          "Evil",
+          "Hot-Headed",
+          "Loner"
+        ]
+      },
+      {
+        "name": "Dr Sam Loomis",
+        "role": "The Doctor",
+        "traits": [
+          "Genius",
+          "Bookworm",
+          "Gloomy",
+          "Hot-Headed"
+        ]
+      },
+      {
+        "name": "Tommy Doyle",
+        "role": "The Ward",
+        "traits": [
+          "Bookworm",
+          "Loner",
+          "Gloomy"
+        ]
+      },
+      {
+        "name": "Lindsey Wallace",
+        "role": "The Ward",
+        "traits": [
+          "Cheerful",
+          "Outgoing",
+          "Neat"
+        ]
+      }
     ],
     "goals": [
       "Laurie must keep both children alive and in green mood until Dr Loomis arrives on the lot — Day 2, dawn.",
@@ -1367,12 +2215,30 @@
       "Michael cannot be killed — only temporarily removed from the lot. If removed, he reappears at the lot boundary one in-game hour later."
     ],
     "storyBeats": [
-      { "step": 1, "text": "Halloween afternoon. Laurie walks to the babysitting job, passing the old Myers house. Something in the window catches her eye. She keeps walking." },
-      { "step": 2, "text": "Sundown. Annie leaves to pick up her boyfriend. Laurie settles the children with the television. The Myers house is dark. The Myers house has always been dark." },
-      { "step": 3, "text": "Annie does not come back. Lynda calls, then doesn't. Laurie checks the door. The lock feels less solid than it did an hour ago." },
-      { "step": 4, "text": "Michael is in the house. Laurie sends the children upstairs and faces what is standing in the hallway." },
-      { "step": 5, "text": "She hurts him. He gets up. She hurts him again. He gets up again. Dr Loomis is driving through Haddonfield with a gun and a twenty-year dread." },
-      { "step": 6, "text": "Dawn. Loomis arrives. The question is not whether Michael is stopped — it is what Laurie looks like after." }
+      {
+        "step": 1,
+        "text": "Halloween afternoon. Laurie walks to the babysitting job, passing the old Myers house. Something in the window catches her eye. She keeps walking."
+      },
+      {
+        "step": 2,
+        "text": "Sundown. Annie leaves to pick up her boyfriend. Laurie settles the children with the television. The Myers house is dark. The Myers house has always been dark."
+      },
+      {
+        "step": 3,
+        "text": "Annie does not come back. Lynda calls, then doesn't. Laurie checks the door. The lock feels less solid than it did an hour ago."
+      },
+      {
+        "step": 4,
+        "text": "Michael is in the house. Laurie sends the children upstairs and faces what is standing in the hallway."
+      },
+      {
+        "step": 5,
+        "text": "She hurts him. He gets up. She hurts him again. He gets up again. Dr Loomis is driving through Haddonfield with a gun and a twenty-year dread."
+      },
+      {
+        "step": 6,
+        "text": "Dawn. Loomis arrives. The question is not whether Michael is stopped — it is what Laurie looks like after."
+      }
     ],
     "endings": [
       {
@@ -1387,7 +2253,8 @@
         "title": "Haddonfield",
         "text": "Either Tommy or Lindsey is removed from the household before dawn. Laurie's failure condition triggers. The scenario ends immediately. Dr Loomis arrives to an empty house. He has always known this was how it would end."
       }
-    ]
+    ],
+    "sort": 17
   },
   {
     "id": "blair-witch",
@@ -1396,7 +2263,14 @@
     "sourceType": "film",
     "year": 1999,
     "difficulty": "hard",
-    "tags": ["supernatural", "found-footage", "wilderness", "paranoia", "ensemble", "survival"],
+    "tags": [
+      "supernatural",
+      "found-footage",
+      "wilderness",
+      "paranoia",
+      "ensemble",
+      "survival"
+    ],
     "description": "Three student filmmakers hike into the Black Hills Forest in Maryland to document the legend of the Blair Witch. They become lost. Their equipment continues to work after they cannot. Their footage is found one year later. Directed by Daniel Myrick and Eduardo Sánchez.",
     "setup": [
       "Use a dense, dark outdoor lot — Granite Falls or a custom wilderness build. No built structures except one ruined cabin at the far end of the lot, locked until Day 5. No roads. No exits visible from the centre of the lot.",
@@ -1409,9 +2283,37 @@
       "Stick figures and rock cairns must appear on the lot each morning from Day 2 onward — add them as debug objects before the Sims wake."
     ],
     "householdMembers": [
-      { "name": "Heather Donahue", "role": "The Director", "traits": ["Ambitious", "Bookworm", "Loner", "Perfectionist", "Hot-Headed"] },
-      { "name": "Josh Leonard", "role": "The Cameraman", "traits": ["Creative", "Outgoing", "Gloomy", "Loner"] },
-      { "name": "Mike Williams", "role": "The Sound Guy", "traits": ["Hot-Headed", "Lazy", "Mischievous", "Gloomy"] }
+      {
+        "name": "Heather Donahue",
+        "role": "The Director",
+        "traits": [
+          "Ambitious",
+          "Bookworm",
+          "Loner",
+          "Perfectionist",
+          "Hot-Headed"
+        ]
+      },
+      {
+        "name": "Josh Leonard",
+        "role": "The Cameraman",
+        "traits": [
+          "Creative",
+          "Outgoing",
+          "Gloomy",
+          "Loner"
+        ]
+      },
+      {
+        "name": "Mike Williams",
+        "role": "The Sound Guy",
+        "traits": [
+          "Hot-Headed",
+          "Lazy",
+          "Mischievous",
+          "Gloomy"
+        ]
+      }
     ],
     "goals": [
       "The group must survive 7 in-game days in the wilderness with no lot exit.",
@@ -1430,12 +2332,30 @@
       "On Day 7: both remaining Sims are moved to the cabin's basement room. The scenario ends there. The camera is still running."
     ],
     "storyBeats": [
-      { "step": 1, "text": "Day one of filming. The forest is beautiful. The locals in town were odd about the whole thing. The map is clear. The path is clear. Everything is fine." },
-      { "step": 2, "text": "Something moved around the camp during the night. The stick figures were not there yesterday. Nobody admits to being afraid." },
-      { "step": 3, "text": "The map is gone. Mike says Heather dropped it. Heather says she did not drop it. They walk in circles for most of the day and end up where they started." },
-      { "step": 4, "text": "Josh's voice is heard in the trees that night but he is not in his sleeping bag in the morning. His camera is still recording." },
-      { "step": 5, "text": "The cabin. It is impossible — they have never been this far in this direction. And yet here it is, exactly where it should not be." },
-      { "step": 6, "text": "Inside. Down the stairs. The camera is still running. It will be running when they find it." }
+      {
+        "step": 1,
+        "text": "Day one of filming. The forest is beautiful. The locals in town were odd about the whole thing. The map is clear. The path is clear. Everything is fine."
+      },
+      {
+        "step": 2,
+        "text": "Something moved around the camp during the night. The stick figures were not there yesterday. Nobody admits to being afraid."
+      },
+      {
+        "step": 3,
+        "text": "The map is gone. Mike says Heather dropped it. Heather says she did not drop it. They walk in circles for most of the day and end up where they started."
+      },
+      {
+        "step": 4,
+        "text": "Josh's voice is heard in the trees that night but he is not in his sleeping bag in the morning. His camera is still recording."
+      },
+      {
+        "step": 5,
+        "text": "The cabin. It is impossible — they have never been this far in this direction. And yet here it is, exactly where it should not be."
+      },
+      {
+        "step": 6,
+        "text": "Inside. Down the stairs. The camera is still running. It will be running when they find it."
+      }
     ],
     "endings": [
       {
@@ -1450,7 +2370,8 @@
         "title": "The Map",
         "text": "If Mike's and Heather's moods are both green on Day 4 — they have held together better than expected — Josh's disappearance is not enough to break them. They find the cabin on Day 5 and choose not to enter. They sit outside it until dawn. Nothing happens. They walk out of the forest on Day 6 using instinct and luck. Nobody believes them. They barely believe themselves."
       }
-    ]
+    ],
+    "sort": 18
   },
   {
     "id": "friday-the-13th",
@@ -1459,7 +2380,14 @@
     "sourceType": "film",
     "year": 1980,
     "difficulty": "easy",
-    "tags": ["slasher", "survival", "ensemble", "camp", "night", "chase"],
+    "tags": [
+      "slasher",
+      "survival",
+      "ensemble",
+      "camp",
+      "night",
+      "chase"
+    ],
     "description": "A group of young counsellors arrive at Camp Crystal Lake to reopen it for the summer, despite the town's warnings and the camp's history. They are not alone in the woods. Someone remembers what happened here. Someone never left. Based on the original film directed by Sean S. Cunningham.",
     "setup": [
       "Build or download a summer camp lot — cabins, a dock, a lake (use a pool with natural surroundings), a mess hall, and dense trees marking the lot's boundaries. Sulani or a custom outdoor world works well.",
@@ -1471,12 +2399,62 @@
       "The scenario runs over a single in-game night — from sundown to dawn."
     ],
     "householdMembers": [
-      { "name": "Alice Hardy", "role": "The Final Girl", "traits": ["Bookworm", "Loner", "Creative", "Good"] },
-      { "name": "Counsellor 2", "role": "The Joker", "traits": ["Outgoing", "Mischievous", "Lazy", "Romantic"] },
-      { "name": "Counsellor 3", "role": "The Couple A", "traits": ["Romantic", "Cheerful", "Outgoing"] },
-      { "name": "Counsellor 4", "role": "The Couple B", "traits": ["Romantic", "Self-Assured", "Active"] },
-      { "name": "Counsellor 5", "role": "The Serious One", "traits": ["Neat", "Ambitious", "Bookworm"] },
-      { "name": "Counsellor 6", "role": "The New One", "traits": ["Cheerful", "Outgoing", "Neat"] }
+      {
+        "name": "Alice Hardy",
+        "role": "The Final Girl",
+        "traits": [
+          "Bookworm",
+          "Loner",
+          "Creative",
+          "Good"
+        ]
+      },
+      {
+        "name": "Counsellor 2",
+        "role": "The Joker",
+        "traits": [
+          "Outgoing",
+          "Mischievous",
+          "Lazy",
+          "Romantic"
+        ]
+      },
+      {
+        "name": "Counsellor 3",
+        "role": "The Couple A",
+        "traits": [
+          "Romantic",
+          "Cheerful",
+          "Outgoing"
+        ]
+      },
+      {
+        "name": "Counsellor 4",
+        "role": "The Couple B",
+        "traits": [
+          "Romantic",
+          "Self-Assured",
+          "Active"
+        ]
+      },
+      {
+        "name": "Counsellor 5",
+        "role": "The Serious One",
+        "traits": [
+          "Neat",
+          "Ambitious",
+          "Bookworm"
+        ]
+      },
+      {
+        "name": "Counsellor 6",
+        "role": "The New One",
+        "traits": [
+          "Cheerful",
+          "Outgoing",
+          "Neat"
+        ]
+      }
     ],
     "goals": [
       "Alice must survive to dawn — mood above red, on the lot, at sunrise.",
@@ -1495,12 +2473,30 @@
       "At dawn: if Alice is alive and has completed the call, the killer retreats to the water. If Alice is alive but has not completed the call, the killer remains for a final confrontation."
     ],
     "storyBeats": [
-      { "step": 1, "text": "The counsellors arrive at Camp Crystal Lake in good spirits. The town locals gave them looks. Someone spray-painted something on the welcome sign. Nobody read it." },
-      { "step": 2, "text": "Sundown. The first pair of counsellors slip away to the dock. They are not seen again. Nobody notices for two hours." },
-      { "step": 3, "text": "The rain starts. The phone in the mess hall is dead. Alice finds it first and begins trying to reach someone on the computer." },
-      { "step": 4, "text": "The cabins are going quiet one by one. Alice moves between them and finds what has been left behind." },
-      { "step": 5, "text": "The killer is not hiding anymore. Alice runs." },
-      { "step": 6, "text": "Dawn. The lake. One final confrontation at the water's edge." }
+      {
+        "step": 1,
+        "text": "The counsellors arrive at Camp Crystal Lake in good spirits. The town locals gave them looks. Someone spray-painted something on the welcome sign. Nobody read it."
+      },
+      {
+        "step": 2,
+        "text": "Sundown. The first pair of counsellors slip away to the dock. They are not seen again. Nobody notices for two hours."
+      },
+      {
+        "step": 3,
+        "text": "The rain starts. The phone in the mess hall is dead. Alice finds it first and begins trying to reach someone on the computer."
+      },
+      {
+        "step": 4,
+        "text": "The cabins are going quiet one by one. Alice moves between them and finds what has been left behind."
+      },
+      {
+        "step": 5,
+        "text": "The killer is not hiding anymore. Alice runs."
+      },
+      {
+        "step": 6,
+        "text": "Dawn. The lake. One final confrontation at the water's edge."
+      }
     ],
     "endings": [
       {
@@ -1515,9 +2511,9 @@
         "title": "No Survivors",
         "text": "Alice is removed from the household before dawn. The killer is alone on the lot at sunrise. The scenario ends. The camp is silent. The water is still. Help arrives to find the welcome sign and eight empty cabins."
       }
-    ]
+    ],
+    "sort": 19
   },
-
   {
     "id": "the-ring",
     "title": "The Ring",
@@ -1525,7 +2521,14 @@
     "sourceType": "film",
     "year": 2002,
     "difficulty": "medium",
-    "tags": ["supernatural", "investigation", "countdown", "paranoia", "solo", "curse"],
+    "tags": [
+      "supernatural",
+      "investigation",
+      "countdown",
+      "paranoia",
+      "solo",
+      "curse"
+    ],
     "description": "Journalist Rachel Keller investigates a cursed videotape — everyone who watches it dies seven days later. Then she watches it. The clock is running. Her son Aidan has also seen it. Based on the 1998 Japanese film Ringu, directed by Hideo Nakata, and the 2002 American adaptation directed by Gore Verbinski.",
     "setup": [
       "Use a city apartment lot for Rachel's home and a secondary rural lot representing the cabin where the tape was first watched. San Myshuno works for the apartment; Henford-on-Bagley for the rural location.",
@@ -1538,9 +2541,36 @@
       "The well must be built or represented on the rural lot — a pit, a basement, a covered shaft. Samara's room is down there."
     ],
     "householdMembers": [
-      { "name": "Rachel Keller", "role": "The Journalist", "traits": ["Ambitious", "Bookworm", "Loner", "Perfectionist", "Gloomy"] },
-      { "name": "Aidan Keller", "role": "The Boy", "traits": ["Loner", "Gloomy", "Bookworm"] },
-      { "name": "Noah Clay", "role": "The Ex", "traits": ["Creative", "Outgoing", "Lazy", "Romantic"] }
+      {
+        "name": "Rachel Keller",
+        "role": "The Journalist",
+        "traits": [
+          "Ambitious",
+          "Bookworm",
+          "Loner",
+          "Perfectionist",
+          "Gloomy"
+        ]
+      },
+      {
+        "name": "Aidan Keller",
+        "role": "The Boy",
+        "traits": [
+          "Loner",
+          "Gloomy",
+          "Bookworm"
+        ]
+      },
+      {
+        "name": "Noah Clay",
+        "role": "The Ex",
+        "traits": [
+          "Creative",
+          "Outgoing",
+          "Lazy",
+          "Romantic"
+        ]
+      }
     ],
     "goals": [
       "Rachel must complete 7 investigative actions — each represented by a 2-hour research or writing task — before Day 7.",
@@ -1558,12 +2588,30 @@
       "Aidan's nightly sleep must never be interrupted — no events, no visitors, no alarms after 9pm."
     ],
     "storyBeats": [
-      { "step": 1, "text": "Rachel watches the tape to understand what killed her niece. It is a short film of images that should not be in sequence. The phone rings when it ends. Seven days." },
-      { "step": 2, "text": "She finds the cabin where the tape was first watched. She finds the owner's name. She finds a photograph of a girl who should not be in it." },
-      { "step": 3, "text": "Aidan draws things he has not seen. He tells Rachel she should not have watched it. He does not say this accusingly. He says it as fact." },
-      { "step": 4, "text": "The rural lot. The horse farm. The well at the edge of the property, covered over and forgotten. Rachel goes down." },
-      { "step": 5, "text": "Samara's story assembles itself — the mother, the island, the asylum, the well. Rachel thinks that finding her will be enough. It is not enough." },
-      { "step": 6, "text": "Noah watches the tape. On Day 6, Samara comes for him. On Day 7, she will come for Rachel — unless Rachel has understood what must be done." }
+      {
+        "step": 1,
+        "text": "Rachel watches the tape to understand what killed her niece. It is a short film of images that should not be in sequence. The phone rings when it ends. Seven days."
+      },
+      {
+        "step": 2,
+        "text": "She finds the cabin where the tape was first watched. She finds the owner's name. She finds a photograph of a girl who should not be in it."
+      },
+      {
+        "step": 3,
+        "text": "Aidan draws things he has not seen. He tells Rachel she should not have watched it. He does not say this accusingly. He says it as fact."
+      },
+      {
+        "step": 4,
+        "text": "The rural lot. The horse farm. The well at the edge of the property, covered over and forgotten. Rachel goes down."
+      },
+      {
+        "step": 5,
+        "text": "Samara's story assembles itself — the mother, the island, the asylum, the well. Rachel thinks that finding her will be enough. It is not enough."
+      },
+      {
+        "step": 6,
+        "text": "Noah watches the tape. On Day 6, Samara comes for him. On Day 7, she will come for Rachel — unless Rachel has understood what must be done."
+      }
     ],
     "endings": [
       {
@@ -1578,7 +2626,8 @@
         "title": "Seven Days",
         "text": "Rachel fails to complete 7 investigative actions before Day 7. The countdown reaches zero. The apartment lot goes dark. Aidan is alone in the morning. The tape is still in the locked room. Someone will find it."
       }
-    ]
+    ],
+    "sort": 20
   },
   {
     "id": "stepford-wives",
@@ -1587,7 +2636,14 @@
     "sourceType": "film",
     "year": 1975,
     "difficulty": "hard",
-    "tags": ["psychological", "suburban", "paranoia", "body-horror", "slow-burn", "ensemble"],
+    "tags": [
+      "psychological",
+      "suburban",
+      "paranoia",
+      "body-horror",
+      "slow-burn",
+      "ensemble"
+    ],
     "description": "Joanna Eberhart moves with her husband Walter and their children to Stepford, Connecticut — a picture-perfect town where the lawns are immaculate, the houses are enormous, and the wives are extraordinary. Beautiful, compliant, devoted to their homes and husbands with a fervour that reads less like contentment and more like something has been removed. Joanna cannot stop noticing. Noticing is the most dangerous thing she can do. Based on the novel by Ira Levin and the 1975 film directed by Bryan Forbes.",
     "setup": [
       "Use a large, pristine suburban world — Willow Creek dressed up with oversized lots, manicured hedges, and no visible disorder anywhere. Every house should look like a show home. The street should feel like a set.",
@@ -1602,10 +2658,50 @@
       "Joanna begins the scenario with a camera object — a debug item representing her photography. It must be in her inventory at all times. If it is ever removed, she has begun to change."
     ],
     "householdMembers": [
-      { "name": "Joanna Eberhart", "role": "The Newcomer", "traits": ["Creative", "Outgoing", "Bookworm", "Self-Assured", "Ambitious"] },
-      { "name": "Walter Eberhart", "role": "The Husband", "traits": ["Good", "Neat", "Ambitious", "Family-Oriented", "Loner"] },
-      { "name": "Bobbie Markowe", "role": "The Friend", "traits": ["Outgoing", "Hot-Headed", "Bookworm", "Mischievous", "Good"] },
-      { "name": "Dale Coba", "role": "The President", "traits": ["Genius", "Loner", "Snob", "Ambitious", "Mean"] }
+      {
+        "name": "Joanna Eberhart",
+        "role": "The Newcomer",
+        "traits": [
+          "Creative",
+          "Outgoing",
+          "Bookworm",
+          "Self-Assured",
+          "Ambitious"
+        ]
+      },
+      {
+        "name": "Walter Eberhart",
+        "role": "The Husband",
+        "traits": [
+          "Good",
+          "Neat",
+          "Ambitious",
+          "Family-Oriented",
+          "Loner"
+        ]
+      },
+      {
+        "name": "Bobbie Markowe",
+        "role": "The Friend",
+        "traits": [
+          "Outgoing",
+          "Hot-Headed",
+          "Bookworm",
+          "Mischievous",
+          "Good"
+        ]
+      },
+      {
+        "name": "Dale Coba",
+        "role": "The President",
+        "traits": [
+          "Genius",
+          "Loner",
+          "Snob",
+          "Ambitious",
+          "Mean"
+        ]
+      }
     ],
     "goals": [
       "Joanna must discover 5 clues about the Men's Association before Day 21 — each represented by a 2-hour research or observation task near the Association building or a suspicious husband.",
@@ -1626,13 +2722,34 @@
       "The camera object must remain in Joanna's inventory. If Walter removes it — represented by taking it from a shared surface — the replacement has begun. The scenario moves immediately to the ending."
     ],
     "storyBeats": [
-      { "step": 1, "text": "Stepford is beautiful. The neighbours are warm. The houses are extraordinary. Joanna photographs everything because that is what she does, and everything here looks like it has been arranged to be photographed." },
-      { "step": 2, "text": "The wives. Something about the wives. Joanna mentions it to Bobbie. Bobbie has noticed too. They sit in Bobbie's kitchen and make a list of things that are wrong." },
-      { "step": 3, "text": "Walter joins the Men's Association. He comes home later than expected and compliments the kitchen in a way he has never complimented anything before." },
-      { "step": 4, "text": "The first replacement. A woman Joanna had begun to like — sharp, funny, prone to strong opinions about local politics — is now discussing the correct temperature for a slow-braised joint. She seems happy. She seems genuinely, completely happy." },
-      { "step": 5, "text": "Diz visits. He asks about Joanna's photography with the specific interest of a man who has been briefed on what to ask about. She smiles and answers and afterwards writes down everything he said." },
-      { "step": 6, "text": "Bobbie. The morning after Bobbie's replacement Joanna stands in Bobbie's kitchen and Bobbie offers her coffee and discusses the new countertops. Joanna drinks the coffee. She does not stay long." },
-      { "step": 7, "text": "The Men's Association. The lot exit. Walter somewhere behind her in the house. The camera in her hand or not in her hand. The decision that has already been made, possibly weeks ago, by someone other than her." }
+      {
+        "step": 1,
+        "text": "Stepford is beautiful. The neighbours are warm. The houses are extraordinary. Joanna photographs everything because that is what she does, and everything here looks like it has been arranged to be photographed."
+      },
+      {
+        "step": 2,
+        "text": "The wives. Something about the wives. Joanna mentions it to Bobbie. Bobbie has noticed too. They sit in Bobbie's kitchen and make a list of things that are wrong."
+      },
+      {
+        "step": 3,
+        "text": "Walter joins the Men's Association. He comes home later than expected and compliments the kitchen in a way he has never complimented anything before."
+      },
+      {
+        "step": 4,
+        "text": "The first replacement. A woman Joanna had begun to like — sharp, funny, prone to strong opinions about local politics — is now discussing the correct temperature for a slow-braised joint. She seems happy. She seems genuinely, completely happy."
+      },
+      {
+        "step": 5,
+        "text": "Diz visits. He asks about Joanna's photography with the specific interest of a man who has been briefed on what to ask about. She smiles and answers and afterwards writes down everything he said."
+      },
+      {
+        "step": 6,
+        "text": "Bobbie. The morning after Bobbie's replacement Joanna stands in Bobbie's kitchen and Bobbie offers her coffee and discusses the new countertops. Joanna drinks the coffee. She does not stay long."
+      },
+      {
+        "step": 7,
+        "text": "The Men's Association. The lot exit. Walter somewhere behind her in the house. The camera in her hand or not in her hand. The decision that has already been made, possibly weeks ago, by someone other than her."
+      }
     ],
     "endings": [
       {
@@ -1647,17 +2764,26 @@
         "title": "Too Late",
         "text": "Joanna collects fewer than 3 clues before Bobbie's replacement. She has no ally, insufficient evidence, and Walter's relationship score has reached Acquaintance. She does not attempt to leave. She stays in the house and photographs the garden and the kitchen and the children and nothing with a sharp edge in it. The photos are beautiful. Diz tells her so on his next visit. She thanks him. She means it."
       }
-    ]
+    ],
+    "sort": 21
   },
   {
     "id": "little-shop-of-horrors",
     "title": "PlantShop of Horrors",
     "source": "Little Shop of Horrors",
     "sourceType": "film",
+    "thumbnail": "/images/banners/sims-shop-horror.png",
     "year": 1960,
     "difficulty": "medium",
-    "tags": ["comedy-horror", "supernatural", "ambition", "plant", "two-person", "escalation"],
-    "description": "SFlaunt your entrepreneurship skills a la Mr Mushnik by running your own flower shop, except all your plants are weird. Actually, your worker Sims are ..plantSims? Don't forget your prized posession - a cowplant named Audrey.",
+    "tags": [
+      "comedy-horror",
+      "supernatural",
+      "ambition",
+      "plant",
+      "two-person",
+      "escalation"
+    ],
+    "description": "Flaunt your entrepreneurship skills a la Mr Mushnik by running your own flower shop, except all your plants are weird. Actually, your worker Sims are ..plantSims? Don't forget your prized posession - a cowplant named Audrey.",
     "setup": [
       "Use a small, shabby commercial lot — a flower shop on a rundown city street. San Myshuno's older districts work well. The shop must be cramped, slightly grimy, and full of plants — none of them as interesting as Audrey II.",
       "Audrey II begins as a small potted plant object on the shop counter — a debug item or the smallest available plant. It must grow at the end of each feeding cycle, represented by replacing it with progressively larger plant objects. There are four sizes: small, medium, large, and enormous. It reaches enormous at the fourth feeding.",
@@ -1670,10 +2796,48 @@
       "The shop must track two parallel metrics: the Business Meter (how well the shop is doing — track customer visits and positive interactions with Mushnick) and the Guilt Meter (a manual count of Seymour's feeding events). At Guilt 4 the plant is enormous and the scenario enters its final phase."
     ],
     "householdMembers": [
-      { "name": "Seymour Krelborn", "role": "The Florist", "traits": ["Good", "Bookworm", "Loner", "Hot-Headed", "Romantic"] },
-      { "name": "Audrey", "role": "The Co-Worker", "traits": ["Good", "Romantic", "Outgoing", "Cheerful", "Loner"] },
-      { "name": "Gravis Mushnick", "role": "The Boss", "traits": ["Mean", "Ambitious", "Materialist", "Snob"] },
-      { "name": "Orin Scrivello", "role": "The Dentist", "traits": ["Mean", "Evil", "Hot-Headed", "Self-Assured"] }
+      {
+        "name": "Seymour Krelborn",
+        "role": "The Florist",
+        "traits": [
+          "Good",
+          "Bookworm",
+          "Loner",
+          "Hot-Headed",
+          "Romantic"
+        ]
+      },
+      {
+        "name": "Audrey",
+        "role": "The Co-Worker",
+        "traits": [
+          "Good",
+          "Romantic",
+          "Outgoing",
+          "Cheerful",
+          "Loner"
+        ]
+      },
+      {
+        "name": "Gravis Mushnick",
+        "role": "The Boss",
+        "traits": [
+          "Mean",
+          "Ambitious",
+          "Materialist",
+          "Snob"
+        ]
+      },
+      {
+        "name": "Orin Scrivello",
+        "role": "The Dentist",
+        "traits": [
+          "Mean",
+          "Evil",
+          "Hot-Headed",
+          "Self-Assured"
+        ]
+      }
     ],
     "goals": [
       "Audrey II must reach enormous size — four completed feeding cycles — before the scenario's ending triggers.",
@@ -1696,13 +2860,34 @@
       "Mushnick must never be told the truth. If he asks a direct question about the plant's growth, Seymour must deflect with a successful Charisma interaction."
     ],
     "storyBeats": [
-      { "step": 1, "text": "Seymour finds the plant at a street market during an unusual solar eclipse. It is small and strange and he has never seen anything like it. He names it after Audrey because he names everything he loves after Audrey." },
-      { "step": 2, "text": "The plant is dying. Seymour pricks his finger on a thorn and a drop of blood falls on the soil. The plant straightens. It opens. It is, somehow, larger than it was this morning." },
-      { "step": 3, "text": "The shop is busy for the first time in years. People come from across the neighbourhood to see the extraordinary plant in the window. Mushnick is delighted. Seymour is terrified. Audrey thinks it is wonderful." },
-      { "step": 4, "text": "Orin. The second visit. What he says to Audrey in the back of the shop while Seymour pretends not to hear. The plant leans slightly toward the sound of Seymour's blood pressure rising." },
-      { "step": 5, "text": "The first feeding. Seymour does not sleep that night. In the morning the plant is the size of a small table and Mushnick has taken a phone call from a television producer." },
-      { "step": 6, "text": "The plant speaks now. It is charming about it. It says please. It says Seymour, feed me. It says you know this was always going to happen. It is not wrong." },
-      { "step": 7, "text": "Enormous. The fourth size. The plant fills the back of the shop. Audrey stands near it and it leans toward her and Seymour finally understands what the next demand is going to be." }
+      {
+        "step": 1,
+        "text": "Seymour finds the plant at a street market during an unusual solar eclipse. It is small and strange and he has never seen anything like it. He names it after Audrey because he names everything he loves after Audrey."
+      },
+      {
+        "step": 2,
+        "text": "The plant is dying. Seymour pricks his finger on a thorn and a drop of blood falls on the soil. The plant straightens. It opens. It is, somehow, larger than it was this morning."
+      },
+      {
+        "step": 3,
+        "text": "The shop is busy for the first time in years. People come from across the neighbourhood to see the extraordinary plant in the window. Mushnick is delighted. Seymour is terrified. Audrey thinks it is wonderful."
+      },
+      {
+        "step": 4,
+        "text": "Orin. The second visit. What he says to Audrey in the back of the shop while Seymour pretends not to hear. The plant leans slightly toward the sound of Seymour's blood pressure rising."
+      },
+      {
+        "step": 5,
+        "text": "The first feeding. Seymour does not sleep that night. In the morning the plant is the size of a small table and Mushnick has taken a phone call from a television producer."
+      },
+      {
+        "step": 6,
+        "text": "The plant speaks now. It is charming about it. It says please. It says Seymour, feed me. It says you know this was always going to happen. It is not wrong."
+      },
+      {
+        "step": 7,
+        "text": "Enormous. The fourth size. The plant fills the back of the shop. Audrey stands near it and it leans toward her and Seymour finally understands what the next demand is going to be."
+      }
     ],
     "endings": [
       {
@@ -1717,8 +2902,7 @@
         "title": "Downtown",
         "text": "Seymour complies with every demand including the last. Audrey is removed from the household. The plant reaches a size that cannot be represented by any available object — place it in the centre of the lot and surround it with debug objects representing rubble. Mushnick is somewhere underneath. Seymour stands in what used to be the shop. The plant says thank you. It says it could not have done this without him. It says there is a whole world out there. It asks if he is ready. Seymour has stopped being able to say no to it. He has been unable to say no to it since the first drop of blood. This was always where they were going."
       }
-    ]
+    ],
+    "sort": 3
   }
-
-
 ]
