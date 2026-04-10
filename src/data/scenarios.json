@@ -224,7 +224,7 @@
         "text": "The Second Mrs de Winter's mood remains red for 7 consecutive days and she and Maxim never reach Good Friends status. She leaves the household. Mrs Danvers locks Rebecca's rooms again. Nothing at Manderley changes."
       }
     ],
-    "sort": 1
+    "sort": 4
   },
   {
     "id": "misery",
@@ -325,14 +325,14 @@
         "text": "Paul sets the kitchen alight during a confrontation. Both Sims are placed in the burning room. Whoever survives inherits the lot and the scenario ends. If Annie survives, she begins again with a new captive."
       }
     ],
-    "sort": 22
+    "sort": 6
   },
   {
     "id": "the-collector",
     "title": "The Collector",
     "source": "The Collector",
     "sourceType": "book",
-    "thumbnail": "/images/banners/sims-collector.png",
+    "thumbnail": "/images/banners/collector.png",
     "year": 1963,
     "difficulty": "hard",
     "tags": [
@@ -427,7 +427,7 @@
         "text": "The Victim deteriorates while the Collector is away — starvation, illness, hysteria, or another fate of your choosing. This mirrors the novel's ending. Frederick, unmoved, clears the cellar and selects a new Victim. Begin again."
       }
     ],
-    "sort": 4
+    "sort": 1
   },
   {
     "id": "haunting-of-hill-house",
@@ -675,7 +675,7 @@
         "text": "Rosemary's mood is consistently red through the final trimester. She gives birth, sees the baby, and does nothing. She neither rocks the cradle nor flees. She sits in the room and the scenario simply ends, unresolved — which is the most honest ending of all."
       }
     ],
-    "sort": 6
+    "sort": 22
   },
   {
     "id": "twin-peaks",
@@ -861,7 +861,7 @@
         "text": "Cooper never enters the Black Lodge. He solves the surface case — Leland is exposed — but the deeper thing is never addressed. He is reassigned. He drives out of Twin Peaks on a grey morning with excellent coffee and an incomplete tape. The red room stays locked. Laura's photo stays at the water's edge. Whatever lives in the woods waits for the next person who gets close enough to hear it."
       }
     ],
-    "sort": 7
+    "sort": 21
   },
   {
     "id": "dexter",
@@ -1988,7 +1988,7 @@
     "title": "Audition",
     "source": "Audition",
     "sourceType": "film",
-    "thumbnail": "/images/banners/sims-audition.png",
+    "thumbnail": "/images/banners/audition.png",
     "year": 1999,
     "difficulty": "hard",
     "tags": [
@@ -2515,7 +2515,7 @@
         "text": "Alice is removed from the household before dawn. The killer is alone on the lot at sunrise. The scenario ends. The camp is silent. The water is still. Help arrives to find the welcome sign and eight empty cabins."
       }
     ],
-    "sort": 19
+    "sort": 2
   },
   {
     "id": "the-ring",
@@ -2631,7 +2631,7 @@
         "text": "Rachel fails to complete 7 investigative actions before Day 7. The countdown reaches zero. The apartment lot goes dark. Aidan is alone in the morning. The tape is still in the locked room. Someone will find it."
       }
     ],
-    "sort": 20
+    "sort": 3
   },
   {
     "id": "stepford-wives",
@@ -2770,7 +2770,7 @@
         "text": "Joanna collects fewer than 3 clues before Bobbie's replacement. She has no ally, insufficient evidence, and Walter's relationship score has reached Acquaintance. She does not attempt to leave. She stays in the house and photographs the garden and the kitchen and the children and nothing with a sharp edge in it. The photos are beautiful. Diz tells her so on his next visit. She thanks him. She means it."
       }
     ],
-    "sort": 21
+    "sort": 7
   },
   {
     "id": "little-shop-of-horrors",
@@ -2908,7 +2908,7 @@
         "text": "Seymour complies with every demand including the last. Audrey is removed from the household. The plant reaches a size that cannot be represented by any available object — place it in the centre of the lot and surround it with debug objects representing rubble. Mushnick is somewhere underneath. Seymour stands in what used to be the shop. The plant says thank you. It says it could not have done this without him. It says there is a whole world out there. It asks if he is ready. Seymour has stopped being able to say no to it. He has been unable to say no to it since the first drop of blood. This was always where they were going."
       }
     ],
-    "sort": 3
+    "sort": 20
   },
   {
   "id": "rebecca-cinderella",
@@ -2979,6 +2979,6 @@
       "text": "The Companion arrives at Manderley and does not immediately feel like she belongs — her Charisma is below level 4 and the household staff watch her with the particular attention of people comparing her to something. She redecorates anyway. She changes three rooms in the first week. She dresses for dinner every evening even when it is only the two of them. She reaches Soulmate status slowly, the way people do when they are both a little afraid of it. By the end she has not become someone new. She has become someone more entirely herself. This turns out to be enough."
     }
   ],
-  "sort": 2 
+  "sort": 19
 }
 ]
