@@ -89,7 +89,7 @@ All three routes are real browser URLs and are directly linkable and bookmarkabl
 
 The home page uses a two-column layout on desktop (wheel takes 2/3, about card takes 1/3) and stacks on mobile.
 
-Above the wheel: a **How to Play** 3-step guide with green-numbered steps. The **about card** covers what the app is, what each scenario includes, how to use it, and a "How it's made" section — describing the Claude Code pilot project model and ChatGPT-generated scenario images.
+Above the wheel: a **How to Play** 3-step guide with green-numbered steps. The **about card** covers what the app is, what each scenario includes, how to use it, and a "How it's made" section — describing the Claude Code pilot project model and Gemini-generated scenario images.
 
 ### Spinning wheel
 
