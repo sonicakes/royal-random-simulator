@@ -12,8 +12,8 @@ interface ScenarioModalProps {
 
 const DIFFICULTY_COLOUR: Record<Scenario['difficulty'], string> = {
   easy: '#4ade80',
-  medium: '#F5B800',
-  hard: '#B81515',
+  medium: '#7A3AAD',
+  hard: '#C05A28',
 }
 
 export default function ScenarioModal({ scenario, onClose, onSpinAgain }: ScenarioModalProps) {
@@ -86,7 +86,7 @@ export default function ScenarioModal({ scenario, onClose, onSpinAgain }: Scenar
           </button>
           <Link
             to={`/scenarios/${scenario.id}`}
-            className="flex-1 py-2 rounded-card font-bold text-sm text-center border border-sims-green/50 hover:border-sims-green text-sims-green transition-colors"
+            className="flex-1 py-2 rounded-card font-bold text-sm text-center border border-[#2ABDA8]/50 hover:border-[#2ABDA8] text-[#2ABDA8] transition-colors"
           >
             View Scenario
           </Link>

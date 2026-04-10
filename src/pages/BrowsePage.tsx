@@ -77,7 +77,7 @@ export default function BrowsePage() {
 
   return (
     <main className="max-w-6xl mx-auto px-4 sm:px-6 py-8 w-full">
-      <h1 className="text-2xl font-extrabold text-white mb-6">Browse Scenarios</h1>
+      <h1 className="text-2xl font-extrabold text-white/80 mb-6">Browse Scenarios</h1>
 
       {/* Controls */}
       <div className="flex flex-col gap-3 mb-8">

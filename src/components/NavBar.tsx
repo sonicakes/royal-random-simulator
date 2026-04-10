@@ -24,16 +24,16 @@ function GemM() {
 
 export default function NavBar() {
   return (
-    <nav className="sticky top-0 z-100 bg-bg border-b border-white/10 px-4 sm:px-6 font-display" style={{ boxShadow: '0 2px 12px rgba(255,255,255,0.04)' }}>
+    <nav className="sticky top-0 z-100 bg-bg border-b border-[#2ABDA8]/20 px-4 sm:px-6 font-display" style={{ boxShadow: '0 2px 12px rgba(255,255,255,0.04)' }}>
       <div className="max-w-6xl mx-auto h-14 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-          <span className="text-sims-green leading-none tracking-wide" style={{ fontFamily: "'Barriecito', cursive", fontSize: '1.5rem' }}>
+          <span className="text-sims-green font-rubik tracking-wider text-xl">
             Royal Si<GemM />ulator
           </span>
         </Link>
         <Link
           to="/browse"
-          className="font-semibold text-white/80 hover:text-sims-green transition-colors"
+          className="tracking-wide text-white/80 hover:text-[#2ABDA8] transition-colors"
         >
           <span className="md:hidden">Browse</span>
           <span className="hidden md:inline">Browse Scenarios</span>

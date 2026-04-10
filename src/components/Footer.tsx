@@ -1,11 +1,11 @@
 export default function Footer() {
   return (
-    <footer className="mt-auto py-6 px-4 border-t border-white/10 z-50 text-center text-sm text-white/40" style={{ background: 'rgba(8,15,20,0.97)', boxShadow: '0 -2px 12px rgba(255,255,255,0.04)' }}>
+    <footer className="mt-auto py-6 px-4 border-t border-[#2ABDA8]/20 z-50 text-center text-sm text-white/40" style={{ background: 'rgba(5,15,24,0.97)', boxShadow: '0 -2px 12px rgba(255,255,255,0.04)' }}>
       <a
         href="https://github.com/sonicakes/royal-random-simulator"
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:text-sims-green transition-colors"
+        className="hover:text-[#2ABDA8] transition-colors"
       >
         GitHub
       </a>

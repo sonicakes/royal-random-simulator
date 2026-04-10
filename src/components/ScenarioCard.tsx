@@ -5,8 +5,15 @@ import { pickPlaceholder } from '../utils/placeholder'
 
 const DIFFICULTY_COLOUR: Record<Scenario['difficulty'], string> = {
   easy: '#4ade80',
-  medium: '#F5B800',
-  hard: '#B81515',
+  medium: '#7A3AAD',
+  hard: '#C05A28',
+}
+
+function tagClass(sourceType: Scenario['sourceType']) {
+  if (sourceType === 'film') return 'bg-[#2ABDA8]/20 text-[#2ABDA8]'
+  if (sourceType === 'book') return 'bg-sims-green/20 text-sims-green'
+  if (sourceType === 'tv')   return 'bg-[#3A6B7A]/25 text-[#7CBDCC]'
+  return 'bg-white/10 text-white/60'
 }
 
 interface ScenarioCardProps {
@@ -19,16 +26,16 @@ export default function ScenarioCard({ scenario }: ScenarioCardProps) {
       to={`/scenarios/${scenario.id}`}
       className="group flex flex-col rounded-card overflow-hidden transition-all duration-200 z-90"
       style={{
-        background: 'rgb(8, 26, 32)',
-        border: '1px solid rgba(255,255,255,0.07)',
-        boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
+        background: 'rgb(5, 15, 24)',
+        border: '1px solid rgba(26,56,72,0.5)',
+        boxShadow: '0 4px 20px rgba(42,189,168,0.12)',
         animation: 'fadeIn 1.5s ease-out',
       }}
       onMouseEnter={(e) => {
-        ;(e.currentTarget as HTMLElement).style.borderColor = 'rgba(74,222,128,0.35)'
+        ;(e.currentTarget as HTMLElement).style.borderColor = 'rgba(42,189,168,0.45)'
       }}
       onMouseLeave={(e) => {
-        ;(e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.07)'
+        ;(e.currentTarget as HTMLElement).style.borderColor = 'rgba(26,56,72,0.5)'
       }}
     >
       {/* thumbnail */}
@@ -47,7 +54,7 @@ export default function ScenarioCard({ scenario }: ScenarioCardProps) {
       )}
 
       <div className="p-4 flex flex-col gap-1 flex-1">
-        <h3 className="font-bold text-lg leading-snug group-hover:text-sims-green transition-colors">
+        <h3 className="text-lg group-hover:text-sims-green transition-colors">
           {scenario.title}
         </h3>
         <p className="text-sm text-white/65 flex gap-2 items-center">
@@ -71,7 +78,7 @@ export default function ScenarioCard({ scenario }: ScenarioCardProps) {
           {scenario.tags.map((tag) => (
             <span
               key={tag}
-              className="text-xs px-2 py-0.5 rounded-full bg-sims-green/25 text-sims-green font-medium"
+              className={`text-xs px-2 py-0.5 rounded-full font-medium ${tagClass(scenario.sourceType)}`}
             >
               {tag}
             </span>
