@@ -5,7 +5,7 @@
   --color-sims-green: #4ade80;
   --color-btn-green: #1db86a;
   --color-btn-green-hover: #18a05c;
-  --color-horror-red: #e8143c;
+  --color-horror-red: #F5B800;
   --color-modal-bg: #0a1a12;
 
   --font-sans: 'Quicksand', system-ui, sans-serif;
@@ -73,13 +73,13 @@
 }
 
 .btn-primary {
-  background: linear-gradient(270deg, #1db86a, #0d9488, #4ade80, #0d9488, #1db86a);
-  background-size: 300% 300%;
-  animation: btn-flow 4s ease infinite;
+  background: linear-gradient(270deg, #2EAD3F, #15B8B0, #0047F5, #7C3AED, #AD2E9C, #B81515, #F5B800, #6BCF3A, #2EAD3F);
+  background-size: 400% 400%;
+  animation: btn-flow 6s ease infinite;
   transition: box-shadow 0.3s ease;
 }
 
 .btn-primary:hover:not(:disabled) {
-  animation: btn-flow 2s ease infinite;
-  box-shadow: 0 0 16px rgba(29, 184, 106, 0.35);
+  animation: btn-flow 3s ease infinite;
+  box-shadow: 0 0 20px rgba(245, 184, 0, 0.3);
 }

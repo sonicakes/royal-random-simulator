@@ -1,15 +1,17 @@
 import { useEffect, useState } from 'react'
-import { PiFilmSlate, PiBookOpenText } from 'react-icons/pi'
+import { PiFilmSlate, PiBookOpenText, PiTelevisionSimple, PiArrowUp } from 'react-icons/pi'
 import { useParams, useNavigate } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import LightboxGallery from '../components/LightboxGallery'
 import scenariosData from '../data/scenarios.json'
 import type { Scenario } from '../types/scenario'
+import { pickPlaceholder } from '../utils/placeholder'
 
 const playthroughModules = import.meta.glob('../data/playthroughs/*.md', { query: '?raw', import: 'default' })
 
 function parsePlaythrough(raw: string): { content: string; screenshots: string[] } {
-  const match = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/)
+  const normalised = raw.replace(/\r\n/g, '\n')
+  const match = normalised.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/)
   if (!match) return { content: raw.trim(), screenshots: [] }
   const screenshots: string[] = []
   const section = match[1].match(/screenshots:\s*\n((?:\s+- .+\n?)+)/)
@@ -30,9 +32,9 @@ interface Playthrough {
 const scenarios = scenariosData as Scenario[]
 
 const DIFFICULTY_COLOUR: Record<Scenario['difficulty'], string> = {
-  easy: 'text-sims-green',
-  medium: 'text-yellow-400',
-  hard: 'text-horror-red',
+  easy: '#4ade80',
+  medium: '#F5B800',
+  hard: '#B81515',
 }
 
 export default function ScenarioDetailPage() {
@@ -41,6 +43,13 @@ export default function ScenarioDetailPage() {
   const scenario = scenarios.find((s) => s.id === id)
 
   const [playthrough, setPlaythrough] = useState<Playthrough | null>(null)
+  const [showBackToTop, setShowBackToTop] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setShowBackToTop(window.scrollY > 400)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   useEffect(() => {
     const key = `../data/playthroughs/${id}.md`
@@ -63,6 +72,7 @@ export default function ScenarioDetailPage() {
   }
 
   return (
+    <>
     <main className="max-w-2xl mx-auto px-4 sm:px-6 py-8 w-full relative z-10" style={{ background: 'rgba(8,15,20,0.97)' }}>
       {/* Back */}
       <button
@@ -75,15 +85,17 @@ export default function ScenarioDetailPage() {
       {/* Header */}
       <div className="mb-6">
         <h1 className="text-3xl font-extrabold mb-1">{scenario.title}</h1>
-        <p className="text-base text-white/70">
+        <p className="text-base text-white/70 flex items-center gap-2">
           <span className="inline-flex items-center gap-1.5 align-middle">
             {scenario.sourceType === 'film'
               ? <PiFilmSlate className="inline text-sims-green" size={16} />
-              : <PiBookOpenText className="inline text-sims-green" size={16} />}
+              : scenario.sourceType === 'book'
+              ? <PiBookOpenText className="inline text-sims-green" size={16} />
+              : <PiTelevisionSimple className="inline text-sims-green" size={16} />}
             {scenario.source} ({scenario.year})
           </span>
           {' · '}
-          <span className={`font-semibold ${DIFFICULTY_COLOUR[scenario.difficulty]}`}>
+          <span className="font-semibold" style={{ color: DIFFICULTY_COLOUR[scenario.difficulty] }}>
             {scenario.difficulty}
           </span>
         </p>
@@ -97,12 +109,11 @@ export default function ScenarioDetailPage() {
           className="w-full rounded-card object-contain mb-8"
         />
       ) : (
-        <div
-          className="w-full aspect-video rounded-card flex items-center justify-center text-white/30 text-xs tracking-wide mb-8"
-          style={{ background: 'rgba(255,255,255,0.10)', border: '1px solid rgba(255,255,255,0.12)' }}
-        >
-          img goes here
-        </div>
+        <img
+          src={pickPlaceholder(scenario.id)}
+          alt="Spooky placeholder"
+          className="w-full rounded-card object-contain mb-8"
+        />
       )}
 
       {/* Description */}
@@ -127,7 +138,10 @@ export default function ScenarioDetailPage() {
           <ul className="space-y-2">
             {scenario.setup.map((item, i) => (
               <li key={i} className="flex gap-3 text-base text-white/85">
-                <span className="text-sims-green shrink-0 mt-1">☐</span>
+                <svg viewBox="0 0 12 14" fill="none" stroke="#4ade80" strokeWidth="1.2" strokeLinejoin="round" style={{ width: '0.7em', height: '0.85em', flexShrink: 0, marginTop: '0.3em' }}>
+                  <polygon points="3,0 9,0 12,5 6,14 0,5" />
+                  <line x1="0" y1="5" x2="12" y2="5" strokeOpacity="0.5" />
+                </svg>
                 <span>{item}</span>
               </li>
             ))}
@@ -271,5 +285,16 @@ export default function ScenarioDetailPage() {
         </section>
       )}
     </main>
+
+      {showBackToTop && (
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          aria-label="Back to top"
+          className="fixed bottom-6 right-6 p-3 rounded-card border border-sims-green/40 bg-bg text-sims-green hover:border-sims-green hover:bg-sims-green/10 transition-colors cursor-pointer shadow-lg z-[100]"
+        >
+          <PiArrowUp size={20} />
+        </button>
+      )}
+    </>
   )
 }

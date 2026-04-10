@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { PiFilmSlate, PiBookOpenText } from 'react-icons/pi'
 import type { Scenario } from '../types/scenario'
+import { pickPlaceholder } from '../utils/placeholder'
 
 interface ScenarioModalProps {
   scenario: Scenario
@@ -10,9 +11,9 @@ interface ScenarioModalProps {
 }
 
 const DIFFICULTY_COLOUR: Record<Scenario['difficulty'], string> = {
-  easy: 'text-sims-green',
-  medium: 'text-yellow-400',
-  hard: 'text-horror-red',
+  easy: '#4ade80',
+  medium: '#F5B800',
+  hard: '#B81515',
 }
 
 export default function ScenarioModal({ scenario, onClose, onSpinAgain }: ScenarioModalProps) {
@@ -30,7 +31,7 @@ export default function ScenarioModal({ scenario, onClose, onSpinAgain }: Scenar
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-md rounded-card p-6 shadow-2xl"
+        className="relative w-full max-w-md rounded-card p-6 shadow-2xl z-200"
         style={{ background: 'rgb(13, 32, 35)', border: '1px solid rgba(74,222,128,0.35)' }}
         onClick={(e) => e.stopPropagation()}
       >
@@ -48,19 +49,21 @@ export default function ScenarioModal({ scenario, onClose, onSpinAgain }: Scenar
           <img
             src={scenario.thumbnail}
             alt={scenario.title}
-            className="w-full h-60 object-cover rounded-lg mb-4"
+            className="w-full h-65 object-cover rounded-lg mb-4"
           />
         ) : (
-          <div className="w-full h-60 rounded-lg bg-white/10 flex items-center justify-center text-white/30 text-xs tracking-wide mb-4">
-            img goes here
-          </div>
+          <img
+            src={pickPlaceholder(scenario.id)}
+            alt="Spooky placeholder"
+            className="w-full h-65 object-cover rounded-lg mb-4"
+          />
         )}
 
         <p className="text-sm font-semibold uppercase tracking-widest text-sims-green mb-1">
           You got…
         </p>
         <h2 className="text-2xl font-extrabold mb-1 capitalize">{scenario.title}</h2>
-        <p className="text-sm text-white/70 mb-3">
+        <p className="text-sm text-white/70 mb-3 flex gap-2 items-center">
           <span className="inline-flex items-center gap-1.5">
             {scenario.sourceType === 'film'
               ? <PiFilmSlate className="text-sims-green" size={14} />
@@ -68,7 +71,7 @@ export default function ScenarioModal({ scenario, onClose, onSpinAgain }: Scenar
             {scenario.source} ({scenario.year})
           </span>
           {' · '}
-          <span className={`font-semibold ${DIFFICULTY_COLOUR[scenario.difficulty]}`}>
+          <span className="font-semibold" style={{ color: DIFFICULTY_COLOUR[scenario.difficulty] }}>
             {scenario.difficulty}
           </span>
         </p>

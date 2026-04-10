@@ -4,6 +4,21 @@ A personal Sims 4 horror scenario generator, created with Claude's help. Gives p
 
 No backend. No database. No auth. All scenario data lives in a single JSON file.
 
+**Live site:** [royal-simulator.netlify.app](https://royal-simulator.netlify.app/)
+
+---
+
+## Deployment
+
+Hosted on **Netlify** with automatic deploys from the `master` branch.
+
+| Setting | Value |
+|---|---|
+| Build command | `npm run build` |
+| Publish directory | `dist` |
+
+`public/_redirects` rewrites all paths to `index.html` so React Router handles client-side navigation correctly on direct URL access and page refresh.
+
 ---
 
 ## Tech stack
@@ -74,7 +89,7 @@ All three routes are real browser URLs and are directly linkable and bookmarkabl
 
 The home page uses a two-column layout on desktop (wheel takes 2/3, about card takes 1/3) and stacks on mobile.
 
-The **about card** covers what the app is, how to play (3 steps), and links to The Cinefile Blog and The Kino Royale Podcast.
+Above the wheel: a **How to Play** 3-step guide with green-numbered steps. The **about card** covers what the app is, what each scenario includes, how to use it, and a "How it's made" section — describing the Claude Code pilot project model and ChatGPT-generated scenario images.
 
 ### Spinning wheel
 
@@ -124,7 +139,7 @@ ctx.fill()
 
 Labels are drawn by rotating the canvas context to point outward along each segment's midpoint, then drawing right-aligned text near the rim. Titles longer than 12 characters are truncated with `…`.
 
-On top of the segments: a green outer ring, a small dark center circle, and a fixed crimson triangle pointer at the top.
+On top of the segments: a green outer ring, a small dark center circle, and a fixed triangle pointer at the top.
 
 ### Animation
 
@@ -247,7 +262,7 @@ All scenarios live in `src/data/scenarios.json` as a top-level array:
 |---|---|---|
 | `id` | `string` | Kebab-case, unique, used as the URL slug |
 | `source` | `string` | Title of the source work |
-| `sourceType` | `"film" \| "book"` | |
+| `sourceType` | `"film" \| "book" \| "tv"` | |
 | `year` | `number` | Release / publication year |
 | `difficulty` | `"easy" \| "medium" \| "hard"` | |
 | `tags` | `string[]` | Freeform lowercase, defined by the author |
@@ -259,13 +274,31 @@ All scenarios live in `src/data/scenarios.json` as a top-level array:
 
 ## Design system
 
+### Colours
+
 | Token | Value | Usage |
 |---|---|---|
 | `--bg` | `#080f14` | Page background |
-| `--bg-card` | `#0a1212` | Card background |
 | `--green-bright` | `#4ade80` | Nav, hover states, gem icon |
-| `--green-btn` | `#16a34a` | Button background |
-| `--crimson` | `#e8143c` | Wheel pointer, film tags, difficulty |
+| `--green-btn` | `#1db86a` | Spin button base |
+| `--horror-red` | `#F5B800` | Amber — medium difficulty, UI accent |
 | `--text-muted` | `rgba(255,255,255,0.35)` | Secondary text |
 
-Font: **Nunito** (Google Fonts), weights 400 and 700. Border radius: 12px for cards/buttons, 99px for pills/badges.
+Difficulty colours: easy `#4ade80` (green) · medium `#F5B800` (amber) · hard `#B81515` (coral).
+
+### Wheel & palette
+
+The wheel cycles through an 8-colour complementary palette derived from a botanical reference image — four source colours plus their direct opposites:
+
+![Site palette reference](public/images/easter-egg-sims.png)
+
+| Colour | Hex | Pair |
+|---|---|---|
+| Forest green | `#2EAD3F` | ↔ Magenta `#AD2E9C` |
+| Teal | `#15B8B0` | ↔ Coral `#B81515` |
+| Amber | `#F5B800` | ↔ Blue `#0047F5` |
+| Lime | `#6BCF3A` | ↔ Purple `#7C3AED` |
+
+The Spin button gradient animates through all 8 colours in wheel order.
+
+Font: **Quicksand** / **Josefin Sans** (Google Fonts). Border radius: 12px for cards/buttons, 99px for pills/badges.

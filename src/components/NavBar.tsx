@@ -24,8 +24,8 @@ function GemM() {
 
 export default function NavBar() {
   return (
-    <nav className="sticky top-0 z-50 bg-bg border-b border-white/10 px-4 sm:px-6 font-display" style={{ boxShadow: '0 2px 12px rgba(255,255,255,0.04)' }}>
-      <div className="max-w-6xl mx-auto h-15 flex items-center justify-between">
+    <nav className="sticky top-0 z-100 bg-bg border-b border-white/10 px-4 sm:px-6 font-display" style={{ boxShadow: '0 2px 12px rgba(255,255,255,0.04)' }}>
+      <div className="max-w-6xl mx-auto h-14 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
           <span className="text-sims-green leading-none tracking-wide" style={{ fontFamily: "'Barriecito', cursive", fontSize: '1.5rem' }}>
             Royal Si<GemM />ulator

@@ -1,6 +1,5 @@
 import { useState, useMemo, useRef, useCallback, useEffect } from 'react'
-import { SlidersHorizontal } from 'lucide-react'
-import { PiFilmSlate, PiBookOpenText } from 'react-icons/pi'
+import { PiFilmSlate, PiBookOpenText, PiTelevisionSimple, PiSlidersHorizontal, PiArrowUp, PiMagnifyingGlass } from 'react-icons/pi'
 import ScenarioCard from '../components/ScenarioCard'
 import scenariosData from '../data/scenarios.json'
 import type { Scenario } from '../types/scenario'
@@ -13,15 +12,16 @@ const PAGE_SIZE = 6
 
 export default function BrowsePage() {
   const [search, setSearch] = useState('')
-  const [sourceType, setSourceType] = useState<'all' | 'film' | 'book'>('all')
+  const [sourceType, setSourceType] = useState<'all' | 'film' | 'book' | 'tv'>('all')
   const [difficulty, setDifficulty] = useState<'all' | 'easy' | 'medium' | 'hard'>('all')
   const [selectedTags, setSelectedTags] = useState<string[]>([])
   const [showFilters, setShowFilters] = useState(false)
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE)
+  const [showBackToTop, setShowBackToTop] = useState(false)
   const sentinelRef = useRef<HTMLDivElement>(null)
 
   const filtered = useMemo(() => {
-    let list = allScenarios
+    let list = [...allScenarios].sort((a, b) => a.sort - b.sort)
 
     if (search.trim()) {
       const q = search.toLowerCase()
@@ -63,6 +63,12 @@ export default function BrowsePage() {
     return () => observer.disconnect()
   }, [loadMore])
 
+  useEffect(() => {
+    const onScroll = () => setShowBackToTop(window.scrollY > 400)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
   const toggleTag = (tag: string) => {
     setSelectedTags((prev) =>
       prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag],
@@ -77,13 +83,19 @@ export default function BrowsePage() {
       <div className="flex flex-col gap-3 mb-8">
         {/* Search + sort + filters toggle */}
         <div className="flex items-center justify-between gap-3">
-          <input
-            type="text"
-            placeholder="Search by title…"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="w-2/3 bg-white/5 border border-white/10 rounded-card px-4 py-2 text-base text-white placeholder-white/50 focus:outline-none focus:border-sims-green/50"
-          />
+          <div className="relative w-md">
+            <PiMagnifyingGlass
+              size={16}
+              className="absolute left-3.5 top-1/2 -translate-y-1/2 text-white/35 pointer-events-none"
+            />
+            <input
+              type="text"
+              placeholder="Search by title…"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className="w-full bg-white/5 z-100 border border-white/10 rounded-card pl-9 pr-4 py-2 text-base text-white placeholder-white/50 focus:outline-none focus:border-sims-green/50"
+            />
+          </div>
           <button
             onClick={() => setShowFilters((v) => !v)}
             aria-label="Toggle filters"
@@ -93,7 +105,7 @@ export default function BrowsePage() {
                 : 'bg-white/5 text-white/50 border-white/10 hover:text-white/80 hover:border-white/30'
             }`}
           >
-            <SlidersHorizontal size={16} />
+            <PiSlidersHorizontal size={16} />
             <span className="text-sm font-semibold">Filters</span>
             {(sourceType !== 'all' || difficulty !== 'all' || selectedTags.length > 0) && (
               <span className="absolute -top-1.5 -right-1.5 bg-sims-green text-bg text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center">
@@ -108,7 +120,7 @@ export default function BrowsePage() {
           <div className="flex flex-col gap-3 pt-1">
             {/* Source type + difficulty */}
             <div className="flex flex-wrap gap-2 items-center">
-              {(['all', 'film', 'book'] as const).map((v) => (
+              {(['all', 'film', 'book', 'tv'] as const).map((v) => (
                 <button
                   key={v}
                   onClick={() => setSourceType(v)}
@@ -120,7 +132,9 @@ export default function BrowsePage() {
                 >
                   {v === 'all' ? 'All types' : v === 'film'
                     ? <span className="flex items-center gap-1.5"><PiFilmSlate size={13} className="text-sims-green" />Film</span>
-                    : <span className="flex items-center gap-1.5"><PiBookOpenText size={13} className="text-sims-green" />Book</span>}
+                    : v === 'book'
+                    ? <span className="flex items-center gap-1.5"><PiBookOpenText size={13} className="text-sims-green" />Book</span>
+                    : <span className="flex items-center gap-1.5"><PiTelevisionSimple size={13} className="text-sims-green" />TV</span>}
                 </button>
               ))}
 
@@ -180,6 +194,17 @@ export default function BrowsePage() {
 
       {/* Lazy load sentinel */}
       {visibleCount < filtered.length && <div ref={sentinelRef} className="h-8 mt-4" />}
+
+      {/* Back to top */}
+      {showBackToTop && (
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          aria-label="Back to top"
+          className="fixed bottom-6 right-6 p-3 rounded-card border border-sims-green/40 bg-bg text-sims-green hover:border-sims-green hover:bg-sims-green/10 transition-colors cursor-pointer shadow-lg z-[100]"
+        >
+          <PiArrowUp size={20} />
+        </button>
+      )}
     </main>
   )
 }

@@ -1,7 +1,7 @@
 # Royal Random SIMulator — Claude Code Instructions
 
 ## Project overview
-Royal Random SIMulator is a Sims 4 horror scenario generator. It is a personal web app created with Claude's help, giving players scenario ideas based on horror films and books. Users discover scenarios via a spinning wheel, browse a searchable library, or navigate directly to a scenario. It can be used alongside The Cinefile Blog (https://cinefile-blog.netlify.app/) and The Kino Royale Podcast (https://open.spotify.com/show/5Ri7xJYDE9JDel4iCdl6LA).
+Royal Random SIMulator is a Sims 4 horror scenario generator. It is a personal web app created with Claude's help, giving players scenario ideas based on horror films, books, and TV shows. Users discover scenarios via a spinning wheel, browse a searchable library, or navigate directly to a scenario. It can be used alongside The Cinefile Blog (https://cinefile-blog.netlify.app/) and The Kino Royale Podcast (https://open.spotify.com/show/5Ri7xJYDE9JDel4iCdl6LA).
 
 There is no backend, no database, no authentication, and no AI integration. All scenario data lives in a single `src/data/scenarios.json` file.
 
@@ -94,11 +94,11 @@ All scenarios live in `src/data/scenarios.json` as a top-level array. The shape 
 Field notes:
 - `id` — kebab-case, unique, used as the URL slug
 - `source` — string title of the source work
-- `sourceType` — `"film"` or `"book"`
+- `sourceType` — `"film"`, `"book"`, or `"tv"`
 - `year` — release/publication year of the source work
 - `difficulty` — `"easy"`, `"medium"`, or `"hard"`
 - `tags` — freeform lowercase strings, defined by the author
-- `thumbnail` — optional; path relative to `/public/images/`; omit if no image yet
+- `thumbnail` — optional; path relative to `/public/images/`; omit if no image yet — a random placeholder from `/public/images/placeholder/` will be used
 - `householdMembers` — each member has `name`, `role`, and `traits` (string array)
 - `storyBeats` — ordered objects with `step` (number) and `text` (string)
 
@@ -109,12 +109,10 @@ Field notes:
 ### Colours
 ```css
 --bg:             #080f14;   /* page background */
---bg-card:        #0a1212;   /* card / modal background */
---bg-modal:       #0a1a12;   /* modal background */
 --green-bright:   #4ade80;   /* primary Sims green — nav, hover, gem icon */
---green-btn:      #16a34a;   /* button background */
---green-btn-hover:#15803d;   /* button hover */
---crimson:        #e8143c;   /* horror accent — wheel pointer, film tags, difficulty */
+--green-btn:      #1db86a;   /* spin button base */
+--amber:          #F5B800;   /* warm accent — medium difficulty */
+--coral:          #B81515;   /* hard difficulty, "Torture" title */
 --text-primary:   #ffffff;
 --text-muted:     rgba(255,255,255,0.35);
 --text-hint:      rgba(255,255,255,0.28);
@@ -122,15 +120,20 @@ Field notes:
 --border-hover:   rgba(74,222,128,0.35);
 ```
 
-### Wheel segment palette (cycle through in order)
+### Difficulty colours
+- easy → `#4ade80` (green)
+- medium → `#F5B800` (amber)
+- hard → `#B81515` (coral)
+
+### Wheel segment palette
+8-colour complementary palette — four colours from a botanical reference image plus their direct opposites. Cycle through in order:
 ```js
-["#16a34a","#0369a1","#7c3aed","'#eab308","#0f766e","#be185d","#15803d","#1d4ed8"]
+["#2EAD3F","#15B8B0","#F5B800","#6BCF3A","#AD2E9C","#B81515","#0047F5","#7C3AED"]
 ```
 
 ### Tags
-- Film source → crimson background/border
-- Book source → green background/border
-- Difficulty badges → crimson
+- Film source → amber tint
+- Book source → green tint
 - Generic tags → subtle white tint
 
 ### Typography
@@ -161,7 +164,7 @@ The nav is 60px tall (`h-15`), no bottom border, and renders: **Royal Si♦ulato
 
 ## Functionality notes
 - Browse page: search is live (filters as user types), no submit button
-- Filters (film/book, difficulty, tags) are additive — AND logic
+- Filters (film/book/tv, difficulty, tags) are additive — AND logic
 - Modal closes on backdrop click or ✕ button
 - No loading states needed — all data is local JSON
 - No error boundaries needed for MVP
@@ -174,6 +177,15 @@ The nav is 60px tall (`h-15`), no bottom border, and renders: **Royal Si♦ulato
 - No user accounts, saves, or favourites
 - No animations beyond the wheel spin & confetti
 - No dark/light mode toggle (dark only)
+
+## Deployment
+
+- Hosted on **Netlify**: https://royal-simulator.netlify.app/
+- Auto-deploys from `master` branch
+- Build command: `npm run build` · Publish directory: `dist`
+- `public/_redirects` rewrites all paths to `index.html` for React Router (BrowserRouter) to work on direct URL access and refresh
+
+---
 
 ## Behavior Instructions
 

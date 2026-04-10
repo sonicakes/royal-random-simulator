@@ -1,9 +1,8 @@
 ---
 screenshots:
-  - /images/img-1.jpg
-  - /images/img-2.jpg
-  - /images/img-3.jpg
-  - /images/img-4.jpg
+  - /images/screenshots/shining-1.png
+  - /images/screenshots/shining-2.png
+  - /images/screenshots/shining-3.png
 ---
 
 Jack started cracking on day four. I had him writing at the desk from 6am every morning, keeping his moodlets green, but the moment Wendy tried to chat to him while he was mid-sentence he snapped and stormed off to the hotel bar. That was the beginning of the end.
