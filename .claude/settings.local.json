@@ -12,7 +12,13 @@
       "Bash(git push:*)",
       "Bash(gh pr:*)",
       "Bash(git checkout:*)",
-      "Bash(git pull:*)"
+      "Bash(git pull:*)",
+      "Bash(git stash:*)",
+      "Bash(mkdir -p public/images/banners)",
+      "Bash(mv public/images/sims-*.png public/images/banners/)",
+      "Bash(xxd)",
+      "Bash(node -e \":*)",
+      "Bash(npx tsc:*)"
     ]
   }
 }

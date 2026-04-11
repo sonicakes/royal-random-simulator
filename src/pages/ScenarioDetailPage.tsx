@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { PiFilmSlate, PiBookOpenText, PiTelevisionSimple, PiArrowUp } from 'react-icons/pi'
+import { PiFilmSlate, PiBookOpenText, PiTelevisionSimple, PiArrowUp, PiCaretLeft } from 'react-icons/pi'
 import { useParams, useNavigate } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import LightboxGallery from '../components/LightboxGallery'
@@ -64,8 +64,8 @@ export default function ScenarioDetailPage() {
     return (
       <main className="max-w-2xl mx-auto px-4 py-16 text-center">
         <p className="text-white/40">Scenario not found.</p>
-        <button onClick={() => navigate(-1)} className="mt-4 text-sims-green text-sm hover:underline cursor-pointer">
-          ← Go back
+        <button onClick={() => navigate(-1)} className="mt-4 text-sims-green text-sm hover:underline cursor-pointer flex items-center gap-1 mx-auto">
+          <PiCaretLeft size={14} /> Go back
         </button>
       </main>
     )
@@ -73,13 +73,18 @@ export default function ScenarioDetailPage() {
 
   return (
     <>
-    <main className="max-w-2xl mx-auto px-4 sm:px-6 py-8 w-full relative z-10" style={{ background: 'rgba(12,10,8,0.97)' }}>
+    {/* Constructivist diagonal bands */}
+    <div className="fixed top-0 left-0 w-full z-0" style={{ height: '300px', background: '#3D0E1A', clipPath: 'polygon(0 0, 100% 0, 100% 65%, 0 100%)' }} />
+    <div className="fixed left-0 w-full z-0" style={{ top: '42%', height: '120px', background: '#3D0E1A', opacity: 0.35, clipPath: 'polygon(0 0, 100% 30%, 100% 100%, 0 70%)' }} />
+    <div className="fixed left-0 w-full z-0" style={{ top: '65%', height: '100px', background: '#B87A0A', opacity: 0.08, clipPath: 'polygon(0 30%, 100% 0, 100% 70%, 0 100%)' }} />
+    <div className="fixed left-0 w-full z-0" style={{ top: '88%', height: '120px', background: '#3D0E1A', opacity: 0.28, clipPath: 'polygon(0 0, 100% 25%, 100% 100%, 0 75%)' }} />
+    <main className="max-w-2xl mx-auto px-4 sm:px-6 py-8 w-full relative z-10">
       {/* Back */}
       <button
         onClick={() => navigate(-1)}
-        className="text-sm text-white/60 hover:text-[#B87A0A] transition-colors mb-6 flex items-center gap-1 cursor-pointer"
+        className="text-btn-green tracking-wider font-display hover:underline mb-6 flex items-center gap-1 cursor-pointer"
       >
-        ← Back
+        <PiCaretLeft size={14} /> Back
       </button>
 
       {/* Header */}
@@ -102,19 +107,24 @@ export default function ScenarioDetailPage() {
       </div>
 
       {/* Thumbnail */}
-      {scenario.thumbnail ? (
-        <img
-          src={scenario.thumbnail}
-          alt={scenario.title}
-          className="w-full rounded-card object-contain mb-8"
-        />
-      ) : (
-        <img
-          src={pickPlaceholder(scenario.id)}
-          alt="Spooky placeholder"
-          className="w-full rounded-card object-contain mb-8"
-        />
-      )}
+      <figure className="mb-8">
+        {scenario.thumbnail ? (
+          <img
+            src={scenario.thumbnail}
+            alt={scenario.title}
+            className="w-full rounded-card object-contain"
+          />
+        ) : (
+          <img
+            src={pickPlaceholder(scenario.id)}
+            alt="Spooky placeholder"
+            className="w-full rounded-card object-contain"
+          />
+        )}
+        <figcaption className="text-xs text-white/35 italic mt-2 leading-relaxed">
+          Generated with Gemini in the style of Eastern European art house cinema poster illustration, Polish Film Poster School 1960s–70s style, referencing the work of Franciszek Starowieyski and the visual language of <em>Valerie and Her Week of Wonders</em> (1970).
+        </figcaption>
+      </figure>
 
       {/* Description */}
       <p className="text-base text-white/85 leading-relaxed mb-8">{scenario.description}</p>
@@ -254,7 +264,7 @@ export default function ScenarioDetailPage() {
                 {scenario.endings.map((e) => (
                   <div key={e.title} className="flex flex-col items-center pt-px">
                     <div className="w-px h-5 bg-[#B87A0A]/40" />
-                    <div style={{ width: 0, height: 0, borderLeft: '5px solid transparent', borderRight: '5px solid transparent', borderTop: '6px solid rgba(42,189,168,0.4)' }} />
+                    <div style={{ width: 0, height: 0, borderLeft: '5px solid transparent', borderRight: '5px solid transparent', borderTop: '6px solid rgba(212,146,10,0.4)' }} />
                   </div>
                 ))}
               </div>
@@ -267,9 +277,9 @@ export default function ScenarioDetailPage() {
               <div
                 key={ending.title}
                 className="rounded-card p-4"
-                style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderTop: '2px solid rgba(42,189,168,0.4)' }}
+                style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderTop: '2px solid rgba(212,146,10,0.4)' }}
               >
-                <h3 className="font-bold text-base text-white mb-2">{ending.title}</h3>
+                <h3 className="text-base text-white mb-2">{ending.title}</h3>
                 <p className="text-sm text-white/75 leading-relaxed">{ending.text}</p>
               </div>
             ))}
