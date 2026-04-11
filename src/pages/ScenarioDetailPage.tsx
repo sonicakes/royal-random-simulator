@@ -75,9 +75,7 @@ export default function ScenarioDetailPage() {
     <>
     {/* Constructivist diagonal bands */}
     <div className="fixed top-0 left-0 w-full z-0" style={{ height: '300px', background: '#3D0E1A', clipPath: 'polygon(0 0, 100% 0, 100% 65%, 0 100%)' }} />
-    <div className="fixed left-0 w-full z-0" style={{ top: '42%', height: '120px', background: '#3D0E1A', opacity: 0.35, clipPath: 'polygon(0 0, 100% 30%, 100% 100%, 0 70%)' }} />
-    <div className="fixed left-0 w-full z-0" style={{ top: '65%', height: '100px', background: '#B87A0A', opacity: 0.08, clipPath: 'polygon(0 30%, 100% 0, 100% 70%, 0 100%)' }} />
-    <div className="fixed left-0 w-full z-0" style={{ top: '88%', height: '120px', background: '#3D0E1A', opacity: 0.28, clipPath: 'polygon(0 0, 100% 25%, 100% 100%, 0 75%)' }} />
+    <div className="fixed left-0 w-full z-0" style={{ top: '55%', height: '120px', background: '#3D0E1A', opacity: 0.30, clipPath: 'polygon(0 0, 100% 30%, 100% 100%, 0 70%)' }} />
     <main className="max-w-2xl mx-auto px-4 sm:px-6 py-8 w-full relative z-10">
       {/* Back */}
       <button
@@ -112,13 +110,15 @@ export default function ScenarioDetailPage() {
           <img
             src={scenario.thumbnail}
             alt={scenario.title}
-            className="w-full rounded-card object-contain"
+            className="w-full object-contain"
+            style={{ clipPath: 'polygon(0 20px, 100% 0, 100% 100%, 0 100%)' }}
           />
         ) : (
           <img
             src={pickPlaceholder(scenario.id)}
             alt="Spooky placeholder"
-            className="w-full rounded-card object-contain"
+            className="w-full object-contain"
+            style={{ clipPath: 'polygon(0 20px, 100% 0, 100% 100%, 0 100%)' }}
           />
         )}
         <figcaption className="text-xs text-white/35 italic mt-2 leading-relaxed">
@@ -168,12 +168,12 @@ export default function ScenarioDetailPage() {
       <section className="mb-8">
         <h2 className="text-xl font-bold text-sims-green mb-3">Household</h2>
         <div
-          className="rounded-card overflow-hidden"
-          style={{ border: '1px solid rgba(255,255,255,0.07)' }}
+          className="overflow-hidden"
+          style={{ border: '1px solid rgba(255,255,255,0.07)', background: 'rgb(12, 10, 8)' }}
         >
           <table className="w-full text-sm">
             <thead>
-              <tr className="text-left text-white/60 text-xs uppercase tracking-wider bg-white/5">
+              <tr className="text-left text-white/60 text-xs uppercase tracking-wider" style={{ background: 'rgba(255,255,255,0.05)' }}>
                 <th className="px-4 py-2 font-semibold">Name</th>
                 <th className="px-4 py-2 font-semibold">Role</th>
                 <th className="px-4 py-2 font-semibold">Traits</th>
@@ -183,7 +183,7 @@ export default function ScenarioDetailPage() {
               {scenario.householdMembers.map((member, i) => (
                 <tr
                   key={member.name}
-                  className={i % 2 === 0 ? 'bg-transparent' : 'bg-white/[0.02]'}
+                  style={{ background: i % 2 === 0 ? 'rgb(12, 10, 8)' : 'rgba(255,255,255,0.02)' }}
                 >
                   <td className="px-4 py-3 font-semibold">{member.name}</td>
                   <td className="px-4 py-3 text-white/75">{member.role}</td>
@@ -273,16 +273,21 @@ export default function ScenarioDetailPage() {
 
           {/* Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-4 sm:mt-0">
-            {scenario.endings.map((ending) => (
+            {scenario.endings.map((ending, i) => {
+              const clipPath = i % 2 === 0
+                ? 'polygon(0 14px, 100% 0, 100% 100%, 0 100%)'
+                : 'polygon(0 0, 100% 14px, 100% 100%, 0 100%)'
+              return (
               <div
                 key={ending.title}
-                className="rounded-card p-4"
-                style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderTop: '2px solid rgba(212,146,10,0.4)' }}
+                className="p-4"
+                style={{ background: 'rgb(12, 10, 8)', outline: '1px solid rgba(255,255,255,0.07)', borderTop: '2px solid rgba(212,146,10,0.4)', clipPath }}
               >
                 <h3 className="text-base text-white mb-2">{ending.title}</h3>
                 <p className="text-sm text-white/75 leading-relaxed">{ending.text}</p>
               </div>
-            ))}
+              )
+            })}
           </div>
         </section>
       )}
@@ -305,7 +310,8 @@ export default function ScenarioDetailPage() {
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           aria-label="Back to top"
-          className="fixed bottom-6 right-6 p-3 rounded-card border border-[#B87A0A]/40 bg-bg text-[#B87A0A] hover:border-[#B87A0A] hover:bg-[#B87A0A]/10 transition-colors cursor-pointer shadow-lg z-[100]"
+          className="fixed bottom-6 right-6 p-3 cursor-pointer shadow-lg z-[100] transition-opacity hover:opacity-80"
+          style={{ background: '#B87A0A', color: 'rgb(12, 10, 8)', borderRadius: 0 }}
         >
           <PiArrowUp size={20} />
         </button>
