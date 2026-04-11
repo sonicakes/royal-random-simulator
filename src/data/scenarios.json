@@ -682,7 +682,7 @@
     "title": "Twin Peaks",
     "source": "Twin Peaks",
     "sourceType": "tv",
-    "thumbnail": "/images/banners/sims-twin-peaks.png",
+    "thumbnail": "/images/banners/twin-peaks.png",
     "year": 1990,
     "difficulty": "hard",
     "tags": [
@@ -1016,7 +1016,7 @@
     "title": "Pretty Little Liars",
     "source": "Pretty Little Liars",
     "sourceType": "film",
-    "thumbnail": "/images/banners/sims-pretty-little-liars.png",
+    "thumbnail": "/images/banners/pretty-little-liars.png",
     "year": 2010,
     "difficulty": "medium",
     "tags": [

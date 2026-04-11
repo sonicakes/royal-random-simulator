@@ -121,7 +121,7 @@ export default function ScenarioDetailPage() {
             style={{ clipPath: 'polygon(0 20px, 100% 0, 100% 100%, 0 100%)' }}
           />
         )}
-        <figcaption className="text-xs text-white/35 italic mt-2 leading-relaxed">
+        <figcaption className="text-xs text-white/50 italic mt-2 leading-relaxed">
           Generated with Gemini in the style of Eastern European art house cinema poster illustration, Polish Film Poster School 1960s–70s style, referencing the work of Franciszek Starowieyski and the visual language of <em>Valerie and Her Week of Wonders</em> (1970).
         </figcaption>
       </figure>
