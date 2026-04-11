@@ -76,11 +76,15 @@ export default function BrowsePage() {
   }
 
   return (
-    <main className="max-w-6xl mx-auto px-4 sm:px-6 py-8 w-full">
-      <h1 className="text-2xl font-extrabold text-white/80 mb-6">Browse Scenarios</h1>
+    <div className="w-full">
+
+      {/* Full-width diagonal filter strip */}
+      <div style={{ background: '#3D0E1A' }}>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-8 pb-6">
+          <h1 className="text-2xl font-extrabold text-white/80 mb-6">Browse Scenarios</h1>
 
       {/* Controls */}
-      <div className="flex flex-col gap-3 mb-8">
+      <div className="flex flex-col gap-3 mb-4">
         {/* Search + sort + filters toggle */}
         <div className="flex items-center justify-between gap-3">
           <div className="relative w-md">
@@ -173,27 +177,40 @@ export default function BrowsePage() {
             </div>
           </div>
         )}
-      </div>
+      </div>{/* end controls */}
+        </div>{/* end max-w container */}
+      </div>{/* end filter strip */}
 
-      {/* Results count */}
-      <p className="text-sm text-white/60 mb-4">
-        {filtered.length} scenario{filtered.length !== 1 ? 's' : ''}
-        {selectedTags.length > 0 && ` · tags: ${selectedTags.join(', ')}`}
-      </p>
+      {/* Diagonal wedge */}
+      <div style={{
+        height: '60px',
+        background: '#3D0E1A',
+        clipPath: 'polygon(0 0, 100% 0, 0 100%)',
+        marginTop: '-1px',
+      }} />
 
-      {/* Grid */}
-      {visible.length === 0 ? (
-        <p className="text-white/60 text-base">No scenarios match those filters.</p>
-      ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {visible.map((s) => (
-            <ScenarioCard key={s.id} scenario={s} />
-          ))}
-        </div>
-      )}
+      {/* Results area */}
+      <main className="max-w-6xl mx-auto px-4 sm:px-6 py-6 w-full">
+        {/* Results count */}
+        <p className="text-sm text-white/60 mb-4">
+          {filtered.length} scenario{filtered.length !== 1 ? 's' : ''}
+          {selectedTags.length > 0 && ` · tags: ${selectedTags.join(', ')}`}
+        </p>
 
-      {/* Lazy load sentinel */}
-      {visibleCount < filtered.length && <div ref={sentinelRef} className="h-8 mt-4" />}
+        {/* Grid */}
+        {visible.length === 0 ? (
+          <p className="text-white/60 text-base">No scenarios match those filters.</p>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {visible.map((s, i) => (
+              <ScenarioCard key={s.id} scenario={s} index={i} />
+            ))}
+          </div>
+        )}
+
+        {/* Lazy load sentinel */}
+        {visibleCount < filtered.length && <div ref={sentinelRef} className="h-8 mt-4" />}
+      </main>
 
       {/* Back to top */}
       {showBackToTop && (
@@ -205,6 +222,6 @@ export default function BrowsePage() {
           <PiArrowUp size={20} />
         </button>
       )}
-    </main>
+    </div>
   )
 }

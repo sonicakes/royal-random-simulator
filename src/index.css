@@ -1,15 +1,23 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg:              #050F18;
-  --color-sims-green:      #4ade80;
-  --color-btn-green:       #2ABDA8;
-  --color-btn-green-hover: #239A8A;
+  --color-bg:              #0C0A08;
+  --color-sims-green:      #D4920A;
+  --color-btn-green:       #B87A0A;
+  --color-btn-green-hover: #9A6A08;
   --color-horror-red:      #F5B800;
-  --color-modal-bg:        #0E1420;
+  --color-modal-bg:        #130F0C;
   --color-burgundy:        #1A3848;
-  --color-ochre:           #2ABDA8;
+  --color-ochre:           #D4920A;
   --color-slate:           #3A6B7A;
+
+  /* Polish school jewel tones */
+  --color-jewel-burgundy:  #5C1A2E;
+  --color-jewel-ochre:     #B87A0A;
+  --color-jewel-forest:    #1A6B3A;
+  --color-jewel-slate:     #2D4A6B;
+  --color-jewel-crimson:   #B81515;
+  --color-jewel-teal:      #0D7A7A;
 
   --font-sans:    "Lora", serif;
   --font-display:    "Staatliches", sans-serif;
@@ -27,6 +35,17 @@
     position: fixed;
     inset: 0;
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'><filter id='noise'><feTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23noise)'/></svg>");
+    opacity: 0.04;
+    pointer-events: none;
+    z-index: 0;
+  }
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url('/sims-pattern.svg');
+    background-repeat: repeat;
+    background-size: 340px 250px;
     opacity: 0.04;
     pointer-events: none;
     z-index: 0;
@@ -73,8 +92,8 @@
 }
 
 .btn-primary {
-  background: #2ABDA8;
-  border: 2px solid #2ABDA8;
+  background: #B87A0A;
+  border: 2px solid #B87A0A;
   color: #050F18;
   transition: background 0.2s ease, box-shadow 0.2s ease;
   letter-spacing: 0.08em;
@@ -82,6 +101,6 @@
 }
 
 .btn-primary:hover:not(:disabled) {
-  background: #239A8A;
-  box-shadow: 0 0 18px rgba(42, 189, 168, 0.35);
+  background: #9A6A08;
+  box-shadow: 0 0 18px rgba(212, 146, 10, 0.35);
 }
