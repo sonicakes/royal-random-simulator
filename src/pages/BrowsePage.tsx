@@ -81,7 +81,7 @@ export default function BrowsePage() {
       {/* Full-width diagonal filter strip */}
       <div style={{ background: '#3D0E1A' }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-8 pb-6">
-          <h1 className="text-2xl font-extrabold text-white/80 mb-6">Browse Scenarios</h1>
+          <h1 className="text-2xl font-extrabold text-ochre mb-6">Browse Scenarios</h1>
 
       {/* Controls */}
       <div className="flex flex-col gap-3 mb-4">
@@ -97,20 +97,22 @@ export default function BrowsePage() {
               placeholder="Search by title…"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full bg-white/5 z-100 border border-white/10 rounded-card pl-9 pr-4 py-2 text-base text-white placeholder-white/50 focus:outline-none focus:border-sims-green/50"
+              className="w-full z-100 border border-white/10 pl-9 pr-4 py-2 text-base text-white placeholder-white/50 focus:outline-none focus:border-sims-green/50"
+              style={{ background: 'rgba(184, 122, 10, 0.10)' }}
             />
           </div>
           <button
             onClick={() => setShowFilters((v) => !v)}
             aria-label="Toggle filters"
-            className={`relative flex items-center gap-2 px-4 py-2 rounded-card border transition-colors cursor-pointer ${
+            className={`relative flex items-center gap-2 px-4 py-2 border transition-colors cursor-pointer ${
               showFilters
-                ? 'bg-sims-green/10 text-sims-green border-sims-green/40'
-                : 'bg-white/5 text-white/50 border-white/10 hover:text-white/80 hover:border-white/30'
+                ? 'border-[#B87A0A] text-[#B87A0A] bg-[#B87A0A]/10'
+                : 'border-[#B87A0A]/50 text-[#B87A0A] bg-transparent hover:border-[#B87A0A]'
             }`}
+            style={{ fontFamily: 'var(--font-sub)', fontWeight: 700 }}
           >
             <PiSlidersHorizontal size={16} />
-            <span className="text-sm font-semibold">Filters</span>
+            <span className="text-sm">Filters</span>
             {(sourceType !== 'all' || difficulty !== 'all' || selectedTags.length > 0) && (
               <span className="absolute -top-1.5 -right-1.5 bg-sims-green text-bg text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center">
                 {(sourceType !== 'all' ? 1 : 0) + (difficulty !== 'all' ? 1 : 0) + selectedTags.length}
@@ -128,7 +130,7 @@ export default function BrowsePage() {
                 <button
                   key={v}
                   onClick={() => setSourceType(v)}
-                  className={`px-3 py-1 rounded-full text-sm font-semibold border transition-colors cursor-pointer ${
+                  className={`px-3 py-1 text-sm font-semibold border transition-colors cursor-pointer ${
                     sourceType === v
                       ? 'bg-sims-green text-bg border-sims-green'
                       : 'bg-transparent text-white/65 border-white/25 hover:border-white/50'
@@ -148,7 +150,7 @@ export default function BrowsePage() {
                 <button
                   key={v}
                   onClick={() => setDifficulty(v)}
-                  className={`px-3 py-1 rounded-full text-sm font-semibold border transition-colors cursor-pointer ${
+                  className={`px-3 py-1 text-sm font-semibold border transition-colors cursor-pointer ${
                     difficulty === v
                       ? 'bg-sims-green text-bg border-sims-green'
                       : 'bg-transparent text-white/65 border-white/25 hover:border-white/50'
@@ -165,7 +167,7 @@ export default function BrowsePage() {
                 <button
                   key={tag}
                   onClick={() => toggleTag(tag)}
-                  className={`px-2.5 py-0.5 rounded-full text-xs font-medium border transition-colors cursor-pointer ${
+                  className={`px-2.5 py-0.5 text-xs font-medium border transition-colors cursor-pointer ${
                     selectedTags.includes(tag)
                       ? 'bg-sims-green/20 text-sims-green border-sims-green/50'
                       : 'bg-transparent text-white/60 border-white/25 hover:border-white/45'
@@ -217,7 +219,8 @@ export default function BrowsePage() {
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           aria-label="Back to top"
-          className="fixed bottom-6 right-6 p-3 rounded-card border border-sims-green/40 bg-bg text-sims-green hover:border-sims-green hover:bg-sims-green/10 transition-colors cursor-pointer shadow-lg z-[100]"
+          className="fixed bottom-6 right-6 p-3 cursor-pointer shadow-lg z-[100] transition-opacity hover:opacity-80"
+          style={{ background: '#B87A0A', color: 'rgb(12, 10, 8)', borderRadius: 0 }}
         >
           <PiArrowUp size={20} />
         </button>

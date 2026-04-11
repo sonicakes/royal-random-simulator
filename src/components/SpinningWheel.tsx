@@ -114,7 +114,7 @@ export default function SpinningWheel({ scenarios, isSpinning, onSpinEnd }: Spin
 
       // --- outer ring with shadow glow ---
       ctx.shadowColor = 'rgba(212,146,10,0.9)'
-      ctx.shadowBlur = 40
+      ctx.shadowBlur = 10
       ctx.beginPath()
       ctx.arc(cx, cy, radius, 0, 2 * Math.PI)
       ctx.strokeStyle = '#D4920A'

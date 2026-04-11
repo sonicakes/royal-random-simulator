@@ -1,4 +1,5 @@
 import { useState, useCallback } from 'react'
+import { PiCaretRight } from 'react-icons/pi'
 import confetti from 'canvas-confetti'
 import SpinningWheel from '../components/SpinningWheel'
 import ScenarioModal from '../components/ScenarioModal'
@@ -35,7 +36,7 @@ export default function HomePage() {
 
   return (
     <main className="flex flex-col items-center flex-1">
-      <div className="w-full" style={{ background: '#4E1D17' }}>
+      <div className="w-full">
       <div
         className="w-full flex flex-col items-center px-4 pt-16 pb-24"
         style={{
@@ -93,7 +94,7 @@ export default function HomePage() {
           <button
             onClick={handleSpin}
             disabled={isSpinning}
-            className="px-10 py-3 font-display rounded-card tracking-widest text-xl btn-primary cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed text-bg shadow-lg"
+            className="px-10 py-3 tracking-widest text-xl btn-primary cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed text-bg shadow-lg" style={{ borderRadius: 0, fontFamily: 'var(--font-sub)', fontWeight: 700 }}
           >
             {isSpinning ? 'Spinning…' : 'Spin!'}
           </button>
@@ -103,7 +104,7 @@ export default function HomePage() {
         <div
           className="md:col-span-1 p-6 flex flex-col gap-5 self-stretch bg-bg"
           style={{
-            clipPath: 'polygon(0 0, calc(100% - 28px) 0, 100% 28px, 100% 100%, 0 100%)',
+            clipPath: 'polygon(20px 0, 100% 0, calc(100% - 20px) 100%, 0 100%)',
             boxShadow: '0 2px 12px rgba(255,255,255,0.04)',
             outline: '1px solid rgba(184,122,10,0.25)',
           }}
@@ -134,7 +135,7 @@ export default function HomePage() {
             href="/browse"
             className="text-btn-green tracking-wider font-display self-end hover:underline mt-auto"
           >
-            Browse all →
+            Browse all <PiCaretRight size={14} className="inline" />
           </a>
         </div>
       </div>
