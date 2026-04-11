@@ -35,7 +35,7 @@ export default function HomePage() {
 
   return (
     <main className="flex flex-col items-center flex-1">
-      <div className="w-full" style={{ background: '#4E1D17' }}>
+      <div className="w-full">
       <div
         className="w-full flex flex-col items-center px-4 pt-16 pb-24"
         style={{

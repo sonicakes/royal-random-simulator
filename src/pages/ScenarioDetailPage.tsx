@@ -254,7 +254,7 @@ export default function ScenarioDetailPage() {
                 {scenario.endings.map((e) => (
                   <div key={e.title} className="flex flex-col items-center pt-px">
                     <div className="w-px h-5 bg-[#B87A0A]/40" />
-                    <div style={{ width: 0, height: 0, borderLeft: '5px solid transparent', borderRight: '5px solid transparent', borderTop: '6px solid rgba(42,189,168,0.4)' }} />
+                    <div style={{ width: 0, height: 0, borderLeft: '5px solid transparent', borderRight: '5px solid transparent', borderTop: '6px solid rgba(212,146,10,0.4)' }} />
                   </div>
                 ))}
               </div>
@@ -267,7 +267,7 @@ export default function ScenarioDetailPage() {
               <div
                 key={ending.title}
                 className="rounded-card p-4"
-                style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderTop: '2px solid rgba(42,189,168,0.4)' }}
+                style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderTop: '2px solid rgba(212,146,10,0.4)' }}
               >
                 <h3 className="font-bold text-base text-white mb-2">{ending.title}</h3>
                 <p className="text-sm text-white/75 leading-relaxed">{ending.text}</p>

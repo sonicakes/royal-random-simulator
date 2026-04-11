@@ -81,7 +81,7 @@ export default function BrowsePage() {
       {/* Full-width diagonal filter strip */}
       <div style={{ background: '#3D0E1A' }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-8 pb-6">
-          <h1 className="text-2xl font-extrabold text-white/80 mb-6">Browse Scenarios</h1>
+          <h1 className="text-2xl font-extrabold text-ochre mb-6">Browse Scenarios</h1>
 
       {/* Controls */}
       <div className="flex flex-col gap-3 mb-4">
