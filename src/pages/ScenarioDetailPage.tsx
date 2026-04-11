@@ -32,9 +32,9 @@ interface Playthrough {
 const scenarios = scenariosData as Scenario[]
 
 const DIFFICULTY_COLOUR: Record<Scenario['difficulty'], string> = {
-  easy: '#4ade80',
-  medium: '#7A3AAD',
-  hard: '#C05A28',
+  easy: '#D4920A',
+  medium: '#7C3AED',
+  hard: '#B81515',
 }
 
 export default function ScenarioDetailPage() {
@@ -73,11 +73,11 @@ export default function ScenarioDetailPage() {
 
   return (
     <>
-    <main className="max-w-2xl mx-auto px-4 sm:px-6 py-8 w-full relative z-10" style={{ background: 'rgba(5,15,24,0.97)' }}>
+    <main className="max-w-2xl mx-auto px-4 sm:px-6 py-8 w-full relative z-10" style={{ background: 'rgba(12,10,8,0.97)' }}>
       {/* Back */}
       <button
         onClick={() => navigate(-1)}
-        className="text-sm text-white/60 hover:text-[#2ABDA8] transition-colors mb-6 flex items-center gap-1 cursor-pointer"
+        className="text-sm text-white/60 hover:text-[#B87A0A] transition-colors mb-6 flex items-center gap-1 cursor-pointer"
       >
         ← Back
       </button>
@@ -125,9 +125,9 @@ export default function ScenarioDetailPage() {
           <span
             key={tag}
             className={`text-xs px-3 py-1 rounded-full font-medium ${
-              scenario.sourceType === 'film' ? 'bg-[#2ABDA8]/15 text-[#2ABDA8]' :
-              scenario.sourceType === 'book' ? 'bg-sims-green/10 text-sims-green/90' :
-              scenario.sourceType === 'tv'   ? 'bg-[#3A6B7A]/20 text-[#7CBDCC]' :
+              scenario.sourceType === 'film' ? 'bg-[#B87A0A]/20 text-[#D4920A]' :
+              scenario.sourceType === 'book' ? 'bg-[#5C1A2E]/30 text-[#C47A8A]' :
+              scenario.sourceType === 'tv'   ? 'bg-[#2D4A6B]/30 text-[#7AADCC]' :
               'bg-white/10 text-white/60'
             }`}
           >
@@ -143,7 +143,7 @@ export default function ScenarioDetailPage() {
           <ul className="space-y-2">
             {scenario.setup.map((item, i) => (
               <li key={i} className="flex gap-3 text-base text-white/85">
-                <svg viewBox="0 0 12 14" fill="none" stroke="#4ade80" strokeWidth="1.2" strokeLinejoin="round" style={{ width: '0.7em', height: '0.85em', flexShrink: 0, marginTop: '0.3em' }}>
+                <svg viewBox="0 0 12 14" fill="none" stroke="#D4920A" strokeWidth="1.2" strokeLinejoin="round" style={{ width: '0.7em', height: '0.85em', flexShrink: 0, marginTop: '0.3em' }}>
                   <polygon points="3,0 9,0 12,5 6,14 0,5" />
                   <line x1="0" y1="5" x2="12" y2="5" strokeOpacity="0.5" />
                 </svg>
@@ -216,7 +216,7 @@ export default function ScenarioDetailPage() {
       {/* Story Beats — timeline */}
       <section className="mb-8">
         <h2 className="text-xl font-bold text-sims-green mb-4">Story Beats</h2>
-        <ol className="relative border-l-2 border-[#2ABDA8]/20 space-y-0">
+        <ol className="relative border-l-2 border-[#B87A0A]/20 space-y-0">
           {scenario.storyBeats.map((beat, i) => {
             const isLast = i === scenario.storyBeats.length - 1
             return (
@@ -224,7 +224,7 @@ export default function ScenarioDetailPage() {
                 {/* dot */}
                 <span
                   className="absolute -left-3.25 flex items-center justify-center w-6 h-6 rounded-full text-sm font-bold"
-                  style={{ background: '#050F18', border: '2px solid #2ABDA8', marginTop: '1.25px' }}
+                  style={{ background: '#050F18', border: '2px solid #B87A0A', marginTop: '1.25px' }}
                 >
                   {beat.step}
                 </span>
@@ -245,15 +245,15 @@ export default function ScenarioDetailPage() {
           <div className="hidden sm:block">
             {/* Stem */}
             <div className="flex justify-center">
-              <div className="w-px h-4 bg-[#2ABDA8]/40" />
+              <div className="w-px h-4 bg-[#B87A0A]/40" />
             </div>
             {/* Branch */}
             <div className="relative">
-              <div className="absolute top-0 left-[16.67%] right-[16.67%] h-px bg-[#2ABDA8]/40" />
+              <div className="absolute top-0 left-[16.67%] right-[16.67%] h-px bg-[#B87A0A]/40" />
               <div className="grid grid-cols-3">
                 {scenario.endings.map((e) => (
                   <div key={e.title} className="flex flex-col items-center pt-px">
-                    <div className="w-px h-5 bg-[#2ABDA8]/40" />
+                    <div className="w-px h-5 bg-[#B87A0A]/40" />
                     <div style={{ width: 0, height: 0, borderLeft: '5px solid transparent', borderRight: '5px solid transparent', borderTop: '6px solid rgba(42,189,168,0.4)' }} />
                   </div>
                 ))}
@@ -295,7 +295,7 @@ export default function ScenarioDetailPage() {
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           aria-label="Back to top"
-          className="fixed bottom-6 right-6 p-3 rounded-card border border-[#2ABDA8]/40 bg-bg text-[#2ABDA8] hover:border-[#2ABDA8] hover:bg-[#2ABDA8]/10 transition-colors cursor-pointer shadow-lg z-[100]"
+          className="fixed bottom-6 right-6 p-3 rounded-card border border-[#B87A0A]/40 bg-bg text-[#B87A0A] hover:border-[#B87A0A] hover:bg-[#B87A0A]/10 transition-colors cursor-pointer shadow-lg z-[100]"
         >
           <PiArrowUp size={20} />
         </button>

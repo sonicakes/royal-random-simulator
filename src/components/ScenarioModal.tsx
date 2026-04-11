@@ -11,9 +11,9 @@ interface ScenarioModalProps {
 }
 
 const DIFFICULTY_COLOUR: Record<Scenario['difficulty'], string> = {
-  easy: '#4ade80',
-  medium: '#7A3AAD',
-  hard: '#C05A28',
+  easy: '#D4920A',
+  medium: '#7C3AED',
+  hard: '#B81515',
 }
 
 export default function ScenarioModal({ scenario, onClose, onSpinAgain }: ScenarioModalProps) {
@@ -32,7 +32,7 @@ export default function ScenarioModal({ scenario, onClose, onSpinAgain }: Scenar
     >
       <div
         className="relative w-full max-w-md rounded-card p-6 shadow-2xl z-200"
-        style={{ background: 'rgb(13, 32, 35)', border: '1px solid rgba(74,222,128,0.35)' }}
+        style={{ background: 'rgb(19, 15, 12)', border: '1px solid rgba(74,222,128,0.35)' }}
         onClick={(e) => e.stopPropagation()}
       >
         {/* close */}
@@ -86,7 +86,7 @@ export default function ScenarioModal({ scenario, onClose, onSpinAgain }: Scenar
           </button>
           <Link
             to={`/scenarios/${scenario.id}`}
-            className="flex-1 py-2 rounded-card font-bold text-sm text-center border border-[#2ABDA8]/50 hover:border-[#2ABDA8] text-[#2ABDA8] transition-colors"
+            className="flex-1 py-2 rounded-card font-bold text-sm text-center border border-[#B87A0A]/50 hover:border-[#B87A0A] text-[#B87A0A] transition-colors"
           >
             View Scenario
           </Link>

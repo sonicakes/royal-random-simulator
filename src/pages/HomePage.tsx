@@ -17,7 +17,7 @@ export default function HomePage() {
       particleCount: 120,
       spread: 80,
       origin: { y: 0.55 },
-      colors: ['#4ade80', '#16a34a', '#F5B800', '#15B8B0', '#ffffff'],
+      colors: ['#D4920A', '#B87A0A', '#B81515', '#7C3AED', '#ffffff'],
     })
     setResult(scenario)
   }, [])
@@ -34,8 +34,34 @@ export default function HomePage() {
   }, [])
 
   return (
-    <main className="flex flex-col items-center flex-1 px-4 py-8">
-      <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+    <main className="flex flex-col items-center flex-1">
+      <div className="w-full" style={{ background: '#4E1D17' }}>
+      <div
+        className="w-full flex flex-col items-center px-4 pt-16 pb-24"
+        style={{
+          background: '#3D0E1A',
+          clipPath: 'polygon(0 5%, 100% 0, 100% 93%, 0 100%)',
+          position: 'relative',
+          overflow: 'hidden',
+        }}
+      >
+        {/* Decorative diagonal plane — slate blue, top-right */}
+        <div style={{
+          position: 'absolute', top: 0, right: 0, width: '55%', height: '55%',
+          background: '#2D4A6B',
+          clipPath: 'polygon(50% 0, 100% 0, 100% 100%)',
+          opacity: 0.18,
+          pointerEvents: 'none',
+        }} />
+        {/* Decorative diagonal plane — dark ochre, bottom-left */}
+        <div style={{
+          position: 'absolute', bottom: 0, left: 0, width: '45%', height: '45%',
+          background: '#B87A0A',
+          clipPath: 'polygon(0 30%, 100% 100%, 0 100%)',
+          opacity: 0.14,
+          pointerEvents: 'none',
+        }} />
+      <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-8 items-center" style={{ position: 'relative', zIndex: 1 }}>
 
         {/* Wheel column — 2/3 */}
         <div className="md:col-span-2 flex flex-col items-center gap-6">
@@ -75,8 +101,12 @@ export default function HomePage() {
 
         {/* About card — 1/3 */}
         <div
-          className="md:col-span-1 rounded-card border p-6 flex flex-col gap-5 self-stretch bg-bg"
-          style={{  borderColor: 'rgba(42,189,168,0.25)', boxShadow: '0 2px 12px rgba(255,255,255,0.04)' }}
+          className="md:col-span-1 p-6 flex flex-col gap-5 self-stretch bg-bg"
+          style={{
+            clipPath: 'polygon(0 0, calc(100% - 28px) 0, 100% 28px, 100% 100%, 0 100%)',
+            boxShadow: '0 2px 12px rgba(255,255,255,0.04)',
+            outline: '1px solid rgba(184,122,10,0.25)',
+          }}
         >
           <div className="flex flex-col gap-3">
             <h2 className="text-ochre/80 font-bold text-base uppercase tracking-widest">About</h2>
@@ -84,19 +114,9 @@ export default function HomePage() {
               
               <p>
                 A companion project to{' '}<a href="https://cinefile-blog.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-btn-green hover:underline">The Cinefile Blog</a>{' '}and{' '}
-                <a href="https://open.spotify.com/show/5Ri7xJYDE9JDel4iCdl6LA?si=eb1e6971fd3d4844" target="_blank" rel="noopener noreferrer" className="text-btn-green hover:underline">The Kino Royale Podcast</a>,
-          
-              <span className='pl-1 font-bold'>The Royal Simulator</span> turns horror films, tv shows and novels into playable Sims 4 scenarios — designed to recreate the logic and atmosphere of each source material inside the game.
-            </p>
-              <p>
-                <span className="text-white uppercase tracking-wider text-sm font-bold font-sub">What each scenario includes</span><br />
-                Full lot setup, household traits, daily rules, story beats, and multiple endings. Difficulty ratings run from easy one-night camps to hard multi-week deterioration arcs.
+                <a href="https://open.spotify.com/show/5Ri7xJYDE9JDel4iCdl6LA?si=eb1e6971fd3d4844" target="_blank" rel="noopener noreferrer" className="text-btn-green hover:underline">The Kino Royale Podcast</a>,{' '}
+                <span className="font-bold">The Royal Simulator</span> turns horror films, tv shows and novels into playable Sims 4 scenarios — designed to recreate the logic and atmosphere of each source material inside the game. Each scenario includes full lot setup, household traits, daily rules, story beats, and multiple endings. Difficulty ratings run from easy one-night camps to hard multi-week deterioration arcs.
               </p>
-              <p>
-                <span className="text-white uppercase tracking-wider text-sm font-sub font-bold">How to use it</span><br />
-                Spin the wheel to let chance decide what you play next, or search the library by title, difficulty, tag, or source type.
-              </p>
-             
             </div>
           </div>
           <div>
@@ -118,6 +138,8 @@ export default function HomePage() {
           </a>
         </div>
       </div>
+      </div>{/* end clip-path wrapper */}
+      </div>{/* end ochre bg wrapper */}
 
       {result && (
         <ScenarioModal

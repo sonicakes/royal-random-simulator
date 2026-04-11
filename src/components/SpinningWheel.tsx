@@ -2,14 +2,14 @@ import { useRef, useEffect, useCallback, useState } from 'react'
 import type { Scenario } from '../types/scenario'
 
 const PALETTE = [
-  '#0E9EAF',  // teal
-  '#1A6090',  // deep blue
-  '#18C4A8',  // turquoise
-  '#2878C8',  // steel blue
-  '#1A9A5C',  // teal-green
-  '#38AA38',  // forest green
-  '#C05A28',  // terracotta (complementary)
-  '#7A3AAD',  // violet (complementary)
+  '#5C1A2E',  // deep burgundy      (~330°) ↔ forest green
+  '#1A6B3A',  // forest green        (~150°) ↔ burgundy
+  '#B87A0A',  // ochre               (~38°)  ↔ slate blue
+  '#2D4A6B',  // slate blue          (~218°) ↔ ochre
+  '#0D7A7A',  // teal                (~180°) ↔ sienna
+  '#6B3A1A',  // dark sienna         (~25°)  ↔ teal
+  '#7C3AED',  // purple              (~270°) ↔ dark olive
+  '#5A8A18',  // dark olive          (~88°)  ↔ purple
 ]
 
 interface SpinningWheelProps {
@@ -58,66 +58,130 @@ export default function SpinningWheel({ scenarios, isSpinning, onSpinEnd }: Spin
 
       ctx.clearRect(0, 0, size, size)
 
-      // segments
+      // --- segments: solid fill + radial gradient overlay + white dividers ---
       for (let i = 0; i < n; i++) {
         const startA = rotation + i * segAngle - Math.PI / 2
         const endA = startA + segAngle
+        const baseColor = PALETTE[i % PALETTE.length] ?? '#16a34a'
 
         ctx.beginPath()
         ctx.moveTo(cx, cy)
         ctx.arc(cx, cy, radius, startA, endA)
         ctx.closePath()
-        ctx.fillStyle = PALETTE[i % PALETTE.length] ?? '#16a34a'
+        ctx.fillStyle = baseColor
         ctx.fill()
-        ctx.strokeStyle = '#080f14'
-        ctx.lineWidth = 2
-        ctx.stroke()
 
-        // label
+        // darker-at-centre radial gradient overlay
+        const grad = ctx.createRadialGradient(cx, cy, 0, cx, cy, radius)
+        grad.addColorStop(0,   'rgba(0,0,0,0.48)')
+        grad.addColorStop(0.5, 'rgba(0,0,0,0.18)')
+        grad.addColorStop(1,   'rgba(0,0,0,0)')
+        ctx.beginPath()
+        ctx.moveTo(cx, cy)
+        ctx.arc(cx, cy, radius, startA, endA)
+        ctx.closePath()
+        ctx.fillStyle = grad
+        ctx.fill()
+
+        // semi-transparent white dividers
+        ctx.strokeStyle = 'rgba(255,255,255,0.18)'
+        ctx.lineWidth = 1.5
+        ctx.stroke()
+      }
+
+      // --- inner accent ring at 60% radius ---
+      ctx.beginPath()
+      ctx.arc(cx, cy, radius * 0.6, 0, 2 * Math.PI)
+      ctx.strokeStyle = 'rgba(212,146,10,0.45)'
+      ctx.lineWidth = 1.5
+      ctx.stroke()
+
+      // --- labels: Staatliches, uppercase ---
+      for (let i = 0; i < n; i++) {
         ctx.save()
         ctx.translate(cx, cy)
         ctx.rotate(rotation + i * segAngle + segAngle / 2 - Math.PI / 2)
         ctx.textAlign = 'right'
-        ctx.fillStyle = '#ffffff'
-        ctx.font = `bold ${Math.max(10, Math.min(14, radius / (n * 0.6)))}px Nunito, sans-serif`
-        const label =
-          scenarios[i]?.title && scenarios[i].title.length > 12
-            ? scenarios[i].title.slice(0, 11) + '…'
-            : (scenarios[i]?.title ?? '')
-        ctx.fillText(label, radius - 10, 4)
+        ctx.fillStyle = 'rgba(255,255,255,0.92)'
+        const fontSize = Math.max(11, Math.min(15, radius / (n * 0.55)))
+        ctx.font = `${fontSize}px Staatliches, sans-serif`
+        ;(ctx as CanvasRenderingContext2D & { letterSpacing: string }).letterSpacing = '1.5px'
+        const raw = scenarios[i]?.title ?? ''
+        const label = raw.length > 14 ? raw.slice(0, 13) + '…' : raw
+        ctx.fillText(label.toUpperCase(), radius - 10, 5)
         ctx.restore()
       }
 
-      // outer ring
+      // --- outer ring with shadow glow ---
+      ctx.shadowColor = 'rgba(212,146,10,0.9)'
+      ctx.shadowBlur = 40
       ctx.beginPath()
       ctx.arc(cx, cy, radius, 0, 2 * Math.PI)
-      ctx.strokeStyle = '#4ade80'
-      ctx.lineWidth = 3
+      ctx.strokeStyle = '#D4920A'
+      ctx.lineWidth = 5
       ctx.stroke()
+      ctx.shadowBlur = 0
 
-      // center circle
-      ctx.beginPath()
-      ctx.arc(cx, cy, 14, 0, 2 * Math.PI)
-      ctx.fillStyle = '#080f14'
-      ctx.fill()
-      ctx.strokeStyle = '#4ade80'
-      ctx.lineWidth = 2
-      ctx.stroke()
+      // --- rim tick marks at segment boundaries ---
+      for (let i = 0; i < n; i++) {
+        const angle = rotation + i * segAngle - Math.PI / 2
+        ctx.beginPath()
+        ctx.moveTo(cx + Math.cos(angle) * (radius - 10), cy + Math.sin(angle) * (radius - 10))
+        ctx.lineTo(cx + Math.cos(angle) * (radius - 1),  cy + Math.sin(angle) * (radius - 1))
+        ctx.strokeStyle = 'rgba(255,255,255,0.45)'
+        ctx.lineWidth = 2
+        ctx.stroke()
+      }
 
-      // pointer at top
-      const pCx = cx
-      const pTip = 2
-      const pBase = 22
-      const pHalf = 10
+      // --- center medallion with plumbob gem ---
+      const medalR = Math.max(16, size * 0.04)
       ctx.beginPath()
-      ctx.moveTo(pCx, pTip)
-      ctx.lineTo(pCx - pHalf, pBase)
-      ctx.lineTo(pCx + pHalf, pBase)
-      ctx.closePath()
-      ctx.fillStyle = '#080f14'
+      ctx.arc(cx, cy, medalR, 0, 2 * Math.PI)
+      ctx.fillStyle = '#0C0A08'
       ctx.fill()
-      ctx.strokeStyle = '#080f14'
+      ctx.strokeStyle = '#D4920A'
       ctx.lineWidth = 1.5
+      ctx.stroke()
+
+      // plumbob diamond (green, matching nav gem)
+      const dH = medalR * 1.1
+      const dW = medalR * 0.6
+      ctx.beginPath()
+      ctx.moveTo(cx,      cy - dH)           // top
+      ctx.lineTo(cx - dW, cy - dH * 0.1)     // left
+      ctx.lineTo(cx,      cy + dH)            // bottom
+      ctx.lineTo(cx + dW, cy - dH * 0.1)     // right
+      ctx.closePath()
+      ctx.fillStyle = '#4ade80'
+      ctx.fill()
+      // crown facet highlight
+      ctx.beginPath()
+      ctx.moveTo(cx - dW, cy - dH * 0.1)
+      ctx.lineTo(cx,      cy - dH)
+      ctx.lineTo(cx + dW, cy - dH * 0.1)
+      ctx.strokeStyle = 'rgba(134,239,172,0.7)'
+      ctx.lineWidth = 0.8
+      ctx.stroke()
+      // girdle line
+      ctx.beginPath()
+      ctx.moveTo(cx - dW, cy - dH * 0.1)
+      ctx.lineTo(cx + dW, cy - dH * 0.1)
+      ctx.strokeStyle = 'rgba(0,0,0,0.35)'
+      ctx.lineWidth = 0.8
+      ctx.stroke()
+
+      // --- constructivist elongated diamond pointer ---
+      const pCx = cx
+      ctx.beginPath()
+      ctx.moveTo(pCx, 2)
+      ctx.lineTo(pCx - 8, 14)
+      ctx.lineTo(pCx, 30)
+      ctx.lineTo(pCx + 8, 14)
+      ctx.closePath()
+      ctx.fillStyle = '#B81515'
+      ctx.fill()
+      ctx.strokeStyle = 'rgba(255,255,255,0.7)'
+      ctx.lineWidth = 1
       ctx.stroke()
     },
     [n, scenarios, segAngle],
