@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { PiFilmSlate, PiBookOpenText, PiTelevisionSimple, PiArrowUp } from 'react-icons/pi'
+import { PiFilmSlate, PiBookOpenText, PiTelevisionSimple, PiArrowUp, PiCaretLeft } from 'react-icons/pi'
 import { useParams, useNavigate } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import LightboxGallery from '../components/LightboxGallery'
@@ -64,8 +64,8 @@ export default function ScenarioDetailPage() {
     return (
       <main className="max-w-2xl mx-auto px-4 py-16 text-center">
         <p className="text-white/40">Scenario not found.</p>
-        <button onClick={() => navigate(-1)} className="mt-4 text-sims-green text-sm hover:underline cursor-pointer">
-          ← Go back
+        <button onClick={() => navigate(-1)} className="mt-4 text-sims-green text-sm hover:underline cursor-pointer flex items-center gap-1 mx-auto">
+          <PiCaretLeft size={14} /> Go back
         </button>
       </main>
     )
@@ -79,7 +79,7 @@ export default function ScenarioDetailPage() {
         onClick={() => navigate(-1)}
         className="text-sm text-white/60 hover:text-[#B87A0A] transition-colors mb-6 flex items-center gap-1 cursor-pointer"
       >
-        ← Back
+        <PiCaretLeft size={14} /> Back
       </button>
 
       {/* Header */}

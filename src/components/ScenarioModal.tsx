@@ -31,14 +31,22 @@ export default function ScenarioModal({ scenario, onClose, onSpinAgain }: Scenar
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-md rounded-card p-6 shadow-2xl z-200"
-        style={{ background: 'rgb(19, 15, 12)', border: '1px solid rgba(74,222,128,0.35)' }}
+        style={{ boxShadow: '3px 6px 16px rgba(212,146,10,0.18), -3px 6px 16px rgba(212,146,10,0.10)' }}
+        className="relative w-full max-w-md z-200"
         onClick={(e) => e.stopPropagation()}
       >
+        <div
+          className="relative p-6"
+          style={{
+            background: 'rgb(12, 10, 8)',
+            outline: '1px solid rgba(184,122,10,0.35)',
+            clipPath: 'polygon(0 20px, 100% 0, 100% 100%, 0 100%)',
+          }}
+        >
         {/* close */}
         <button
           onClick={onClose}
-          className="absolute top-3 right-4 text-white/40 hover:text-white text-xl leading-none cursor-pointer"
+          className="absolute top-5 right-4 text-white/40 hover:text-white text-xl leading-none cursor-pointer"
           aria-label="Close"
         >
           ×
@@ -49,20 +57,20 @@ export default function ScenarioModal({ scenario, onClose, onSpinAgain }: Scenar
           <img
             src={scenario.thumbnail}
             alt={scenario.title}
-            className="w-full h-65 object-cover rounded-lg mb-4"
+            className="w-full h-65 object-cover mb-4"
           />
         ) : (
           <img
             src={pickPlaceholder(scenario.id)}
             alt="Spooky placeholder"
-            className="w-full h-65 object-cover rounded-lg mb-4"
+            className="w-full h-65 object-cover mb-4"
           />
         )}
 
         <p className="text-sm font-semibold uppercase tracking-widest text-sims-green mb-1">
           You got…
         </p>
-        <h2 className="text-2xl font-extrabold mb-1 capitalize">{scenario.title}</h2>
+        <h2 className="text-2xl font-extrabold mb-1 capitalize" style={{ fontFamily: "'Courier Prime', monospace" }}>{scenario.title}</h2>
         <p className="text-sm text-white/70 mb-3 flex gap-2 items-center">
           <span className="inline-flex items-center gap-1.5">
             {scenario.sourceType === 'film'
@@ -75,21 +83,22 @@ export default function ScenarioModal({ scenario, onClose, onSpinAgain }: Scenar
             {scenario.difficulty}
           </span>
         </p>
-        <p className="text-base text-white/85 leading-relaxed mb-5">{scenario.description}</p>
+        <p className="text-xs text-white/85 leading-relaxed mb-5">{scenario.description}</p>
 
         <div className="flex gap-3">
-          <button
-            onClick={onSpinAgain}
-            className="flex-1 py-2 rounded-card font-bold text-sm btn-primary cursor-pointer text-bg"
-          >
-            Spin Again
-          </button>
           <Link
             to={`/scenarios/${scenario.id}`}
-            className="flex-1 py-2 rounded-card font-bold text-sm text-center border border-[#B87A0A]/50 hover:border-[#B87A0A] text-[#B87A0A] transition-colors"
+            className="flex-1 py-2 font-bold text-sm text-center btn-primary text-bg transition-colors"
           >
             View Scenario
           </Link>
+          <button
+            onClick={onSpinAgain}
+            className="flex-1 py-2 font-bold text-sm cursor-pointer border border-[#B87A0A]/50 hover:border-[#B87A0A] text-[#B87A0A] transition-colors bg-transparent"
+          >
+            Spin Again
+          </button>
+        </div>
         </div>
       </div>
     </div>
