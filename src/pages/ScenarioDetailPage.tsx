@@ -32,9 +32,9 @@ interface Playthrough {
 const scenarios = scenariosData as Scenario[]
 
 const DIFFICULTY_COLOUR: Record<Scenario['difficulty'], string> = {
-  easy: '#D4920A',
+  easy: '#2EAD3F',
   medium: '#7C3AED',
-  hard: '#B81515',
+  hard: '#15B8B0',
 }
 
 export default function ScenarioDetailPage() {
@@ -110,7 +110,7 @@ export default function ScenarioDetailPage() {
           <img
             src={scenario.thumbnail}
             alt={scenario.title}
-            className="w-full object-contain"
+            className="w-full object-cover min-h-80 lg:min-h-100"
             style={{ clipPath: 'polygon(0 20px, 100% 0, 100% 100%, 0 100%)' }}
           />
         ) : (
@@ -311,7 +311,7 @@ export default function ScenarioDetailPage() {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           aria-label="Back to top"
           className="fixed bottom-6 right-6 p-3 cursor-pointer shadow-lg z-[100] transition-opacity hover:opacity-80"
-          style={{ background: '#B87A0A', color: 'rgb(12, 10, 8)', borderRadius: 0 }}
+          style={{ background: '#B87A0A', color: 'rgb(12, 10, 8)', borderRadius: 0, transform: 'skewX(-8deg)', boxShadow: '0 2px 8px rgba(255,255,255,0.08)' }}
         >
           <PiArrowUp size={20} />
         </button>

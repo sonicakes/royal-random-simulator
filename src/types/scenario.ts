@@ -16,7 +16,6 @@ export interface Ending {
 
 export interface Scenario {
   id: string
-  sort: number
   title: string
   source: string
   sourceType: 'film' | 'book' | 'tv'

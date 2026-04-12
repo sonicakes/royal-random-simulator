@@ -107,20 +107,20 @@ export default function SpinningWheel({ scenarios, isSpinning, onSpinEnd }: Spin
         ctx.font = `${fontSize}px Staatliches, sans-serif`
         ;(ctx as CanvasRenderingContext2D & { letterSpacing: string }).letterSpacing = '1.5px'
         const raw = scenarios[i]?.title ?? ''
-        const label = raw.length > 14 ? raw.slice(0, 13) + '…' : raw
+        const maxChars = radius < 150 ? 7 : radius < 200 ? 10 : 13
+        const label = raw.length > maxChars + 1 ? raw.slice(0, maxChars) + '…' : raw
         ctx.fillText(label.toUpperCase(), radius - 10, 5)
         ctx.restore()
       }
 
       // --- outer ring with shadow glow ---
       ctx.shadowColor = 'rgba(212,146,10,0.9)'
-      ctx.shadowBlur = 10
+      ctx.shadowBlur = 5
       ctx.beginPath()
       ctx.arc(cx, cy, radius, 0, 2 * Math.PI)
       ctx.strokeStyle = '#D4920A'
       ctx.lineWidth = 5
       ctx.stroke()
-      ctx.shadowBlur = 0
 
       // --- rim tick marks at segment boundaries ---
       for (let i = 0; i < n; i++) {

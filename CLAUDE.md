@@ -73,7 +73,7 @@ All scenarios live in `src/data/scenarios.json` as a top-level array. The shape 
   "difficulty": "hard",
   "tags": ["isolation", "psychological", "family"],
   "description": "A longer written description in the author's voice.",
-  "thumbnail": "/images/the-shining.jpg",
+  "thumbnail": "/images/banners/shining.png",
   "householdMembers": [
     {
       "name": "Jack Torrance",
@@ -98,7 +98,7 @@ Field notes:
 - `year` — release/publication year of the source work
 - `difficulty` — `"easy"`, `"medium"`, or `"hard"`
 - `tags` — freeform lowercase strings, defined by the author
-- `thumbnail` — optional; path relative to `/public/images/`; omit if no image yet — a random placeholder from `/public/images/placeholder/` will be used
+- `thumbnail` — optional; path under `/public/images/banners/`; omit if no image yet — a random placeholder from `/public/images/placeholder/` will be used
 - `householdMembers` — each member has `name`, `role`, and `traits` (string array)
 - `storyBeats` — ordered objects with `step` (number) and `text` (string)
 
@@ -110,9 +110,8 @@ Field notes:
 ```css
 --bg:             #080f14;   /* page background */
 --green-bright:   #4ade80;   /* primary Sims green — nav, hover, gem icon */
---green-btn:      #1db86a;   /* spin button base */
---amber:          #F5B800;   /* warm accent — medium difficulty */
---coral:          #B81515;   /* hard difficulty, "Torture" title */
+--ochre:          #D4920A;   /* warm ochre — primary UI accent, buttons, borders */
+--burgundy:       #3D0E1A;   /* deep burgundy — header bands, modal bg */
 --text-primary:   #ffffff;
 --text-muted:     rgba(255,255,255,0.35);
 --text-hint:      rgba(255,255,255,0.28);
@@ -121,9 +120,9 @@ Field notes:
 ```
 
 ### Difficulty colours
-- easy → `#4ade80` (green)
-- medium → `#F5B800` (amber)
-- hard → `#B81515` (coral)
+- easy → `#2EAD3F` (forest green)
+- medium → `#7C3AED` (purple)
+- hard → `#15B8B0` (teal)
 
 ### Wheel segment palette
 8-colour complementary palette — four colours from a botanical reference image plus their direct opposites. Cycle through in order:
@@ -137,9 +136,16 @@ Field notes:
 - Generic tags → subtle white tint
 
 ### Typography
-- Font: Nunito (Google Fonts) with system sans fallback
-- Weights: 400 regular, 700 bold
-- Border radius: 12px for cards and buttons, 99px for pills/badges
+- `--font-sans` — **Lora** (serif) — body text
+- `--font-display` — **Staatliches** (condensed display) — headings, nav logo, wheel labels, buttons
+- `--font-sub` — **Courier Prime** (monospace) — subheadings, UI labels, input fields
+- All three loaded from Google Fonts
+
+### Buttons & inputs
+- All styled buttons use `transform: skewX(-8deg)` for the constructivist parallelogram look
+- Subtle white box-shadow: `0 2px 8px rgba(255,255,255,0.08)`
+- Primary button background: `#B87A0A` (ochre), no border radius
+- Input fields are also skewed to match buttons
 
 ### Nav logo (GemM)
 The "M" in "SIMulator" in the nav is replaced by an inline faceted gem SVG — a three-polygon diamond in green tones, sized to sit flush with the surrounding text:
@@ -150,7 +156,7 @@ The "M" in "SIMulator" in the nav is replaced by an inline faceted gem SVG — a
   <polygon points="0,5 12,5 6,14" fill="#16a34a" opacity="0.9" />
 </svg>
 ```
-The nav is 60px tall (`h-15`), no bottom border, and renders: **Royal Si♦ulator** on the left, **Browse Scenarios** on the right.
+The nav logo uses **Staatliches** (`--font-display`), uppercase with wide letter-spacing. The nav renders: **ROYAL SI♦ULATOR** on the left, **BROWSE SCENARIOS** on the right.
 
 ---
 

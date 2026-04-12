@@ -39,28 +39,18 @@ export default function HomePage() {
       <div className="w-full">
       <div
         className="w-full flex flex-col items-center px-4 pt-16 pb-24"
-        style={{
-          background: '#3D0E1A',
-          clipPath: 'polygon(0 5%, 100% 0, 100% 93%, 0 100%)',
-          position: 'relative',
-          overflow: 'hidden',
-        }}
+        style={{ position: 'relative' }}
       >
-        {/* Decorative diagonal plane — slate blue, top-right */}
+        {/* Top diagonal accent band */}
         <div style={{
-          position: 'absolute', top: 0, right: 0, width: '55%', height: '55%',
-          background: '#2D4A6B',
-          clipPath: 'polygon(50% 0, 100% 0, 100% 100%)',
-          opacity: 0.18,
+          position: 'absolute',
+          top: 0, left: 0,
+          width: '100%',
+          height: '60%',
+          background: '#3D0E1A',
+          clipPath: 'polygon(0 0, 100% 0, 100% 55%, 0 100%)',
           pointerEvents: 'none',
-        }} />
-        {/* Decorative diagonal plane — dark ochre, bottom-left */}
-        <div style={{
-          position: 'absolute', bottom: 0, left: 0, width: '45%', height: '45%',
-          background: '#B87A0A',
-          clipPath: 'polygon(0 30%, 100% 100%, 0 100%)',
-          opacity: 0.14,
-          pointerEvents: 'none',
+          zIndex: 0,
         }} />
       <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-8 items-center" style={{ position: 'relative', zIndex: 1 }}>
 
@@ -104,9 +94,7 @@ export default function HomePage() {
         <div
           className="md:col-span-1 p-6 flex flex-col gap-5 self-stretch bg-bg"
           style={{
-            clipPath: 'polygon(20px 0, 100% 0, calc(100% - 20px) 100%, 0 100%)',
             boxShadow: '0 2px 12px rgba(255,255,255,0.04)',
-            outline: '1px solid rgba(184,122,10,0.25)',
           }}
         >
           <div className="flex flex-col gap-3">
@@ -114,9 +102,9 @@ export default function HomePage() {
             <div className="text-white/80 text-sm leading-relaxed flex flex-col gap-3">
               
               <p>
-                A companion project to{' '}<a href="https://cinefile-blog.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-btn-green hover:underline">The Cinefile Blog</a>{' '}and{' '}
-                <a href="https://open.spotify.com/show/5Ri7xJYDE9JDel4iCdl6LA?si=eb1e6971fd3d4844" target="_blank" rel="noopener noreferrer" className="text-btn-green hover:underline">The Kino Royale Podcast</a>,{' '}
-                <span className="font-bold">The Royal Simulator</span> turns horror films, tv shows and novels into playable Sims 4 scenarios — designed to recreate the logic and atmosphere of each source material inside the game. Each scenario includes full lot setup, household traits, daily rules, story beats, and multiple endings. Difficulty ratings run from easy one-night camps to hard multi-week deterioration arcs.
+                A companion project to{' '}<a href="https://cinefileblog.com/" target="_blank" rel="noopener noreferrer" className="text-btn-green hover:underline font-bold">The Cinefile Blog</a>{' '}and{' '}
+                <a href="https://open.spotify.com/show/5Ri7xJYDE9JDel4iCdl6LA?si=eb1e6971fd3d4844" target="_blank" rel="noopener noreferrer" className="text-btn-green hover:underline font-bold">The Kino Royale Podcast</a>,{' '}
+                <span className="italic">The Royal Simulator</span> turns horror films, tv shows and novels into playable Sims 4 scenarios — designed to recreate the logic and atmosphere of each source material inside the game. Each scenario includes full lot setup, household traits, daily rules, story beats, and multiple endings. Difficulty ratings run from easy one-night camps to hard multi-week deterioration arcs.
               </p>
             </div>
           </div>
