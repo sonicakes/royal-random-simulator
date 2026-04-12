@@ -110,15 +110,14 @@
         "title": "All Work and No Play",
         "text": "Jack's manuscript is never finished. His mood remains red. He never leaves the bar wing. Wendy and Danny depart on Day 21 without him. Jack stays behind. The scenario ends when he reaches Enemies status with every household member. He is home."
       }
-    ],
-    "sort": 23
+    ]
   },
   {
     "id": "rebecca",
     "title": "Rebecca — In Her Shadow",
     "source": "Rebecca",
     "sourceType": "book",
-    "thumbnail": "/images/banners/rebecca-shadow.png",
+    "thumbnail": "/images/banners/rebecca-og.png",
     "year": 1938,
     "difficulty": "medium",
     "tags": [
@@ -223,8 +222,7 @@
         "title": "Rebecca Wins",
         "text": "The Second Mrs de Winter's mood remains red for 7 consecutive days and she and Maxim never reach Good Friends status. She leaves the household. Mrs Danvers locks Rebecca's rooms again. Nothing at Manderley changes."
       }
-    ],
-    "sort": 4
+    ]
   },
   {
     "id": "misery",
@@ -324,8 +322,7 @@
         "title": "The Fire",
         "text": "Paul sets the kitchen alight during a confrontation. Both Sims are placed in the burning room. Whoever survives inherits the lot and the scenario ends. If Annie survives, she begins again with a new captive."
       }
-    ],
-    "sort": 6
+    ]
   },
   {
     "id": "the-collector",
@@ -426,15 +423,14 @@
         "title": "The Accident",
         "text": "The Victim deteriorates while the Collector is away — starvation, illness, hysteria, or another fate of your choosing. This mirrors the novel's ending. Frederick, unmoved, clears the cellar and selects a new Victim. Begin again."
       }
-    ],
-    "sort": 1
+    ]
   },
   {
     "id": "haunting-of-hill-house",
     "title": "The Haunting of Hill House",
     "source": "The Haunting of Hill House",
     "sourceType": "book",
-    "thumbnail": "/images/banners/sims-haunting-hill.png",
+    "thumbnail": "/images/banners/haunted-hill.png",
     "year": 1959,
     "difficulty": "hard",
     "tags": [
@@ -550,8 +546,7 @@
         "title": "The Record",
         "text": "All four Sims survive to Day 28. Dr Montague completes his research notes (finish a book on the Writing skill). The group departs. Hill House is left exactly as it was. Whatever lived there is still living there."
       }
-    ],
-    "sort": 16
+    ]
   },
   {
     "id": "rosemarys-baby",
@@ -674,15 +669,14 @@
         "title": "The Doubt",
         "text": "Rosemary's mood is consistently red through the final trimester. She gives birth, sees the baby, and does nothing. She neither rocks the cradle nor flees. She sits in the room and the scenario simply ends, unresolved — which is the most honest ending of all."
       }
-    ],
-    "sort": 22
+    ]
   },
   {
     "id": "twin-peaks",
     "title": "Twin Peaks",
     "source": "Twin Peaks",
     "sourceType": "tv",
-    "thumbnail": "/images/banners/sims-twin-peaks.png",
+    "thumbnail": "/images/banners/twin-peaks.png",
     "year": 1990,
     "difficulty": "hard",
     "tags": [
@@ -860,8 +854,7 @@
         "title": "The Mystery Remains",
         "text": "Cooper never enters the Black Lodge. He solves the surface case — Leland is exposed — but the deeper thing is never addressed. He is reassigned. He drives out of Twin Peaks on a grey morning with excellent coffee and an incomplete tape. The red room stays locked. Laura's photo stays at the water's edge. Whatever lives in the woods waits for the next person who gets close enough to hear it."
       }
-    ],
-    "sort": 21
+    ]
   },
   {
     "id": "dexter",
@@ -1008,15 +1001,14 @@
         "title": "Deb Knows",
         "text": "Debra enters the kill room during a ritual — either by autonomous pathing or as a deliberate story choice. Her mood drops to critical. Dexter's mask interaction fails — she rejects all 5 positive interactions. She knows. The scenario ends here. What she does with what she knows is the question the series spent eight seasons answering. You decide."
       }
-    ],
-    "sort": 8
+    ]
   },
   {
     "id": "pretty-little-liars",
     "title": "Pretty Little Liars",
     "source": "Pretty Little Liars",
     "sourceType": "film",
-    "thumbnail": "/images/banners/sims-pretty-little-liars.png",
+    "thumbnail": "/images/banners/pretty-little-liars.png",
     "year": 2010,
     "difficulty": "medium",
     "tags": [
@@ -1148,13 +1140,13 @@
         "title": "The Lie That Held",
         "text": "All four Secrets are exposed within the group but never to the outside world. The Liars know everything about each other now and have chosen to stay anyway. They have 3 clues — not enough to name A — but enough to know A is someone who needed them scared more than they needed them caught. The messages stop. Not because A is gone. Because A got what they wanted."
       }
-    ],
-    "sort": 9
+    ]
   },
   {
     "id": "buffy-the-vampire-slayer",
     "title": "Buffy the Vampire Slayer",
     "source": "Buffy the Vampire Slayer",
+    "thumbnail": "/images/banners/buffy.png",
     "sourceType": "film",
     "year": 1997,
     "difficulty": "medium",
@@ -1310,14 +1302,14 @@
         "title": "The Chosen One Falls",
         "text": "Buffy enters the Hellmouth but Willow has not reached level 7 and Giles has fewer than 5 Watcher points. The encounter cannot be completed. Buffy is removed from the lot. The Gang stands outside the sealed basement. In every generation there is a Chosen One. She alone will face the vampires and the forces of darkness. She alone. Until the next one."
       }
-    ],
-    "sort": 10
+    ]
   },
   {
     "id": "sabrina-the-teenage-witch",
     "title": "Sabrina the Teenage Witch",
     "source": "Sabrina the Teenage Witch",
-    "sourceType": "film",
+    "thumbnail": "/images/banners/sabrina.png",
+    "sourceType": "tv",
     "year": 1996,
     "difficulty": "easy",
     "tags": [
@@ -1458,13 +1450,13 @@
         "title": "The Other Realm Calls",
         "text": "Sabrina reaches Mischief level 5 but fails the Witch's License test three times. The Council elder informs her she must spend one week in the Other Realm for intensive training — represented by removing Sabrina from the lot for 7 days. Harvey waits. Libby fills the social vacuum immediately. When Sabrina returns she is more powerful and has missed something she cannot get back. The license test is rescheduled. She passes on the first attempt."
       }
-    ],
-    "sort": 11
+    ]
   },
   {
     "id": "the-others",
     "title": "The Others",
     "source": "The Others",
+    "thumbnail": "/images/banners/others.png",
     "sourceType": "film",
     "year": 2001,
     "difficulty": "medium",
@@ -1596,14 +1588,14 @@
         "title": "The Intruders",
         "text": "An NPC successfully enters the lot and encounters Grace. Grace's erratic trait triggers — she attacks or drives them off. The NPC calls for help. Officials arrive. The scenario ends with outsiders inside Manderley — and Grace, finally, having to explain herself."
       }
-    ],
-    "sort": 12
+    ]
   },
   {
     "id": "hereditary",
     "title": "Hereditary",
     "source": "Hereditary",
     "sourceType": "film",
+    "thumbnail": "/images/banners/hereditary.png",
     "year": 2018,
     "difficulty": "hard",
     "tags": [
@@ -1722,14 +1714,14 @@
         "title": "The Miniature",
         "text": "Annie completes all three miniatures but Steve remains in the household with green mood to the end. The ritual is never completed. The scenario ends with the family fractured but present — living inside a house that is already, in every way that matters, a doll's house."
       }
-    ],
-    "sort": 13
+    ]
   },
   {
     "id": "midsommar",
     "title": "Midsommar",
     "source": "Midsommar",
     "sourceType": "film",
+    "thumbnail": "/images/banners/midsommar.png",
     "year": 2019,
     "difficulty": "medium",
     "tags": [
@@ -1861,13 +1853,13 @@
         "title": "The Thesis",
         "text": "Josh completes his research notes before being removed and hides them off-lot. He survives to Day 28 and leaves with the notes. The commune does not pursue him. The thesis is published the following year. It wins an award. No one who reads it believes it."
       }
-    ],
-    "sort": 14
+    ]
   },
   {
     "id": "crimson-peak",
     "title": "Crimson Peak",
     "source": "Crimson Peak",
+    "thumbnail": "/images/banners/crimson-peak.png",
     "sourceType": "film",
     "year": 2015,
     "difficulty": "medium",
@@ -1980,8 +1972,7 @@
         "title": "The Tea",
         "text": "Edith's Energy and Health needs reach critical before Day 21 and she never discovers the basement. She deteriorates in the upper floors while Lucille attends to her with perfect, terrible care. Thomas watches from the doorway. Lucille begins corresponding with a new prospect. Begin again."
       }
-    ],
-    "sort": 15
+    ]
   },
   {
     "id": "audition",
@@ -2099,8 +2090,7 @@
         "title": "The Audition Was Always Real",
         "text": "Shigeharu reaches Soulmate status with Asami before Day 14 and Asami's hidden traits never activate. The scenario ends in Phase One — a quiet, almost convincing domestic happiness. The sack in her apartment is never explained. Shigehiko likes her. Everything is fine. Do not look in the sack."
       }
-    ],
-    "sort": 5
+    ]
   },
   {
     "id": "halloween",
@@ -2108,7 +2098,7 @@
     "source": "Halloween",
     "sourceType": "film",
     "year": 1978,
-    "thumbnail": "/images/banners/sims-halloween.png",
+    "thumbnail": "/images/banners/hallowee-sims.png",
     "difficulty": "medium",
     "tags": [
       "slasher",
@@ -2255,13 +2245,13 @@
         "title": "Haddonfield",
         "text": "Either Tommy or Lindsey is removed from the household before dawn. Laurie's failure condition triggers. The scenario ends immediately. Dr Loomis arrives to an empty house. He has always known this was how it would end."
       }
-    ],
-    "sort": 17
+    ]
   },
   {
     "id": "blair-witch",
     "title": "The Blair Witch Project",
     "source": "The Blair Witch Project",
+    "thumbnail": "/images/banners/blair-witch.png",
     "sourceType": "film",
     "year": 1999,
     "difficulty": "hard",
@@ -2372,8 +2362,7 @@
         "title": "The Map",
         "text": "If Mike's and Heather's moods are both green on Day 4 — they have held together better than expected — Josh's disappearance is not enough to break them. They find the cabin on Day 5 and choose not to enter. They sit outside it until dawn. Nothing happens. They walk out of the forest on Day 6 using instinct and luck. Nobody believes them. They barely believe themselves."
       }
-    ],
-    "sort": 18
+    ]
   },
   {
     "id": "friday-the-13th",
@@ -2514,8 +2503,7 @@
         "title": "No Survivors",
         "text": "Alice is removed from the household before dawn. The killer is alone on the lot at sunrise. The scenario ends. The camp is silent. The water is still. Help arrives to find the welcome sign and eight empty cabins."
       }
-    ],
-    "sort": 2
+    ]
   },
   {
     "id": "the-ring",
@@ -2630,8 +2618,7 @@
         "title": "Seven Days",
         "text": "Rachel fails to complete 7 investigative actions before Day 7. The countdown reaches zero. The apartment lot goes dark. Aidan is alone in the morning. The tape is still in the locked room. Someone will find it."
       }
-    ],
-    "sort": 3
+    ]
   },
   {
     "id": "stepford-wives",
@@ -2769,8 +2756,7 @@
         "title": "Too Late",
         "text": "Joanna collects fewer than 3 clues before Bobbie's replacement. She has no ally, insufficient evidence, and Walter's relationship score has reached Acquaintance. She does not attempt to leave. She stays in the house and photographs the garden and the kitchen and the children and nothing with a sharp edge in it. The photos are beautiful. Diz tells her so on his next visit. She thanks him. She means it."
       }
-    ],
-    "sort": 7
+    ]
   },
   {
     "id": "little-shop-of-horrors",
@@ -2907,78 +2893,134 @@
         "title": "Downtown",
         "text": "Seymour complies with every demand including the last. Audrey is removed from the household. The plant reaches a size that cannot be represented by any available object — place it in the centre of the lot and surround it with debug objects representing rubble. Mushnick is somewhere underneath. Seymour stands in what used to be the shop. The plant says thank you. It says it could not have done this without him. It says there is a whole world out there. It asks if he is ready. Seymour has stopped being able to say no to it. He has been unable to say no to it since the first drop of blood. This was always where they were going."
       }
-    ],
-    "sort": 20
+    ]
   },
   {
-  "id": "rebecca-cinderella",
-  "title": "Rebecca — Rags to Riches",
-  "source": "Rebecca",
-  "sourceType": "book",
-  "thumbnail": "/images/banners/rebecca-riches.png",
-  "year": 1938,
-  "difficulty": "easy",
-  "tags": ["gothic", "romance", "rags-to-riches", "class", "identity", "cinderella"],
-  "description": "Before she became the second Mrs de Winter, she was nobody in particular — a lady's companion, paid to be useful and unobtrusive, trailing behind her employer across the hotels of Monte Carlo with a permanent expression of grateful invisibility. Then Maxim de Winter sat down at her table during a rainstorm and looked at her as though she were someone worth looking at. This is the other story. The one that happens before Manderley. Based on the novel by Daphne du Maurier.",
-  "setup": [
-    "Use two lots in sequence. Phase One takes place on a hotel lot — Tartosa is ideal, or a large furnished Henford-on-Bagley build dressed as a grand European hotel. It must have a dining room, a terrace, a garden, and at least one suite locked to the protagonist. Phase Two begins when the protagonist leaves the hotel lot and moves to Manderley — use the same Manderley build from the original Rebecca scenario if you have it, or build a large manor with a sealed wing.",
-    "The Companion is a young adult — the protagonist, unnamed as in the novel. She is not poor exactly but she is not anything exactly. She has a small wardrobe, no household funds of her own, and a talent for going unnoticed that she has always mistaken for a personality. Suggested traits: Bookworm, Romantic, Loner, Creative, Gloomy. She begins with Charisma level 1 and no social connections on the lot.",
-    "Mrs Van Hopper is a middle-aged adult — the Companion's employer, loud, vulgar, unexpectedly well-connected, and entirely unaware that the Companion is a person. Suggested traits: Snob, Outgoing, Mean, Materialist, Oblivious (use Cheerful). She must be obeyed. She pays the bills. She is the before.",
-    "Maxim de Winter is a middle-aged adult — wealthy, widowed, handsome in the manner of someone who stopped caring whether they were handsome. Suggested traits: Romantic, Gloomy, Snob, Loner, Neat. He finds Mrs Van Hopper exhausting and the Companion interesting, in that order.",
-    "The hotel must have at least 4 NPCs representing other guests — wealthy, well-dressed, the kind of people who look through the Companion without meaning to.",
-    "The Companion begins Phase One with a strict set of material restrictions: no expensive clothing, no initiating conversations with guests above her station, no dining alone. She may only do these things once she has earned them through her relationship with Maxim.",
-    "A single luxury item — a piece of jewellery, a silk scarf, an expensive book — must be placed in the hotel's locked suite. The Companion may not own or wear it until Phase Two begins.",
-    "Phase Two begins when the Companion and Maxim reach Soulmate status and she moves to the Manderley lot. Her household funds increase to match Maxim's the moment she arrives. Her wardrobe must be entirely replaced within the first 3 days of Phase Two."
-  ],
-  "householdMembers": [
-    { "name": "The Companion", "role": "The Protagonist", "traits": ["Bookworm", "Romantic", "Loner", "Creative", "Gloomy"] },
-    { "name": "Mrs Van Hopper", "role": "The Employer", "traits": ["Snob", "Outgoing", "Mean", "Materialist", "Cheerful"] },
-    { "name": "Maxim de Winter", "role": "The Widower", "traits": ["Romantic", "Gloomy", "Snob", "Loner", "Neat"] }
-  ],
-  "goals": [
-    "Phase One: the Companion must reach Romantic Interest status with Maxim before Mrs Van Hopper announces her departure from the hotel — Day 14.",
-    "Phase One: the Companion must increase her Charisma skill from level 1 to level 4 before Phase Two begins.",
-    "Phase One: the Companion must perform one act of independent selfhood per day — a creative task, a solo walk on the terrace, a meal eaten alone by choice rather than invisibility.",
-    "Phase Two: the Companion must reach Soulmate status with Maxim within 7 days of arriving at Manderley.",
-    "Phase Two: the Companion must redecorate at least one room of Manderley — claiming it as her own — before the scenario ends."
-  ],
-  "rules": [
-    "Every day in Phase One: Mrs Van Hopper issues one instruction — represented by a directed interaction that the Companion must complete before pursuing any personal goals. Fetch something, arrange something, cancel something. The instruction comes first.",
-    "Every day in Phase One: the Companion may not initiate conversation with Maxim unless he has already initiated conversation with her that day. She is learning to be noticed rather than useful.",
-    "Every day in Phase One: the Companion must eat at least one meal alone — not with Mrs Van Hopper, not with Maxim. This hour belongs to her.",
-    "Every day in Phase One: the Companion practices Charisma — reading, observing other guests, rehearsing conversation. She must gain at least one Charisma skill point per 3 in-game days.",
-    "Once per week in Phase One: Mrs Van Hopper hosts a social gathering in her suite. The Companion must attend, serve, and be invisible. If Maxim attends: the Companion may exchange one meaningful interaction with him while Mrs Van Hopper is occupied. One. It must count.",
-    "If Mrs Van Hopper catches the Companion in an unsanctioned conversation with Maxim: she performs a humiliation interaction — a public mean or dismissive action in front of at least one other NPC. The Companion may not react. She must perform a positive interaction with Mrs Van Hopper within the hour.",
-    "Maxim must initiate all romantic interactions in Phase One. The Companion may not lean forward until he does. This is partly social conditioning and partly that she cannot quite believe he means it.",
-    "On Day 14: Mrs Van Hopper announces her departure. This is the pivot. If the Companion and Maxim have reached Romantic Interest: Maxim proposes. The Companion accepts. Mrs Van Hopper is told, not consulted. Her reaction is one final humiliation interaction that the Companion absorbs without flinching, because she is leaving and Mrs Van Hopper is not.",
-    "If Romantic Interest has not been reached by Day 14: the Companion departs with Mrs Van Hopper. The scenario resets to Day 1. She will come back to Monte Carlo eventually. She always comes back to the places where things almost happened.",
-    "On arrival at Manderley in Phase Two: the Companion's wardrobe must be replaced entirely within 3 days. Remove all budget clothing items. She dresses like someone who belongs here now. She is still learning to feel like it.",
-    "Every day in Phase Two: one room of Manderley may be redecorated by the Companion. She must complete at least one redecoration before the scenario ends. The rooms she changes are the rooms she owns.",
-    "Mrs Danvers is an optional addition to Phase Two — if you are running this scenario connected to the original Rebecca scenario, add her to the Manderley household. Her daily sabotage rules apply immediately. If you are running this as a standalone: Manderley is simply large and cold and full of someone else's things."
-  ],
-  "storyBeats": [
-    { "step": 1, "text": "Monte Carlo. The hotel terrace. Mrs Van Hopper holds court and the Companion sits slightly behind her with the particular posture of someone who has learned to take up as little space as possible. Maxim de Winter is at the next table. He is looking at the sea. Then he is looking at her." },
-    { "step": 2, "text": "He asks her name. She gives it. He does not treat it as a small thing, which is more than most people have done. Mrs Van Hopper watches from across the dining room with the expression of a woman doing arithmetic." },
-    { "step": 3, "text": "The afternoons. He takes her driving along the coast while Mrs Van Hopper rests. She talks more than she intended to. He listens in a way she is not accustomed to. She is becoming someone who can be listened to. This is terrifying and also wonderful." },
-    { "step": 4, "text": "Mrs Van Hopper notices. The humiliation is performed in front of four other guests and is very thorough. The Companion absorbs it. She has had practice. Maxim is not present but he hears about it and his expression does something she has not seen it do before." },
-    { "step": 5, "text": "Day 14. Mrs Van Hopper's luggage is in the hall. The Companion's small suitcase is beside it. Maxim appears in the lobby. He asks her not to go. He says it more plainly than she expected from a man like him. She says yes before he has entirely finished asking." },
-    { "step": 6, "text": "She tells Mrs Van Hopper. Mrs Van Hopper's final humiliation attempt is her best work. The Companion stands through it with her chin level and her hands still. She is going to Manderley. She is going to be Mrs de Winter. Mrs Van Hopper's opinion of this is, for the first time, entirely beside the point." },
-    { "step": 7, "text": "Manderley. The gates. The drive through the rhododendrons. The house enormous at the end of it, full of someone else's history. She steps out of the car and looks up at it and thinks: I live here now. She is not sure she believes it yet. She will learn to." }
-  ],
-  "endings": [
-    {
-      "title": "The Second Mrs de Winter",
-      "text": "The Companion reaches Soulmate status with Maxim within 7 days of arriving at Manderley. Her wardrobe has been replaced. At least one room has been redecorated — a small corner of the house that is hers and nobody else's. She stands in it on a quiet afternoon and the house feels, for the first time, like it might eventually feel like home. She is not the first Mrs de Winter. She is the second. She intends to be entirely different."
-    },
-    {
-      "title": "Monte Carlo",
-      "text": "The Companion does not reach Romantic Interest by Day 14. She leaves with Mrs Van Hopper. She sits in the back of the car as the hotel disappears behind them and looks out of the window at the coast road they used to drive along. She has a name and a small suitcase and a Charisma skill that is higher than it was. She will meet someone else eventually. She will be someone's companion until she isn't. The sea is very blue and Mrs Van Hopper is already talking about New York."
-    },
-    {
-      "title": "Becoming",
-      "text": "The Companion arrives at Manderley and does not immediately feel like she belongs — her Charisma is below level 4 and the household staff watch her with the particular attention of people comparing her to something. She redecorates anyway. She changes three rooms in the first week. She dresses for dinner every evening even when it is only the two of them. She reaches Soulmate status slowly, the way people do when they are both a little afraid of it. By the end she has not become someone new. She has become someone more entirely herself. This turns out to be enough."
-    }
-  ],
-  "sort": 19
-}
+    "id": "rebecca-cinderella",
+    "title": "Rebecca — Rags to Riches",
+    "source": "Rebecca",
+    "sourceType": "book",
+    "thumbnail": "/images/banners/rebecca-cinderella.png",
+    "year": 1938,
+    "difficulty": "easy",
+    "tags": [
+      "gothic",
+      "romance",
+      "rags-to-riches",
+      "class",
+      "identity",
+      "cinderella"
+    ],
+    "description": "Before she became the second Mrs de Winter, she was nobody in particular — a lady's companion, paid to be useful and unobtrusive, trailing behind her employer across the hotels of Monte Carlo with a permanent expression of grateful invisibility. Then Maxim de Winter sat down at her table during a rainstorm and looked at her as though she were someone worth looking at. This is the other story. The one that happens before Manderley. Based on the novel by Daphne du Maurier.",
+    "setup": [
+      "Use two lots in sequence. Phase One takes place on a hotel lot — Tartosa is ideal, or a large furnished Henford-on-Bagley build dressed as a grand European hotel. It must have a dining room, a terrace, a garden, and at least one suite locked to the protagonist. Phase Two begins when the protagonist leaves the hotel lot and moves to Manderley — use the same Manderley build from the original Rebecca scenario if you have it, or build a large manor with a sealed wing.",
+      "The Companion is a young adult — the protagonist, unnamed as in the novel. She is not poor exactly but she is not anything exactly. She has a small wardrobe, no household funds of her own, and a talent for going unnoticed that she has always mistaken for a personality. Suggested traits: Bookworm, Romantic, Loner, Creative, Gloomy. She begins with Charisma level 1 and no social connections on the lot.",
+      "Mrs Van Hopper is a middle-aged adult — the Companion's employer, loud, vulgar, unexpectedly well-connected, and entirely unaware that the Companion is a person. Suggested traits: Snob, Outgoing, Mean, Materialist, Oblivious (use Cheerful). She must be obeyed. She pays the bills. She is the before.",
+      "Maxim de Winter is a middle-aged adult — wealthy, widowed, handsome in the manner of someone who stopped caring whether they were handsome. Suggested traits: Romantic, Gloomy, Snob, Loner, Neat. He finds Mrs Van Hopper exhausting and the Companion interesting, in that order.",
+      "The hotel must have at least 4 NPCs representing other guests — wealthy, well-dressed, the kind of people who look through the Companion without meaning to.",
+      "The Companion begins Phase One with a strict set of material restrictions: no expensive clothing, no initiating conversations with guests above her station, no dining alone. She may only do these things once she has earned them through her relationship with Maxim.",
+      "A single luxury item — a piece of jewellery, a silk scarf, an expensive book — must be placed in the hotel's locked suite. The Companion may not own or wear it until Phase Two begins.",
+      "Phase Two begins when the Companion and Maxim reach Soulmate status and she moves to the Manderley lot. Her household funds increase to match Maxim's the moment she arrives. Her wardrobe must be entirely replaced within the first 3 days of Phase Two."
+    ],
+    "householdMembers": [
+      {
+        "name": "The Companion",
+        "role": "The Protagonist",
+        "traits": [
+          "Bookworm",
+          "Romantic",
+          "Loner",
+          "Creative",
+          "Gloomy"
+        ]
+      },
+      {
+        "name": "Mrs Van Hopper",
+        "role": "The Employer",
+        "traits": [
+          "Snob",
+          "Outgoing",
+          "Mean",
+          "Materialist",
+          "Cheerful"
+        ]
+      },
+      {
+        "name": "Maxim de Winter",
+        "role": "The Widower",
+        "traits": [
+          "Romantic",
+          "Gloomy",
+          "Snob",
+          "Loner",
+          "Neat"
+        ]
+      }
+    ],
+    "goals": [
+      "Phase One: the Companion must reach Romantic Interest status with Maxim before Mrs Van Hopper announces her departure from the hotel — Day 14.",
+      "Phase One: the Companion must increase her Charisma skill from level 1 to level 4 before Phase Two begins.",
+      "Phase One: the Companion must perform one act of independent selfhood per day — a creative task, a solo walk on the terrace, a meal eaten alone by choice rather than invisibility.",
+      "Phase Two: the Companion must reach Soulmate status with Maxim within 7 days of arriving at Manderley.",
+      "Phase Two: the Companion must redecorate at least one room of Manderley — claiming it as her own — before the scenario ends."
+    ],
+    "rules": [
+      "Every day in Phase One: Mrs Van Hopper issues one instruction — represented by a directed interaction that the Companion must complete before pursuing any personal goals. Fetch something, arrange something, cancel something. The instruction comes first.",
+      "Every day in Phase One: the Companion may not initiate conversation with Maxim unless he has already initiated conversation with her that day. She is learning to be noticed rather than useful.",
+      "Every day in Phase One: the Companion must eat at least one meal alone — not with Mrs Van Hopper, not with Maxim. This hour belongs to her.",
+      "Every day in Phase One: the Companion practices Charisma — reading, observing other guests, rehearsing conversation. She must gain at least one Charisma skill point per 3 in-game days.",
+      "Once per week in Phase One: Mrs Van Hopper hosts a social gathering in her suite. The Companion must attend, serve, and be invisible. If Maxim attends: the Companion may exchange one meaningful interaction with him while Mrs Van Hopper is occupied. One. It must count.",
+      "If Mrs Van Hopper catches the Companion in an unsanctioned conversation with Maxim: she performs a humiliation interaction — a public mean or dismissive action in front of at least one other NPC. The Companion may not react. She must perform a positive interaction with Mrs Van Hopper within the hour.",
+      "Maxim must initiate all romantic interactions in Phase One. The Companion may not lean forward until he does. This is partly social conditioning and partly that she cannot quite believe he means it.",
+      "On Day 14: Mrs Van Hopper announces her departure. This is the pivot. If the Companion and Maxim have reached Romantic Interest: Maxim proposes. The Companion accepts. Mrs Van Hopper is told, not consulted. Her reaction is one final humiliation interaction that the Companion absorbs without flinching, because she is leaving and Mrs Van Hopper is not.",
+      "If Romantic Interest has not been reached by Day 14: the Companion departs with Mrs Van Hopper. The scenario resets to Day 1. She will come back to Monte Carlo eventually. She always comes back to the places where things almost happened.",
+      "On arrival at Manderley in Phase Two: the Companion's wardrobe must be replaced entirely within 3 days. Remove all budget clothing items. She dresses like someone who belongs here now. She is still learning to feel like it.",
+      "Every day in Phase Two: one room of Manderley may be redecorated by the Companion. She must complete at least one redecoration before the scenario ends. The rooms she changes are the rooms she owns.",
+      "Mrs Danvers is an optional addition to Phase Two — if you are running this scenario connected to the original Rebecca scenario, add her to the Manderley household. Her daily sabotage rules apply immediately. If you are running this as a standalone: Manderley is simply large and cold and full of someone else's things."
+    ],
+    "storyBeats": [
+      {
+        "step": 1,
+        "text": "Monte Carlo. The hotel terrace. Mrs Van Hopper holds court and the Companion sits slightly behind her with the particular posture of someone who has learned to take up as little space as possible. Maxim de Winter is at the next table. He is looking at the sea. Then he is looking at her."
+      },
+      {
+        "step": 2,
+        "text": "He asks her name. She gives it. He does not treat it as a small thing, which is more than most people have done. Mrs Van Hopper watches from across the dining room with the expression of a woman doing arithmetic."
+      },
+      {
+        "step": 3,
+        "text": "The afternoons. He takes her driving along the coast while Mrs Van Hopper rests. She talks more than she intended to. He listens in a way she is not accustomed to. She is becoming someone who can be listened to. This is terrifying and also wonderful."
+      },
+      {
+        "step": 4,
+        "text": "Mrs Van Hopper notices. The humiliation is performed in front of four other guests and is very thorough. The Companion absorbs it. She has had practice. Maxim is not present but he hears about it and his expression does something she has not seen it do before."
+      },
+      {
+        "step": 5,
+        "text": "Day 14. Mrs Van Hopper's luggage is in the hall. The Companion's small suitcase is beside it. Maxim appears in the lobby. He asks her not to go. He says it more plainly than she expected from a man like him. She says yes before he has entirely finished asking."
+      },
+      {
+        "step": 6,
+        "text": "She tells Mrs Van Hopper. Mrs Van Hopper's final humiliation attempt is her best work. The Companion stands through it with her chin level and her hands still. She is going to Manderley. She is going to be Mrs de Winter. Mrs Van Hopper's opinion of this is, for the first time, entirely beside the point."
+      },
+      {
+        "step": 7,
+        "text": "Manderley. The gates. The drive through the rhododendrons. The house enormous at the end of it, full of someone else's history. She steps out of the car and looks up at it and thinks: I live here now. She is not sure she believes it yet. She will learn to."
+      }
+    ],
+    "endings": [
+      {
+        "title": "The Second Mrs de Winter",
+        "text": "The Companion reaches Soulmate status with Maxim within 7 days of arriving at Manderley. Her wardrobe has been replaced. At least one room has been redecorated — a small corner of the house that is hers and nobody else's. She stands in it on a quiet afternoon and the house feels, for the first time, like it might eventually feel like home. She is not the first Mrs de Winter. She is the second. She intends to be entirely different."
+      },
+      {
+        "title": "Monte Carlo",
+        "text": "The Companion does not reach Romantic Interest by Day 14. She leaves with Mrs Van Hopper. She sits in the back of the car as the hotel disappears behind them and looks out of the window at the coast road they used to drive along. She has a name and a small suitcase and a Charisma skill that is higher than it was. She will meet someone else eventually. She will be someone's companion until she isn't. The sea is very blue and Mrs Van Hopper is already talking about New York."
+      },
+      {
+        "title": "Becoming",
+        "text": "The Companion arrives at Manderley and does not immediately feel like she belongs — her Charisma is below level 4 and the household staff watch her with the particular attention of people comparing her to something. She redecorates anyway. She changes three rooms in the first week. She dresses for dinner every evening even when it is only the two of them. She reaches Soulmate status slowly, the way people do when they are both a little afraid of it. By the end she has not become someone new. She has become someone more entirely herself. This turns out to be enough."
+      }
+    ]
+  }
 ]

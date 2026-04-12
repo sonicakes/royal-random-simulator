@@ -30,13 +30,13 @@ export default function NavBar() {
     <nav className="sticky top-0 z-100 bg-bg px-4 sm:px-6 font-display">
       <div className="max-w-6xl mx-auto h-14 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-          <span className="text-white tracking-wider text-xl" style={{ fontFamily: "'Courier Prime', monospace" }}>
+          <span className="text-white tracking-widest text-2xl uppercase" style={{ fontFamily: 'var(--font-display)' }}>
             Royal Si<GemM />ulator
           </span>
         </Link>
         <Link
           to="/browse"
-          className="tracking-wide text-white/80 hover:text-[#B87A0A] transition-colors"
+          className="tracking-widest text-white/80 font-sub uppercase text-sm font-bold hover:text-[#B87A0A] transition-colors"
         >
           <span className="md:hidden">Browse</span>
           <span className="hidden md:inline">Browse Scenarios</span>

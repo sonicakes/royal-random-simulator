@@ -4,9 +4,9 @@ import type { Scenario } from '../types/scenario'
 import { pickPlaceholder } from '../utils/placeholder'
 
 const DIFFICULTY_COLOUR: Record<Scenario['difficulty'], string> = {
-  easy: '#D4920A',
+  easy: '#2EAD3F',
   medium: '#7C3AED',
-  hard: '#B81515',
+  hard: '#15B8B0',
 }
 
 function tagClass(sourceType: Scenario['sourceType']) {
@@ -30,29 +30,19 @@ function SourceIcon({ sourceType }: { sourceType: Scenario['sourceType'] }) {
 export default function ScenarioCard({ scenario, index = 0 }: ScenarioCardProps) {
   const diffColor = DIFFICULTY_COLOUR[scenario.difficulty]
   const thumb = scenario.thumbnail || pickPlaceholder(scenario.id)
-  const isOffset = index % 3 === 2
-
   const slashLeft = index % 2 === 0
   const clipPath = slashLeft
     ? 'polygon(0 20px, 100% 0, 100% 100%, 0 100%)'
     : 'polygon(0 0, 100% 20px, 100% 100%, 0 100%)'
 
   const wrapperStyle = {
-    boxShadow: '3px 6px 16px rgba(212,146,10,0.18), -3px 6px 16px rgba(212,146,10,0.10)',
     animation: 'fadeIn 1.5s ease-out',
   }
 
   const sharedStyle = {
     background: 'rgb(12, 10, 8)',
-    outline: '1px solid rgba(26,56,72,0.5)',
     clipPath,
-  }
-
-  const handleEnter = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    ;(e.currentTarget as HTMLElement).style.outlineColor = 'rgba(212,146,10,0.45)'
-  }
-  const handleLeave = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    ;(e.currentTarget as HTMLElement).style.outlineColor = 'rgba(26,56,72,0.5)'
+    borderBottom: '2px solid rgba(184,122,10,0.15)',
   }
 
   const tags = (
@@ -65,51 +55,15 @@ export default function ScenarioCard({ scenario, index = 0 }: ScenarioCardProps)
     </div>
   )
 
-  if (isOffset) {
-    return (
-      <div style={wrapperStyle}>
-      <Link
-        to={`/scenarios/${scenario.id}`}
-        className="group flex flex-col overflow-hidden transition-all duration-200 z-90"
-        style={sharedStyle}
-        onMouseEnter={handleEnter}
-        onMouseLeave={handleLeave}
-      >
-        <div className="relative">
-          <img src={thumb} alt={scenario.title} className="w-full h-72 object-cover" />
-          <div className="absolute bottom-0 left-0 right-0 p-4" style={{ background: 'rgba(0,0,0,0.72)' }}>
-            <h3 className="text-lg font-display text-white group-hover:text-sims-green transition-colors">
-              {scenario.title}
-            </h3>
-            <p className="text-sm text-white/65 flex gap-2 items-center mt-0.5">
-              <span className="inline-flex items-center gap-1.5">
-                <SourceIcon sourceType={scenario.sourceType} />
-                {scenario.year}
-              </span>
-              {' · '}
-              <span className="font-semibold" style={{ color: diffColor }}>{scenario.difficulty}</span>
-            </p>
-          </div>
-        </div>
-        <div className="p-4 flex flex-col gap-1 flex-1">
-          <p className="text-sm text-white/75 leading-relaxed line-clamp-2">{scenario.description}</p>
-          {tags}
-        </div>
-      </Link>
-      </div>
-    )
-  }
-
   return (
+    <div style={{ paddingTop: '1px', overflow: 'hidden' }}>
     <div style={wrapperStyle}>
     <Link
       to={`/scenarios/${scenario.id}`}
-      className="group flex flex-col overflow-hidden transition-all duration-200 hover:rotate-[2deg] z-90"
+      className="group flex flex-col overflow-hidden transition-all duration-200 hover:rotate-2 z-90"
       style={sharedStyle}
-      onMouseEnter={handleEnter}
-      onMouseLeave={handleLeave}
     >
-      <img src={thumb} alt={scenario.title} className="w-full h-60 object-cover" />
+      <img src={thumb} alt={scenario.title} className="w-full h-90 object-cover" />
       <div className="p-4 flex flex-col gap-1 flex-1">
         <h3 className="text-lg font-display group-hover:text-sims-green transition-colors">{scenario.title}</h3>
         <p className="text-sm text-white/65 flex gap-2 items-center">
@@ -124,6 +78,7 @@ export default function ScenarioCard({ scenario, index = 0 }: ScenarioCardProps)
         {tags}
       </div>
     </Link>
+    </div>
     </div>
   )
 }

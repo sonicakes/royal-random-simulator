@@ -21,7 +21,8 @@ export default function BrowsePage() {
   const sentinelRef = useRef<HTMLDivElement>(null)
 
   const filtered = useMemo(() => {
-    let list = [...allScenarios].sort((a, b) => a.sort - b.sort)
+    const diffOrder = { easy: 0, medium: 1, hard: 2 }
+    let list = [...allScenarios].sort((a, b) => diffOrder[a.difficulty] - diffOrder[b.difficulty])
 
     if (search.trim()) {
       const q = search.toLowerCase()
@@ -79,7 +80,7 @@ export default function BrowsePage() {
     <div className="w-full">
 
       {/* Full-width diagonal filter strip */}
-      <div style={{ background: '#3D0E1A' }}>
+      <div style={{ background: '#3D0E1A', clipPath: 'polygon(0 0, 100% 0, 100% calc(100% - 60px), 0 100%)', paddingBottom: '60px' }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-8 pb-6">
           <h1 className="text-2xl font-extrabold text-ochre mb-6">Browse Scenarios</h1>
 
@@ -98,7 +99,7 @@ export default function BrowsePage() {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               className="w-full z-100 border border-white/10 pl-9 pr-4 py-2 text-base text-white placeholder-white/50 focus:outline-none focus:border-sims-green/50"
-              style={{ background: 'rgba(184, 122, 10, 0.10)' }}
+              style={{ background: 'rgba(184, 122, 10, 0.10)', boxShadow: '0 2px 8px rgba(255,255,255,0.08)', fontFamily: 'var(--font-sub)', transform: 'skewX(-8deg)' }}
             />
           </div>
           <button
@@ -109,7 +110,7 @@ export default function BrowsePage() {
                 ? 'border-[#B87A0A] text-[#B87A0A] bg-[#B87A0A]/10'
                 : 'border-[#B87A0A]/50 text-[#B87A0A] bg-transparent hover:border-[#B87A0A]'
             }`}
-            style={{ fontFamily: 'var(--font-sub)', fontWeight: 700 }}
+            style={{ fontFamily: 'var(--font-sub)', fontWeight: 700, transform: 'skewX(-8deg)', boxShadow: '0 2px 8px rgba(255,255,255,0.08)' }}
           >
             <PiSlidersHorizontal size={16} />
             <span className="text-sm">Filters</span>
@@ -135,6 +136,7 @@ export default function BrowsePage() {
                       ? 'bg-sims-green text-bg border-sims-green'
                       : 'bg-transparent text-white/65 border-white/25 hover:border-white/50'
                   }`}
+                  style={{ transform: 'skewX(-8deg)', boxShadow: '0 2px 8px rgba(255,255,255,0.08)' }}
                 >
                   {v === 'all' ? 'All types' : v === 'film'
                     ? <span className="flex items-center gap-1.5"><PiFilmSlate size={13} className="text-sims-green" />Film</span>
@@ -155,6 +157,7 @@ export default function BrowsePage() {
                       ? 'bg-sims-green text-bg border-sims-green'
                       : 'bg-transparent text-white/65 border-white/25 hover:border-white/50'
                   }`}
+                  style={{ transform: 'skewX(-8deg)', boxShadow: '0 2px 8px rgba(255,255,255,0.08)' }}
                 >
                   {v === 'all' ? 'All difficulty' : v}
                 </button>
@@ -172,6 +175,7 @@ export default function BrowsePage() {
                       ? 'bg-sims-green/20 text-sims-green border-sims-green/50'
                       : 'bg-transparent text-white/60 border-white/25 hover:border-white/45'
                   }`}
+                  style={{ transform: 'skewX(-8deg)', boxShadow: '0 2px 8px rgba(255,255,255,0.08)' }}
                 >
                   {tag}
                 </button>
@@ -182,14 +186,6 @@ export default function BrowsePage() {
       </div>{/* end controls */}
         </div>{/* end max-w container */}
       </div>{/* end filter strip */}
-
-      {/* Diagonal wedge */}
-      <div style={{
-        height: '60px',
-        background: '#3D0E1A',
-        clipPath: 'polygon(0 0, 100% 0, 0 100%)',
-        marginTop: '-1px',
-      }} />
 
       {/* Results area */}
       <main className="max-w-6xl mx-auto px-4 sm:px-6 py-6 w-full">
@@ -220,7 +216,7 @@ export default function BrowsePage() {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           aria-label="Back to top"
           className="fixed bottom-6 right-6 p-3 cursor-pointer shadow-lg z-[100] transition-opacity hover:opacity-80"
-          style={{ background: '#B87A0A', color: 'rgb(12, 10, 8)', borderRadius: 0 }}
+          style={{ background: '#B87A0A', color: 'rgb(12, 10, 8)', borderRadius: 0, transform: 'skewX(-8deg)', boxShadow: '0 2px 8px rgba(255,255,255,0.08)' }}
         >
           <PiArrowUp size={20} />
         </button>

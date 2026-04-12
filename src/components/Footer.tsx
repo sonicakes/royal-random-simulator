@@ -10,7 +10,7 @@ export default function Footer() {
         GitHub
       </a>
       <span className="mx-2">·</span>
-      <span>Designed, Developed & Deployed by The Film Lady Productions in 2026</span>
+      <span>Designed, Developed & Deployed by <span className="italic">The Film Lady Productions</span> in 2026</span>
     </footer>
   )
 }

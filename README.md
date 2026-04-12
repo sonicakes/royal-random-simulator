@@ -103,7 +103,7 @@ A searchable, filterable grid of all scenarios:
 - **Source type** — toggle between All / Film / Book
 - **Difficulty** — toggle between All / Easy / Medium / Hard
 - **Tags** — every tag across all scenarios rendered as toggleable pills; AND logic (must match all selected tags)
-- **Sort** — default order, year ascending, year descending, or title A–Z
+- **Sort** — always ordered easy → medium → hard
 - **Lazy loading** — 6 cards per batch, loaded via `IntersectionObserver` as you scroll
 
 ### Scenario detail page
@@ -137,7 +137,7 @@ ctx.fillStyle = PALETTE[i % PALETTE.length]
 ctx.fill()
 ```
 
-Labels are drawn by rotating the canvas context to point outward along each segment's midpoint, then drawing right-aligned text near the rim. Titles longer than 12 characters are truncated with `…`.
+Labels are drawn by rotating the canvas context to point outward along each segment's midpoint, then drawing right-aligned text near the rim. Titles are truncated with `…` based on wheel size — 7 chars on small mobile, 10 on mid, 13 on desktop.
 
 On top of the segments: a green outer ring, a small dark center circle, and a fixed triangle pointer at the top.
 
@@ -240,7 +240,7 @@ All scenarios live in `src/data/scenarios.json` as a top-level array:
   "difficulty": "hard",
   "tags": ["isolation", "psychological", "family"],
   "description": "A longer written description in the author's voice.",
-  "thumbnail": "/images/the-shining.jpg",
+  "thumbnail": "/images/banners/shining.png",
   "householdMembers": [
     {
       "name": "Jack Torrance",
@@ -266,7 +266,7 @@ All scenarios live in `src/data/scenarios.json` as a top-level array:
 | `year` | `number` | Release / publication year |
 | `difficulty` | `"easy" \| "medium" \| "hard"` | |
 | `tags` | `string[]` | Freeform lowercase, defined by the author |
-| `thumbnail` | `string` (optional) | Path relative to `/public/images/` |
+| `thumbnail` | `string` (optional) | Path under `/public/images/banners/` |
 | `householdMembers` | `array` | Each has `name`, `role`, `traits` |
 | `storyBeats` | `array` | Each has `step` (number) and `text` (string) |
 
@@ -280,17 +280,15 @@ All scenarios live in `src/data/scenarios.json` as a top-level array:
 |---|---|---|
 | `--bg` | `#080f14` | Page background |
 | `--green-bright` | `#4ade80` | Nav, hover states, gem icon |
-| `--green-btn` | `#1db86a` | Spin button base |
-| `--horror-red` | `#F5B800` | Amber — medium difficulty, UI accent |
+| `--ochre` | `#D4920A` | Primary UI accent — buttons, borders, highlights |
+| `--burgundy` | `#3D0E1A` | Header bands, modal background |
 | `--text-muted` | `rgba(255,255,255,0.35)` | Secondary text |
 
-Difficulty colours: easy `#4ade80` (green) · medium `#F5B800` (amber) · hard `#B81515` (coral).
+Difficulty colours: easy `#2EAD3F` (forest green) · medium `#7C3AED` (purple) · hard `#15B8B0` (teal).
 
-### Wheel & palette
+### Wheel palette
 
-The wheel cycles through an 8-colour complementary palette derived from a botanical reference image — four source colours plus their direct opposites:
-
-![Site palette reference](public/images/easter-egg-sims.png)
+The wheel cycles through an 8-colour complementary palette:
 
 | Colour | Hex | Pair |
 |---|---|---|
@@ -299,6 +297,10 @@ The wheel cycles through an 8-colour complementary palette derived from a botani
 | Amber | `#F5B800` | ↔ Blue `#0047F5` |
 | Lime | `#6BCF3A` | ↔ Purple `#7C3AED` |
 
-The Spin button gradient animates through all 8 colours in wheel order.
+### Typography & buttons
 
-Font: **Quicksand** / **Josefin Sans** (Google Fonts). Border radius: 12px for cards/buttons, 99px for pills/badges.
+- **Lora** (`--font-sans`) — body text
+- **Staatliches** (`--font-display`) — headings, nav logo, wheel labels
+- **Courier Prime** (`--font-sub`) — UI labels, input fields
+
+All styled buttons and inputs use `transform: skewX(-8deg)` for a constructivist parallelogram shape. No border radius on buttons.
