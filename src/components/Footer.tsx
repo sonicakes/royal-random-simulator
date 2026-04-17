@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="mt-auto py-6 px-4 border-t border-[#B87A0A]/20 z-50 text-center text-sm text-white/40" style={{ background: 'rgba(12,10,8,0.97)', boxShadow: '0 -2px 12px rgba(255,255,255,0.04)' }}>
+    <footer className="mt-auto py-6 px-4 border-t border-[#B87A0A]/20 z-50 text-center text-sm text-white/40 bg-bg/[0.97] shadow-[0_-2px_12px_rgba(255,255,255,0.04)]">
       <a
         href="https://github.com/sonicakes/royal-random-simulator"
         target="_blank"

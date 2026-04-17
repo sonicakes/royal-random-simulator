@@ -2896,6 +2896,87 @@
     ]
   },
   {
+  "id": "the-craft",
+  "title": "The Craft",
+  "source": "The Craft",
+  "sourceType": "film",
+  "thumbnail": "/images/banners/craft.png",
+  "year": 1996,
+  "difficulty": "medium",
+  "tags": ["supernatural", "teen", "coven", "friendship", "power", "psychological"],
+  "description": "Sarah Bailey arrives at a new school in Los Angeles and falls in with three outcast girls who practise witchcraft — Nancy, Bonnie, and Rochelle. As the fourth member of their coven, Sarah completes a circle that makes their magic real and potent in ways none of them were prepared for. Power arrives. Then it goes wrong, the way power always goes wrong when the person holding it is seventeen and in pain. Directed by Andrew Fleming.",
+  "setup": [
+    "Use a suburban world with a Catholic school lot — Willow Creek dressed with uniform details and a chapel or assembly room. The school must have a distinct social hierarchy visible in the lot layout — popular students occupy the central areas, the coven forms at the edges.",
+    "A second lot represents the occult shop — a small, cluttered magic supply store run by an older woman named Lirio. This lot contains the only NPC who understands what is happening and will not be surprised by it.",
+    "The coven's primary gathering space is a locked basement or secluded outdoor area — a circle of candles represented by debug objects, four chairs, a altar surface. It unlocks on Day 1 when Sarah joins.",
+    "Sarah Bailey is a young adult — newly arrived, telekinetically gifted before she even knows it, looking for somewhere to belong. Suggested traits: Creative, Loner, Good, Romantic, Erratic. She begins with Mischief skill level 2 representing her raw untrained power.",
+    "Nancy Downs is a young adult — volatile, brilliant, from a chaotic home, the most powerful and the most dangerous. Suggested traits: Hot-Headed, Mean, Creative, Ambitious, Erratic. She begins with Mischief skill level 4. Her household funds are the lowest of the four.",
+    "Bonnie is a young adult — scarred, self-conscious, desperate to be seen as beautiful. Suggested traits: Gloomy, Romantic, Creative, Loner. She begins with Mischief skill level 2. Her goal is entirely personal — she wants to be free of shame.",
+    "Rochelle is a young adult — graceful, targeted by a racist bully, patient and precise in her anger. Suggested traits: Active, Good, Loner, Ambitious. She begins with Mischief skill level 2. Her goal is also personal and specific.",
+    "Chris Hooker is a young adult NPC — handsome, careless, cruel in the specific way of boys who have never faced consequences. Suggested traits: Self-Assured, Romantic, Mean, Lazy. He is the first target of the coven's magic.",
+    "Laura Lizzie is a young adult NPC — Rochelle's bully, specific and relentless. Suggested traits: Mean, Self-Assured, Outgoing, Snob. She is the second target.",
+    "Lirio is an older adult NPC — the occult shop owner, a real witch, the only person who warns Sarah before it is too late. Suggested traits: Genius, Loner, Gloomy, Bookworm.",
+    "Each coven member begins the scenario with one personal wound — a specific thing they want magic to fix. Write these down before the scenario starts: Sarah's wound is belonging, Nancy's is power and escape from poverty, Bonnie's is her physical self-image, Rochelle's is the bully. These wounds drive every magical action taken."
+  ],
+  "householdMembers": [
+    { "name": "Sarah Bailey", "role": "The Fourth", "traits": ["Creative", "Loner", "Good", "Romantic", "Erratic"] },
+    { "name": "Nancy Downs", "role": "The Leader", "traits": ["Hot-Headed", "Mean", "Creative", "Ambitious", "Erratic"] },
+    { "name": "Bonnie", "role": "The Wounded", "traits": ["Gloomy", "Romantic", "Creative", "Loner"] },
+    { "name": "Rochelle", "role": "The Patient", "traits": ["Active", "Good", "Loner", "Ambitious"] }
+  ],
+  "goals": [
+    "The coven must perform four workings — one for each member's personal wound — before Day 21. Each working is represented by a 2-hour ritual in the coven space followed by a visible in-game change for that member.",
+    "Nancy must reach Mischief level 7 — she is invoking Manon and taking everything that is being offered.",
+    "Sarah must reach Good Friends status with all three coven members before Day 14 — and then watch it fracture.",
+    "Sarah must visit Lirio at the occult shop at least twice — once before the power shift and once after.",
+    "The coven must fracture — Nancy and Sarah must reach Enemies status — before the scenario ends."
+  ],
+  "rules": [
+    "Every day: the coven meets at the circle space for at least 1 hour. All four must be present. This is the core rule. The coven functions as a unit or it does not function.",
+    "Every day: each member must perform one action toward her personal wound — Bonnie checks her appearance, Rochelle interacts with Laura, Nancy does something that expresses her anger at her circumstances, Sarah reaches toward connection.",
+    "Every day: track the Power Meter — a manual count starting at 0. It increases by 1 each time a working is completed and by 1 each time Nancy's Mischief skill increases. At Power 6 the balance shifts. At Power 8 Nancy cannot be reasoned with.",
+    "The four workings must be performed in order — Sarah's belonging first, Bonnie's self-image second, Rochelle's justice third, Nancy's power last. Each working uses the 2-hour ritual format and must show a visible result.",
+    "Working 1 — Sarah's belonging: after the ritual, Sarah gains Friend status with one new NPC at the school who previously ignored her. Chris Hooker must be that NPC.",
+    "Working 2 — Bonnie's self-image: after the ritual, remove Bonnie's Gloomy trait and replace it with Self-Assured. She is transformed. She does not handle it gracefully.",
+    "Working 3 — Rochelle's justice: after the ritual, Laura Lizzie must perform one deeply humiliating autonomous action — crying in public, losing a social interaction badly, leaving the lot — representing her hair falling out. Rochelle watches without expression.",
+    "Working 4 — Nancy's power: this working has no ceiling. Nancy invokes Manon directly. Her Mischief skill jumps to 7 immediately. Her Hot-Headed trait activates — she must perform one hostile interaction with every other household member within 24 hours of the working.",
+    "Once Bonnie's trait changes to Self-Assured: she begins spending time away from the coven. She must miss at least one daily meeting per week from this point forward.",
+    "Once Rochelle's working is complete: she becomes quieter. She must reduce her daily interactions with the rest of the coven by half. The working satisfied something. She is not sure she likes what satisfaction feels like.",
+    "Chris Hooker must be dealt with between Working 1 and Working 3. He does something that violates Sarah's trust — represented by a hostile or humiliating interaction directed at her in a public space. This triggers Sarah's first uncontrolled use of magic — her Erratic trait activates and she must perform one retaliatory action before the day ends.",
+    "From Power 6 onward: Nancy must perform one escalating action per day — mean, hostile, or mischievous — toward any non-coven Sim. She is testing what she can do. She is finding out there is no limit.",
+    "Lirio's first visit must occur before Working 4. She warns Sarah — represented by a long conversation interaction that ends with Lirio leaving the lot immediately. Sarah may not follow her.",
+    "Lirio's second visit must occur after Power 6. She tells Sarah what invoking Manon without discipline costs. This visit unlocks Sarah's ability to bind — represented by Sarah reaching Mischief level 5.",
+    "From Power 8 onward: Nancy may not be redirected. Any positive interaction Sarah attempts with her fails automatically. The friendship is over. The coven is over. Only the power remains.",
+    "The binding: Sarah must reach Mischief level 5 and perform a final 2-hour ritual alone — without the other three present — before the scenario ends. This is the climax."
+  ],
+  "storyBeats": [
+    { "step": 1, "text": "Sarah arrives at the new school and immediately notices the three girls who notice her back. Nancy watches her from across the courtyard with an expression that is not quite welcome and not quite threat — something between the two." },
+    { "step": 2, "text": "The circle is complete. Four points, four directions, something that was not quite working before begins to work. Small things at first — a candle lighting without a match, a coin landing on its edge, the feeling that the air in the room has changed quality." },
+    { "step": 3, "text": "The first working. Sarah belongs somewhere for the first time. Chris Hooker smiles at her and she does not yet know what his smile costs." },
+    { "step": 4, "text": "Bonnie looks in the mirror and sees what she has always wanted to see. She turns away from the girl she was with an ease that should feel like relief and feels instead like a door closing." },
+    { "step": 5, "text": "Rochelle watches Laura's hair come out in the shower drain. She expected to feel more. She feels exactly the right amount and is not sure that is better." },
+    { "step": 6, "text": "Chris does what Chris does. Sarah's hands go warm without her deciding anything. The power is not frightening in the moment — that comes later." },
+    { "step": 7, "text": "Nancy invokes Manon at the water's edge and the water does what she tells it to. She is standing in the middle of something that has no edges she can find. She is smiling." },
+    { "step": 8, "text": "The Power Meter hits 6. Nancy comes to school the next morning and the air around her is different. She is not testing anymore. She is certain." },
+    { "step": 9, "text": "Lirio tells Sarah what binding costs and what it is for. Sarah listens in the way you listen when someone is telling you something you already knew and were hoping not to hear confirmed." },
+    { "step": 10, "text": "The circle is broken. Nancy, Bonnie, and Rochelle on one side of something. Sarah on the other. The binding circle drawn alone, the ritual completed alone, the ending faced alone." }
+  ],
+  "endings": [
+    {
+      "title": "The Binding",
+      "text": "Sarah reaches Mischief level 5 and completes the solo binding ritual before the scenario ends. Nancy's power is bound — represent this by removing her Ambitious trait and replacing it with Loner. Bonnie and Rochelle leave quietly, separately, carrying what they asked for and what it cost them. Sarah sits in the coven space alone. The candles are still. The power is still there — hers now, properly, without the coven amplifying it into something none of them could control. She does not feel like she won."
+    },
+    {
+      "title": "Manon Takes Everything",
+      "text": "Sarah does not reach Mischief level 5 before Power 8. The binding ritual cannot be completed. Nancy's power has no ceiling and no direction except outward. Remove Nancy from the household — she is somewhere else now, in a state that is not quite anything she planned. Bonnie and Rochelle are left with what they wished for and nothing else. Sarah leaves the lot alone. The occult shop is closed when she passes it. Lirio is not there."
+    },
+    {
+      "title": "The Coven Holds",
+      "text": "If Sarah reaches Good Friends status with all three members and the Power Meter never exceeds 5 — if the workings are performed carefully and Nancy's Mischief skill is kept at level 5 — the coven does not fracture. This is the rarest ending and the most fragile. Four girls in a circle, power distributed evenly, each of them carrying their own wound and their own healing. It does not last. It does not need to last. It was real while it lasted."
+    }
+  ]
+},
+  {
     "id": "rebecca-cinderella",
     "title": "Rebecca — Rags to Riches",
     "source": "Rebecca",

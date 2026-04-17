@@ -1,7 +1,7 @@
 # Royal Random SIMulator — Claude Code Instructions
 
 ## Project overview
-Royal Random SIMulator is a Sims 4 horror scenario generator. It is a personal web app created with Claude's help, giving players scenario ideas based on horror films, books, and TV shows. Users discover scenarios via a spinning wheel, browse a searchable library, or navigate directly to a scenario. It can be used alongside The Cinefile Blog (https://cinefile-blog.netlify.app/) and The Kino Royale Podcast (https://open.spotify.com/show/5Ri7xJYDE9JDel4iCdl6LA).
+Royal Simulator is a Sims 4 horror scenario generator. It is a personal web app created with Claude's help, giving players scenario ideas based on horror films, books, and TV shows. Users discover scenarios via a spinning wheel, browse a searchable library, or navigate directly to a scenario. It can be used alongside The Cinefile Blog (https://cinefileblog.com/) and The Kino Royale Podcast (https://open.spotify.com/show/5Ri7xJYDE9JDel4iCdl6LA).
 
 There is no backend, no database, no authentication, and no AI integration. All scenario data lives in a single `src/data/scenarios.json` file.
 
@@ -107,22 +107,25 @@ Field notes:
 ## Design system
 
 ### Colours
+All colours are defined as Tailwind v4 `@theme` tokens in `src/index.css`. Token names map directly to utility classes (e.g. `--color-ochre` → `text-ochre`, `bg-ochre`).
+
 ```css
---bg:             #080f14;   /* page background */
---green-bright:   #4ade80;   /* primary Sims green — nav, hover, gem icon */
---ochre:          #D4920A;   /* warm ochre — primary UI accent, buttons, borders */
---burgundy:       #3D0E1A;   /* deep burgundy — header bands, modal bg */
---text-primary:   #ffffff;
---text-muted:     rgba(255,255,255,0.35);
---text-hint:      rgba(255,255,255,0.28);
---border-default: rgba(255,255,255,0.07);
---border-hover:   rgba(74,222,128,0.35);
+--color-bg:           #0C0A08;   /* page background */
+--color-sims-green:   #4ade80;   /* Sims green — gem icon, hover accents */
+--color-ochre:        #D4920A;   /* primary UI accent — labels, icons, headings */
+--color-ochre-btn:    #B87A0A;   /* button background (slightly darker ochre) */
+--color-ochre-hover:  #9A6A08;   /* button hover state */
+--color-band:         #3D0E1A;   /* constructivist diagonal bands, modal bg */
+--color-amber:        #F5B800;   /* amber — wheel palette */
+--color-teal-dark:    #1A3848;   /* dark teal */
+--color-dot-bg:       #050F18;   /* story beat timeline dot background */
 ```
 
 ### Difficulty colours
-- easy → `#2EAD3F` (forest green)
-- medium → `#7C3AED` (purple)
-- hard → `#15B8B0` (teal)
+Defined as tokens; use `text-diff-easy`, `text-diff-medium`, `text-diff-hard`:
+- `--color-diff-easy: #2EAD3F` (forest green)
+- `--color-diff-medium: #7C3AED` (purple)
+- `--color-diff-hard: #15B8B0` (teal)
 
 ### Wheel segment palette
 8-colour complementary palette — four colours from a botanical reference image plus their direct opposites. Cycle through in order:
@@ -144,8 +147,9 @@ Field notes:
 ### Buttons & inputs
 - All styled buttons use `transform: skewX(-8deg)` for the constructivist parallelogram look
 - Subtle white box-shadow: `0 2px 8px rgba(255,255,255,0.08)`
-- Primary button background: `#B87A0A` (ochre), no border radius
+- Primary button background: `#B87A0A` (`--color-ochre-btn`), no border radius
 - Input fields are also skewed to match buttons
+- Two shared utility classes handle this: `btn-primary` (CSS class in `index.css` — filled ochre style) and `btn-skew` (Tailwind `@utility` — just the skew + shadow, for outline/ghost variants)
 
 ### Nav logo (GemM)
 The "M" in "SIMulator" in the nav is replaced by an inline faceted gem SVG — a three-polygon diamond in green tones, sized to sit flush with the surrounding text:
@@ -170,7 +174,8 @@ The nav logo uses **Staatliches** (`--font-display`), uppercase with wide letter
 
 ## Functionality notes
 - Browse page: search is live (filters as user types), no submit button
-- Filters (film/book/tv, difficulty, tags) are additive — AND logic
+- Filters (film/book/tv, difficulty) are always visible when the filter panel is open — AND logic
+- Tags are collapsed behind a `▸ Tags` toggle by default. When expanded, only tags present in the current filtered result set are shown — so filtering by source type or search automatically narrows the tag list. Selected count and available count are shown in the toggle label even when collapsed.
 - Modal closes on backdrop click or ✕ button
 - No loading states needed — all data is local JSON
 - No error boundaries needed for MVP

@@ -10,10 +10,10 @@ interface ScenarioModalProps {
   onSpinAgain: () => void
 }
 
-const DIFFICULTY_COLOUR: Record<Scenario['difficulty'], string> = {
-  easy: '#2EAD3F',
-  medium: '#7C3AED',
-  hard: '#15B8B0',
+const DIFFICULTY_CLASS: Record<Scenario['difficulty'], string> = {
+  easy: 'text-diff-easy',
+  medium: 'text-diff-medium',
+  hard: 'text-diff-hard',
 }
 
 export default function ScenarioModal({ scenario, onClose, onSpinAgain }: ScenarioModalProps) {
@@ -26,16 +26,14 @@ export default function ScenarioModal({ scenario, onClose, onSpinAgain }: Scenar
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4"
-      style={{ background: 'rgba(0,0,0,0.75)' }}
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75"
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-md z-200"
+        className="relative w-full max-w-md z-200 pt-px overflow-hidden"
         onClick={(e) => e.stopPropagation()}
-        style={{ paddingTop: '1px', overflow: 'hidden' }}
       >
-      <div style={{ boxShadow: '3px 6px 16px rgba(212,146,10,0.18), -3px 6px 16px rgba(212,146,10,0.10)' }}>
+      <div className="shadow-modal">
         {/* close */}
         <button
           onClick={onClose}
@@ -44,45 +42,36 @@ export default function ScenarioModal({ scenario, onClose, onSpinAgain }: Scenar
         >
           ×
         </button>
-        <div
-          className="relative p-6"
-          style={{
-            background: '#3D0E1A',
-            outline: '1px solid rgba(184,122,10,0.35)',
-            clipPath: 'polygon(0 20px, 100% 0, 100% 100%, 0 100%)',
-          }}
-        >
+        <div className="relative p-6 bg-band outline outline-1 outline-ochre-btn/35 clip-slash-left">
 
         {/* thumbnail */}
         {scenario.thumbnail ? (
           <img
             src={scenario.thumbnail}
             alt={scenario.title}
-            className="w-full h-65 object-cover mb-4 mt-8"
-            style={{ clipPath: 'polygon(0 20px, 100% 0, 100% 100%, 0 100%)' }}
+            className="w-full h-65 object-cover mb-4 mt-8 clip-slash-left"
           />
         ) : (
           <img
             src={pickPlaceholder(scenario.id)}
             alt="Spooky placeholder"
-            className="w-full h-65 object-cover mb-4 mt-8"
-            style={{ clipPath: 'polygon(0 20px, 100% 0, 100% 100%, 0 100%)' }}
+            className="w-full h-65 object-cover mb-4 mt-8 clip-slash-left"
           />
         )}
 
-        <p className="text-sm font-semibold font-sub uppercase tracking-widest text-sims-green mb-1">
+        <p className="text-sm font-semibold font-sub uppercase tracking-widest text-ochre mb-1">
           You got…
         </p>
         <h2 className="text-2xl font-display tracking-wide mb-1 capitalize">{scenario.title}</h2>
         <p className="text-sm text-white/70 mb-3 flex gap-2 items-center">
           <span className="inline-flex items-center gap-1.5">
             {scenario.sourceType === 'film'
-              ? <PiFilmSlate className="text-sims-green" size={14} />
-              : <PiBookOpenText className="text-sims-green" size={14} />}
+              ? <PiFilmSlate className="text-ochre" size={14} />
+              : <PiBookOpenText className="text-ochre" size={14} />}
             {scenario.source} ({scenario.year})
           </span>
           {' · '}
-          <span className="font-semibold" style={{ color: DIFFICULTY_COLOUR[scenario.difficulty] }}>
+          <span className={`font-semibold ${DIFFICULTY_CLASS[scenario.difficulty]}`}>
             {scenario.difficulty}
           </span>
         </p>
@@ -91,13 +80,13 @@ export default function ScenarioModal({ scenario, onClose, onSpinAgain }: Scenar
         <div className="flex gap-3">
           <Link
             to={`/scenarios/${scenario.id}`}
-            className="flex-1 py-2 font-bold text-sm text-center btn-primary text-bg transition-colors" style={{ fontFamily: 'var(--font-sub)' }}
+            className="flex-1 py-2 font-bold text-sm text-center btn-primary text-bg transition-colors font-sub"
           >
             View Scenario
           </Link>
           <button
             onClick={onSpinAgain}
-            className="flex-1 py-2 font-bold text-sm cursor-pointer border border-[#B87A0A]/50 hover:border-[#B87A0A] text-[#B87A0A] transition-colors bg-transparent" style={{ fontFamily: 'var(--font-sub)', transform: 'skewX(-8deg)', boxShadow: '0 2px 8px rgba(255,255,255,0.08)' }}
+            className="flex-1 py-2 font-bold text-sm cursor-pointer border border-[#B87A0A]/50 hover:border-[#B87A0A] text-[#B87A0A] transition-colors bg-transparent font-sub btn-skew"
           >
             Spin Again
           </button>

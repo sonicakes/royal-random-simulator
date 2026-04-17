@@ -16,6 +16,7 @@ export default function BrowsePage() {
   const [difficulty, setDifficulty] = useState<'all' | 'easy' | 'medium' | 'hard'>('all')
   const [selectedTags, setSelectedTags] = useState<string[]>([])
   const [showFilters, setShowFilters] = useState(false)
+  const [showTags, setShowTags] = useState(false)
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE)
   const [showBackToTop, setShowBackToTop] = useState(false)
   const sentinelRef = useRef<HTMLDivElement>(null)
@@ -40,6 +41,19 @@ export default function BrowsePage() {
 
     return list
   }, [search, sourceType, difficulty, selectedTags])
+
+  // Tags available in results before tag filtering — keeps selected tags selectable even when narrowing
+  const relevantTags = useMemo(() => {
+    const diffOrder = { easy: 0, medium: 1, hard: 2 }
+    let base = [...allScenarios].sort((a, b) => diffOrder[a.difficulty] - diffOrder[b.difficulty])
+    if (search.trim()) {
+      const q = search.toLowerCase()
+      base = base.filter((s) => s.title.toLowerCase().includes(q))
+    }
+    if (sourceType !== 'all') base = base.filter((s) => s.sourceType === sourceType)
+    if (difficulty !== 'all') base = base.filter((s) => s.difficulty === difficulty)
+    return Array.from(new Set(base.flatMap((s) => s.tags))).sort()
+  }, [search, sourceType, difficulty])
 
   // reset visible count when filters change
   useEffect(() => {
@@ -80,7 +94,7 @@ export default function BrowsePage() {
     <div className="w-full">
 
       {/* Full-width diagonal filter strip */}
-      <div style={{ background: '#3D0E1A', clipPath: 'polygon(0 0, 100% 0, 100% calc(100% - 60px), 0 100%)', paddingBottom: '60px' }}>
+      <div className="bg-band clip-band-browse pb-15">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-8 pb-6">
           <h1 className="text-2xl font-extrabold text-ochre mb-6">Browse Scenarios</h1>
 
@@ -98,24 +112,22 @@ export default function BrowsePage() {
               placeholder="Search by title…"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full z-100 border border-white/10 pl-9 pr-4 py-2 text-base text-white placeholder-white/50 focus:outline-none focus:border-sims-green/50"
-              style={{ background: 'rgba(184, 122, 10, 0.10)', boxShadow: '0 2px 8px rgba(255,255,255,0.08)', fontFamily: 'var(--font-sub)', transform: 'skewX(-8deg)' }}
+              className="w-full z-100 border border-white/10 pl-9 pr-4 py-2 text-base text-white placeholder-white/50 focus:outline-none focus:border-ochre/50 bg-ochre-btn/10 font-sub btn-skew"
             />
           </div>
           <button
             onClick={() => setShowFilters((v) => !v)}
             aria-label="Toggle filters"
-            className={`relative flex items-center gap-2 px-4 py-2 border transition-colors cursor-pointer ${
+            className={`relative flex items-center gap-2 px-4 py-2 border transition-colors cursor-pointer font-sub font-bold btn-skew ${
               showFilters
                 ? 'border-[#B87A0A] text-[#B87A0A] bg-[#B87A0A]/10'
                 : 'border-[#B87A0A]/50 text-[#B87A0A] bg-transparent hover:border-[#B87A0A]'
             }`}
-            style={{ fontFamily: 'var(--font-sub)', fontWeight: 700, transform: 'skewX(-8deg)', boxShadow: '0 2px 8px rgba(255,255,255,0.08)' }}
           >
             <PiSlidersHorizontal size={16} />
             <span className="text-sm">Filters</span>
             {(sourceType !== 'all' || difficulty !== 'all' || selectedTags.length > 0) && (
-              <span className="absolute -top-1.5 -right-1.5 bg-sims-green text-bg text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center">
+              <span className="absolute -top-1.5 -right-1.5 bg-ochre text-bg text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center">
                 {(sourceType !== 'all' ? 1 : 0) + (difficulty !== 'all' ? 1 : 0) + selectedTags.length}
               </span>
             )}
@@ -131,18 +143,17 @@ export default function BrowsePage() {
                 <button
                   key={v}
                   onClick={() => setSourceType(v)}
-                  className={`px-3 py-1 text-sm font-semibold border transition-colors cursor-pointer ${
+                  className={`px-3 py-1 text-sm font-semibold border transition-colors cursor-pointer btn-skew ${
                     sourceType === v
-                      ? 'bg-sims-green text-bg border-sims-green'
+                      ? 'bg-ochre text-bg border-ochre'
                       : 'bg-transparent text-white/65 border-white/25 hover:border-white/50'
                   }`}
-                  style={{ transform: 'skewX(-8deg)', boxShadow: '0 2px 8px rgba(255,255,255,0.08)' }}
                 >
                   {v === 'all' ? 'All types' : v === 'film'
-                    ? <span className="flex items-center gap-1.5"><PiFilmSlate size={13} className="text-sims-green" />Film</span>
+                    ? <span className="flex items-center gap-1.5"><PiFilmSlate size={13} className="text-ochre" />Film</span>
                     : v === 'book'
-                    ? <span className="flex items-center gap-1.5"><PiBookOpenText size={13} className="text-sims-green" />Book</span>
-                    : <span className="flex items-center gap-1.5"><PiTelevisionSimple size={13} className="text-sims-green" />TV</span>}
+                    ? <span className="flex items-center gap-1.5"><PiBookOpenText size={13} className="text-ochre" />Book</span>
+                    : <span className="flex items-center gap-1.5"><PiTelevisionSimple size={13} className="text-ochre" />TV</span>}
                 </button>
               ))}
 
@@ -152,12 +163,11 @@ export default function BrowsePage() {
                 <button
                   key={v}
                   onClick={() => setDifficulty(v)}
-                  className={`px-3 py-1 text-sm font-semibold border transition-colors cursor-pointer ${
+                  className={`px-3 py-1 text-sm font-semibold border transition-colors cursor-pointer btn-skew ${
                     difficulty === v
-                      ? 'bg-sims-green text-bg border-sims-green'
+                      ? 'bg-ochre text-bg border-ochre'
                       : 'bg-transparent text-white/65 border-white/25 hover:border-white/50'
                   }`}
-                  style={{ transform: 'skewX(-8deg)', boxShadow: '0 2px 8px rgba(255,255,255,0.08)' }}
                 >
                   {v === 'all' ? 'All difficulty' : v}
                 </button>
@@ -165,21 +175,36 @@ export default function BrowsePage() {
             </div>
 
             {/* Tags */}
-            <div className="flex flex-wrap gap-2">
-              {allTags.map((tag) => (
-                <button
-                  key={tag}
-                  onClick={() => toggleTag(tag)}
-                  className={`px-2.5 py-0.5 text-xs font-medium border transition-colors cursor-pointer ${
-                    selectedTags.includes(tag)
-                      ? 'bg-sims-green/20 text-sims-green border-sims-green/50'
-                      : 'bg-transparent text-white/60 border-white/25 hover:border-white/45'
-                  }`}
-                  style={{ transform: 'skewX(-8deg)', boxShadow: '0 2px 8px rgba(255,255,255,0.08)' }}
-                >
-                  {tag}
-                </button>
-              ))}
+            <div className="flex flex-col gap-2">
+              <button
+                onClick={() => setShowTags((v) => !v)}
+                className="flex items-center gap-2 text-sm text-white/60 hover:text-white/90 transition-colors cursor-pointer w-fit font-sub"
+              >
+                <span>{showTags ? '▾' : '▸'} Tags</span>
+                {selectedTags.length > 0 && (
+                  <span className="text-ochre text-xs">({selectedTags.length} selected)</span>
+                )}
+                {!showTags && relevantTags.length < allTags.length && (
+                  <span className="text-white/35 text-xs">{relevantTags.length} available</span>
+                )}
+              </button>
+              {showTags && (
+                <div className="flex flex-wrap gap-2">
+                  {relevantTags.map((tag) => (
+                    <button
+                      key={tag}
+                      onClick={() => toggleTag(tag)}
+                      className={`px-2.5 py-0.5 text-xs font-medium border transition-colors cursor-pointer btn-skew ${
+                        selectedTags.includes(tag)
+                          ? 'bg-ochre/20 text-ochre border-ochre/50'
+                          : 'bg-transparent text-white/60 border-white/25 hover:border-white/45'
+                      }`}
+                    >
+                      {tag}
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         )}
@@ -215,8 +240,7 @@ export default function BrowsePage() {
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           aria-label="Back to top"
-          className="fixed bottom-6 right-6 p-3 cursor-pointer shadow-lg z-[100] transition-opacity hover:opacity-80"
-          style={{ background: '#B87A0A', color: 'rgb(12, 10, 8)', borderRadius: 0, transform: 'skewX(-8deg)', boxShadow: '0 2px 8px rgba(255,255,255,0.08)' }}
+          className="fixed bottom-6 right-6 p-3 cursor-pointer z-[100] transition-opacity hover:opacity-80 bg-ochre-btn text-bg rounded-none btn-skew"
         >
           <PiArrowUp size={20} />
         </button>

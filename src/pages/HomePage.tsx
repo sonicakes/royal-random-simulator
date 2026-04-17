@@ -37,22 +37,10 @@ export default function HomePage() {
   return (
     <main className="flex flex-col items-center flex-1">
       <div className="w-full">
-      <div
-        className="w-full flex flex-col items-center px-4 pt-16 pb-24"
-        style={{ position: 'relative' }}
-      >
+      <div className="w-full flex flex-col items-center px-4 pt-16 pb-24 relative">
         {/* Top diagonal accent band */}
-        <div style={{
-          position: 'absolute',
-          top: 0, left: 0,
-          width: '100%',
-          height: '60%',
-          background: '#3D0E1A',
-          clipPath: 'polygon(0 0, 100% 0, 100% 55%, 0 100%)',
-          pointerEvents: 'none',
-          zIndex: 0,
-        }} />
-      <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-8 items-center" style={{ position: 'relative', zIndex: 1 }}>
+        <div className="absolute top-0 left-0 w-full h-[60%] bg-band clip-band-home pointer-events-none z-0" />
+      <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-8 items-center relative z-[1]">
 
         {/* Wheel column — 2/3 */}
         <div className="md:col-span-2 flex flex-col items-center gap-6">
@@ -65,7 +53,7 @@ export default function HomePage() {
               <ol className="text-white/80 text-sm leading-relaxed flex flex-col gap-1">
                 {['Spin the wheel to get a random horror scenario', 'Build the household described in the scenario', 'Follow the story beats in order and see how it plays out'].map((step, i) => (
                   <li key={i} className="flex gap-2">
-                    <span className="text-btn-green font-bold shrink-0">{i + 1}.</span>
+                    <span className="text-ochre-btn font-bold shrink-0">{i + 1}.</span>
                     <span>{step}</span>
                   </li>
                 ))}
@@ -84,7 +72,7 @@ export default function HomePage() {
           <button
             onClick={handleSpin}
             disabled={isSpinning}
-            className="px-10 py-3 tracking-widest text-xl btn-primary cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed text-bg shadow-lg" style={{ borderRadius: 0, fontFamily: 'var(--font-sub)', fontWeight: 700 }}
+            className="px-10 py-3 tracking-widest text-xl btn-primary cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed text-bg shadow-lg rounded-none font-sub font-bold"
           >
             {isSpinning ? 'Spinning…' : 'Spin!'}
           </button>
@@ -92,18 +80,15 @@ export default function HomePage() {
 
         {/* About card — 1/3 */}
         <div
-          className="md:col-span-1 p-6 flex flex-col gap-5 self-stretch bg-bg"
-          style={{
-            boxShadow: '0 2px 12px rgba(255,255,255,0.04)',
-          }}
+          className="md:col-span-1 p-6 flex flex-col gap-5 self-stretch bg-bg shadow-[0_2px_12px_rgba(255,255,255,0.04)]"
         >
           <div className="flex flex-col gap-3">
             <h2 className="text-ochre/80 font-bold text-base uppercase tracking-widest">About</h2>
             <div className="text-white/80 text-sm leading-relaxed flex flex-col gap-3">
               
               <p>
-                A companion project to{' '}<a href="https://cinefileblog.com/" target="_blank" rel="noopener noreferrer" className="text-btn-green hover:underline font-bold">The Cinefile Blog</a>{' '}and{' '}
-                <a href="https://open.spotify.com/show/5Ri7xJYDE9JDel4iCdl6LA?si=eb1e6971fd3d4844" target="_blank" rel="noopener noreferrer" className="text-btn-green hover:underline font-bold">The Kino Royale Podcast</a>,{' '}
+                A companion project to{' '}<a href="https://cinefileblog.com/" target="_blank" rel="noopener noreferrer" className="text-ochre-btn hover:underline font-bold">The Cinefile Blog</a>{' '}and{' '}
+                <a href="https://open.spotify.com/show/5Ri7xJYDE9JDel4iCdl6LA?si=eb1e6971fd3d4844" target="_blank" rel="noopener noreferrer" className="text-ochre-btn hover:underline font-bold">The Kino Royale Podcast</a>,{' '}
                 <span className="italic">The Royal Simulator</span> turns horror films, tv shows and novels into playable Sims 4 scenarios — designed to recreate the logic and atmosphere of each source material inside the game. Each scenario includes full lot setup, household traits, daily rules, story beats, and multiple endings. Difficulty ratings run from easy one-night camps to hard multi-week deterioration arcs.
               </p>
             </div>
@@ -121,7 +106,7 @@ export default function HomePage() {
 
           <a
             href="/browse"
-            className="text-btn-green tracking-wider font-display self-end hover:underline mt-auto"
+            className="text-ochre-btn tracking-wider font-display self-end hover:underline mt-auto"
           >
             Browse all <PiCaretRight size={14} className="inline" />
           </a>

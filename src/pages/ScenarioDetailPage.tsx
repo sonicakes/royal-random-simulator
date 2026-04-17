@@ -31,10 +31,10 @@ interface Playthrough {
 
 const scenarios = scenariosData as Scenario[]
 
-const DIFFICULTY_COLOUR: Record<Scenario['difficulty'], string> = {
-  easy: '#2EAD3F',
-  medium: '#7C3AED',
-  hard: '#15B8B0',
+const DIFFICULTY_CLASS: Record<Scenario['difficulty'], string> = {
+  easy: 'text-diff-easy',
+  medium: 'text-diff-medium',
+  hard: 'text-diff-hard',
 }
 
 export default function ScenarioDetailPage() {
@@ -64,7 +64,7 @@ export default function ScenarioDetailPage() {
     return (
       <main className="max-w-2xl mx-auto px-4 py-16 text-center">
         <p className="text-white/40">Scenario not found.</p>
-        <button onClick={() => navigate(-1)} className="mt-4 text-sims-green text-sm hover:underline cursor-pointer flex items-center gap-1 mx-auto">
+        <button onClick={() => navigate(-1)} className="mt-4 text-ochre text-sm hover:underline cursor-pointer flex items-center gap-1 mx-auto">
           <PiCaretLeft size={14} /> Go back
         </button>
       </main>
@@ -74,13 +74,13 @@ export default function ScenarioDetailPage() {
   return (
     <>
     {/* Constructivist diagonal bands */}
-    <div className="fixed top-0 left-0 w-full z-0" style={{ height: '300px', background: '#3D0E1A', clipPath: 'polygon(0 0, 100% 0, 100% 65%, 0 100%)' }} />
-    <div className="fixed left-0 w-full z-0" style={{ top: '55%', height: '120px', background: '#3D0E1A', opacity: 0.30, clipPath: 'polygon(0 0, 100% 30%, 100% 100%, 0 70%)' }} />
+    <div className="fixed top-0 left-0 w-full z-0 h-[300px] bg-band clip-band-hero" />
+    <div className="fixed left-0 w-full z-0 top-[55%] h-[120px] bg-band opacity-30 clip-band-accent" />
     <main className="max-w-2xl mx-auto px-4 sm:px-6 py-8 w-full relative z-10">
       {/* Back */}
       <button
         onClick={() => navigate(-1)}
-        className="text-btn-green tracking-wider font-display hover:underline mb-6 flex items-center gap-1 cursor-pointer"
+        className="text-ochre-btn tracking-wider font-display hover:underline mb-6 flex items-center gap-1 cursor-pointer"
       >
         <PiCaretLeft size={14} /> Back
       </button>
@@ -91,14 +91,14 @@ export default function ScenarioDetailPage() {
         <p className="text-base text-white/70 flex items-center gap-2">
           <span className="inline-flex items-center gap-1.5 align-middle">
             {scenario.sourceType === 'film'
-              ? <PiFilmSlate className="inline text-sims-green" size={16} />
+              ? <PiFilmSlate className="inline text-ochre" size={16} />
               : scenario.sourceType === 'book'
-              ? <PiBookOpenText className="inline text-sims-green" size={16} />
-              : <PiTelevisionSimple className="inline text-sims-green" size={16} />}
+              ? <PiBookOpenText className="inline text-ochre" size={16} />
+              : <PiTelevisionSimple className="inline text-ochre" size={16} />}
             {scenario.source} ({scenario.year})
           </span>
           {' · '}
-          <span className="font-semibold" style={{ color: DIFFICULTY_COLOUR[scenario.difficulty] }}>
+          <span className={`font-semibold ${DIFFICULTY_CLASS[scenario.difficulty]}`}>
             {scenario.difficulty}
           </span>
         </p>
@@ -110,15 +110,13 @@ export default function ScenarioDetailPage() {
           <img
             src={scenario.thumbnail}
             alt={scenario.title}
-            className="w-full object-cover min-h-80 lg:min-h-100"
-            style={{ clipPath: 'polygon(0 20px, 100% 0, 100% 100%, 0 100%)' }}
+            className="w-full object-cover min-h-80 lg:min-h-100 clip-slash-left"
           />
         ) : (
           <img
             src={pickPlaceholder(scenario.id)}
             alt="Spooky placeholder"
-            className="w-full object-contain"
-            style={{ clipPath: 'polygon(0 20px, 100% 0, 100% 100%, 0 100%)' }}
+            className="w-full object-contain clip-slash-left"
           />
         )}
         <figcaption className="text-xs text-white/50 italic mt-2 leading-relaxed">
@@ -149,11 +147,11 @@ export default function ScenarioDetailPage() {
       {/* Setup */}
       {scenario.setup && scenario.setup.length > 0 && (
         <section className="mb-8">
-          <h2 className="text-xl font-bold text-sims-green mb-3">Setup</h2>
+          <h2 className="text-xl font-bold text-ochre mb-3">Setup</h2>
           <ul className="space-y-2">
             {scenario.setup.map((item, i) => (
               <li key={i} className="flex gap-3 text-base text-white/85">
-                <svg viewBox="0 0 12 14" fill="none" stroke="#D4920A" strokeWidth="1.2" strokeLinejoin="round" style={{ width: '0.7em', height: '0.85em', flexShrink: 0, marginTop: '0.3em' }}>
+                <svg viewBox="0 0 12 14" fill="none" stroke="#D4920A" strokeWidth="1.2" strokeLinejoin="round" className="w-[0.7em] h-[0.85em] shrink-0 mt-[0.3em]">
                   <polygon points="3,0 9,0 12,5 6,14 0,5" />
                   <line x1="0" y1="5" x2="12" y2="5" strokeOpacity="0.5" />
                 </svg>
@@ -166,24 +164,23 @@ export default function ScenarioDetailPage() {
 
       {/* Household Members */}
       <section className="mb-8">
-        <h2 className="text-xl font-bold text-sims-green mb-3">Household</h2>
+        <h2 className="text-xl font-bold text-ochre mb-3">Household</h2>
         <div
-          className="overflow-hidden"
-          style={{ border: '1px solid rgba(255,255,255,0.07)', background: 'rgb(12, 10, 8)' }}
+          className="overflow-hidden border border-white/7 bg-bg"
         >
           <table className="w-full text-sm">
             <thead>
-              <tr className="text-left text-white/60 text-xs uppercase tracking-wider" style={{ background: 'rgba(255,255,255,0.05)' }}>
+              <tr className="text-left text-white/60 text-xs uppercase tracking-wider bg-white/5">
                 <th className="px-4 py-2 font-semibold">Name</th>
                 <th className="px-4 py-2 font-semibold">Role</th>
                 <th className="px-4 py-2 font-semibold">Traits</th>
               </tr>
             </thead>
             <tbody>
-              {scenario.householdMembers.map((member, i) => (
+              {scenario.householdMembers.map((member) => (
                 <tr
                   key={member.name}
-                  style={{ background: i % 2 === 0 ? 'rgb(12, 10, 8)' : 'rgba(255,255,255,0.02)' }}
+                  className="odd:bg-bg even:bg-white/[0.02]"
                 >
                   <td className="px-4 py-3 font-semibold">{member.name}</td>
                   <td className="px-4 py-3 text-white/75">{member.role}</td>
@@ -197,11 +194,11 @@ export default function ScenarioDetailPage() {
 
       {/* Goals */}
       <section className="mb-8">
-        <h2 className="text-xl font-bold text-sims-green mb-3">Goals</h2>
+        <h2 className="text-xl font-bold text-ochre mb-3">Goals</h2>
         <ul className="space-y-2">
           {scenario.goals.map((goal, i) => (
             <li key={i} className="flex gap-3 text-base text-white/85">
-              <span className="text-sims-green font-bold shrink-0">{i + 1}.</span>
+              <span className="text-ochre font-bold shrink-0">{i + 1}.</span>
               <span>{goal}</span>
             </li>
           ))}
@@ -211,11 +208,11 @@ export default function ScenarioDetailPage() {
       {/* Rules */}
       {scenario.rules && scenario.rules.length > 0 && (
         <section className="mb-8">
-          <h2 className="text-xl font-bold text-sims-green mb-3">Rules</h2>
+          <h2 className="text-xl font-bold text-ochre mb-3">Rules</h2>
           <ul className="space-y-2">
             {scenario.rules.map((rule, i) => (
               <li key={i} className="flex gap-3 text-base text-white/85">
-                <span className="text-sims-green font-bold shrink-0">{i + 1}.</span>
+                <span className="text-ochre font-bold shrink-0">{i + 1}.</span>
                 <span>{rule}</span>
               </li>
             ))}
@@ -225,7 +222,7 @@ export default function ScenarioDetailPage() {
 
       {/* Story Beats — timeline */}
       <section className="mb-8">
-        <h2 className="text-xl font-bold text-sims-green mb-4">Story Beats</h2>
+        <h2 className="text-xl font-bold text-ochre mb-4">Story Beats</h2>
         <ol className="relative border-l-2 border-[#B87A0A]/20 space-y-0">
           {scenario.storyBeats.map((beat, i) => {
             const isLast = i === scenario.storyBeats.length - 1
@@ -233,8 +230,7 @@ export default function ScenarioDetailPage() {
               <li key={beat.step} className={`ml-5 ${isLast ? 'pb-0' : 'pb-6'}`}>
                 {/* dot */}
                 <span
-                  className="absolute -left-3.25 flex items-center justify-center w-6 h-6 rounded-full text-sm font-bold"
-                  style={{ background: '#050F18', border: '2px solid #B87A0A', marginTop: '1.25px' }}
+                  className="absolute -left-3.25 flex items-center justify-center w-6 h-6 rounded-full text-sm font-bold bg-dot-bg border-2 border-ochre-btn mt-px"
                 >
                   {beat.step}
                 </span>
@@ -249,7 +245,7 @@ export default function ScenarioDetailPage() {
       {scenario.endings && scenario.endings.length > 0 && (
         <section className="mb-8">
           {/* Title */}
-          <h2 className="text-xl font-bold text-sims-green text-center mb-0">How It Ends</h2>
+          <h2 className="text-xl font-bold text-ochre text-center mb-0">How It Ends</h2>
 
           {/* Connector — stem + horizontal branch + drops (hidden on mobile) */}
           <div className="hidden sm:block">
@@ -264,7 +260,7 @@ export default function ScenarioDetailPage() {
                 {scenario.endings.map((e) => (
                   <div key={e.title} className="flex flex-col items-center pt-px">
                     <div className="w-px h-5 bg-[#B87A0A]/40" />
-                    <div style={{ width: 0, height: 0, borderLeft: '5px solid transparent', borderRight: '5px solid transparent', borderTop: '6px solid rgba(212,146,10,0.4)' }} />
+                    <div className="css-triangle-down" />
                   </div>
                 ))}
               </div>
@@ -273,21 +269,15 @@ export default function ScenarioDetailPage() {
 
           {/* Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-4 sm:mt-0">
-            {scenario.endings.map((ending, i) => {
-              const clipPath = i % 2 === 0
-                ? 'polygon(0 14px, 100% 0, 100% 100%, 0 100%)'
-                : 'polygon(0 0, 100% 14px, 100% 100%, 0 100%)'
-              return (
+            {scenario.endings.map((ending, i) => (
               <div
                 key={ending.title}
-                className="p-4"
-                style={{ background: 'rgb(12, 10, 8)', outline: '1px solid rgba(255,255,255,0.07)', borderTop: '2px solid rgba(212,146,10,0.4)', clipPath }}
+                className={`p-4 bg-bg outline outline-1 outline-white/7 border-t-2 border-ochre/40 ${i % 2 === 0 ? 'clip-slash-left-sm' : 'clip-slash-right-sm'}`}
               >
                 <h3 className="text-base text-white mb-2">{ending.title}</h3>
                 <p className="text-sm text-white/75 leading-relaxed">{ending.text}</p>
               </div>
-              )
-            })}
+            ))}
           </div>
         </section>
       )}
@@ -295,7 +285,7 @@ export default function ScenarioDetailPage() {
       {/* Playthrough journal */}
       {playthrough && (
         <section className="mt-2">
-          <h2 className="text-xl font-bold text-sims-green mb-4">My Playthrough</h2>
+          <h2 className="text-xl font-bold text-ochre mb-4">My Playthrough</h2>
           {playthrough.screenshots.length > 0 && (
             <LightboxGallery screenshots={playthrough.screenshots} alt="Playthrough screenshot" />
           )}
@@ -310,8 +300,7 @@ export default function ScenarioDetailPage() {
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           aria-label="Back to top"
-          className="fixed bottom-6 right-6 p-3 cursor-pointer shadow-lg z-[100] transition-opacity hover:opacity-80"
-          style={{ background: '#B87A0A', color: 'rgb(12, 10, 8)', borderRadius: 0, transform: 'skewX(-8deg)', boxShadow: '0 2px 8px rgba(255,255,255,0.08)' }}
+          className="fixed bottom-6 right-6 p-3 cursor-pointer z-[100] transition-opacity hover:opacity-80 bg-ochre-btn text-bg rounded-none btn-skew"
         >
           <PiArrowUp size={20} />
         </button>

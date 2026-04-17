@@ -1,6 +1,6 @@
-# Royal Random SIMulator
+# Royal Simulator
 
-A personal Sims 4 horror scenario generator, created with Claude's help. Gives players scenario ideas based on horror films and books — discovered via a spinning wheel, browsed in a searchable library, or navigated to directly. Pairs with [The Cinefile Blog](https://cinefile-blog.netlify.app/) and [The Kino Royale Podcast](https://open.spotify.com/show/5Ri7xJYDE9JDel4iCdl6LA).
+A personal Sims 4 horror scenario generator, created with Claude's help. Gives players scenario ideas based on horror films and books — discovered via a spinning wheel, browsed in a searchable library, or navigated to directly. Pairs with [The Cinefile Blog](https://cinefileblog.com/) and [The Kino Royale Podcast](https://open.spotify.com/show/5Ri7xJYDE9JDel4iCdl6LA).
 
 No backend. No database. No auth. All scenario data lives in a single JSON file.
 
@@ -102,7 +102,7 @@ A searchable, filterable grid of all scenarios:
 - **Live search** — filters by title as you type
 - **Source type** — toggle between All / Film / Book
 - **Difficulty** — toggle between All / Easy / Medium / Hard
-- **Tags** — every tag across all scenarios rendered as toggleable pills; AND logic (must match all selected tags)
+- **Tags** — collapsed behind a `▸ Tags` toggle by default to avoid overwhelming the filter panel. When expanded, only tags present in the current filtered set are shown — so filtering by Film or searching by title automatically narrows the tag list to what's actually relevant. AND logic applies (must match all selected tags). A selected count and available count are shown in the toggle label so active tags are always visible even when the list is collapsed.
 - **Sort** — always ordered easy → medium → hard
 - **Lazy loading** — 6 cards per batch, loaded via `IntersectionObserver` as you scroll
 
@@ -272,19 +272,51 @@ All scenarios live in `src/data/scenarios.json` as a top-level array:
 
 ---
 
+## Content
+
+### Scenarios
+
+All scenarios are written with the help of **Claude** (Anthropic). Each one is authored in the voice of the site — part horror-fan enthusiasm, part Sims challenge design — and draws on the source material's structure, characters, and tone to produce something genuinely playable rather than just descriptive.
+
+### Banner images
+
+Each scenario's banner image was generated with **Gemini** using a consistent style prompt, then selected by hand. The prompt establishes the Polish Film Poster School aesthetic as a visual baseline — referencing the work of Franciszek Starowieyski and the dreamlike imagery of *Valerie and Her Week of Wonders* (1970) — and each scenario gets its own scene description built on top of that foundation.
+
+All prompts are documented in [`public/royal-simulator-image-prompts.md`](public/royal-simulator-image-prompts.md).
+
+---
+
 ## Design system
+
+### Design aesthetic
+
+The visual language draws from two unlikely but complementary references.
+
+The primary influence is the **Polish school of poster design** — the bold, politically charged graphic tradition that flourished in Eastern Europe from the 1950s through the 1980s. That movement's hallmarks are all present here: high contrast against deep, near-black grounds; warm ochre and burgundy as dramatic accent colours; sharp geometric forms; condensed display type (Staatliches) used with intention; and a constructivist preference for parallelograms and diagonal geometry over softness and curves. Nothing is rounded. Nothing is decorative for its own sake.
+
+The secondary note is the **Freddy Krueger sweater** — a happy accident that emerged from experimenting with the Polish palette. The alternating rhythm of crimson-burgundy bands against deep grounds (card headers, modal backgrounds, UI dividers) echoes the grimy, repetitive stripe pattern of that iconic knit. It wasn't a starting point; it arrived through the work.
+
+Together: stark, ideological-feeling layouts with a seam of genre-horror textile. Eastern European agitprop meets slasher wardrobe.
+
+---
 
 ### Colours
 
+All colours are Tailwind v4 `@theme` tokens defined in `src/index.css`. Token names map directly to utility classes — `--color-ochre` becomes `text-ochre`, `bg-ochre`, `border-ochre`, etc.
+
 | Token | Value | Usage |
 |---|---|---|
-| `--bg` | `#080f14` | Page background |
-| `--green-bright` | `#4ade80` | Nav, hover states, gem icon |
-| `--ochre` | `#D4920A` | Primary UI accent — buttons, borders, highlights |
-| `--burgundy` | `#3D0E1A` | Header bands, modal background |
-| `--text-muted` | `rgba(255,255,255,0.35)` | Secondary text |
+| `--color-bg` | `#0C0A08` | Page background |
+| `--color-sims-green` | `#4ade80` | Sims green — gem icon, hover accents |
+| `--color-ochre` | `#D4920A` | Primary UI accent — labels, icons, section headings |
+| `--color-ochre-btn` | `#B87A0A` | Button backgrounds (slightly darker ochre) |
+| `--color-ochre-hover` | `#9A6A08` | Button hover state |
+| `--color-band` | `#3D0E1A` | Constructivist diagonal bands, modal background |
+| `--color-amber` | `#F5B800` | Amber — wheel palette |
+| `--color-teal-dark` | `#1A3848` | Dark teal |
+| `--color-dot-bg` | `#050F18` | Story beat timeline dot |
 
-Difficulty colours: easy `#2EAD3F` (forest green) · medium `#7C3AED` (purple) · hard `#15B8B0` (teal).
+Difficulty: `--color-diff-easy` `#2EAD3F` · `--color-diff-medium` `#7C3AED` · `--color-diff-hard` `#15B8B0` — used via `text-diff-easy`, `text-diff-medium`, `text-diff-hard`.
 
 ### Wheel palette
 
@@ -303,4 +335,7 @@ The wheel cycles through an 8-colour complementary palette:
 - **Staatliches** (`--font-display`) — headings, nav logo, wheel labels
 - **Courier Prime** (`--font-sub`) — UI labels, input fields
 
-All styled buttons and inputs use `transform: skewX(-8deg)` for a constructivist parallelogram shape. No border radius on buttons.
+All styled buttons and inputs use `transform: skewX(-8deg)` for a constructivist parallelogram shape. No border radius on buttons. Two shared classes handle the button styles:
+
+- `btn-primary` — CSS class in `index.css`: filled ochre button (background, border, colour, skew, shadow, uppercase tracking)
+- `btn-skew` — Tailwind `@utility` in `index.css`: skew + white box-shadow only, for outline/ghost variants

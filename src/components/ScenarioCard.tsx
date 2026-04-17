@@ -3,10 +3,10 @@ import { PiFilmSlate, PiBookOpenText, PiTelevisionSimple } from 'react-icons/pi'
 import type { Scenario } from '../types/scenario'
 import { pickPlaceholder } from '../utils/placeholder'
 
-const DIFFICULTY_COLOUR: Record<Scenario['difficulty'], string> = {
-  easy: '#2EAD3F',
-  medium: '#7C3AED',
-  hard: '#15B8B0',
+const DIFFICULTY_CLASS: Record<Scenario['difficulty'], string> = {
+  easy: 'text-diff-easy',
+  medium: 'text-diff-medium',
+  hard: 'text-diff-hard',
 }
 
 function tagClass(sourceType: Scenario['sourceType']) {
@@ -22,28 +22,14 @@ interface ScenarioCardProps {
 }
 
 function SourceIcon({ sourceType }: { sourceType: Scenario['sourceType'] }) {
-  if (sourceType === 'film') return <PiFilmSlate className="text-sims-green" size={14} />
-  if (sourceType === 'book') return <PiBookOpenText className="text-sims-green" size={14} />
-  return <PiTelevisionSimple className="text-sims-green" size={14} />
+  if (sourceType === 'film') return <PiFilmSlate className="text-ochre" size={14} />
+  if (sourceType === 'book') return <PiBookOpenText className="text-ochre" size={14} />
+  return <PiTelevisionSimple className="text-ochre" size={14} />
 }
 
 export default function ScenarioCard({ scenario, index = 0 }: ScenarioCardProps) {
-  const diffColor = DIFFICULTY_COLOUR[scenario.difficulty]
   const thumb = scenario.thumbnail || pickPlaceholder(scenario.id)
   const slashLeft = index % 2 === 0
-  const clipPath = slashLeft
-    ? 'polygon(0 20px, 100% 0, 100% 100%, 0 100%)'
-    : 'polygon(0 0, 100% 20px, 100% 100%, 0 100%)'
-
-  const wrapperStyle = {
-    animation: 'fadeIn 1.5s ease-out',
-  }
-
-  const sharedStyle = {
-    background: 'rgb(12, 10, 8)',
-    clipPath,
-    borderBottom: '2px solid rgba(184,122,10,0.15)',
-  }
 
   const tags = (
     <div className="flex flex-wrap gap-1 mt-2">
@@ -56,23 +42,22 @@ export default function ScenarioCard({ scenario, index = 0 }: ScenarioCardProps)
   )
 
   return (
-    <div style={{ paddingTop: '1px', overflow: 'hidden' }}>
-    <div style={wrapperStyle}>
+    <div className="pt-px overflow-hidden">
+    <div className="animate-[fadeIn_1.5s_ease-out]">
     <Link
       to={`/scenarios/${scenario.id}`}
-      className="group flex flex-col overflow-hidden transition-all duration-200 hover:rotate-2 z-90"
-      style={sharedStyle}
+      className={`group flex flex-col overflow-hidden transition-all duration-200 hover:rotate-2 z-90 bg-bg border-b-2 border-ochre-btn/[0.15] ${slashLeft ? 'clip-slash-left' : 'clip-slash-right'}`}
     >
       <img src={thumb} alt={scenario.title} className="w-full h-90 object-cover" />
       <div className="p-4 flex flex-col gap-1 flex-1">
-        <h3 className="text-lg font-display group-hover:text-sims-green transition-colors">{scenario.title}</h3>
+        <h3 className="text-lg font-display group-hover:text-ochre transition-colors">{scenario.title}</h3>
         <p className="text-sm text-white/65 flex gap-2 items-center">
           <span className="inline-flex items-center gap-1.5">
             <SourceIcon sourceType={scenario.sourceType} />
             {scenario.year}
           </span>
           {' · '}
-          <span className="font-semibold" style={{ color: diffColor }}>{scenario.difficulty}</span>
+          <span className={`font-semibold ${DIFFICULTY_CLASS[scenario.difficulty]}`}>{scenario.difficulty}</span>
         </p>
         <p className="text-sm text-white/75 leading-relaxed mt-1 line-clamp-2">{scenario.description}</p>
         {tags}

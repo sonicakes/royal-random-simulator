@@ -36,7 +36,7 @@ export default function LightboxGallery({ screenshots, alt = 'Screenshot' }: Lig
           <button
             key={i}
             onClick={() => setActiveIndex(i)}
-            className="overflow-hidden rounded-card focus:outline-none focus:ring-2 focus:ring-sims-green cursor-pointer"
+            className="overflow-hidden rounded-card focus:outline-none focus:ring-2 focus:ring-ochre cursor-pointer"
           >
             <img
               src={src}
@@ -50,8 +50,7 @@ export default function LightboxGallery({ screenshots, alt = 'Screenshot' }: Lig
       {/* Lightbox */}
       {isOpen && activeIndex !== null && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4"
-          style={{ background: 'rgba(0,0,0,0.92)' }}
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/92"
           onClick={close}
         >
           {/* Counter */}
