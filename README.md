@@ -1,6 +1,6 @@
-# Royal Random SIMulator
+# Royal Simulator
 
-A personal Sims 4 horror scenario generator, created with Claude's help. Gives players scenario ideas based on horror films and books — discovered via a spinning wheel, browsed in a searchable library, or navigated to directly. Pairs with [The Cinefile Blog](https://cinefile-blog.netlify.app/) and [The Kino Royale Podcast](https://open.spotify.com/show/5Ri7xJYDE9JDel4iCdl6LA).
+A personal Sims 4 horror scenario generator, created with Claude's help. Gives players scenario ideas based on horror films and books — discovered via a spinning wheel, browsed in a searchable library, or navigated to directly. Pairs with [The Cinefile Blog](https://cinefileblog.com/) and [The Kino Royale Podcast](https://open.spotify.com/show/5Ri7xJYDE9JDel4iCdl6LA).
 
 No backend. No database. No auth. All scenario data lives in a single JSON file.
 
@@ -272,7 +272,33 @@ All scenarios live in `src/data/scenarios.json` as a top-level array:
 
 ---
 
+## Content
+
+### Scenarios
+
+All scenarios are written with the help of **Claude** (Anthropic). Each one is authored in the voice of the site — part horror-fan enthusiasm, part Sims challenge design — and draws on the source material's structure, characters, and tone to produce something genuinely playable rather than just descriptive.
+
+### Banner images
+
+Each scenario's banner image was generated with **Gemini** using a consistent style prompt, then selected by hand. The prompt establishes the Polish Film Poster School aesthetic as a visual baseline — referencing the work of Franciszek Starowieyski and the dreamlike imagery of *Valerie and Her Week of Wonders* (1970) — and each scenario gets its own scene description built on top of that foundation.
+
+All prompts are documented in [`public/royal-simulator-image-prompts.md`](public/royal-simulator-image-prompts.md).
+
+---
+
 ## Design system
+
+### Design aesthetic
+
+The visual language draws from two unlikely but complementary references.
+
+The primary influence is the **Polish school of poster design** — the bold, politically charged graphic tradition that flourished in Eastern Europe from the 1950s through the 1980s. That movement's hallmarks are all present here: high contrast against deep, near-black grounds; warm ochre and burgundy as dramatic accent colours; sharp geometric forms; condensed display type (Staatliches) used with intention; and a constructivist preference for parallelograms and diagonal geometry over softness and curves. Nothing is rounded. Nothing is decorative for its own sake.
+
+The secondary note is the **Freddy Krueger sweater** — a happy accident that emerged from experimenting with the Polish palette. The alternating rhythm of crimson-burgundy bands against deep grounds (card headers, modal backgrounds, UI dividers) echoes the grimy, repetitive stripe pattern of that iconic knit. It wasn't a starting point; it arrived through the work.
+
+Together: stark, ideological-feeling layouts with a seam of genre-horror textile. Eastern European agitprop meets slasher wardrobe.
+
+---
 
 ### Colours
 
