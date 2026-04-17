@@ -4,7 +4,7 @@ function GemM() {
   return (
     <svg
       viewBox="0 0 12 22"
-      style={{ display: 'inline', width: '0.75em', height: '1.1em', verticalAlign: 'middle', position: 'relative', top: '-0.05em', filter: 'drop-shadow(0 0 4px rgba(74,222,128,0.8)) drop-shadow(0 0 2px rgba(74,222,128,0.6))' }}
+      className="gem-svg"
       aria-hidden="true"
     >
       <defs>
@@ -30,7 +30,7 @@ export default function NavBar() {
     <nav className="sticky top-0 z-100 bg-bg px-4 sm:px-6 font-display">
       <div className="max-w-6xl mx-auto h-14 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-          <span className="text-white tracking-widest text-2xl uppercase" style={{ fontFamily: 'var(--font-display)' }}>
+          <span className="text-white tracking-widest text-2xl uppercase">
             Royal Si<GemM />ulator
           </span>
         </Link>

@@ -2,14 +2,21 @@
 
 @theme {
   --color-bg:              #0C0A08;
-  --color-sims-green:      #D4920A;
-  --color-btn-green:       #B87A0A;
-  --color-btn-green-hover: #9A6A08;
-  --color-horror-red:      #F5B800;
+  --color-sims-green:      #4ade80;
+  --color-ochre-btn:       #B87A0A;
+  --color-ochre-hover:     #9A6A08;
+  --color-amber:           #F5B800;
   --color-modal-bg:        #130F0C;
-  --color-burgundy:        #1A3848;
+  --color-teal-dark:       #1A3848;
   --color-ochre:           #D4920A;
   --color-slate:           #3A6B7A;
+  --color-band:            #3D0E1A;
+  --color-dot-bg:          #050F18;
+
+  /* Difficulty colours */
+  --color-diff-easy:       #2EAD3F;
+  --color-diff-medium:     #7C3AED;
+  --color-diff-hard:       #15B8B0;
 
   /* Polish school jewel tones */
   --color-jewel-burgundy:  #5C1A2E;
@@ -105,4 +112,61 @@
 .btn-primary:hover:not(:disabled) {
   background: #9A6A08;
   box-shadow: 0 0 18px rgba(212, 146, 10, 0.35);
+}
+
+/* Constructivist clip-path utilities */
+@utility clip-slash-left {
+  clip-path: polygon(0 20px, 100% 0, 100% 100%, 0 100%);
+}
+@utility clip-slash-right {
+  clip-path: polygon(0 0, 100% 20px, 100% 100%, 0 100%);
+}
+@utility clip-slash-left-sm {
+  clip-path: polygon(0 14px, 100% 0, 100% 100%, 0 100%);
+}
+@utility clip-slash-right-sm {
+  clip-path: polygon(0 0, 100% 14px, 100% 100%, 0 100%);
+}
+@utility clip-band-hero {
+  clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
+}
+@utility clip-band-home {
+  clip-path: polygon(0 0, 100% 0, 100% 55%, 0 100%);
+}
+@utility clip-band-accent {
+  clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 70%);
+}
+@utility clip-band-browse {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 60px), 0 100%);
+}
+
+/* Skewed button / input shape */
+@utility btn-skew {
+  transform: skewX(-8deg);
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.08);
+}
+
+/* Modal ochre glow */
+@utility shadow-modal {
+  box-shadow: 3px 6px 16px rgba(212, 146, 10, 0.18), -3px 6px 16px rgba(212, 146, 10, 0.10);
+}
+
+/* CSS triangle for endings connector */
+@utility css-triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid rgba(212, 146, 10, 0.4);
+}
+
+/* GemM SVG in NavBar */
+@utility gem-svg {
+  display: inline;
+  width: 0.75em;
+  height: 1.1em;
+  vertical-align: middle;
+  position: relative;
+  top: -0.05em;
+  filter: drop-shadow(0 0 4px rgba(74, 222, 128, 0.8)) drop-shadow(0 0 2px rgba(74, 222, 128, 0.6));
 }
