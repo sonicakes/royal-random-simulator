@@ -1,4 +1,5 @@
-import { useState, useMemo, useRef, useCallback, useEffect } from 'react'
+import { useState, useMemo, useRef, useCallback, useEffect, useLayoutEffect } from 'react'
+import { useNavigationType } from 'react-router-dom'
 import { PiFilmSlate, PiBookOpenText, PiTelevisionSimple, PiSlidersHorizontal, PiArrowUp, PiMagnifyingGlass } from 'react-icons/pi'
 import ScenarioCard from '../components/ScenarioCard'
 import scenariosData from '../data/scenarios.json'
@@ -9,8 +10,11 @@ const allScenarios = scenariosData as Scenario[]
 const allTags = Array.from(new Set(allScenarios.flatMap((s) => s.tags))).sort()
 
 const PAGE_SIZE = 6
+const STORAGE_KEY = 'browse-state'
 
 export default function BrowsePage() {
+  const navType = useNavigationType()
+
   const [search, setSearch] = useState('')
   const [sourceType, setSourceType] = useState<'all' | 'film' | 'book' | 'tv'>('all')
   const [difficulty, setDifficulty] = useState<'all' | 'easy' | 'medium' | 'hard'>('all')
@@ -20,6 +24,49 @@ export default function BrowsePage() {
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE)
   const [showBackToTop, setShowBackToTop] = useState(false)
   const sentinelRef = useRef<HTMLDivElement>(null)
+  const scrollToRestore = useRef<number | null>(null)
+
+  // Ref always holds latest state for the unmount snapshot (avoids stale closure)
+  const stateRef = useRef({ search, sourceType, difficulty, selectedTags, visibleCount })
+  useEffect(() => {
+    stateRef.current = { search, sourceType, difficulty, selectedTags, visibleCount }
+  })
+
+  // Restore state on back navigation — useLayoutEffect so it runs before first paint
+  useLayoutEffect(() => {
+    if (navType !== 'POP') return
+    try {
+      const raw = sessionStorage.getItem(STORAGE_KEY)
+      if (!raw) return
+      const saved = JSON.parse(raw)
+      setSearch(saved.search ?? '')
+      setSourceType(saved.sourceType ?? 'all')
+      setDifficulty(saved.difficulty ?? 'all')
+      setSelectedTags(saved.selectedTags ?? [])
+      setVisibleCount(saved.visibleCount ?? PAGE_SIZE)
+      scrollToRestore.current = saved.scrollY ?? 0
+    } catch {}
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Scroll to saved position once the restored visibleCount has been committed to the DOM
+  useLayoutEffect(() => {
+    if (scrollToRestore.current === null) return
+    const y = scrollToRestore.current
+    scrollToRestore.current = null
+    window.scrollTo(0, y)
+  }, [visibleCount])
+
+  // Save state to sessionStorage on unmount
+  useEffect(() => {
+    return () => {
+      try {
+        sessionStorage.setItem(STORAGE_KEY, JSON.stringify({
+          ...stateRef.current,
+          scrollY: window.scrollY,
+        }))
+      } catch {}
+    }
+  }, [])
 
   const filtered = useMemo(() => {
     const diffOrder = { easy: 0, medium: 1, hard: 2 }
@@ -55,11 +102,6 @@ export default function BrowsePage() {
     return Array.from(new Set(base.flatMap((s) => s.tags))).sort()
   }, [search, sourceType, difficulty])
 
-  // reset visible count when filters change
-  useEffect(() => {
-    setVisibleCount(PAGE_SIZE)
-  }, [filtered])
-
   const visible = filtered.slice(0, visibleCount)
 
   // lazy load via IntersectionObserver
@@ -88,6 +130,7 @@ export default function BrowsePage() {
     setSelectedTags((prev) =>
       prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag],
     )
+    setVisibleCount(PAGE_SIZE)
   }
 
   return (
@@ -111,7 +154,7 @@ export default function BrowsePage() {
               type="text"
               placeholder="Search by title…"
               value={search}
-              onChange={(e) => setSearch(e.target.value)}
+              onChange={(e) => { setSearch(e.target.value); setVisibleCount(PAGE_SIZE) }}
               className="w-full z-100 border border-white/10 pl-9 pr-4 py-2 text-base text-white placeholder-white/50 focus:outline-none focus:border-ochre/50 bg-ochre-btn/10 font-sub btn-skew"
             />
           </div>
@@ -142,7 +185,7 @@ export default function BrowsePage() {
               {(['all', 'film', 'book', 'tv'] as const).map((v) => (
                 <button
                   key={v}
-                  onClick={() => setSourceType(v)}
+                  onClick={() => { setSourceType(v); setVisibleCount(PAGE_SIZE) }}
                   className={`px-3 py-1 text-sm font-semibold border transition-colors cursor-pointer btn-skew ${
                     sourceType === v
                       ? 'bg-ochre text-bg border-ochre'
@@ -162,7 +205,7 @@ export default function BrowsePage() {
               {(['all', 'easy', 'medium', 'hard'] as const).map((v) => (
                 <button
                   key={v}
-                  onClick={() => setDifficulty(v)}
+                  onClick={() => { setDifficulty(v); setVisibleCount(PAGE_SIZE) }}
                   className={`px-3 py-1 text-sm font-semibold border transition-colors cursor-pointer btn-skew ${
                     difficulty === v
                       ? 'bg-ochre text-bg border-ochre'

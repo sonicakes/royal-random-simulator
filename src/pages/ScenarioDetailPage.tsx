@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { PiFilmSlate, PiBookOpenText, PiTelevisionSimple, PiArrowUp, PiCaretLeft } from 'react-icons/pi'
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate, useNavigationType, Link } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import LightboxGallery from '../components/LightboxGallery'
 import scenariosData from '../data/scenarios.json'
@@ -40,6 +40,7 @@ const DIFFICULTY_CLASS: Record<Scenario['difficulty'], string> = {
 export default function ScenarioDetailPage() {
   const { id } = useParams<{ id: string }>()
   const navigate = useNavigate()
+  const navType = useNavigationType()
   const scenario = scenarios.find((s) => s.id === id)
 
   const [playthrough, setPlaythrough] = useState<Playthrough | null>(null)
@@ -78,12 +79,21 @@ export default function ScenarioDetailPage() {
     <div className="fixed left-0 w-full z-0 top-[55%] h-[120px] bg-band opacity-30 clip-band-accent" />
     <main className="max-w-2xl mx-auto px-4 sm:px-6 py-8 w-full relative z-10">
       {/* Back */}
-      <button
-        onClick={() => navigate(-1)}
-        className="text-ochre-btn tracking-wider font-display hover:underline mb-6 flex items-center gap-1 cursor-pointer"
-      >
-        <PiCaretLeft size={14} /> Back
-      </button>
+      {navType === 'PUSH' ? (
+        <button
+          onClick={() => navigate(-1)}
+          className="text-ochre-btn tracking-wider font-display hover:underline mb-6 flex items-center gap-1 cursor-pointer"
+        >
+          <PiCaretLeft size={14} /> Back
+        </button>
+      ) : (
+        <Link
+          to="/browse"
+          className="text-ochre-btn tracking-wider font-display hover:underline mb-6 flex items-center gap-1 w-fit"
+        >
+          <PiCaretLeft size={14} /> Browse all
+        </Link>
+      )}
 
       {/* Header */}
       <div className="mb-6">

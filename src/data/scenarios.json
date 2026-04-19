@@ -1143,6 +1143,80 @@
     ]
   },
   {
+  "id": "rebecca-ghost",
+  "title": "Rebecca The Ghost",
+  "source": "Rebecca",
+  "sourceType": "book",
+  "thumbnail": "/images/banners/rebecca-ghost.png",
+  "year": 1938,
+  "difficulty": "hard",
+  "tags": ["supernatural", "gothic", "ghost", "revenge", "obsession", "psychological"],
+  "description": "Rebecca de Winter did not love Maxim. She did not love anyone — she was constitutionally incapable of it and considered this an advantage. What she loved was Manderley, and the power it gave her, and the particular pleasure of arranging people's lives without their knowledge. She is dead. This has not stopped her. Based on the novel by Daphne du Maurier — played from the other side of the story.",
+  "setup": [
+    "Use the full Manderley build — grand manor, formal gardens, boathouse, sealed wing. Every room should contain at least one object associated with Rebecca: her monogram, her stationery, a portrait, a personal item. The more saturated with her presence the house is, the better the scenario plays.",
+    "Rebecca is represented by a ghost Sim — use the in-game ghost mechanic or a Sim in white with the Gloomy and Mean traits active. She may not be seen by any living Sim except Mrs Danvers. She exists in the house and acts through it.",
+    "Mrs Danvers is a middle-aged adult — Rebecca's instrument, her truest believer, the woman who has made a religion of her memory. Suggested traits: Mean, Jealous, Perfectionist, Gloomy, Loner. She is the only Sim Rebecca may directly interact with. All other influence must be indirect — through objects, rooms, and the atmosphere of the house.",
+    "Maxim de Winter is a middle-aged adult — guilty, haunted, desperately trying to build something new on ground that will not hold it. Suggested traits: Snob, Loner, Romantic, Gloomy, Neat. He must never know Rebecca is present. If he senses anything, it must be dismissed.",
+    "The Second Mrs de Winter is a young adult — well-meaning, insecure, slowly finding her footing. Suggested traits: Bookworm, Romantic, Gloomy, Neat, Outgoing. She is Rebecca's primary target — not out of hatred exactly, but because displacing her is the most elegant proof that Manderley still belongs to Rebecca.",
+    "Frank Crawley is a middle-aged adult NPC — Maxim's estate manager, steady and observant. Suggested traits: Good, Neat, Bookworm, Loner. He notices things. He must be kept at a distance.",
+    "Colonel Julyan is an older adult NPC — a magistrate, a man of facts. Suggested traits: Genius, Neat, Snob. He appears only in the final story beat.",
+    "Rebecca's sealed wing must be the most lavishly furnished room on the lot — her desk, her monogrammed items, her personal objects all intact. Mrs Danvers maintains it daily. It must never be redecorated.",
+    "A second locked space — the boathouse — represents the secret Rebecca kept in life. It unlocks at Day 21. What it contains determines which ending triggers.",
+    "Rebecca may not eat, sleep, or satisfy any physical need. She exists outside those mechanics. Her only needs are Social — met exclusively through Mrs Danvers — and her Influence Meter, a manual count tracking how much of Manderley she still controls."
+  ],
+  "householdMembers": [
+    { "name": "Rebecca de Winter", "role": "The Ghost", "traits": ["Mean", "Gloomy", "Mischievous", "Self-Assured", "Loner"] },
+    { "name": "Mrs Danvers", "role": "The Keeper", "traits": ["Mean", "Jealous", "Perfectionist", "Gloomy", "Loner"] },
+    { "name": "Maxim de Winter", "role": "The Widower", "traits": ["Snob", "Loner", "Romantic", "Gloomy", "Neat"] },
+    { "name": "The Second Mrs de Winter", "role": "The Usurper", "traits": ["Bookworm", "Romantic", "Gloomy", "Neat", "Outgoing"] }
+  ],
+  "goals": [
+    "The Influence Meter must reach 7 before Day 28 — Rebecca's hold on Manderley must be demonstrably stronger at the end than at the beginning.",
+    "The Second Mrs de Winter must never reach Soulmate status with Maxim — Rebecca wins if their relationship stalls at Good Friends or below.",
+    "Mrs Danvers must retain Friend status with Rebecca — represented by their daily interaction — for the entire scenario. If she falters, Rebecca loses her only instrument.",
+    "Maxim must never directly confront Rebecca's presence — he must always be given a rational explanation for anything that occurs. If he reaches Enemies status with any household member due to Rebecca's interference, the scenario enters crisis.",
+    "Rebecca's sealed wing must never be redecorated. If the Second Mrs de Winter touches a single item, the Influence Meter increases by 2 — the house is asserting itself."
+  ],
+  "rules": [
+    "Every day: Rebecca performs one act of haunting — choose from: move an object in a room the Second Mrs de Winter uses, cause an appliance to break, have Mrs Danvers mention Rebecca's name once in the Second Mrs de Winter's hearing, or place Rebecca's monogrammed items in a newly visible location. Each act adds 1 to the Influence Meter.",
+    "Every day: Mrs Danvers maintains Rebecca's rooms — cleaning, arranging, preserving. This must be her first action of the day before any interaction with living Sims.",
+    "Every day: Rebecca and Mrs Danvers must interact once — a conversation, a direction, a moment of communion. This is Rebecca's only social need and it must be met. If missed, Rebecca's Gloomy trait activates and she loses one Influence point.",
+    "Every day: the Second Mrs de Winter must attempt one act of self-establishment — redecorating a room, hosting a visitor, initiating conversation with Maxim. Rebecca must counter it — for every act of establishment, one haunting act must be performed before the day ends.",
+    "Once per week: Mrs Danvers performs a major act of sabotage on Rebecca's behalf — one significant hostile or mischievous interaction directed at the Second Mrs de Winter. Options include: showing her Rebecca's rooms in a way designed to overwhelm, describing Rebecca's perfections in specific and crushing detail, or engineering a social failure at a household event.",
+    "Once per week: host a social event at Manderley. Rebecca must cause one thing to go wrong during it — a broken object, an awkward silence engineered by Mrs Danvers, a moment where Rebecca's name enters the conversation uninvited.",
+    "Maxim must never be the target of Rebecca's haunting directly. She has no interest in frightening him — she has interest in making Manderley inhospitable to the woman he brought into it.",
+    "If the Second Mrs de Winter attempts to enter Rebecca's sealed wing before Day 14: Mrs Danvers must intercept her and turn her away. This costs Mrs Danvers one Social need bar but adds 1 to the Influence Meter — the house is defended.",
+    "From Day 14 onward: Rebecca's sealed wing may be entered by the Second Mrs de Winter once. Mrs Danvers accompanies her. Rebecca is present as a ghost but invisible. The visit must end with the Second Mrs de Winter leaving more unsettled than when she entered — represented by her mood dropping at least one bar.",
+    "The boathouse unlocks at Day 21. Rebecca may visit it alone — represented by moving her ghost Sim to the boathouse lot and leaving her there for 2 hours. This is the only time Rebecca acts independently of Mrs Danvers. What she does there is not explained.",
+    "From Day 21 onward: the secret Rebecca kept in life begins to surface. One piece of information — represented by a NPC conversation with Frank Crawley or a discovered object — must reach Maxim each day. Rebecca cannot stop this. She can only watch.",
+    "If Maxim's mood drops to red for 2 consecutive days after the secret begins to surface: he is close to the truth. Rebecca must perform 2 haunting acts in one day to distract the household.",
+    "Colonel Julyan arrives on Day 26. His presence cannot be controlled. Rebecca watches the inquest from the sealed wing."
+  ],
+  "storyBeats": [
+    { "step": 1, "text": "Manderley without Rebecca is still full of Rebecca. Her monogram on everything. Her rooms untouched. Mrs Danvers moving through the house like a woman in a continuous act of devotion. The new wife arrived weeks ago and the house has not acknowledged her yet." },
+    { "step": 2, "text": "The Second Mrs de Winter tries to order flowers for the dining room. The arrangement is wrong — not wrong in any specific way, just wrong in the way that everything she does in Manderley is slightly wrong, as though the house has a preference and she is not it." },
+    { "step": 3, "text": "Mrs Danvers takes the Second Mrs de Winter to Rebecca's rooms. She does not force her. She simply opens the door and describes what she sees with the specific tenderness of someone showing a visitor a cathedral. The Second Mrs de Winter stands in the middle of it and understands something she cannot articulate." },
+    { "step": 4, "text": "The fancy dress ball. The costume Mrs Danvers suggests. The moment Maxim sees her at the top of the stairs and his face does something that is not admiration. Rebecca arranged this. She arranged it months ago, from before she died, knowing the house would provide the opportunity." },
+    { "step": 5, "text": "The boathouse. Something in the water. Something that was not meant to surface has surfaced." },
+    { "step": 6, "text": "Frank Crawley knows something. Maxim knows something. The thing Rebecca kept sealed is open now and it is not what anyone expected — not a love story, not a betrayal in the usual sense. Something colder. Something she chose." },
+    { "step": 7, "text": "Colonel Julyan sits in the library and asks questions that have correct answers and answers that are true. They are not always the same answer. Rebecca arranged this too, in her way. She always preferred the version of events she composed herself." }
+  ],
+  "endings": [
+    {
+      "title": "Manderley Endures",
+      "text": "The Influence Meter reaches 7. The Second Mrs de Winter and Maxim never reach Soulmate status. The inquest closes without a verdict that damages Maxim entirely. The Second Mrs de Winter remains in Manderley but it is not hers — it has never been hers — and she knows it now in a way she will carry for the rest of her life. Mrs Danvers locks Rebecca's rooms. Rebecca is still in the house. She was always going to stay. Manderley is hers in the only way that matters."
+    },
+    {
+      "title": "The Fire",
+      "text": "The Influence Meter reaches 7 but the Second Mrs de Winter and Maxim reach Soulmate status despite everything. Mrs Danvers's mood reaches critical red — she has failed Rebecca and she knows it. She does not accept failure. Set a fire in Rebecca's sealed wing while Mrs Danvers is inside it. Manderley burns. Rebecca watches from the grounds as the house goes. She is not distressed. She is not capable of distress. If Manderley cannot be hers, it will not be anyone's. This was always an option."
+    },
+    {
+      "title": "The Inquest",
+      "text": "The secret surfaces fully before Day 28. Colonel Julyan's inquest reveals what Rebecca was — not a wronged wife, not a romantic tragedy, but something she chose deliberately and completely. Maxim is implicated. The Second Mrs de Winter stands beside him. The Influence Meter does not matter anymore. Rebecca's version of events has been replaced by the true one and the true one is worse in different ways. She watches from the sealed wing. She is, for the first time, not in control of the narrative. She finds this almost interesting."
+    }
+  ]
+},
+  {
     "id": "buffy-the-vampire-slayer",
     "title": "Buffy the Vampire Slayer",
     "source": "Buffy the Vampire Slayer",
